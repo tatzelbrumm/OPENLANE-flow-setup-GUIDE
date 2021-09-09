@@ -3212,3 +3212,46 @@ lrwxrwxrwx 1 root root      65 Sep  9 09:09 setup.tcl -> /home/<user>/EDA/OpenLa
 So far, I need to start xschem in
 ~/.xschem/xschem_library/xschem_sky130$ xschem &
 
+~/EDA$ git clone git@github.com:efabless/caravel_user_project_analog.git
+Cloning into 'caravel_user_project_analog'...
+remote: Enumerating objects: 296, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 296 (delta 8), reused 26 (delta 6), pack-reused 263
+Receiving objects: 100% (296/296), 1.90 MiB | 3.88 MiB/s, done.
+Resolving deltas: 100% (133/133), done.
+
+~/EDA$ git clone git@github.com:efabless/caravel_user_project.git
+Cloning into 'caravel_user_project'...
+remote: Enumerating objects: 998, done.
+remote: Counting objects: 100% (67/67), done.
+remote: Compressing objects: 100% (51/51), done.
+remote: Total 998 (delta 22), reused 50 (delta 15), pack-reused 931
+Receiving objects: 100% (998/998), 41.62 MiB | 16.10 MiB/s, done.
+Resolving deltas: 100% (470/470), done.
+
+for the installation, follow
+https://caravel-user-project.readthedocs.io/en/latest/
+
+~/EDA/caravel_user_project_analog$ make install 1>caravel_user_project.make.log 2>caravel_user_project.make.err
+
+~/EDA/caravel_user_project_analog$ make install 1>caravel_user_project_analog.make.log 2>caravel_user_project_analog.make.err
+
+~/EDA$ mkdir pdk
+
+~/EDA/caravel_user_project$ export PDK_ROOT=~/EDA/pdk
+
+~/EDA/caravel_user_project$ env | grep PDK_ROOT
+PDK_ROOT=/home/cmaier/EDA/pdk
+
+~/EDA/caravel_user_project$ make pdk 1>caravel_user_project.make_pdk.log 2>caravel_user_project.make_pdk.err
+
+installation failed
+~/EDA/caravel_user_project$ mv caravel_user_project.make_pdk.err caravel_user_project.make_pdk.FAIL.01.err
+~/EDA/caravel_user_project$ mv caravel_user_project.make_pdk.log caravel_user_project.make_pdk.FAIL.01.log
+
+~/EDA$ rm -rf pdk
+
+After this fails both natively and non-natively, try to skip the make pdk step entirely
+
+
