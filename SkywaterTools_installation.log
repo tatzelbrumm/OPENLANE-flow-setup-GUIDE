@@ -1,0 +1,3214 @@
+ngspice, ADMS
+refer to
+~/EDA/ngspice_installation.log
+
+~/C/cmake-3.21.2$ sudo apt-get install libssl-dev 
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm11
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  libssl-doc
+The following NEW packages will be installed:
+  libssl-dev
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 1.584 kB of archives.
+After this operation, 8.008 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl-dev amd64 1.1.1f-1ubuntu2.8 [1.584 kB]
+Fetched 1.584 kB in 0s (5.344 kB/s)  
+Selecting previously unselected package libssl-dev:amd64.
+(Reading database ... 269227 files and directories currently installed.)
+Preparing to unpack .../libssl-dev_1.1.1f-1ubuntu2.8_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.1f-1ubuntu2.8) ...
+Setting up libssl-dev:amd64 (1.1.1f-1ubuntu2.8) ...
+
+~/EDA/yosys$ sudo apt-get install gfortran
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm11
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  gfortran-9 libgfortran-9-dev libgfortran5
+Suggested packages:
+  gfortran-multilib gfortran-doc gfortran-9-multilib gfortran-9-doc libcoarrays-dev
+The following NEW packages will be installed:
+  gfortran gfortran-9 libgfortran-9-dev libgfortran5
+0 upgraded, 4 newly installed, 0 to remove and 3 not upgraded.
+Need to get 9.343 kB of archives.
+After this operation, 36,0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgfortran5 amd64 10.3.0-1ubuntu1~20.04 [736 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgfortran-9-dev amd64 9.3.0-17ubuntu1~20.04 [684 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 gfortran-9 amd64 9.3.0-17ubuntu1~20.04 [7.921 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 gfortran amd64 4:9.3.0-1ubuntu2 [1.372 B]
+Fetched 9.343 kB in 1s (13,5 MB/s)
+Selecting previously unselected package libgfortran5:amd64.
+(Reading database ... 269344 files and directories currently installed.)
+Preparing to unpack .../libgfortran5_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libgfortran5:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libgfortran-9-dev:amd64.
+Preparing to unpack .../libgfortran-9-dev_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking libgfortran-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package gfortran-9.
+Preparing to unpack .../gfortran-9_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking gfortran-9 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../gfortran_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking gfortran (4:9.3.0-1ubuntu2) ...
+Setting up libgfortran5:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libgfortran-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up gfortran-9 (9.3.0-17ubuntu1~20.04) ...
+Setting up gfortran (4:9.3.0-1ubuntu2) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in auto mode
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+~/C/Downloads$ wget https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz
+--2021-09-08 02:21:55--  https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-releases.githubusercontent.com/537699/9d6105c7-4734-49b8-a044-53e75ff88abb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210908%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210908T002155Z&X-Amz-Expires=300&X-Amz-Signature=b48801590bf63f7d97d1f10d1066719d30a1419414f83b54988d3e8b596fb1df&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=537699&response-content-disposition=attachment%3B%20filename%3Dcmake-3.21.2.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2021-09-08 02:21:55--  https://github-releases.githubusercontent.com/537699/9d6105c7-4734-49b8-a044-53e75ff88abb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210908%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210908T002155Z&X-Amz-Expires=300&X-Amz-Signature=b48801590bf63f7d97d1f10d1066719d30a1419414f83b54988d3e8b596fb1df&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=537699&response-content-disposition=attachment%3B%20filename%3Dcmake-3.21.2.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-releases.githubusercontent.com (github-releases.githubusercontent.com)... 2606:50c0:8003::154, 2606:50c0:8000::154, 2606:50c0:8002::154, ...
+Connecting to github-releases.githubusercontent.com (github-releases.githubusercontent.com)|2606:50c0:8003::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9630492 (9,2M) [application/octet-stream]
+Saving to: ‘cmake-3.21.2.tar.gz’
+
+cmake-3.21.2.tar.gz              100%[==========================================================>]   9,18M  19,2MB/s    in 0,5s    
+
+2021-09-08 02:21:56 (19,2 MB/s) - ‘cmake-3.21.2.tar.gz’ saved [9630492/9630492]
+
+~/C/Downloads$ tar xvzf cmake-3.21.2.tar.gz
+~/C/Downloads$ lart
+total 9420
+drwxrwxr-x 11 <user> <user>    4096 Aug 25 16:17 cmake-3.21.2
+-rw-rw-r--  1 <user> <user> 9630492 Aug 25 17:52 cmake-3.21.2.tar.gz
+drwxrwxr-x  3 <user> <user>    4096 Sep  8 02:22 ..
+drwxrwxr-x  3 <user> <user>    4096 Sep  8 02:24 .
+
+~/C/Downloads$ mv cmake-3.21.2 ..
+
+~/C/cmake-3.21.2$ sudo apt-get install libcrypto++-dev 
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm11
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libcrypto++6
+The following NEW packages will be installed:
+  libcrypto++-dev libcrypto++6
+0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2.265 kB of archives.
+After this operation, 17,9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libcrypto++6 amd64 5.6.4-9build1 [889 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libcrypto++-dev amd64 5.6.4-9build1 [1.377 kB]
+Fetched 2.265 kB in 1s (3.729 kB/s)        
+Selecting previously unselected package libcrypto++6.
+(Reading database ... 269379 files and directories currently installed.)
+Preparing to unpack .../libcrypto++6_5.6.4-9build1_amd64.deb ...
+Unpacking libcrypto++6 (5.6.4-9build1) ...
+Selecting previously unselected package libcrypto++-dev.
+Preparing to unpack .../libcrypto++-dev_5.6.4-9build1_amd64.deb ...
+Unpacking libcrypto++-dev (5.6.4-9build1) ...
+Setting up libcrypto++6 (5.6.4-9build1) ...
+Setting up libcrypto++-dev (5.6.4-9build1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+~/C/cmake-3.21.2$ ./bootstrap | tee ../cmake-3.21.2.bootstrap.log
+~/C/cmake-3.21.2$ make -j8 1>../cmake-3.21.2.make.log 2>../cmake-3.21.2.make.err
+~/C/cmake-3.21.2$ make test 1>../cmake-3.21.2.test.log 2>../cmake-3.21.2.test.err
+~/C/cmake-3.21.2$ sudo make install 1>../cmake-3.21.2.make_install.log 2>../cmake-3.21.2.make_install.err
+~/C/cmake-3.21.2$ which cmake
+/usr/local/bin/cmake
+
+~/EDA/yosys$ sudo apt-get install tcl-dev tcllib tk-dev 
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm11
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libexpat1-dev libfontconfig1-dev libfreetype-dev libfreetype6-dev libpng-dev libpng-tools libxft-dev libxrender-dev libxss-dev
+  tcl8.6-dev tk8.6-dev uuid-dev x11proto-scrnsaver-dev zlib1g-dev
+Suggested packages:
+  freetype2-doc tcl-doc tcl8.6-doc tcllib-critcl tk-doc tk8.6-doc
+The following NEW packages will be installed:
+  libexpat1-dev libfontconfig1-dev libfreetype-dev libfreetype6-dev libpng-dev libpng-tools libxft-dev libxrender-dev libxss-dev
+  tcl-dev tcl8.6-dev tcllib tk-dev tk8.6-dev uuid-dev x11proto-scrnsaver-dev zlib1g-dev
+0 upgraded, 17 newly installed, 0 to remove and 9 not upgraded.
+Need to get 7.910 kB of archives.
+After this operation, 36,8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libexpat1-dev amd64 2.2.9-1build1 [116 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.2 [155 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpng-dev amd64 1.6.37-2 [175 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libfreetype-dev amd64 2.10.1-2ubuntu0.1 [493 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libfreetype6-dev amd64 2.10.1-2ubuntu0.1 [9.812 B]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 uuid-dev amd64 2.34-0.1ubuntu9.1 [33,6 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1-dev amd64 2.13.1-2ubuntu3 [731 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpng-tools amd64 1.6.37-2 [26,1 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxrender-dev amd64 1:0.9.10-1 [24,9 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxft-dev amd64 2.3.3-0ubuntu1 [49,1 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/main amd64 x11proto-scrnsaver-dev all 2019.2-1ubuntu1 [2.624 B]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxss-dev amd64 1:1.2.3-1 [11,9 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal/main amd64 tcl8.6-dev amd64 8.6.10+dfsg-1 [905 kB]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 tcl-dev amd64 8.6.9+1 [5.760 B]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 tcllib all 1.20+dfsg-1 [4.457 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal/main amd64 tk8.6-dev amd64 8.6.10-1 [711 kB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 tk-dev amd64 8.6.9+1 [3.076 B]
+Fetched 7.910 kB in 1s (13,4 MB/s)  
+Selecting previously unselected package libexpat1-dev:amd64.
+(Reading database ... 269540 files and directories currently installed.)
+Preparing to unpack .../00-libexpat1-dev_2.2.9-1build1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.9-1build1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../01-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.2) ...
+Selecting previously unselected package libpng-dev:amd64.
+Preparing to unpack .../02-libpng-dev_1.6.37-2_amd64.deb ...
+Unpacking libpng-dev:amd64 (1.6.37-2) ...
+Selecting previously unselected package libfreetype-dev:amd64.
+Preparing to unpack .../03-libfreetype-dev_2.10.1-2ubuntu0.1_amd64.deb ...
+Unpacking libfreetype-dev:amd64 (2.10.1-2ubuntu0.1) ...
+Selecting previously unselected package libfreetype6-dev:amd64.
+Preparing to unpack .../04-libfreetype6-dev_2.10.1-2ubuntu0.1_amd64.deb ...
+Unpacking libfreetype6-dev:amd64 (2.10.1-2ubuntu0.1) ...
+Selecting previously unselected package uuid-dev:amd64.
+Preparing to unpack .../05-uuid-dev_2.34-0.1ubuntu9.1_amd64.deb ...
+Unpacking uuid-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Selecting previously unselected package libfontconfig1-dev:amd64.
+Preparing to unpack .../06-libfontconfig1-dev_2.13.1-2ubuntu3_amd64.deb ...
+Unpacking libfontconfig1-dev:amd64 (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libpng-tools.
+Preparing to unpack .../07-libpng-tools_1.6.37-2_amd64.deb ...
+Unpacking libpng-tools (1.6.37-2) ...
+Selecting previously unselected package libxrender-dev:amd64.
+Preparing to unpack .../08-libxrender-dev_1%3a0.9.10-1_amd64.deb ...
+Unpacking libxrender-dev:amd64 (1:0.9.10-1) ...
+Selecting previously unselected package libxft-dev:amd64.
+Preparing to unpack .../09-libxft-dev_2.3.3-0ubuntu1_amd64.deb ...
+Unpacking libxft-dev:amd64 (2.3.3-0ubuntu1) ...
+Selecting previously unselected package x11proto-scrnsaver-dev.
+Preparing to unpack .../10-x11proto-scrnsaver-dev_2019.2-1ubuntu1_all.deb ...
+Unpacking x11proto-scrnsaver-dev (2019.2-1ubuntu1) ...
+Selecting previously unselected package libxss-dev:amd64.
+Preparing to unpack .../11-libxss-dev_1%3a1.2.3-1_amd64.deb ...
+Unpacking libxss-dev:amd64 (1:1.2.3-1) ...
+Selecting previously unselected package tcl8.6-dev:amd64.
+Preparing to unpack .../12-tcl8.6-dev_8.6.10+dfsg-1_amd64.deb ...
+Unpacking tcl8.6-dev:amd64 (8.6.10+dfsg-1) ...
+Selecting previously unselected package tcl-dev:amd64.
+Preparing to unpack .../13-tcl-dev_8.6.9+1_amd64.deb ...
+Unpacking tcl-dev:amd64 (8.6.9+1) ...
+Selecting previously unselected package tcllib.
+Preparing to unpack .../14-tcllib_1.20+dfsg-1_all.deb ...
+Unpacking tcllib (1.20+dfsg-1) ...
+Selecting previously unselected package tk8.6-dev:amd64.
+Preparing to unpack .../15-tk8.6-dev_8.6.10-1_amd64.deb ...
+Unpacking tk8.6-dev:amd64 (8.6.10-1) ...
+Selecting previously unselected package tk-dev:amd64.
+Preparing to unpack .../16-tk-dev_8.6.9+1_amd64.deb ...
+Unpacking tk-dev:amd64 (8.6.9+1) ...
+Setting up libpng-tools (1.6.37-2) ...
+Setting up libexpat1-dev:amd64 (2.2.9-1build1) ...
+Setting up tcllib (1.20+dfsg-1) ...
+Setting up uuid-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.2) ...
+Setting up x11proto-scrnsaver-dev (2019.2-1ubuntu1) ...
+Setting up libxrender-dev:amd64 (1:0.9.10-1) ...
+Setting up tcl8.6-dev:amd64 (8.6.10+dfsg-1) ...
+Setting up libpng-dev:amd64 (1.6.37-2) ...
+Setting up libxss-dev:amd64 (1:1.2.3-1) ...
+Setting up libfreetype-dev:amd64 (2.10.1-2ubuntu0.1) ...
+Setting up tcl-dev:amd64 (8.6.9+1) ...
+Setting up libfreetype6-dev:amd64 (2.10.1-2ubuntu0.1) ...
+Setting up libfontconfig1-dev:amd64 (2.13.1-2ubuntu3) ...
+Setting up libxft-dev:amd64 (2.3.3-0ubuntu1) ...
+Setting up tk8.6-dev:amd64 (8.6.10-1) ...
+Setting up tk-dev:amd64 (8.6.9+1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~$ sudo apt-get install libffi-dev 
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm11
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  libffi-dev
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 57,0 kB of archives.
+After this operation, 312 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libffi-dev amd64 3.3-4 [57,0 kB]
+Fetched 57,0 kB in 0s (409 kB/s)      
+Selecting previously unselected package libffi-dev:amd64.
+(Reading database ... 272257 files and directories currently installed.)
+Preparing to unpack .../libffi-dev_3.3-4_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.3-4) ...
+Setting up libffi-dev:amd64 (3.3-4) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+
+~/EDA/yosys$ mv yosys.make.err yosys.make.2021JUL28.err
+~/EDA/yosys$ mv yosys.make.log yosys.make.2021JUL28.log
+~/EDA/yosys$ mv yosys.install.log yosys.install.2021JUL28.log
+~/EDA/yosys$ mv yosys.install.err yosys.install.2021JUL28.err
+
+~/EDA/yosys$ git pull --all
+Fetching origin
+remote: Enumerating objects: 490, done.
+remote: Counting objects: 100% (486/486), done.
+remote: Compressing objects: 100% (247/247), done.
+remote: Total 490 (delta 297), reused 379 (delta 239), pack-reused 4
+Receiving objects: 100% (490/490), 434.77 KiB | 3.04 MiB/s, done.
+Resolving deltas: 100% (297/297), completed with 30 local objects.
+From github.com:YosysHQ/yosys
+   37d76dee..50be8fd0  master        -> origin/master
+ * [new branch]        eddie/bug2731 -> origin/eddie/bug2731
+ * [new branch]        eddie/bug2759 -> origin/eddie/bug2759
+ * [new branch]        eddie/bug2972 -> origin/eddie/bug2972
+Updating 37d76dee..50be8fd0
+Fast-forward
+ .github/workflows/version.yml               |   7 +-
+ CHANGELOG                                   |   6 +
+ Makefile                                    |  15 +-
+ backends/cxxrtl/cxxrtl_backend.cc           |  39 ++--
+ backends/verilog/verilog_backend.cc         |  93 ++++++++-
+ frontends/ast/Makefile.inc                  |   1 +
+ frontends/ast/ast.cc                        |   9 +-
+ frontends/ast/ast.h                         |   5 +-
+ frontends/ast/ast_binding.cc                |  49 +++++
+ frontends/ast/ast_binding.h                 |  58 ++++++
+ frontends/ast/genrtlil.cc                   |  96 ++++++++-
+ frontends/ast/simplify.cc                   | 119 ++++++-----
+ frontends/verific/verific.cc                |   9 +-
+ frontends/verilog/preproc.cc                |  34 +++-
+ frontends/verilog/preproc.h                 |   1 +
+ frontends/verilog/verilog_lexer.l           |   3 +
+ frontends/verilog/verilog_parser.y          | 223 ++++++++++++++++++---
+ kernel/binding.cc                           |  29 +++
+ kernel/binding.h                            |  60 ++++++
+ kernel/celltypes.h                          |   4 +
+ kernel/constids.inc                         |  17 ++
+ kernel/log.cc                               |  10 +-
+ kernel/mem.cc                               | 580 +++++++++++++++++++++++++++++++++++++++++++++--------
+ kernel/mem.h                                |  45 ++++-
+ kernel/modtools.h                           |   6 +-
+ kernel/qcsat.cc                             | 102 ++++++++++
+ kernel/qcsat.h                              |  76 +++++++
+ kernel/rtlil.cc                             |  97 ++++++++-
+ kernel/rtlil.h                              |  11 +-
+ manual/CHAPTER_CellLib.tex                  | 133 ++++++++++---
+ passes/cmds/logger.cc                       |   9 +
+ passes/cmds/torder.cc                       |   2 +-
+ passes/memory/memory.cc                     |  23 ++-
+ passes/memory/memory_bram.cc                | 441 ++++++++++++++++++----------------------
+ passes/memory/memory_dff.cc                 | 466 +++++++++++++++++++++++++++++++++++++++++--
+ passes/memory/memory_share.cc               | 167 +++++++---------
+ passes/opt/Makefile.inc                     |   2 +
+ passes/opt/opt_clean.cc                     |  28 ++-
+ passes/opt/opt_dff.cc                       |  44 ++--
+ passes/opt/opt_expr.cc                      |   2 +-
+ passes/opt/opt_lut.cc                       |  53 ++---
+ passes/opt/opt_mem_feedback.cc              |   4 +-
+ passes/opt/opt_mem_priority.cc              | 109 ++++++++++
+ passes/opt/opt_mem_widen.cc                 | 107 ++++++++++
+ passes/opt/opt_merge.cc                     |  38 +---
+ passes/opt/opt_reduce.cc                    |   4 +-
+ passes/opt/share.cc                         |  84 +++-----
+ passes/opt/wreduce.cc                       |   2 +-
+ passes/proc/proc_memwr.cc                   |  28 ++-
+ passes/proc/proc_prune.cc                   |  65 +++---
+ passes/proc/proc_rmdead.cc                  |  65 +++++-
+ passes/sat/sim.cc                           |   1 +
+ passes/techmap/extract.cc                   |   1 +
+ techlibs/common/simlib.v                    | 193 ++++++++++++++++++
+ techlibs/ecp5/brams.txt                     |   2 +-
+ techlibs/ecp5/cells_bb.v                    |   9 +
+ techlibs/ecp5/lutrams.txt                   |   2 +-
+ techlibs/gowin/cells_map.v                  |   7 +
+ techlibs/gowin/cells_sim.v                  |   4 +-
+ techlibs/gowin/synth_gowin.cc               |   6 +-
+ techlibs/ice40/cells_sim.v                  |   4 +-
+ techlibs/ice40/synth_ice40.cc               |   2 +-
+ techlibs/nexus/cells_map.v                  |   2 +-
+ techlibs/xilinx/xc7_brams_map.v             |  10 +-
+ tests/arch/ecp5/memories.ys                 | 187 ++++++++++-------
+ tests/arch/gowin/tribuf.ys                  |   3 +-
+ tests/arch/ice40/bug2061.ys                 |  24 +++
+ tests/arch/ice40/memories.ys                |  97 +++++----
+ tests/memories/read_arst.v                  |  27 +++
+ tests/memories/read_two_mux.v               |   5 +-
+ tests/memories/run-test.sh                  |  34 +++-
+ tests/memories/trans_sdp.v                  |  21 ++
+ tests/memories/trans_sp.v                   |  21 ++
+ tests/memories/wide_all.v                   |  36 ++++
+ tests/memories/wide_read_async.v            |  27 +++
+ tests/memories/wide_read_mixed.v            |  46 +++++
+ tests/memories/wide_read_sync.v             |  32 +++
+ tests/memories/wide_read_trans.v            |  40 ++++
+ tests/memories/wide_thru_priority.v         |  29 +++
+ tests/memories/wide_write.v                 |  29 +++
+ tests/opt/bug2765.ys                        |   4 +-
+ tests/opt/bug2920.ys                        |  42 ++++
+ tests/opt/memory_dff_trans.ys               | 874 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/opt/opt_clean_mem.ys                  |  16 +-
+ tests/opt/opt_mem_feedback.ys               |   4 +-
+ tests/opt/opt_mem_priority.ys               | 209 +++++++++++++++++++
+ tests/opt/opt_merge_init.ys                 |   2 +-
+ tests/proc/bug2962.ys                       |  22 ++
+ tests/proc/rmdead.v                         |  46 +++++
+ tests/proc/rmdead.ys                        |   4 +
+ tests/simple/case_large.v                   | 273 +++++++++++++++++++++++++
+ tests/simple/loop_prefix_case.v             |  18 ++
+ tests/svtypes/logic_rom.ys                  |   2 +-
+ tests/svtypes/typedef_initial_and_assign.sv |  94 +++++++++
+ tests/svtypes/typedef_initial_and_assign.ys |  14 ++
+ tests/svtypes/typedef_memory.ys             |   2 +-
+ tests/svtypes/typedef_memory_2.ys           |   2 +-
+ tests/techmap/iopadmap.ys                   |   4 +-
+ tests/verilog/for_decl_no_init.ys           |   9 +
+ tests/verilog/for_decl_no_sv.ys             |   9 +
+ tests/verilog/for_decl_shadow.sv            |  32 +++
+ tests/verilog/for_decl_shadow.ys            |   6 +
+ tests/verilog/genfor_decl_no_init.ys        |   7 +
+ tests/verilog/genfor_decl_no_sv.ys          |   7 +
+ tests/verilog/genvar_loop_decl_1.sv         |  18 ++
+ tests/verilog/genvar_loop_decl_1.ys         |  14 ++
+ tests/verilog/genvar_loop_decl_2.sv         |  30 +++
+ tests/verilog/genvar_loop_decl_2.ys         |   5 +
+ tests/verilog/genvar_loop_decl_3.sv         |  28 +++
+ tests/verilog/genvar_loop_decl_3.ys         |   5 +
+ tests/verilog/macro_arg_tromp.sv            |  21 ++
+ tests/verilog/macro_arg_tromp.ys            |   2 +
+ 112 files changed, 5460 insertions(+), 946 deletions(-)
+ create mode 100644 frontends/ast/ast_binding.cc
+ create mode 100644 frontends/ast/ast_binding.h
+ create mode 100644 kernel/binding.cc
+ create mode 100644 kernel/binding.h
+ create mode 100644 kernel/qcsat.cc
+ create mode 100644 kernel/qcsat.h
+ create mode 100644 passes/opt/opt_mem_priority.cc
+ create mode 100644 passes/opt/opt_mem_widen.cc
+ create mode 100644 tests/arch/ice40/bug2061.ys
+ create mode 100644 tests/memories/read_arst.v
+ create mode 100644 tests/memories/trans_sdp.v
+ create mode 100644 tests/memories/trans_sp.v
+ create mode 100644 tests/memories/wide_all.v
+ create mode 100644 tests/memories/wide_read_async.v
+ create mode 100644 tests/memories/wide_read_mixed.v
+ create mode 100644 tests/memories/wide_read_sync.v
+ create mode 100644 tests/memories/wide_read_trans.v
+ create mode 100644 tests/memories/wide_thru_priority.v
+ create mode 100644 tests/memories/wide_write.v
+ create mode 100644 tests/opt/bug2920.ys
+ create mode 100644 tests/opt/memory_dff_trans.ys
+ create mode 100644 tests/opt/opt_mem_priority.ys
+ create mode 100644 tests/proc/bug2962.ys
+ create mode 100644 tests/proc/rmdead.v
+ create mode 100644 tests/proc/rmdead.ys
+ create mode 100644 tests/simple/case_large.v
+ create mode 100644 tests/simple/loop_prefix_case.v
+ create mode 100644 tests/svtypes/typedef_initial_and_assign.sv
+ create mode 100644 tests/svtypes/typedef_initial_and_assign.ys
+ create mode 100644 tests/verilog/for_decl_no_init.ys
+ create mode 100644 tests/verilog/for_decl_no_sv.ys
+ create mode 100644 tests/verilog/for_decl_shadow.sv
+ create mode 100644 tests/verilog/for_decl_shadow.ys
+ create mode 100644 tests/verilog/genfor_decl_no_init.ys
+ create mode 100644 tests/verilog/genfor_decl_no_sv.ys
+ create mode 100644 tests/verilog/genvar_loop_decl_1.sv
+ create mode 100644 tests/verilog/genvar_loop_decl_1.ys
+ create mode 100644 tests/verilog/genvar_loop_decl_2.sv
+ create mode 100644 tests/verilog/genvar_loop_decl_2.ys
+ create mode 100644 tests/verilog/genvar_loop_decl_3.sv
+ create mode 100644 tests/verilog/genvar_loop_decl_3.ys
+ create mode 100644 tests/verilog/macro_arg_tromp.sv
+ create mode 100644 tests/verilog/macro_arg_tromp.ys
+
+~/EDA/yosys$ make 1>yosys.make.log 2>yosys.make.err
+~/EDA/yosys$ sudo make install 1>yosys.install.log 2>yosys.install.err
+
+~$ which yosys
+/usr/local/bin/yosys
+
+~/EDA/netgen$ git pull --all
+Fetching origin
+remote: Enumerating objects: 151, done.
+remote: Counting objects: 100% (151/151), done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 151 (delta 63), reused 148 (delta 60), pack-reused 0
+Receiving objects: 100% (151/151), 18.56 KiB | 3.09 MiB/s, done.
+Resolving deltas: 100% (63/63), completed with 3 local objects.
+From github.com:RTimothyEdwards/netgen
+   a332c23..d7355ce  master     -> origin/master
+   cf6dd2a..66cf2b8  netgen-1.5 -> origin/netgen-1.5
+ * [new tag]         1.5.201    -> 1.5.201
+ * [new tag]         1.5.197    -> 1.5.197
+ * [new tag]         1.5.198    -> 1.5.198
+ * [new tag]         1.5.199    -> 1.5.199
+ * [new tag]         1.5.200    -> 1.5.200
+Updating a332c23..d7355ce
+Fast-forward
+ .github/workflows/main.yml |  40 +++++
+ README => README.md        |   6 +-
+ VERSION                    |   2 +-
+ python/Makefile            |   1 +
+ python/lvs_manager.py      | 891 -------------------------------------------------------------------------------------------------
+ 5 files changed, 47 insertions(+), 893 deletions(-)
+ create mode 100644 .github/workflows/main.yml
+ rename README => README.md (98%)
+ delete mode 100644 python/lvs_manager.py
+
+~/EDA/netgen$ ./configure 
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for library containing strerror... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for gm4... no
+checking for gnum4... no
+checking for m4... /usr/bin/m4
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of unsigned long long... 8
+checking whether byte ordering is bigendian... no
+checking for ANSI C header files... (cached) yes
+checking for setenv... yes
+checking for putenv... yes
+checking for vfork... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking param.h usability... no
+checking param.h presence... no
+checking for param.h... no
+checking for python3... yes
+checking for va_copy... yes
+checking for __va_copy... yes
+checking for tclConfig.sh... /usr/lib/tcl8.6/tclConfig.sh
+checking for tkConfig.sh... /usr/lib/tk8.6/tkConfig.sh
+checking for wish executable... /usr/bin/wish
+checking for tclsh executable... /usr/bin/tclsh
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+configure: creating ./config.status
+config.status: creating defs.mak
+config.status: WARNING:  'defs.mak.in' seems to ignore the --datarootdir setting
+
+-----------------------------------------------------------
+Configuration Summary (principle requirements):
+
+Tcl/Tk:      yes
+Python3:    yes
+-----------------------------------------------------------
+
+Use 'make' to compile and 'make install' to install.
+
+Errors may not be printed to stdout:  see files 'make.log' 
+   and 'install.log' for a complete error summary.
+
+-----------------------------------------------------------
+
+~/EDA/netgen$ make
+--- errors and warnings logged in file make.log
+make[1]: Entering directory '/home/<user>/EDA/netgen'
+--- making modules
+for dir in base tcltk; do \
+	(cd $dir && make module); done
+make[2]: Entering directory '/home/<user>/EDA/netgen/base'
+make[2]: Nothing to be done for 'module'.
+make[2]: Leaving directory '/home/<user>/EDA/netgen/base'
+make[2]: Entering directory '/home/<user>/EDA/netgen/tcltk'
+make[2]: Nothing to be done for 'module'.
+make[2]: Leaving directory '/home/<user>/EDA/netgen/tcltk'
+--- making Tcl shared-object libraries
+for dir in netgen python tcltk; do \
+	(cd $dir && make tcl-main); done
+make[2]: Entering directory '/home/<user>/EDA/netgen/netgen'
+make[2]: Nothing to be done for 'tcl-main'.
+make[2]: Leaving directory '/home/<user>/EDA/netgen/netgen'
+make[2]: Entering directory '/home/<user>/EDA/netgen/python'
+sed -e '/SUBST_SCRIPT_DIR/s#SUBST_SCRIPT_DIR#/usr/local/lib/netgen/python#' \
+	lvs_manager.py.in > lvs_manager.py
+make[2]: Leaving directory '/home/<user>/EDA/netgen/python'
+make[2]: Entering directory '/home/<user>/EDA/netgen/tcltk'
+make[2]: Nothing to be done for 'tcl-main'.
+make[2]: Leaving directory '/home/<user>/EDA/netgen/tcltk'
+make[1]: Leaving directory '/home/<user>/EDA/netgen'
+
+~/EDA/netgen$ sudo make install
+[sudo] password for <user>: 
+./scripts/mkdirs /usr/local/bin
+--- installing executable to /usr/local/bin
+--- installing run-time files to /usr/local/lib
+
+~$ which netgen 
+/usr/local/bin/netgen
+
+~/EDA/magic$ git pull --all
+Fetching origin
+remote: Enumerating objects: 479, done.
+remote: Counting objects: 100% (479/479), done.
+remote: Compressing objects: 100% (250/250), done.
+remote: Total 479 (delta 249), reused 398 (delta 168), pack-reused 0
+Receiving objects: 100% (479/479), 499.27 KiB | 2.74 MiB/s, done.
+Resolving deltas: 100% (249/249), completed with 39 local objects.
+From github.com:RTimothyEdwards/magic
+   e403e92..0ebdf3e  master     -> origin/master
+   e403e92..0ebdf3e  magic-8.3  -> origin/magic-8.3
+ * [new tag]         8.3.203    -> 8.3.203
+ * [new tag]         8.3.161    -> 8.3.161
+ * [new tag]         8.3.162    -> 8.3.162
+ * [new tag]         8.3.163    -> 8.3.163
+ * [new tag]         8.3.164    -> 8.3.164
+ * [new tag]         8.3.165    -> 8.3.165
+ * [new tag]         8.3.166    -> 8.3.166
+ * [new tag]         8.3.167    -> 8.3.167
+ * [new tag]         8.3.168    -> 8.3.168
+ * [new tag]         8.3.169    -> 8.3.169
+ * [new tag]         8.3.170    -> 8.3.170
+ * [new tag]         8.3.171    -> 8.3.171
+ * [new tag]         8.3.172    -> 8.3.172
+ * [new tag]         8.3.173    -> 8.3.173
+ * [new tag]         8.3.174    -> 8.3.174
+ * [new tag]         8.3.175    -> 8.3.175
+ * [new tag]         8.3.176    -> 8.3.176
+ * [new tag]         8.3.177    -> 8.3.177
+ * [new tag]         8.3.178    -> 8.3.178
+ * [new tag]         8.3.179    -> 8.3.179
+ * [new tag]         8.3.180    -> 8.3.180
+ * [new tag]         8.3.181    -> 8.3.181
+ * [new tag]         8.3.182    -> 8.3.182
+ * [new tag]         8.3.183    -> 8.3.183
+ * [new tag]         8.3.184    -> 8.3.184
+ * [new tag]         8.3.185    -> 8.3.185
+ * [new tag]         8.3.186    -> 8.3.186
+ * [new tag]         8.3.187    -> 8.3.187
+ * [new tag]         8.3.188    -> 8.3.188
+ * [new tag]         8.3.189    -> 8.3.189
+ * [new tag]         8.3.190    -> 8.3.190
+ * [new tag]         8.3.191    -> 8.3.191
+ * [new tag]         8.3.192    -> 8.3.192
+ * [new tag]         8.3.193    -> 8.3.193
+ * [new tag]         8.3.194    -> 8.3.194
+ * [new tag]         8.3.195    -> 8.3.195
+ * [new tag]         8.3.196    -> 8.3.196
+ * [new tag]         8.3.197    -> 8.3.197
+ * [new tag]         8.3.198    -> 8.3.198
+ * [new tag]         8.3.199    -> 8.3.199
+ * [new tag]         8.3.200    -> 8.3.200
+ * [new tag]         8.3.201    -> 8.3.201
+ * [new tag]         8.3.202    -> 8.3.202
+Updating e403e92..0ebdf3e
+Fast-forward
+ .github/workflows/main.yml |   32 ++
+ README => README.md        |    5 +
+ VERSION                    |    2 +-
+ calma/CalmaRdcl.c          |   21 +-
+ calma/CalmaRead.c          |    7 +
+ calma/CalmaWrite.c         |  199 ++++++++++--
+ calma/calmaInt.h           |    1 +
+ cif/CIFgen.c               |  199 +++++++-----
+ cif/CIFhier.c              |  280 +++++++++++-----
+ cif/CIFsee.c               |    2 +-
+ commands/CmdCD.c           |   40 +--
+ commands/CmdFI.c           |   13 +-
+ commands/CmdLQ.c           |   10 +-
+ database/DBcellcopy.c      |    1 +
+ database/DBcellname.c      |   41 ++-
+ database/DBtpaint.c        |    4 +-
+ database/database.h.in     |    3 +-
+ dbwind/DBWprocs.c          |    8 +-
+ dbwind/DBWtools.c          |   21 +-
+ drc/DRCarray.c             |   13 +-
+ drc/DRCbasic.c             |  171 ++++++++--
+ drc/DRCcif.c               |   17 +
+ drc/DRCsubcell.c           |   28 +-
+ drc/DRCtech.c              |    9 +-
+ ext2sim/ext2sim.c          |   45 ++-
+ ext2spice/ext2hier.c       |   44 ++-
+ ext2spice/ext2spice.c      |  367 ++++++++++++---------
+ ext2spice/ext2spice.h      |   33 +-
+ extflat/EFantenna.c        |   30 +-
+ extflat/EFargs.c           |   14 +-
+ extflat/EFbuild.c          |   72 ++++-
+ extflat/EFdef.c            |    1 +
+ extflat/EFread.c           |    4 +-
+ extflat/EFvisit.c          |   12 +-
+ extflat/extflat.h          |   13 +-
+ extract/ExtBasic.c         |    6 +-
+ extract/ExtCell.c          |    2 +-
+ extract/ExtHier.c          |  157 ++++++---
+ extract/ExtTech.c          |   85 +++--
+ extract/extract.h          |   32 +-
+ extract/extractInt.h       |    1 +
+ lef/lefRead.c              |    1 +
+ lef/lefWrite.c             |    2 +-
+ resis/Makefile             |    2 +-
+ resis/ResChecks.c          |  194 +++++------
+ resis/ResConDCS.c          |  547 -------------------------------
+ resis/ResDebug.c           |   25 +-
+ resis/ResFract.c           |  565 ++++++++++++++++----------------
+ resis/ResJunct.c           |  158 +++++----
+ resis/ResMain.c            |  771 ++++++++++++++++++++++++++------------------
+ resis/ResMakeRes.c         |    2 +-
+ resis/ResMerge.c           | 1389 ++++++++++++++++++++++++++++++++++++++-----------------------------------------
+ resis/ResPrint.c           |  254 ++++++++-------
+ resis/ResReadSim.c         | 1079 +++++++++++++++++++++++++++++++------------------------------
+ resis/ResRex.c             |  114 ++++---
+ resis/ResSimple.c          | 1685 ++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------
+ resis/ResUtils.c           |  425 ++++++++++++------------
+ resis/ResWrite.c           |  256 ++++++++-------
+ resis/resis.h              |    5 +-
+ utils/geometry.h           |    3 +-
+ utils/heap.c               |    6 +-
+ utils/ihash.h              |    1 +
+ utils/main.c               |    9 +
+ utils/tech.c               |    2 +-
+ windows/windMain.c         |    1 +
+ 65 files changed, 4993 insertions(+), 4548 deletions(-)
+ create mode 100644 .github/workflows/main.yml
+ rename README => README.md (99%)
+ delete mode 100644 resis/ResConDCS.c
+
+~/EDA/magic$ make force
+for dir in bplane cmwind commands database dbwind debug drc extflat extract graphics netmenu plow resis select sim textio tiles utils windows wiring calma cif plot lef readline garouter grouter irouter mzrouter router gcr magic ext2sim ext2spice net2ir extcheck graphics scmos lisp tcltk; do \
+	(cd $dir && make clean); done
+make[1]: Entering directory '/home/<user>/EDA/magic/bplane'
+rm -f bpDump.o bpUtils.o bpBins.o bpEnum.o bpMain.o bpStat.o   libbplane.a libbplane.o bplane
+make[1]: Leaving directory '/home/<user>/EDA/magic/bplane'
+make[1]: Entering directory '/home/<user>/EDA/magic/cmwind'
+rm -f CMWmain.o CMWcmmnds.o CMWundo.o CMWrgbhsv.o   libcmwind.a libcmwind.o cmwind
+make[1]: Leaving directory '/home/<user>/EDA/magic/cmwind'
+make[1]: Entering directory '/home/<user>/EDA/magic/commands'
+rm -f CmdSubrs.o CmdAB.o CmdCD.o CmdE.o CmdFI.o CmdLQ.o CmdRS.o CmdTZ.o CmdWizard.o CmdAuto.o   libcommands.a libcommands.o commands
+make[1]: Leaving directory '/home/<user>/EDA/magic/commands'
+make[1]: Entering directory '/home/<user>/EDA/magic/database'
+rm -f DBbound.o DBcell.o DBcellbox.o DBcellcopy.o DBcellname.o DBcellsrch.o DBcellsel.o DBcellsubr.o DBconnect.o DBcount.o DBexpand.o DBio.o DBlabel.o DBlabel2.o DBpaint2.o DBpaint.o DBprop.o DBtech.o DBtcontact.o DBtechname.o DBtpaint.o DBtpaint2.o DBtechtype.o DBtiles.o DBtimestmp.o DBundo.o   ../tiles/libtiles.o ../utils/libutils.o libdatabase.a libdatabase.o database database.h
+make[1]: Leaving directory '/home/<user>/EDA/magic/database'
+make[1]: Entering directory '/home/<user>/EDA/magic/dbwind'
+rm -f DBWcommands.o DBWdisplay.o DBWbuttons.o DBWelement.o DBWfdback.o DBWhlights.o DBWprocs.o DBWtools.o DBWundo.o   libdbwind.a libdbwind.o dbwind
+make[1]: Leaving directory '/home/<user>/EDA/magic/dbwind'
+make[1]: Entering directory '/home/<user>/EDA/magic/debug'
+rm -f debugFlags.o hist.o   libdebug.a libdebug.o debug
+make[1]: Leaving directory '/home/<user>/EDA/magic/debug'
+make[1]: Entering directory '/home/<user>/EDA/magic/drc'
+rm -f DRCarray.o DRCbasic.o DRCcif.o DRCcontin.o DRCmain.o DRCsubcell.o DRCtech.o DRCprint.o DRCextend.o   libdrc.a libdrc.o drc
+make[1]: Leaving directory '/home/<user>/EDA/magic/drc'
+make[1]: Entering directory '/home/<user>/EDA/magic/extflat'
+rm -f EFargs.o EFbuild.o EFdef.o EFerr.o EFflat.o EFhier.o EFname.o EFread.o EFsym.o EFvisit.o EFantenna.o   libextflat.a libextflat.o extflat
+make[1]: Leaving directory '/home/<user>/EDA/magic/extflat'
+make[1]: Entering directory '/home/<user>/EDA/magic/extract'
+rm -f ExtArray.o ExtBasic.o ExtCell.o ExtCouple.o ExtHard.o ExtHier.o ExtLength.o ExtMain.o ExtNghbors.o ExtPerim.o ExtRegion.o ExtSubtree.o ExtTech.o ExtTest.o ExtTimes.o ExtYank.o ExtInter.o ExtUnique.o   libextract.a libextract.o extract
+make[1]: Leaving directory '/home/<user>/EDA/magic/extract'
+make[1]: Entering directory '/home/<user>/EDA/magic/graphics'
+rm -f grMain.o grLock.o grDStyle.o grText.o grCMap.o grClip.o grGlyphs.o grNull.o W3Dmain.o grX11thread.o grX11su1.o grX11su2.o grX11su3.o grX11su4.o grX11su5.o  libgraphics.a libgraphics.o graphics  *.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/graphics'
+make[1]: Entering directory '/home/<user>/EDA/magic/netmenu'
+rm -f NMbutton.o NMcmdAK.o NMcmdLZ.o NMlabel.o NMmain.o NMnetlist.o NMshowpt.o NMshowcell.o NMundo.o NMwiring.o   libnetmenu.a libnetmenu.o netmenu
+make[1]: Leaving directory '/home/<user>/EDA/magic/netmenu'
+make[1]: Entering directory '/home/<user>/EDA/magic/plow'
+rm -f PlowCmd.o PlowJogs.o PlowMain.o PlowQueue.o PlowRandom.o PlowRules1.o PlowRules2.o PlowRules3.o PlowSearch.o PlowTech.o PlowTest.o PlowWidth.o PlowYank.o   libplow.a libplow.o plow
+make[1]: Leaving directory '/home/<user>/EDA/magic/plow'
+make[1]: Entering directory '/home/<user>/EDA/magic/resis'
+rm -f ResMain.o ResJunct.o ResMakeRes.o ResSimple.o ResPrint.o ResReadSim.o ResRex.o ResBasic.o ResMerge.o ResChecks.o ResFract.o ResUtils.o ResDebug.o   libresis.a libresis.o resis
+make[1]: Leaving directory '/home/<user>/EDA/magic/resis'
+make[1]: Entering directory '/home/<user>/EDA/magic/select'
+rm -f selCreate.o selDisplay.o selEnum.o selOps.o selUndo.o selUnselect.o   libselect.a libselect.o select
+make[1]: Leaving directory '/home/<user>/EDA/magic/select'
+make[1]: Entering directory '/home/<user>/EDA/magic/sim'
+rm -f SimDBstuff.o SimSelect.o SimRsim.o SimExtract.o   libsim.a libsim.o sim
+make[1]: Leaving directory '/home/<user>/EDA/magic/sim'
+make[1]: Entering directory '/home/<user>/EDA/magic/textio'
+rm -f txCommands.o txInput.o txMain.o txMore.o txOutput.o   libtextio.a libtextio.o textio
+make[1]: Leaving directory '/home/<user>/EDA/magic/textio'
+make[1]: Entering directory '/home/<user>/EDA/magic/tiles'
+rm -f tile.o search.o   libtiles.a libtiles.o tiles
+make[1]: Leaving directory '/home/<user>/EDA/magic/tiles'
+make[1]: Entering directory '/home/<user>/EDA/magic/utils'
+rm -f args.o child.o dqueue.o finddisp.o flock.o flsbuf.o fraction.o geometry.o getrect.o hash.o heap.o ihash.o list.o lookup.o lookupany.o lookupfull.o macros.o main.o malloc.o match.o maxrect.o netlist.o niceabort.o parser.o path.o pathvisit.o port.o printstuff.o signals.o stack.o strdup.o runstats.o set.o show.o tech.o touchtypes.o undo.o  LIBdbio.o LIBmain.o LIBtextio.o libutils.a libutils.o utils
+make[1]: Leaving directory '/home/<user>/EDA/magic/utils'
+make[1]: Entering directory '/home/<user>/EDA/magic/windows'
+rm -f windClient.o windCmdAM.o windCmdNR.o windCmdSZ.o windSend.o windDebug.o windDisp.o windMain.o windMove.o windSearch.o windTrans.o windView.o   libwindows.a libwindows.o windows
+make[1]: Leaving directory '/home/<user>/EDA/magic/windows'
+make[1]: Entering directory '/home/<user>/EDA/magic/wiring'
+rm -f wireOps.o wireTech.o wireUndo.o   libwiring.a libwiring.o wiring
+make[1]: Leaving directory '/home/<user>/EDA/magic/wiring'
+make[1]: Entering directory '/home/<user>/EDA/magic/calma'
+rm -f CalmaRead.o CalmaRdcl.o CalmaRdio.o CalmaRdpt.o CalmaWrite.o   libcalma.a libcalma.o calma
+make[1]: Leaving directory '/home/<user>/EDA/magic/calma'
+make[1]: Entering directory '/home/<user>/EDA/magic/cif'
+rm -f CIFgen.o CIFhier.o CIFmain.o CIFrdcl.o CIFrdpt.o CIFrdpoly.o CIFrdtech.o CIFrdutils.o CIFsee.o CIFtech.o CIFwrite.o   libcif.a libcif.o cif
+make[1]: Leaving directory '/home/<user>/EDA/magic/cif'
+make[1]: Entering directory '/home/<user>/EDA/magic/plot'
+rm -f plotCmd.o plotGremln.o plotHP.o plotPS.o plotMain.o plotRutils.o plotVers.o plotPixels.o plotPNM.o   libplot.a libplot.o plot tclplot tclplot.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/plot'
+make[1]: Entering directory '/home/<user>/EDA/magic/lef'
+rm -f lefCmd.o lefTech.o lefWrite.o defWrite.o lefRead.o defRead.o   liblef.a liblef.o lef magiclef tcllef.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/lef'
+make[1]: Entering directory '/home/<user>/EDA/magic/readline'
+rm -f readline
+make[1]: Leaving directory '/home/<user>/EDA/magic/readline'
+make[1]: Entering directory '/home/<user>/EDA/magic/garouter'
+rm -f gaChannel.o gaMain.o gaMaze.o gaSimple.o gaStem.o gaTest.o   libgarouter.a libgarouter.o garouter
+make[1]: Leaving directory '/home/<user>/EDA/magic/garouter'
+make[1]: Entering directory '/home/<user>/EDA/magic/grouter'
+rm -f grouteChan.o grouteCrss.o grouteDens.o grouteMain.o grouteMult.o grouteMaze.o groutePath.o groutePen.o grouteTest.o   libgrouter.a libgrouter.o grouter
+make[1]: Leaving directory '/home/<user>/EDA/magic/grouter'
+make[1]: Entering directory '/home/<user>/EDA/magic/irouter'
+rm -f irCommand.o irMain.o irRoute.o irTestCmd.o irUtils.o   libirouter.a libirouter.o irouter
+make[1]: Leaving directory '/home/<user>/EDA/magic/irouter'
+make[1]: Entering directory '/home/<user>/EDA/magic/mzrouter'
+rm -f mzBlock.o mzDebug.o mzEstimate.o mzXtndDown.o mzXtndLeft.o mzXtndRght.o mzXtndUp.o mzHint.o mzInit.o mzNumLine.o mzMain.o mzSearch.o mzStart.o mzSubrs.o mzTech.o mzTestCmd.o mzWalk.o   libmzrouter.a libmzrouter.o mzrouter
+make[1]: Leaving directory '/home/<user>/EDA/magic/mzrouter'
+make[1]: Entering directory '/home/<user>/EDA/magic/router'
+rm -f rtrCmd.o rtrMain.o rtrDcmpose.o rtrFdback.o rtrHazards.o rtrChannel.o rtrPaint.o rtrPin.o rtrSide.o rtrStem.o rtrTech.o rtrVia.o rtrTravers.o   librouter.a librouter.o router tclroute tclroute.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/router'
+make[1]: Entering directory '/home/<user>/EDA/magic/gcr'
+rm -f gcrChannel.o gcrColl.o gcrDebug.o gcrEdge.o gcrFeas.o gcrFlags.o gcrInit.o gcrLib.o gcrRiver.o gcrRoute.o gcrShwFlgs.o gcrUnsplit.o   libgcr.a libgcr.o gcr
+make[1]: Leaving directory '/home/<user>/EDA/magic/gcr'
+make[1]: Entering directory '/home/<user>/EDA/magic/magic'
+rm -f magicTop.o   libmagic.a libmagic.o magic tclmagic libtclmagic.a proto.magicrc
+make[1]: Leaving directory '/home/<user>/EDA/magic/magic'
+make[1]: Entering directory '/home/<user>/EDA/magic/ext2sim'
+rm -f ext2sim.o   libext2sim.a libext2sim.o ext2sim exttosim simwrap.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/ext2sim'
+make[1]: Entering directory '/home/<user>/EDA/magic/ext2spice'
+rm -f ext2spice.o ext2hier.o   libext2spice.a libext2spice.o ext2spice exttospice spicewrap.o spicehier.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/ext2spice'
+make[1]: Entering directory '/home/<user>/EDA/magic/net2ir'
+rm -f net2ir.o   libnet2ir.a libnet2ir.o net2ir
+make[1]: Leaving directory '/home/<user>/EDA/magic/net2ir'
+make[1]: Entering directory '/home/<user>/EDA/magic/extcheck'
+gcc -g -m64 -fPIC   -I. -I..  -I../readline -DCAD_DIR=\"/usr/local/lib\" -DBIN_DIR=\"/usr/local/bin\"  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_SYS_MMAN_H=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_PATHS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DX_DISPLAY_MISSING=1 -DEXT2SPICE_AUTO=1 -DEXT2SIM_AUTO=1 -DFILE_LOCKS=1 -DCALMA_MODULE=1 -DCIF_MODULE=1 -DPLOT_MODULE=1 -DLEF_MODULE=1 -DUSE_READLINE=1 -DHAVE_PTHREADS=1 -DROUTE_MODULE=1 -DRSIM_MODULE=1 -DUSE_NEW_MACROS=1 -DVECTOR_FONTS=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DMAGIC_VERSION=\"`cat ../VERSION | cut -d. -f1-2`\" -DMAGIC_REVISION=\"`cat ../VERSION | cut -d. -f3`\" -DGCORE=\"/usr/bin/gcore\" -DSHDLIB_EXT=\"\" -DNDEBUG -MM extcheck.c | \
+sed -e "/#/D" -e "/ \//s/ \/.*\.h//" -e "/  \\\/D" \
+> Depend
+rm -f extcheck.o   libextcheck.a libextcheck.o extcheck
+make[1]: Leaving directory '/home/<user>/EDA/magic/extcheck'
+make[1]: Entering directory '/home/<user>/EDA/magic/graphics'
+rm -f grMain.o grLock.o grDStyle.o grText.o grCMap.o grClip.o grGlyphs.o grNull.o W3Dmain.o grX11thread.o grX11su1.o grX11su2.o grX11su3.o grX11su4.o grX11su5.o  libgraphics.a libgraphics.o graphics  *.o
+make[1]: Leaving directory '/home/<user>/EDA/magic/graphics'
+make[1]: Entering directory '/home/<user>/EDA/magic/scmos'
+rm -f *.tech *.tech27
+cd cif_template && make clean;
+make[2]: Entering directory '/home/<user>/EDA/magic/scmos/cif_template'
+rm -rf objs
+make[2]: Leaving directory '/home/<user>/EDA/magic/scmos/cif_template'
+make[1]: Leaving directory '/home/<user>/EDA/magic/scmos'
+make[1]: Entering directory '/home/<user>/EDA/magic/lisp'
+rm -f lispMain.o lispEval.o lispPrint.o lispParse.o lispA-Z.o lispGC.o lispFrame.o lispTrace.o lispMagic.o lispArith.o lispString.o lispIO.o   liblisp.a liblisp.o lisp
+make[1]: Leaving directory '/home/<user>/EDA/magic/lisp'
+make[1]: Entering directory '/home/<user>/EDA/magic/tcltk'
+rm -f tclmagic.o   libtcltk.a libtcltk.o tcltk magic.sh magic.tcl magicexec magicdnull ext2spice.sh ext2sim.sh
+make[1]: Leaving directory '/home/<user>/EDA/magic/tcltk'
+rm -f *.tmp */*.tmp *.sav */*.sav *.log TAGS tags
+--- errors and warnings logged in file make.log
+--- making header file database/database.h
+~$ sudo apt-get install libcairo2-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libblkid-dev libcairo-script-interpreter2 libglib2.0-dev libglib2.0-dev-bin libmount-dev libpcre16-3 libpcre2-dev
+  libpcre2-posix2 libpcre3-dev libpcre32-3 libpcrecpp0v5 libpixman-1-dev libselinux1-dev libsepol1-dev libxcb-render0-dev
+  libxcb-shm0-dev
+Suggested packages:
+  libcairo2-doc libgirepository1.0-dev libglib2.0-doc libxml2-utils
+The following NEW packages will be installed:
+  libblkid-dev libcairo-script-interpreter2 libcairo2-dev libglib2.0-dev libglib2.0-dev-bin libmount-dev libpcre16-3 libpcre2-dev
+  libpcre2-posix2 libpcre3-dev libpcre32-3 libpcrecpp0v5 libpixman-1-dev libselinux1-dev libsepol1-dev libxcb-render0-dev
+  libxcb-shm0-dev
+0 upgraded, 17 newly installed, 0 to remove and 9 not upgraded.
+Need to get 4.905 kB of archives.
+After this operation, 25,7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libcairo-script-interpreter2 amd64 1.16.0-4ubuntu1 [54,2 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpixman-1-dev amd64 0.38.4-0ubuntu1 [243 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxcb-render0-dev amd64 1.14-2 [18,4 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0-dev amd64 1.14-2 [6.716 B]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-dev-bin amd64 2.64.6-1~ubuntu20.04.4 [109 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libblkid-dev amd64 2.34-0.1ubuntu9.1 [167 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libmount-dev amd64 2.34-0.1ubuntu9.1 [176 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcre16-3 amd64 2:8.39-12build1 [150 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcre32-3 amd64 2:8.39-12build1 [140 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcrecpp0v5 amd64 2:8.39-12build1 [15,5 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcre3-dev amd64 2:8.39-12build1 [540 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libsepol1-dev amd64 3.0-1 [325 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcre2-posix2 amd64 10.34-7 [5.992 B]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpcre2-dev amd64 10.34-7 [670 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libselinux1-dev amd64 3.0-1build2 [151 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-dev amd64 2.64.6-1~ubuntu20.04.4 [1.506 kB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libcairo2-dev amd64 1.16.0-4ubuntu1 [627 kB]
+Fetched 4.905 kB in 0s (10,8 MB/s)      
+Selecting previously unselected package libcairo-script-interpreter2:amd64.
+(Reading database ... 272284 files and directories currently installed.)
+Preparing to unpack .../00-libcairo-script-interpreter2_1.16.0-4ubuntu1_amd64.deb ...
+Unpacking libcairo-script-interpreter2:amd64 (1.16.0-4ubuntu1) ...
+Selecting previously unselected package libpixman-1-dev:amd64.
+Preparing to unpack .../01-libpixman-1-dev_0.38.4-0ubuntu1_amd64.deb ...
+Unpacking libpixman-1-dev:amd64 (0.38.4-0ubuntu1) ...
+Selecting previously unselected package libxcb-render0-dev:amd64.
+Preparing to unpack .../02-libxcb-render0-dev_1.14-2_amd64.deb ...
+Unpacking libxcb-render0-dev:amd64 (1.14-2) ...
+Selecting previously unselected package libxcb-shm0-dev:amd64.
+Preparing to unpack .../03-libxcb-shm0-dev_1.14-2_amd64.deb ...
+Unpacking libxcb-shm0-dev:amd64 (1.14-2) ...
+Selecting previously unselected package libglib2.0-dev-bin.
+Preparing to unpack .../04-libglib2.0-dev-bin_2.64.6-1~ubuntu20.04.4_amd64.deb ...
+Unpacking libglib2.0-dev-bin (2.64.6-1~ubuntu20.04.4) ...
+Selecting previously unselected package libblkid-dev:amd64.
+Preparing to unpack .../05-libblkid-dev_2.34-0.1ubuntu9.1_amd64.deb ...
+Unpacking libblkid-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Selecting previously unselected package libmount-dev:amd64.
+Preparing to unpack .../06-libmount-dev_2.34-0.1ubuntu9.1_amd64.deb ...
+Unpacking libmount-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../07-libpcre16-3_2%3a8.39-12build1_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-12build1) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../08-libpcre32-3_2%3a8.39-12build1_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-12build1) ...
+Selecting previously unselected package libpcrecpp0v5:amd64.
+Preparing to unpack .../09-libpcrecpp0v5_2%3a8.39-12build1_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-12build1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../10-libpcre3-dev_2%3a8.39-12build1_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-12build1) ...
+Selecting previously unselected package libsepol1-dev:amd64.
+Preparing to unpack .../11-libsepol1-dev_3.0-1_amd64.deb ...
+Unpacking libsepol1-dev:amd64 (3.0-1) ...
+Selecting previously unselected package libpcre2-posix2:amd64.
+Preparing to unpack .../12-libpcre2-posix2_10.34-7_amd64.deb ...
+Unpacking libpcre2-posix2:amd64 (10.34-7) ...
+Selecting previously unselected package libpcre2-dev:amd64.
+Preparing to unpack .../13-libpcre2-dev_10.34-7_amd64.deb ...
+Unpacking libpcre2-dev:amd64 (10.34-7) ...
+Selecting previously unselected package libselinux1-dev:amd64.
+Preparing to unpack .../14-libselinux1-dev_3.0-1build2_amd64.deb ...
+Unpacking libselinux1-dev:amd64 (3.0-1build2) ...
+Selecting previously unselected package libglib2.0-dev:amd64.
+Preparing to unpack .../15-libglib2.0-dev_2.64.6-1~ubuntu20.04.4_amd64.deb ...
+Unpacking libglib2.0-dev:amd64 (2.64.6-1~ubuntu20.04.4) ...
+Selecting previously unselected package libcairo2-dev:amd64.
+Preparing to unpack .../16-libcairo2-dev_1.16.0-4ubuntu1_amd64.deb ...
+Unpacking libcairo2-dev:amd64 (1.16.0-4ubuntu1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-12build1) ...
+Setting up libcairo-script-interpreter2:amd64 (1.16.0-4ubuntu1) ...
+Setting up libglib2.0-dev-bin (2.64.6-1~ubuntu20.04.4) ...
+Setting up libblkid-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Setting up libpixman-1-dev:amd64 (0.38.4-0ubuntu1) ...
+Setting up libpcre16-3:amd64 (2:8.39-12build1) ...
+Setting up libsepol1-dev:amd64 (3.0-1) ...
+Setting up libxcb-shm0-dev:amd64 (1.14-2) ...
+Setting up libpcre32-3:amd64 (2:8.39-12build1) ...
+Setting up libxcb-render0-dev:amd64 (1.14-2) ...
+Setting up libpcre2-posix2:amd64 (10.34-7) ...
+Setting up libmount-dev:amd64 (2.34-0.1ubuntu9.1) ...
+Setting up libpcre2-dev:amd64 (10.34-7) ...
+Setting up libselinux1-dev:amd64 (3.0-1build2) ...
+Setting up libpcre3-dev:amd64 (2:8.39-12build1) ...
+Setting up libglib2.0-dev:amd64 (2.64.6-1~ubuntu20.04.4) ...
+Processing triggers for libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.4) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Setting up libcairo2-dev:amd64 (1.16.0-4ubuntu1) ...
+
+Follow http://www.codebind.com/linux-tutorials/install-opengl-ubuntu-linux/
+~$ sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  freeglut3 libdrm-dev libgl-dev libglx-dev
+The following NEW packages will be installed:
+  freeglut3 freeglut3-dev libdrm-dev libgl-dev libglu1-mesa-dev libglx-dev mesa-common-dev
+0 upgraded, 7 newly installed, 0 to remove and 9 not upgraded.
+Need to get 1.952 kB of archives.
+After this operation, 6.230 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 freeglut3 amd64 2.8.1-3 [73,6 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx-dev amd64 1.3.2-1~ubuntu0.20.04.1 [14,0 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl-dev amd64 1.3.2-1~ubuntu0.20.04.1 [97,8 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libglu1-mesa-dev amd64 9.0.1-1build1 [207 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 freeglut3-dev amd64 2.8.1-3 [124 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-dev amd64 2.4.105-3~20.04.1 [131 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 mesa-common-dev amd64 21.0.3-0ubuntu0.3~20.04.1 [1.304 kB]
+Fetched 1.952 kB in 0s (6.622 kB/s)        
+Selecting previously unselected package freeglut3:amd64.
+(Reading database ... 273249 files and directories currently installed.)
+Preparing to unpack .../0-freeglut3_2.8.1-3_amd64.deb ...
+Unpacking freeglut3:amd64 (2.8.1-3) ...
+Selecting previously unselected package libglx-dev:amd64.
+Preparing to unpack .../1-libglx-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libglx-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libgl-dev:amd64.
+Preparing to unpack .../2-libgl-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libgl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libglu1-mesa-dev:amd64.
+Preparing to unpack .../3-libglu1-mesa-dev_9.0.1-1build1_amd64.deb ...
+Unpacking libglu1-mesa-dev:amd64 (9.0.1-1build1) ...
+Selecting previously unselected package freeglut3-dev:amd64.
+Preparing to unpack .../4-freeglut3-dev_2.8.1-3_amd64.deb ...
+Unpacking freeglut3-dev:amd64 (2.8.1-3) ...
+Selecting previously unselected package libdrm-dev:amd64.
+Preparing to unpack .../5-libdrm-dev_2.4.105-3~20.04.1_amd64.deb ...
+Unpacking libdrm-dev:amd64 (2.4.105-3~20.04.1) ...
+Selecting previously unselected package mesa-common-dev:amd64.
+Preparing to unpack .../6-mesa-common-dev_21.0.3-0ubuntu0.3~20.04.1_amd64.deb ...
+Unpacking mesa-common-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Setting up libdrm-dev:amd64 (2.4.105-3~20.04.1) ...
+Setting up freeglut3:amd64 (2.8.1-3) ...
+Setting up libglx-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libgl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libglu1-mesa-dev:amd64 (9.0.1-1build1) ...
+Setting up mesa-common-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Setting up freeglut3-dev:amd64 (2.8.1-3) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+~/EDA/magic$ ./configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for library containing strerror... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of unsigned long long... 8
+checking whether byte ordering is bigendian... no
+checking for ANSI C header files... (cached) yes
+checking for setenv... yes
+checking for putenv... yes
+checking for vfork... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking param.h usability... no
+checking param.h presence... no
+checking for param.h... no
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking for va_copy... yes
+checking for __va_copy... yes
+checking for gcore... /usr/bin/gcore
+checking for csh... no
+checking for python3... /usr/bin/python3
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for XOpenDevice in -lXi... no
+checking for XmuInternAtom in -lXmu... yes
+checking for XextFindDisplay in -lXext... yes
+checking for tclConfig.sh... /usr/lib/tcl8.6/tclConfig.sh
+checking for tkConfig.sh... /usr/lib/tk8.6/tkConfig.sh
+checking for wish executable... /usr/bin/wish
+checking for tclsh executable... /usr/bin/tclsh
+checking GL/gl.h usability... yes
+checking GL/gl.h presence... yes
+checking for GL/gl.h... yes
+checking for glXCreateContext in -lGL... yes
+checking for gluNewTess in -lGLU... yes
+checking cairo/cairo.h usability... yes
+checking cairo/cairo.h presence... yes
+checking for cairo/cairo.h... yes
+checking for cairo_user_to_device in -lcairo... yes
+configure: creating ./config.status
+config.status: creating defs.mak
+config.status: WARNING:  'defs.mak.in' seems to ignore the --datarootdir setting
+
+-----------------------------------------------------------
+Configuration Summary (principle requirements):
+
+X11:          yes
+Python3:      yes
+OpenGL:       yes
+Vector fonts: yes
+Cairo:        yes
+Tcl/Tk:       yes
+-----------------------------------------------------------
+
+Use 'make' to compile and 'make install' to install.
+
+Errors may not be printed to stdout:  see files 'make.log' 
+  and 'install.log' for complete error summary.
+
+-----------------------------------------------------------
+
+~$ sudo apt install csh
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  csh
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 243 kB of archives.
+After this operation, 367 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 csh amd64 20110502-5 [243 kB]
+Fetched 243 kB in 0s (1.266 kB/s)
+Selecting previously unselected package csh.
+(Reading database ... 273756 files and directories currently installed.)
+Preparing to unpack .../csh_20110502-5_amd64.deb ...
+Unpacking csh (20110502-5) ...
+Setting up csh (20110502-5) ...
+update-alternatives: using /bin/bsd-csh to provide /bin/csh (csh) in auto mode
+Processing triggers for menu (2.1.47ubuntu4) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~/EDA/magic$ make
+~/EDA/magic$ sudo make install
+[sudo] password for <user>: 
+--- installing executable to /usr/local/bin
+--- installing runtime files to /usr/local/lib
+~/EDA/magic$ lart *.log
+-rw-rw-r-- 1 <user> <user> 777223 Sep  8 05:47 make.log
+-rw-r--r-- 1 root   root    15076 Sep  8 05:47 install.log
+
+~$ which magic
+/usr/local/bin/magic
+
+~$ sudo apt-get install klayout 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  fonts-lato javascript-common libjs-jquery libqt5multimedia5 libqt5multimediawidgets5 libqt5opengl5 libqt5xmlpatterns5 libruby2.7
+  rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration
+Suggested packages:
+  apache2 | lighttpd | httpd ri ruby-dev bundler
+The following NEW packages will be installed:
+  fonts-lato javascript-common klayout libjs-jquery libqt5multimedia5 libqt5multimediawidgets5 libqt5opengl5 libqt5xmlpatterns5
+  libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration
+0 upgraded, 18 newly installed, 0 to remove and 9 not upgraded.
+Need to get 41,6 MB of archives.
+After this operation, 226 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 fonts-lato all 2.0-2 [2.698 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libqt5multimedia5 amd64 5.12.8-0ubuntu1 [283 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libqt5opengl5 amd64 5.12.8+dfsg-0ubuntu1 [136 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libqt5multimediawidgets5 amd64 5.12.8-0ubuntu1 [36,8 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libqt5xmlpatterns5 amd64 5.12.8-0ubuntu1 [959 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal/main amd64 rubygems-integration all 1.16 [5.092 B]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 ruby2.7 amd64 2.7.0-5ubuntu1.5 [95,6 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby amd64 1:2.7+1 [5.412 B]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal/main amd64 rake all 13.0.1-4 [61,6 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby-minitest all 5.13.0-1 [40,9 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby-net-telnet all 0.1.1-2 [12,6 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby-power-assert all 1.1.7-1 [11,4 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby-test-unit all 3.3.5-1 [73,2 kB]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal/main amd64 ruby-xmlrpc all 0.3.0-2 [23,8 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libruby2.7 amd64 2.7.0-5ubuntu1.5 [3.526 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 klayout amd64 0.26.2-2 [33,3 MB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal/main amd64 javascript-common all 11 [6.066 B]
+Get:18 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libjs-jquery all 3.3.1~dfsg-3 [329 kB]
+Fetched 41,6 MB in 2s (18,6 MB/s)       
+Selecting previously unselected package fonts-lato.
+(Reading database ... 273765 files and directories currently installed.)
+Preparing to unpack .../00-fonts-lato_2.0-2_all.deb ...
+Unpacking fonts-lato (2.0-2) ...
+Selecting previously unselected package libqt5multimedia5:amd64.
+Preparing to unpack .../01-libqt5multimedia5_5.12.8-0ubuntu1_amd64.deb ...
+Unpacking libqt5multimedia5:amd64 (5.12.8-0ubuntu1) ...
+Selecting previously unselected package libqt5opengl5:amd64.
+Preparing to unpack .../02-libqt5opengl5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+Unpacking libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+Selecting previously unselected package libqt5multimediawidgets5:amd64.
+Preparing to unpack .../03-libqt5multimediawidgets5_5.12.8-0ubuntu1_amd64.deb ...
+Unpacking libqt5multimediawidgets5:amd64 (5.12.8-0ubuntu1) ...
+Selecting previously unselected package libqt5xmlpatterns5:amd64.
+Preparing to unpack .../04-libqt5xmlpatterns5_5.12.8-0ubuntu1_amd64.deb ...
+Unpacking libqt5xmlpatterns5:amd64 (5.12.8-0ubuntu1) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../05-rubygems-integration_1.16_all.deb ...
+Unpacking rubygems-integration (1.16) ...
+Selecting previously unselected package ruby2.7.
+Preparing to unpack .../06-ruby2.7_2.7.0-5ubuntu1.5_amd64.deb ...
+Unpacking ruby2.7 (2.7.0-5ubuntu1.5) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../07-ruby_1%3a2.7+1_amd64.deb ...
+Unpacking ruby (1:2.7+1) ...
+Selecting previously unselected package rake.
+Preparing to unpack .../08-rake_13.0.1-4_all.deb ...
+Unpacking rake (13.0.1-4) ...
+Selecting previously unselected package ruby-minitest.
+Preparing to unpack .../09-ruby-minitest_5.13.0-1_all.deb ...
+Unpacking ruby-minitest (5.13.0-1) ...
+Selecting previously unselected package ruby-net-telnet.
+Preparing to unpack .../10-ruby-net-telnet_0.1.1-2_all.deb ...
+Unpacking ruby-net-telnet (0.1.1-2) ...
+Selecting previously unselected package ruby-power-assert.
+Preparing to unpack .../11-ruby-power-assert_1.1.7-1_all.deb ...
+Unpacking ruby-power-assert (1.1.7-1) ...
+Selecting previously unselected package ruby-test-unit.
+Preparing to unpack .../12-ruby-test-unit_3.3.5-1_all.deb ...
+Unpacking ruby-test-unit (3.3.5-1) ...
+Selecting previously unselected package ruby-xmlrpc.
+Preparing to unpack .../13-ruby-xmlrpc_0.3.0-2_all.deb ...
+Unpacking ruby-xmlrpc (0.3.0-2) ...
+Selecting previously unselected package libruby2.7:amd64.
+Preparing to unpack .../14-libruby2.7_2.7.0-5ubuntu1.5_amd64.deb ...
+Unpacking libruby2.7:amd64 (2.7.0-5ubuntu1.5) ...
+Selecting previously unselected package klayout.
+Preparing to unpack .../15-klayout_0.26.2-2_amd64.deb ...
+Unpacking klayout (0.26.2-2) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../16-javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../17-libjs-jquery_3.3.1~dfsg-3_all.deb ...
+Unpacking libjs-jquery (3.3.1~dfsg-3) ...
+Setting up javascript-common (11) ...
+Setting up fonts-lato (2.0-2) ...
+Setting up ruby-power-assert (1.1.7-1) ...
+Setting up libqt5xmlpatterns5:amd64 (5.12.8-0ubuntu1) ...
+Setting up rubygems-integration (1.16) ...
+Setting up libqt5multimedia5:amd64 (5.12.8-0ubuntu1) ...
+Setting up ruby-minitest (5.13.0-1) ...
+Setting up ruby-test-unit (3.3.5-1) ...
+Setting up ruby-net-telnet (0.1.1-2) ...
+Setting up libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+Setting up libjs-jquery (3.3.1~dfsg-3) ...
+Setting up ruby-xmlrpc (0.3.0-2) ...
+Setting up libqt5multimediawidgets5:amd64 (5.12.8-0ubuntu1) ...
+Setting up ruby2.7 (2.7.0-5ubuntu1.5) ...
+Setting up ruby (1:2.7+1) ...
+Setting up rake (13.0.1-4) ...
+Setting up libruby2.7:amd64 (2.7.0-5ubuntu1.5) ...
+Setting up klayout (0.26.2-2) ...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for fontconfig (2.13.1-2ubuntu3) ...
+Processing triggers for bamfdaemon (0.5.3+18.04.20180207.2-0ubuntu2) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+
+~/EDA/OpenSTA$ git pull --all
+Fetching origin
+remote: Enumerating objects: 118, done.
+remote: Counting objects: 100% (118/118), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 89 (delta 68), reused 73 (delta 52), pack-reused 0
+Unpacking objects: 100% (89/89), 9.10 KiB | 160.00 KiB/s, done.
+From github.com:The-OpenROAD-Project/OpenSTA
+   85bdbe6..5a765a7  master     -> origin/master
+Updating 85bdbe6..5a765a7
+Fast-forward
+ include/sta/ClkNetwork.hh        |   1 +
+ include/sta/ConcreteLibrary.hh   |   5 +-
+ include/sta/ConcreteNetwork.hh   |   7 ++-
+ include/sta/CycleAccting.hh      |   1 +
+ include/sta/Network.hh           |   6 ++-
+ include/sta/NullParasitics.hh    |   1 +
+ include/sta/Parasitics.hh        |   1 +
+ include/sta/Sta.hh               |   3 +-
+ messages.txt                     | 232 ++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------
+ network/ConcreteLibrary.cc       |  27 +++++++----
+ network/ConcreteNetwork.cc       |  14 +++---
+ parasitics/ConcreteParasitics.cc |  25 +++++++++-
+ parasitics/ConcreteParasitics.hh |   1 +
+ parasitics/NullParasitics.cc     |   5 ++
+ sdc/CycleAccting.cc              |  15 +++++-
+ sdc/WriteSdc.cc                  |   2 +-
+ search/ClkNetwork.cc             |   7 +++
+ search/Sim.cc                    |  43 +++++++----------
+ search/Sta.cc                    |  59 +++++++++--------------
+ tcl/Sdc.tcl                      |   8 +---
+ tcl/Search.tcl                   |   4 +-
+ 21 files changed, 256 insertions(+), 211 deletions(-)
+
+~/EDA/OpenSTA/build$ cmake ..
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- STA version: 2.3.0
+-- STA git sha: 5a765a7606da7c1bc2cd55d26b2981f69d301227
+-- System name: Linux
+-- Compiler: GNU 9.3.0
+-- Build type: RELEASE
+-- Build CXX_FLAGS: -O3 -DNDEBUG
+-- Install prefix: /usr/local
+-- Found FLEX: /usr/bin/flex (found version "2.6.4") 
+-- Found BISON: /usr/bin/bison (found version "3.5.1") 
+-- TCL library: /usr/lib/x86_64-linux-gnu/libtcl.so
+-- TCL header: /usr/include/tcl/tcl.h
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- SSTA: 0
+-- STA executable: /home/<user>/EDA/OpenSTA/app/sta
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/<user>/EDA/OpenSTA/build
+
+~$ sudo apt-get install swig
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  swig4.0
+Suggested packages:
+  swig-doc swig-examples swig4.0-examples swig4.0-doc
+The following NEW packages will be installed:
+  swig swig4.0
+0 upgraded, 2 newly installed, 0 to remove and 9 not upgraded.
+Need to get 1.086 kB of archives.
+After this operation, 5.413 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 swig4.0 amd64 4.0.1-5build1 [1.081 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 swig all 4.0.1-5build1 [5.528 B]
+Fetched 1.086 kB in 0s (4.010 kB/s)
+Selecting previously unselected package swig4.0.
+(Reading database ... 275844 files and directories currently installed.)
+Preparing to unpack .../swig4.0_4.0.1-5build1_amd64.deb ...
+Unpacking swig4.0 (4.0.1-5build1) ...
+Selecting previously unselected package swig.
+Preparing to unpack .../swig_4.0.1-5build1_all.deb ...
+Unpacking swig (4.0.1-5build1) ...
+Setting up swig4.0 (4.0.1-5build1) ...
+Setting up swig (4.0.1-5build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~$ sudo apt-get install m4 tcsh csh libx11-dev tcl-dev tcllib swig tk-dev libcairo2-dev mesa-common-dev libglu1-mesa-dev libncurses-dev build-essential bison flex libreadline-dev gawk libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev adms autoconf automake libtool libxpm-dev libxaw7-dev libssl-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+autoconf is already the newest version (2.69-11.1).
+automake is already the newest version (1:1.16.1-4ubuntu6).
+bison is already the newest version (2:3.5.1+dfsg-1).
+flex is already the newest version (2.6.4-6.2).
+libcairo2-dev is already the newest version (1.16.0-4ubuntu1).
+libffi-dev is already the newest version (3.3-4).
+libglu1-mesa-dev is already the newest version (9.0.1-1build1).
+libncurses-dev is already the newest version (6.2-0ubuntu2).
+libncurses-dev set to manually installed.
+libreadline-dev is already the newest version (8.0-4).
+libtool is already the newest version (2.4.6-14).
+libxaw7-dev is already the newest version (2:1.0.13-1).
+libxpm-dev is already the newest version (1:3.5.12-1).
+libxpm-dev set to manually installed.
+m4 is already the newest version (1.4.18-4).
+m4 set to manually installed.
+pkg-config is already the newest version (0.29.1-0ubuntu4).
+pkg-config set to manually installed.
+python3 is already the newest version (3.8.2-0ubuntu2).
+python3 set to manually installed.
+csh is already the newest version (20110502-5).
+swig is already the newest version (4.0.1-5build1).
+tcl-dev is already the newest version (8.6.9+1).
+tcllib is already the newest version (1.20+dfsg-1).
+tk-dev is already the newest version (8.6.9+1).
+build-essential is already the newest version (12.8ubuntu1.1).
+git is already the newest version (1:2.25.1-1ubuntu3.1).
+git set to manually installed.
+libssl-dev is already the newest version (1.1.1f-1ubuntu2.8).
+libx11-dev is already the newest version (2:1.6.9-2ubuntu1.2).
+mesa-common-dev is already the newest version (21.0.3-0ubuntu0.3~20.04.1).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-2ubuntu1.2).
+zlib1g-dev set to manually installed.
+The following additional packages will be installed:
+  libadms0 libann0 libboost-filesystem1.71-dev libboost-python1.71-dev libboost-python1.71.0 libboost-system1.71-dev
+  libboost-system1.71.0 libboost1.71-dev libcdt5 libcgraph6 libgts-0.7-5 libgts-bin libgvc6 libgvpr2 liblab-gamut1 libpathplan4
+  libpython3-dev libpython3.8-dev python3-dev python3.8-dev
+Suggested packages:
+  gawk-doc graphviz-doc libboost1.71-doc gccxml libboost-atomic1.71-dev libboost-chrono1.71-dev libboost-container1.71-dev
+  libboost-context1.71-dev libboost-contract1.71-dev libboost-coroutine1.71-dev libboost-date-time1.71-dev
+  libboost-exception1.71-dev libboost-fiber1.71-dev libboost-graph1.71-dev libboost-graph-parallel1.71-dev
+  libboost-iostreams1.71-dev libboost-locale1.71-dev libboost-log1.71-dev libboost-math1.71-dev libboost-mpi1.71-dev
+  libboost-mpi-python1.71-dev libboost-numpy1.71-dev libboost-program-options1.71-dev libboost-random1.71-dev
+  libboost-regex1.71-dev libboost-serialization1.71-dev libboost-stacktrace1.71-dev libboost-test1.71-dev libboost-thread1.71-dev
+  libboost-timer1.71-dev libboost-type-erasure1.71-dev libboost-wave1.71-dev libboost1.71-tools-dev libmpfrc++-dev libntl-dev
+The following NEW packages will be installed:
+  adms gawk graphviz libadms0 libann0 libboost-filesystem-dev libboost-filesystem1.71-dev libboost-python-dev
+  libboost-python1.71-dev libboost-python1.71.0 libboost-system-dev libboost-system1.71-dev libboost-system1.71.0 libboost1.71-dev
+  libcdt5 libcgraph6 libgts-0.7-5 libgts-bin libgvc6 libgvpr2 liblab-gamut1 libpathplan4 libpython3-dev libpython3.8-dev
+  python3-dev python3.8-dev tcsh xdot
+0 upgraded, 28 newly installed, 0 to remove and 9 not upgraded.
+Need to get 17,7 MB of archives.
+After this operation, 184 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 gawk amd64 1:5.0.1+dfsg-1 [418 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libadms0 amd64 2.3.6-2 [140 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 adms amd64 2.3.6-2 [36,9 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libann0 amd64 1.1.2+doc-7build1 [26,0 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libcdt5 amd64 2.42.2-3build2 [18,7 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libcgraph6 amd64 2.42.2-3build2 [41,3 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libgts-0.7-5 amd64 0.7.6+darcs121130-4 [150 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libpathplan4 amd64 2.42.2-3build2 [21,9 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libgvc6 amd64 2.42.2-3build2 [647 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libgvpr2 amd64 2.42.2-3build2 [167 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 liblab-gamut1 amd64 2.42.2-3build2 [177 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 graphviz amd64 2.42.2-3build2 [590 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost1.71-dev amd64 1.71.0-6ubuntu6 [9.068 kB]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-system1.71.0 amd64 1.71.0-6ubuntu6 [205 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-system1.71-dev amd64 1.71.0-6ubuntu6 [205 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-filesystem1.71-dev amd64 1.71.0-6ubuntu6 [258 kB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-filesystem-dev amd64 1.71.0.0ubuntu2 [3.420 B]
+Get:18 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-python1.71.0 amd64 1.71.0-6ubuntu6 [278 kB]
+Get:19 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-dev amd64 3.8.10-0ubuntu1~20.04 [3.943 kB]
+Get:20 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpython3-dev amd64 3.8.2-0ubuntu2 [7.236 B]
+Get:21 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-dev amd64 3.8.10-0ubuntu1~20.04 [510 kB]
+Get:22 http://de.archive.ubuntu.com/ubuntu focal/main amd64 python3-dev amd64 3.8.2-0ubuntu2 [1.212 B]
+Get:23 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libboost-python1.71-dev amd64 1.71.0-6ubuntu6 [300 kB]
+Get:24 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libboost-python-dev amd64 1.71.0.0ubuntu2 [3.688 B]
+Get:25 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libboost-system-dev amd64 1.71.0.0ubuntu2 [3.536 B]
+Get:26 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libgts-bin amd64 0.7.6+darcs121130-4 [41,3 kB]
+Get:27 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 tcsh amd64 6.21.00-1 [427 kB]
+Get:28 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 xdot all 1.1-2 [26,7 kB]
+Fetched 17,7 MB in 1s (16,2 MB/s) 
+Selecting previously unselected package gawk.
+(Reading database ... 276595 files and directories currently installed.)
+Preparing to unpack .../00-gawk_1%3a5.0.1+dfsg-1_amd64.deb ...
+Unpacking gawk (1:5.0.1+dfsg-1) ...
+Selecting previously unselected package libadms0:amd64.
+Preparing to unpack .../01-libadms0_2.3.6-2_amd64.deb ...
+Unpacking libadms0:amd64 (2.3.6-2) ...
+Selecting previously unselected package adms.
+Preparing to unpack .../02-adms_2.3.6-2_amd64.deb ...
+Unpacking adms (2.3.6-2) ...
+Selecting previously unselected package libann0.
+Preparing to unpack .../03-libann0_1.1.2+doc-7build1_amd64.deb ...
+Unpacking libann0 (1.1.2+doc-7build1) ...
+Selecting previously unselected package libcdt5:amd64.
+Preparing to unpack .../04-libcdt5_2.42.2-3build2_amd64.deb ...
+Unpacking libcdt5:amd64 (2.42.2-3build2) ...
+Selecting previously unselected package libcgraph6:amd64.
+Preparing to unpack .../05-libcgraph6_2.42.2-3build2_amd64.deb ...
+Unpacking libcgraph6:amd64 (2.42.2-3build2) ...
+Selecting previously unselected package libgts-0.7-5:amd64.
+Preparing to unpack .../06-libgts-0.7-5_0.7.6+darcs121130-4_amd64.deb ...
+Unpacking libgts-0.7-5:amd64 (0.7.6+darcs121130-4) ...
+Selecting previously unselected package libpathplan4:amd64.
+Preparing to unpack .../07-libpathplan4_2.42.2-3build2_amd64.deb ...
+Unpacking libpathplan4:amd64 (2.42.2-3build2) ...
+Selecting previously unselected package libgvc6.
+Preparing to unpack .../08-libgvc6_2.42.2-3build2_amd64.deb ...
+Unpacking libgvc6 (2.42.2-3build2) ...
+Selecting previously unselected package libgvpr2:amd64.
+Preparing to unpack .../09-libgvpr2_2.42.2-3build2_amd64.deb ...
+Unpacking libgvpr2:amd64 (2.42.2-3build2) ...
+Selecting previously unselected package liblab-gamut1:amd64.
+Preparing to unpack .../10-liblab-gamut1_2.42.2-3build2_amd64.deb ...
+Unpacking liblab-gamut1:amd64 (2.42.2-3build2) ...
+Selecting previously unselected package graphviz.
+Preparing to unpack .../11-graphviz_2.42.2-3build2_amd64.deb ...
+Unpacking graphviz (2.42.2-3build2) ...
+Selecting previously unselected package libboost1.71-dev:amd64.
+Preparing to unpack .../12-libboost1.71-dev_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-system1.71.0:amd64.
+Preparing to unpack .../13-libboost-system1.71.0_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-system1.71.0:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-system1.71-dev:amd64.
+Preparing to unpack .../14-libboost-system1.71-dev_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-system1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-filesystem1.71-dev:amd64.
+Preparing to unpack .../15-libboost-filesystem1.71-dev_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-filesystem1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-filesystem-dev:amd64.
+Preparing to unpack .../16-libboost-filesystem-dev_1.71.0.0ubuntu2_amd64.deb ...
+Unpacking libboost-filesystem-dev:amd64 (1.71.0.0ubuntu2) ...
+Selecting previously unselected package libboost-python1.71.0.
+Preparing to unpack .../17-libboost-python1.71.0_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-python1.71.0 (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libpython3.8-dev:amd64.
+Preparing to unpack .../18-libpython3.8-dev_3.8.10-0ubuntu1~20.04_amd64.deb ...
+Unpacking libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../19-libpython3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Selecting previously unselected package python3.8-dev.
+Preparing to unpack .../20-python3.8-dev_3.8.10-0ubuntu1~20.04_amd64.deb ...
+Unpacking python3.8-dev (3.8.10-0ubuntu1~20.04) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../21-python3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking python3-dev (3.8.2-0ubuntu2) ...
+Selecting previously unselected package libboost-python1.71-dev.
+Preparing to unpack .../22-libboost-python1.71-dev_1.71.0-6ubuntu6_amd64.deb ...
+Unpacking libboost-python1.71-dev (1.71.0-6ubuntu6) ...
+Selecting previously unselected package libboost-python-dev.
+Preparing to unpack .../23-libboost-python-dev_1.71.0.0ubuntu2_amd64.deb ...
+Unpacking libboost-python-dev (1.71.0.0ubuntu2) ...
+Selecting previously unselected package libboost-system-dev:amd64.
+Preparing to unpack .../24-libboost-system-dev_1.71.0.0ubuntu2_amd64.deb ...
+Unpacking libboost-system-dev:amd64 (1.71.0.0ubuntu2) ...
+Selecting previously unselected package libgts-bin.
+Preparing to unpack .../25-libgts-bin_0.7.6+darcs121130-4_amd64.deb ...
+Unpacking libgts-bin (0.7.6+darcs121130-4) ...
+Selecting previously unselected package tcsh.
+Preparing to unpack .../26-tcsh_6.21.00-1_amd64.deb ...
+Unpacking tcsh (6.21.00-1) ...
+Selecting previously unselected package xdot.
+Preparing to unpack .../27-xdot_1.1-2_all.deb ...
+Unpacking xdot (1.1-2) ...
+Setting up gawk (1:5.0.1+dfsg-1) ...
+Setting up libboost1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Setting up liblab-gamut1:amd64 (2.42.2-3build2) ...
+Setting up libboost-python1.71.0 (1.71.0-6ubuntu6) ...
+Setting up libgts-0.7-5:amd64 (0.7.6+darcs121130-4) ...
+Setting up libadms0:amd64 (2.3.6-2) ...
+Setting up libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04) ...
+Setting up libpathplan4:amd64 (2.42.2-3build2) ...
+Setting up libann0 (1.1.2+doc-7build1) ...
+Setting up python3.8-dev (3.8.10-0ubuntu1~20.04) ...
+Setting up libboost-system1.71.0:amd64 (1.71.0-6ubuntu6) ...
+Setting up libcdt5:amd64 (2.42.2-3build2) ...
+Setting up libcgraph6:amd64 (2.42.2-3build2) ...
+Setting up tcsh (6.21.00-1) ...
+/usr/bin/update-menus
+Setting up adms (2.3.6-2) ...
+Setting up libgts-bin (0.7.6+darcs121130-4) ...
+Setting up libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Setting up libboost-system1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Setting up libboost-filesystem1.71-dev:amd64 (1.71.0-6ubuntu6) ...
+Setting up python3-dev (3.8.2-0ubuntu2) ...
+Setting up libgvc6 (2.42.2-3build2) ...
+Setting up libgvpr2:amd64 (2.42.2-3build2) ...
+Setting up libboost-filesystem-dev:amd64 (1.71.0.0ubuntu2) ...
+Setting up graphviz (2.42.2-3build2) ...
+Setting up xdot (1.1-2) ...
+Setting up libboost-python1.71-dev (1.71.0-6ubuntu6) ...
+Setting up libboost-system-dev:amd64 (1.71.0.0ubuntu2) ...
+Setting up libboost-python-dev (1.71.0.0ubuntu2) ...
+Processing triggers for bamfdaemon (0.5.3+18.04.20180207.2-0ubuntu2) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for menu (2.1.47ubuntu4) ...
+
+~$ sudo apt-get install clang
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  binfmt-support clang-10 lib32gcc-s1 lib32stdc++6 libc6-i386 libclang-common-10-dev libclang-cpp10 libclang1-10 libgc1c2
+  libllvm10 libobjc-9-dev libobjc4 libomp-10-dev libomp5-10 libpfm4 libz3-4 libz3-dev llvm-10 llvm-10-dev llvm-10-runtime
+  llvm-10-tools
+Suggested packages:
+  clang-10-doc libomp-10-doc llvm-10-doc
+The following NEW packages will be installed:
+  binfmt-support clang clang-10 lib32gcc-s1 lib32stdc++6 libc6-i386 libclang-common-10-dev libclang-cpp10 libclang1-10 libgc1c2
+  libllvm10 libobjc-9-dev libobjc4 libomp-10-dev libomp5-10 libpfm4 libz3-4 libz3-dev llvm-10 llvm-10-dev llvm-10-runtime
+  llvm-10-tools
+0 upgraded, 22 newly installed, 0 to remove and 9 not upgraded.
+Need to get 80,8 MB of archives.
+After this operation, 486 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 binfmt-support amd64 2.2.0-2 [58,2 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1 [15,3 MB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libclang-cpp10 amd64 1:10.0.0-4ubuntu1 [9.944 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libgc1c2 amd64 1:7.6.4-0.4ubuntu1 [83,9 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 libobjc4 amd64 10.3.0-1ubuntu1~20.04 [42,8 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 libobjc-9-dev amd64 9.3.0-17ubuntu1~20.04 [226 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-i386 amd64 2.31-0ubuntu9.2 [2.723 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 lib32gcc-s1 amd64 10.3.0-1ubuntu1~20.04 [49,2 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 lib32stdc++6 amd64 10.3.0-1ubuntu1~20.04 [525 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libclang-common-10-dev amd64 1:10.0.0-4ubuntu1 [5.012 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libclang1-10 amd64 1:10.0.0-4ubuntu1 [7.571 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 clang-10 amd64 1:10.0.0-4ubuntu1 [66,9 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 clang amd64 1:10.0-50~exp1 [3.276 B]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libomp5-10 amd64 1:10.0.0-4ubuntu1 [300 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libomp-10-dev amd64 1:10.0.0-4ubuntu1 [47,7 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 llvm-10-runtime amd64 1:10.0.0-4ubuntu1 [180 kB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpfm4 amd64 4.10.1+git20-g7700f49-2 [266 kB]
+Get:18 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 llvm-10 amd64 1:10.0.0-4ubuntu1 [5.214 kB]
+Get:19 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 llvm-10-tools amd64 1:10.0.0-4ubuntu1 [317 kB]
+Get:20 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libz3-4 amd64 4.8.7-4build1 [6.792 kB]
+Get:21 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libz3-dev amd64 4.8.7-4build1 [67,5 kB]
+Get:22 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 llvm-10-dev amd64 1:10.0.0-4ubuntu1 [26,0 MB]
+Fetched 80,8 MB in 4s (18,4 MB/s)       
+Selecting previously unselected package binfmt-support.
+(Reading database ... 292438 files and directories currently installed.)
+Preparing to unpack .../00-binfmt-support_2.2.0-2_amd64.deb ...
+Unpacking binfmt-support (2.2.0-2) ...
+Selecting previously unselected package libllvm10:amd64.
+Preparing to unpack .../01-libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libclang-cpp10.
+Preparing to unpack .../02-libclang-cpp10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libclang-cpp10 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libgc1c2:amd64.
+Preparing to unpack .../03-libgc1c2_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Unpacking libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Selecting previously unselected package libobjc4:amd64.
+Preparing to unpack .../04-libobjc4_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libobjc4:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libobjc-9-dev:amd64.
+Preparing to unpack .../05-libobjc-9-dev_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking libobjc-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package libc6-i386.
+Preparing to unpack .../06-libc6-i386_2.31-0ubuntu9.2_amd64.deb ...
+Unpacking libc6-i386 (2.31-0ubuntu9.2) ...
+Selecting previously unselected package lib32gcc-s1.
+Preparing to unpack .../07-lib32gcc-s1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking lib32gcc-s1 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package lib32stdc++6.
+Preparing to unpack .../08-lib32stdc++6_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking lib32stdc++6 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libclang-common-10-dev.
+Preparing to unpack .../09-libclang-common-10-dev_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libclang-common-10-dev (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libclang1-10.
+Preparing to unpack .../10-libclang1-10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libclang1-10 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package clang-10.
+Preparing to unpack .../11-clang-10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking clang-10 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package clang.
+Preparing to unpack .../12-clang_1%3a10.0-50~exp1_amd64.deb ...
+Unpacking clang (1:10.0-50~exp1) ...
+Selecting previously unselected package libomp5-10:amd64.
+Preparing to unpack .../13-libomp5-10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libomp5-10:amd64 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libomp-10-dev.
+Preparing to unpack .../14-libomp-10-dev_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libomp-10-dev (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package llvm-10-runtime.
+Preparing to unpack .../15-llvm-10-runtime_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking llvm-10-runtime (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libpfm4:amd64.
+Preparing to unpack .../16-libpfm4_4.10.1+git20-g7700f49-2_amd64.deb ...
+Unpacking libpfm4:amd64 (4.10.1+git20-g7700f49-2) ...
+Selecting previously unselected package llvm-10.
+Preparing to unpack .../17-llvm-10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking llvm-10 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package llvm-10-tools.
+Preparing to unpack .../18-llvm-10-tools_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking llvm-10-tools (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package libz3-4:amd64.
+Preparing to unpack .../19-libz3-4_4.8.7-4build1_amd64.deb ...
+Unpacking libz3-4:amd64 (4.8.7-4build1) ...
+Selecting previously unselected package libz3-dev:amd64.
+Preparing to unpack .../20-libz3-dev_4.8.7-4build1_amd64.deb ...
+Unpacking libz3-dev:amd64 (4.8.7-4build1) ...
+Selecting previously unselected package llvm-10-dev.
+Preparing to unpack .../21-llvm-10-dev_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking llvm-10-dev (1:10.0.0-4ubuntu1) ...
+Setting up llvm-10-tools (1:10.0.0-4ubuntu1) ...
+Setting up libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Setting up libobjc4:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Setting up libz3-4:amd64 (4.8.7-4build1) ...
+Setting up libpfm4:amd64 (4.10.1+git20-g7700f49-2) ...
+Setting up libclang1-10 (1:10.0.0-4ubuntu1) ...
+Setting up binfmt-support (2.2.0-2) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/binfmt-support.service → /lib/systemd/system/binfmt-support.service.
+Setting up libobjc-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up libomp5-10:amd64 (1:10.0.0-4ubuntu1) ...
+Setting up libc6-i386 (2.31-0ubuntu9.2) ...
+Setting up libz3-dev:amd64 (4.8.7-4build1) ...
+Setting up libomp-10-dev (1:10.0.0-4ubuntu1) ...
+Setting up libclang-cpp10 (1:10.0.0-4ubuntu1) ...
+Setting up llvm-10-runtime (1:10.0.0-4ubuntu1) ...
+Setting up lib32gcc-s1 (10.3.0-1ubuntu1~20.04) ...
+Setting up lib32stdc++6 (10.3.0-1ubuntu1~20.04) ...
+Setting up libclang-common-10-dev (1:10.0.0-4ubuntu1) ...
+Setting up llvm-10 (1:10.0.0-4ubuntu1) ...
+Setting up llvm-10-dev (1:10.0.0-4ubuntu1) ...
+Setting up clang-10 (1:10.0.0-4ubuntu1) ...
+Setting up clang (1:10.0-50~exp1) ...
+Processing triggers for systemd (245.4-4ubuntu3.11) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+~/EDA/OpenSTA$ mkdir build
+~/EDA/OpenSTA$ cd build
+~/EDA/OpenSTA/build$ cmake ..
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- STA version: 2.3.0
+-- STA git sha: 5a765a7606da7c1bc2cd55d26b2981f69d301227
+-- System name: Linux
+-- Compiler: GNU 9.3.0
+-- Build type: RELEASE
+-- Build CXX_FLAGS: -O3 -DNDEBUG
+-- Install prefix: /usr/local
+-- Found FLEX: /usr/bin/flex (found version "2.6.4") 
+-- Found BISON: /usr/bin/bison (found version "3.5.1") 
+-- Found SWIG: /usr/bin/swig4.0 (found suitable version "4.0.1", minimum required is "3.0")  
+-- TCL library: /usr/lib/x86_64-linux-gnu/libtcl.so
+-- TCL header: /usr/include/tcl/tcl.h
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- SSTA: 0
+-- STA executable: /home/<user>/EDA/OpenSTA/app/sta
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/<user>/EDA/OpenSTA/build
+
+~/EDA/OpenSTA/build$ make 1>OpenSTA.make.log 2>OpenSTA.make.err
+~/EDA/OpenSTA$ sudo ln -s $PWD/app/sta /usr/bin/sta
+
+~/EDA/OpenTimer/build$ cmake ../ 1>OpenTimer.cmake.log 2>OpenTimer.cmake.err
+~/EDA/OpenTimer/build$ make 1>OpenTimer.make.log 2>OpenTimer.make.err
+~/EDA/OpenTimer$ sudo ln -s ~/EDA/OpenTimer/bin/ot-shell /usr/bin/OpenTimer
+
+~/EDA/xschem$ git pull --all
+Fetching origin
+remote: Enumerating objects: 445, done.
+remote: Counting objects: 100% (445/445), done.
+remote: Compressing objects: 100% (210/210), done.
+remote: Total 348 (delta 255), reused 229 (delta 138), pack-reused 0
+Receiving objects: 100% (348/348), 10.55 MiB | 11.72 MiB/s, done.
+Resolving deltas: 100% (255/255), completed with 91 local objects.
+From github.com:StefanSchippers/xschem
+   7d65c5e..113f25a  master     -> origin/master
+Updating 7d65c5e..113f25a
+Fast-forward
+ LICENSE                                     |    2 +-
+ README                                      |    4 +
+ README_MacOS.md                             |   31 +-
+ XSchemWin/INSTALL_WIN                       |    2 +-
+ XSchemWin/README_WIN                        |    1 +
+ XSchemWin/XSchemWin.sln                     |   10 +
+ XSchemWin/XSchemWin.vcxproj                 |   75 +
+ XSchemWin/XSchemWix/Product.wxs             |    6 +-
+ XSchemWin/XSchemWix/XSchemWix.wixproj       |    2 +-
+ XSchemWin/XSchemWix/doc.wxs                 |    4 -
+ XSchemWin/XSchemWix/heat_doc.wxs            |  528 +++--
+ XSchemWin/XSchemWix/heat_xschem_library.wxs | 3450 ++++++++++++++++----------------
+ scconfig/src/default/lib_try.c              |   22 +-
+ scconfig/src/scripts/find_welltype.c        |    2 +-
+ scconfig/src/tmpasm/tmpasm_scconfig.c       |    5 +-
+ src/Makefile.in                             |    2 +-
+ src/actions.c                               |   54 +-
+ src/break.awk                               |    2 +-
+ src/callback.c                              |   18 +-
+ src/check.c                                 |    2 +-
+ src/clip.c                                  |    2 +-
+ src/convert_to_verilog2001.awk              |    2 +-
+ src/draw.c                                  |   20 +-
+ src/editprop.c                              |    2 +-
+ src/expandlabel.y                           |    2 +-
+ src/findnet.c                               |    2 +-
+ src/flatten.awk                             |    2 +-
+ src/flatten_savenodes.awk                   |    2 +-
+ src/font.c                                  |    2 +-
+ src/globals.c                               |    3 +-
+ src/hash_iterator.c                         |    2 +-
+ src/hilight.c                               |   12 +-
+ src/hspice_backannotate.tcl                 |    2 +-
+ src/icon.c                                  |    2 +-
+ src/in_memory_undo.c                        |    2 +-
+ src/keys.help                               |    1 +
+ src/main.c                                  |    2 +-
+ src/make_sym.awk                            |    2 +-
+ src/make_sym_lcc.awk                        |  390 ++++
+ src/move.c                                  |    4 +-
+ src/netlist.c                               |   43 +-
+ src/ngspice_backannotate.tcl                |    2 +-
+ src/node_hash.c                             |    3 +-
+ src/options.c                               |    4 +-
+ src/parselabel.l                            |    2 +-
+ src/paste.c                                 |    2 +-
+ src/psprint.c                               |  372 ++--
+ src/rawtovcd.c                              |    2 +-
+ src/save.c                                  |  113 +-
+ src/scheduler.c                             |   39 +-
+ src/select.c                                |    6 +-
+ src/spice.awk                               |   10 +-
+ src/spice_netlist.c                         |  147 +-
+ src/store.c                                 |    2 +-
+ src/svgdraw.c                               |   16 +-
+ src/symgen.awk                              |    2 +-
+ src/tedax.awk                               |    2 +-
+ src/tedax_netlist.c                         |   14 +-
+ src/token.c                                 |   21 +-
+ src/utile/clock.awk                         |   22 +
+ src/utile/expand_alias.awk                  |   21 +
+ src/utile/param.awk                         |   21 +
+ src/utile/preprocess.awk                    |   21 +
+ src/utile/stimuli.awk                       |   21 +
+ src/utile/utile.tcl                         |   24 +
+ src/verilog.awk                             |    2 +-
+ src/verilog_netlist.c                       |   13 +-
+ src/vhdl.awk                                |    2 +-
+ src/vhdl_netlist.c                          |   22 +-
+ src/xinit.c                                 |    5 +-
+ src/xschem.h                                |   17 +-
+ src/xschem.tcl                              | 8613 ++++++++++++++++++++++++++++++++++++++++---------------------------------------
+ src/xschemrc                                |   17 +
+ tests/create_save.tcl                       |    2 +-
+ tests/netlisting.tcl                        |    2 +-
+ tests/open_close.tcl                        |    2 +-
+ tests/run_regression.tcl                    |    2 +-
+ tests/test_utility.tcl                      |    2 +-
+ xschem_library/examples/cmos_example.sch    |   10 +
+ xschem_library/examples/mos_power_ampli.sym |   32 +-
+ xschem_library/examples/poweramp.sch        |    7 +-
+ xschem_library/examples/poweramp.sym        |    9 +-
+ xschem_library/rom8k/lvnand3.sch            |  102 +-
+ xschem_library/rom8k/lvnor2.sch             |   76 +-
+ xschem_library/rom8k/passhs.sch             |   40 +-
+ 85 files changed, 7787 insertions(+), 6802 deletions(-)
+ create mode 100644 src/make_sym_lcc.awk
+
+~$ sudo apt-get install xcb
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  xcb
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 21,4 kB of archives.
+After this operation, 65,5 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 xcb amd64 2.4-5 [21,4 kB]
+Fetched 21,4 kB in 0s (150 kB/s)
+Selecting previously unselected package xcb.
+(Reading database ... 295551 files and directories currently installed.)
+Preparing to unpack .../archives/xcb_2.4-5_amd64.deb ...
+Unpacking xcb (2.4-5) ...
+Setting up xcb (2.4-5) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for menu (2.1.47ubuntu4) ...
+
+~$ sudo apt-get install libx11-xcb-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  libx11-xcb-dev
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 9.800 B of archives.
+After this operation, 82,9 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-xcb-dev amd64 2:1.6.9-2ubuntu1.2 [9.800 B]
+Fetched 9.800 B in 0s (117 kB/s)           
+Selecting previously unselected package libx11-xcb-dev:amd64.
+(Reading database ... 295559 files and directories currently installed.)
+Preparing to unpack .../libx11-xcb-dev_2%3a1.6.9-2ubuntu1.2_amd64.deb ...
+Unpacking libx11-xcb-dev:amd64 (2:1.6.9-2ubuntu1.2) ...
+Setting up libx11-xcb-dev:amd64 (2:1.6.9-2ubuntu1.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~/EDA/xschem$ ./configure
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default   -c -o hooks.o hooks.c
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_cc.c -o src//default/find_cc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_compile.c -o src//default/lib_compile.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_uniqinc.c -o src//default/lib_uniqinc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_file.c -o src//default/lib_file.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_try.c -o src//default/lib_try.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/str.c -o src//default/str.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/ht.c -o src//default/ht.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/log.c -o src//default/log.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/arg.c -o src//default/arg.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/db.c -o src//default/db.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/dep.c -o src//default/dep.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/deps_default.c -o src//default/deps_default.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_libs.c -o src//default/find_libs.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_fscalls.c -o src//default/find_fscalls.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_printf.c -o src//default/find_printf.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_proc.c -o src//default/find_proc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_fstools.c -o src//default/find_fstools.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_uname.c -o src//default/find_uname.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_target.c -o src//default/find_target.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_thread.c -o src//default/find_thread.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_io.c -o src//default/find_io.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_time.c -o src//default/find_time.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_types.c -o src//default/find_types.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_signal.c -o src//default/find_signal.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_environ.c -o src//default/find_environ.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/regex.c -o src//default/regex.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_filelist.c -o src//default/lib_filelist.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_srctree.c -o src//default/lib_srctree.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_pkg_config.c -o src//default/lib_pkg_config.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_str.c -o src//default/find_str.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_sys.c -o src//default/find_sys.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/scripts.c -o src//scripts/scripts.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_gpmi.c -o src//scripts/find_gpmi.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_tcl.c -o src//scripts/find_tcl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_ruby.c -o src//scripts/find_ruby.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mruby.c -o src//scripts/find_mruby.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_python.c -o src//scripts/find_python.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_perl.c -o src//scripts/find_perl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mawk.c -o src//scripts/find_mawk.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_lua.c -o src//scripts/find_lua.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_guile.c -o src//scripts/find_guile.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_stutter.c -o src//scripts/find_stutter.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_funlisp.c -o src//scripts/find_funlisp.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_duktape.c -o src//scripts/find_duktape.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mujs.c -o src//scripts/find_mujs.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_fungw.c -o src//scripts/find_fungw.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_m4.c -o src//scripts/find_m4.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_welltype.c -o src//scripts/find_welltype.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_picol.c -o src//scripts/find_picol.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/tmpasm.c -o src//tmpasm/tmpasm.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/tmpasm_scconfig.c -o src//tmpasm/tmpasm_scconfig.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/openfiles.c -o src//tmpasm/openfiles.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//parsgen/find_parsgen.c -o src//parsgen/find_parsgen.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gtk2.c -o src//gui/find_gtk2.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gtk3.c -o src//gui/find_gtk3.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_lesstif2.c -o src//gui/find_lesstif2.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_x.c -o src//gui/find_x.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gd.c -o src//gui/find_gd.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_cairo.c -o src//gui/find_cairo.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_misc.c -o src//gui/find_misc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gl.c -o src//gui/find_gl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/gui.c -o src//gui/gui.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main.c -o src//default/main.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main_custom_args.c -o src//default/main_custom_args.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main_lib.c -o src//default/main_lib.o
+cc -o configure  hooks.o src//default/find_cc.o src//default/lib_compile.o src//default/lib_uniqinc.o src//default/lib_file.o src//default/lib_try.o src//default/str.o src//default/ht.o src//default/log.o src//default/arg.o src//default/db.o src//default/dep.o src//default/deps_default.o src//default/find_libs.o src//default/find_fscalls.o src//default/find_printf.o src//default/find_proc.o src//default/find_fstools.o src//default/find_uname.o src//default/find_target.o src//default/find_thread.o src//default/find_io.o src//default/find_time.o src//default/find_types.o src//default/find_signal.o src//default/find_environ.o src//default/regex.o src//default/lib_filelist.o src//default/lib_srctree.o src//default/lib_pkg_config.o src//default/find_str.o src//default/find_sys.o src//scripts/scripts.o src//scripts/find_gpmi.o src//scripts/find_tcl.o src//scripts/find_ruby.o src//scripts/find_mruby.o src//scripts/find_python.o src//scripts/find_perl.o src//scripts/find_mawk.o src//scripts/find_lua.o src//scripts/find_guile.o src//scripts/find_stutter.o src//scripts/find_funlisp.o src//scripts/find_duktape.o src//scripts/find_mujs.o src//scripts/find_fungw.o src//scripts/find_m4.o src//scripts/find_welltype.o src//scripts/find_picol.o   src//tmpasm/tmpasm.o src//tmpasm/tmpasm_scconfig.o src//tmpasm/openfiles.o  src//parsgen/find_parsgen.o    src//gui/find_gtk2.o src//gui/find_gtk3.o src//gui/find_lesstif2.o src//gui/find_x.o src//gui/find_gd.o src//gui/find_cairo.o src//gui/find_misc.o src//gui/find_gl.o src//gui/gui.o    src//default/main.o src//default/main_custom_args.o src//default/main_lib.o
+cc -c -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -o src/util/sccbox.o src/util/sccbox.c
+cc                 -o sccbox src/util/sccbox.o
+--- Detecting host
+Looking for a shell... /bin/sh -c
+Looking for a shell escape character... found: '\'
+Detecting temp dir... validated /home/<user>/EDA/xschem/scconfig/
+Checking for system type... OK (name: Linux; class: UNIX)
+--- Detecting target (same as host)
+Checking for cc (target)... OK ('gcc', ' -pipe', '')
+Checking for -fpic... OK (-fPIC)
+Checking for popen(3)... OK ('#define _XOPEN_SOURCE\n', '' and '')
+Checking for flex... Found.
+Checking for bison... Found.
+Checking for XOpenDisplay... OK ('', '' and '-lX11')
+Checking for tk... 8.6... OK ('', '-I/usr/include/tcl8.6' and '-ltcl8.6')
+OK ('', '-I/usr/include/tcl8.6 ' and '-ltcl8.6  -ltk8.6')
+Checking for awk... OK (awk)
+Checking for xpm... OK ('', '' and '-lX11 -lXpm')
+Checking for cairo... OK ('', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16' and '-lcairo')
+Checking for Xrender... OK ('', '' and '-lX11 -lXrender')
+Checking for cairo... OK ('', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16' and '-lcairo')
+Checking for cairo-xcb... OK ('#include <cairo-xcb.h>\n', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16' and '-lcairo')
+Checking for xcb... OK ('', '' and '-lX11 -lxcb')
+Checking for xgetxcbconnection... OK ('', '' and '-lX11 -lX11-xcb')
+Checking for xcb_render... OK ('', '' and '-lX11 -lxcb-render')
+--- Detecting runtime (same as host)
+
+--- Generating build and config files
+config.h:              ok
+Makefile.conf:         ok
+doc/manpages/xschem.1: ok
+src/Makefile:          ok
+
+
+=====================
+Configuration summary
+=====================
+
+Compilation:
+ CC:        gcc
+ debug:     no
+ profiling: no
+
+Paths:
+ prefix:        /usr/local
+ user-conf-dir: ~/.xschem
+ user-lib-path: ~/.xschem/xschem_library
+ sys-lib-path:  /usr/local/share/xschem/xschem_library/devices
+
+Libs & features:
+ tcl:       -ltcl8.6
+ tk:        -ltcl8.6  -ltk8.6
+ cairo:     yes
+ xrender:   yes
+ xcb:       yes
+
+Configuration complete, ready to compile.
+~/EDA/xschem$ make 1>xschem.make.log 2>xschem.make.err
+~/EDA/xschem$ sudo make install 1>xschem.install.log 2>xschem.install.err
+
+~$ sudo apt-get install iverilog 
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  gtkwave
+The following NEW packages will be installed:
+  iverilog
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 1.859 kB of archives.
+After this operation, 6.547 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 iverilog amd64 10.3-1build1 [1.859 kB]
+Fetched 1.859 kB in 0s (6.592 kB/s)
+Selecting previously unselected package iverilog.
+(Reading database ... 295568 files and directories currently installed.)
+Preparing to unpack .../iverilog_10.3-1build1_amd64.deb ...
+Unpacking iverilog (10.3-1build1) ...
+Setting up iverilog (10.3-1build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~$ sudo apt-get install gtkwave
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libjudydebian1
+The following NEW packages will be installed:
+  gtkwave libjudydebian1
+0 upgraded, 2 newly installed, 0 to remove and 9 not upgraded.
+Need to get 2.461 kB of archives.
+After this operation, 5.080 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libjudydebian1 amd64 1.0.5-5 [94,6 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 gtkwave amd64 3.3.103-1build1 [2.366 kB]
+Fetched 2.461 kB in 0s (7.232 kB/s)
+Selecting previously unselected package libjudydebian1.
+(Reading database ... 295661 files and directories currently installed.)
+Preparing to unpack .../libjudydebian1_1.0.5-5_amd64.deb ...
+Unpacking libjudydebian1 (1.0.5-5) ...
+Selecting previously unselected package gtkwave.
+Preparing to unpack .../gtkwave_3.3.103-1build1_amd64.deb ...
+Unpacking gtkwave (3.3.103-1build1) ...
+Setting up libjudydebian1 (1.0.5-5) ...
+Setting up gtkwave (3.3.103-1build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for gnome-icon-theme (3.12.0-3) ...
+Processing triggers for shared-mime-info (1.15-1) ...
+Processing triggers for bamfdaemon (0.5.3+18.04.20180207.2-0ubuntu2) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.4) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+~$ sudo apt-get install libgtk-3-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  gir1.2-harfbuzz-0.0 libatk-bridge2.0-dev libatk1.0-dev libatspi2.0-dev libdatrie-dev libdbus-1-dev libegl-dev libegl1-mesa-dev
+  libepoxy-dev libfribidi-dev libgdk-pixbuf2.0-dev libgl1-mesa-dev libgles-dev libgles1 libglvnd-dev libgraphite2-dev
+  libharfbuzz-dev libharfbuzz-gobject0 libopengl-dev libopengl0 libpango1.0-dev libthai-dev libwayland-bin libwayland-dev
+  libxcomposite-dev libxcursor-dev libxdamage-dev libxfixes-dev libxi-dev libxinerama-dev libxkbcommon-dev libxrandr-dev
+  libxtst-dev pango1.0-tools wayland-protocols x11proto-input-dev x11proto-randr-dev x11proto-record-dev x11proto-xinerama-dev
+Suggested packages:
+  libdatrie-doc libgraphite2-utils libgtk-3-doc imagemagick libpango1.0-doc libthai-doc libwayland-doc
+The following NEW packages will be installed:
+  gir1.2-harfbuzz-0.0 libatk-bridge2.0-dev libatk1.0-dev libatspi2.0-dev libdatrie-dev libdbus-1-dev libegl-dev libegl1-mesa-dev
+  libepoxy-dev libfribidi-dev libgdk-pixbuf2.0-dev libgl1-mesa-dev libgles-dev libgles1 libglvnd-dev libgraphite2-dev libgtk-3-dev
+  libharfbuzz-dev libharfbuzz-gobject0 libopengl-dev libopengl0 libpango1.0-dev libthai-dev libwayland-bin libwayland-dev
+  libxcomposite-dev libxcursor-dev libxdamage-dev libxfixes-dev libxi-dev libxinerama-dev libxkbcommon-dev libxrandr-dev
+  libxtst-dev pango1.0-tools wayland-protocols x11proto-input-dev x11proto-randr-dev x11proto-record-dev x11proto-xinerama-dev
+0 upgraded, 40 newly installed, 0 to remove and 9 not upgraded.
+Need to get 3.043 kB of archives.
+After this operation, 28,7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 gir1.2-harfbuzz-0.0 amd64 2.6.4-1ubuntu4 [26,3 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libdbus-1-dev amd64 1.12.16-2ubuntu2.1 [167 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxfixes-dev amd64 1:5.0.3-2 [11,4 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 x11proto-input-dev all 2019.2-1ubuntu1 [2.628 B]
+Get:5 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxi-dev amd64 2:1.7.10-0ubuntu1 [187 kB]
+Get:6 http://de.archive.ubuntu.com/ubuntu focal/main amd64 x11proto-record-dev all 2019.2-1ubuntu1 [2.624 B]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxtst-dev amd64 2:1.2.3-1 [15,2 kB]
+Get:8 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-dev amd64 2.36.0-2 [66,7 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-dev amd64 2.34.2-0ubuntu2~20.04.1 [3.140 B]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-dev amd64 2.35.1-1ubuntu2 [95,2 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libdatrie-dev amd64 0.2.12-3 [17,6 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libegl-dev amd64 1.3.2-1~ubuntu0.20.04.1 [17,2 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgles1 amd64 1.3.2-1~ubuntu0.20.04.1 [10,3 kB]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgles-dev amd64 1.3.2-1~ubuntu0.20.04.1 [48,0 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libopengl0 amd64 1.3.2-1~ubuntu0.20.04.1 [29,3 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libopengl-dev amd64 1.3.2-1~ubuntu0.20.04.1 [3.584 B]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libglvnd-dev amd64 1.3.2-1~ubuntu0.20.04.1 [11,6 kB]
+Get:18 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libegl1-mesa-dev amd64 21.0.3-0ubuntu0.3~20.04.1 [7.812 B]
+Get:19 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1-mesa-dev amd64 21.0.3-0ubuntu0.3~20.04.1 [6.468 B]
+Get:20 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libepoxy-dev amd64 1.5.4-1 [126 kB]
+Get:21 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libfribidi-dev amd64 1.0.8-2 [62,3 kB]
+Get:22 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-dev amd64 2.40.0+dfsg-3ubuntu0.2 [43,6 kB]
+Get:23 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-dev amd64 1.3.13-11build1 [14,7 kB]
+Get:24 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libharfbuzz-gobject0 amd64 2.6.4-1ubuntu4 [20,4 kB]
+Get:25 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libharfbuzz-dev amd64 2.6.4-1ubuntu4 [526 kB]
+Get:26 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libthai-dev amd64 0.1.28-3 [24,5 kB]
+Get:27 http://de.archive.ubuntu.com/ubuntu focal/main amd64 pango1.0-tools amd64 1.44.7-2ubuntu4 [26,2 kB]
+Get:28 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libpango1.0-dev amd64 1.44.7-2ubuntu4 [132 kB]
+Get:29 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libwayland-bin amd64 1.18.0-1 [20,3 kB]
+Get:30 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libwayland-dev amd64 1.18.0-1 [64,6 kB]
+Get:31 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite-dev amd64 1:0.4.5-1 [9.152 B]
+Get:32 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxcursor-dev amd64 1:1.2.0-2 [26,5 kB]
+Get:33 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxdamage-dev amd64 1:1.1.5-2 [5.228 B]
+Get:34 http://de.archive.ubuntu.com/ubuntu focal/main amd64 x11proto-xinerama-dev all 2019.2-1ubuntu1 [2.628 B]
+Get:35 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxinerama-dev amd64 2:1.1.4-2 [7.896 B]
+Get:36 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxkbcommon-dev amd64 0.10.0-1 [45,4 kB]
+Get:37 http://de.archive.ubuntu.com/ubuntu focal/main amd64 x11proto-randr-dev all 2019.2-1ubuntu1 [2.620 B]
+Get:38 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libxrandr-dev amd64 2:1.5.2-0ubuntu1 [25,0 kB]
+Get:39 http://de.archive.ubuntu.com/ubuntu focal/main amd64 wayland-protocols all 1.20-1 [60,3 kB]
+Get:40 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-dev amd64 3.24.20-0ubuntu1 [1.067 kB]
+Fetched 3.043 kB in 0s (6.902 kB/s)  
+Extracting templates from packages: 100%
+Selecting previously unselected package gir1.2-harfbuzz-0.0:amd64.
+(Reading database ... 295768 files and directories currently installed.)
+Preparing to unpack .../00-gir1.2-harfbuzz-0.0_2.6.4-1ubuntu4_amd64.deb ...
+Unpacking gir1.2-harfbuzz-0.0:amd64 (2.6.4-1ubuntu4) ...
+Selecting previously unselected package libdbus-1-dev:amd64.
+Preparing to unpack .../01-libdbus-1-dev_1.12.16-2ubuntu2.1_amd64.deb ...
+Unpacking libdbus-1-dev:amd64 (1.12.16-2ubuntu2.1) ...
+Selecting previously unselected package libxfixes-dev:amd64.
+Preparing to unpack .../02-libxfixes-dev_1%3a5.0.3-2_amd64.deb ...
+Unpacking libxfixes-dev:amd64 (1:5.0.3-2) ...
+Selecting previously unselected package x11proto-input-dev.
+Preparing to unpack .../03-x11proto-input-dev_2019.2-1ubuntu1_all.deb ...
+Unpacking x11proto-input-dev (2019.2-1ubuntu1) ...
+Selecting previously unselected package libxi-dev:amd64.
+Preparing to unpack .../04-libxi-dev_2%3a1.7.10-0ubuntu1_amd64.deb ...
+Unpacking libxi-dev:amd64 (2:1.7.10-0ubuntu1) ...
+Selecting previously unselected package x11proto-record-dev.
+Preparing to unpack .../05-x11proto-record-dev_2019.2-1ubuntu1_all.deb ...
+Unpacking x11proto-record-dev (2019.2-1ubuntu1) ...
+Selecting previously unselected package libxtst-dev:amd64.
+Preparing to unpack .../06-libxtst-dev_2%3a1.2.3-1_amd64.deb ...
+Unpacking libxtst-dev:amd64 (2:1.2.3-1) ...
+Selecting previously unselected package libatspi2.0-dev:amd64.
+Preparing to unpack .../07-libatspi2.0-dev_2.36.0-2_amd64.deb ...
+Unpacking libatspi2.0-dev:amd64 (2.36.0-2) ...
+Selecting previously unselected package libatk-bridge2.0-dev:amd64.
+Preparing to unpack .../08-libatk-bridge2.0-dev_2.34.2-0ubuntu2~20.04.1_amd64.deb ...
+Unpacking libatk-bridge2.0-dev:amd64 (2.34.2-0ubuntu2~20.04.1) ...
+Selecting previously unselected package libatk1.0-dev:amd64.
+Preparing to unpack .../09-libatk1.0-dev_2.35.1-1ubuntu2_amd64.deb ...
+Unpacking libatk1.0-dev:amd64 (2.35.1-1ubuntu2) ...
+Selecting previously unselected package libdatrie-dev:amd64.
+Preparing to unpack .../10-libdatrie-dev_0.2.12-3_amd64.deb ...
+Unpacking libdatrie-dev:amd64 (0.2.12-3) ...
+Selecting previously unselected package libegl-dev:amd64.
+Preparing to unpack .../11-libegl-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libegl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libgles1:amd64.
+Preparing to unpack .../12-libgles1_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libgles1:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libgles-dev:amd64.
+Preparing to unpack .../13-libgles-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libgles-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libopengl0:amd64.
+Preparing to unpack .../14-libopengl0_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libopengl0:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libopengl-dev:amd64.
+Preparing to unpack .../15-libopengl-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libopengl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libglvnd-dev:amd64.
+Preparing to unpack .../16-libglvnd-dev_1.3.2-1~ubuntu0.20.04.1_amd64.deb ...
+Unpacking libglvnd-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Selecting previously unselected package libegl1-mesa-dev:amd64.
+Preparing to unpack .../17-libegl1-mesa-dev_21.0.3-0ubuntu0.3~20.04.1_amd64.deb ...
+Unpacking libegl1-mesa-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Selecting previously unselected package libgl1-mesa-dev:amd64.
+Preparing to unpack .../18-libgl1-mesa-dev_21.0.3-0ubuntu0.3~20.04.1_amd64.deb ...
+Unpacking libgl1-mesa-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Selecting previously unselected package libepoxy-dev:amd64.
+Preparing to unpack .../19-libepoxy-dev_1.5.4-1_amd64.deb ...
+Unpacking libepoxy-dev:amd64 (1.5.4-1) ...
+Selecting previously unselected package libfribidi-dev:amd64.
+Preparing to unpack .../20-libfribidi-dev_1.0.8-2_amd64.deb ...
+Unpacking libfribidi-dev:amd64 (1.0.8-2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-dev:amd64.
+Preparing to unpack .../21-libgdk-pixbuf2.0-dev_2.40.0+dfsg-3ubuntu0.2_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-dev:amd64 (2.40.0+dfsg-3ubuntu0.2) ...
+Selecting previously unselected package libgraphite2-dev:amd64.
+Preparing to unpack .../22-libgraphite2-dev_1.3.13-11build1_amd64.deb ...
+Unpacking libgraphite2-dev:amd64 (1.3.13-11build1) ...
+Selecting previously unselected package libharfbuzz-gobject0:amd64.
+Preparing to unpack .../23-libharfbuzz-gobject0_2.6.4-1ubuntu4_amd64.deb ...
+Unpacking libharfbuzz-gobject0:amd64 (2.6.4-1ubuntu4) ...
+Selecting previously unselected package libharfbuzz-dev:amd64.
+Preparing to unpack .../24-libharfbuzz-dev_2.6.4-1ubuntu4_amd64.deb ...
+Unpacking libharfbuzz-dev:amd64 (2.6.4-1ubuntu4) ...
+Selecting previously unselected package libthai-dev:amd64.
+Preparing to unpack .../25-libthai-dev_0.1.28-3_amd64.deb ...
+Unpacking libthai-dev:amd64 (0.1.28-3) ...
+Selecting previously unselected package pango1.0-tools.
+Preparing to unpack .../26-pango1.0-tools_1.44.7-2ubuntu4_amd64.deb ...
+Unpacking pango1.0-tools (1.44.7-2ubuntu4) ...
+Selecting previously unselected package libpango1.0-dev:amd64.
+Preparing to unpack .../27-libpango1.0-dev_1.44.7-2ubuntu4_amd64.deb ...
+Unpacking libpango1.0-dev:amd64 (1.44.7-2ubuntu4) ...
+Selecting previously unselected package libwayland-bin.
+Preparing to unpack .../28-libwayland-bin_1.18.0-1_amd64.deb ...
+Unpacking libwayland-bin (1.18.0-1) ...
+Selecting previously unselected package libwayland-dev:amd64.
+Preparing to unpack .../29-libwayland-dev_1.18.0-1_amd64.deb ...
+Unpacking libwayland-dev:amd64 (1.18.0-1) ...
+Selecting previously unselected package libxcomposite-dev:amd64.
+Preparing to unpack .../30-libxcomposite-dev_1%3a0.4.5-1_amd64.deb ...
+Unpacking libxcomposite-dev:amd64 (1:0.4.5-1) ...
+Selecting previously unselected package libxcursor-dev:amd64.
+Preparing to unpack .../31-libxcursor-dev_1%3a1.2.0-2_amd64.deb ...
+Unpacking libxcursor-dev:amd64 (1:1.2.0-2) ...
+Selecting previously unselected package libxdamage-dev:amd64.
+Preparing to unpack .../32-libxdamage-dev_1%3a1.1.5-2_amd64.deb ...
+Unpacking libxdamage-dev:amd64 (1:1.1.5-2) ...
+Selecting previously unselected package x11proto-xinerama-dev.
+Preparing to unpack .../33-x11proto-xinerama-dev_2019.2-1ubuntu1_all.deb ...
+Unpacking x11proto-xinerama-dev (2019.2-1ubuntu1) ...
+Selecting previously unselected package libxinerama-dev:amd64.
+Preparing to unpack .../34-libxinerama-dev_2%3a1.1.4-2_amd64.deb ...
+Unpacking libxinerama-dev:amd64 (2:1.1.4-2) ...
+Selecting previously unselected package libxkbcommon-dev:amd64.
+Preparing to unpack .../35-libxkbcommon-dev_0.10.0-1_amd64.deb ...
+Unpacking libxkbcommon-dev:amd64 (0.10.0-1) ...
+Selecting previously unselected package x11proto-randr-dev.
+Preparing to unpack .../36-x11proto-randr-dev_2019.2-1ubuntu1_all.deb ...
+Unpacking x11proto-randr-dev (2019.2-1ubuntu1) ...
+Selecting previously unselected package libxrandr-dev:amd64.
+Preparing to unpack .../37-libxrandr-dev_2%3a1.5.2-0ubuntu1_amd64.deb ...
+Unpacking libxrandr-dev:amd64 (2:1.5.2-0ubuntu1) ...
+Selecting previously unselected package wayland-protocols.
+Preparing to unpack .../38-wayland-protocols_1.20-1_all.deb ...
+Unpacking wayland-protocols (1.20-1) ...
+Selecting previously unselected package libgtk-3-dev:amd64.
+Preparing to unpack .../39-libgtk-3-dev_3.24.20-0ubuntu1_amd64.deb ...
+Unpacking libgtk-3-dev:amd64 (3.24.20-0ubuntu1) ...
+Setting up libegl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up x11proto-randr-dev (2019.2-1ubuntu1) ...
+Setting up libfribidi-dev:amd64 (1.0.8-2) ...
+Setting up libxkbcommon-dev:amd64 (0.10.0-1) ...
+Setting up pango1.0-tools (1.44.7-2ubuntu4) ...
+Setting up libharfbuzz-gobject0:amd64 (2.6.4-1ubuntu4) ...
+Setting up gir1.2-harfbuzz-0.0:amd64 (2.6.4-1ubuntu4) ...
+Setting up x11proto-xinerama-dev (2019.2-1ubuntu1) ...
+Setting up libopengl0:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libgdk-pixbuf2.0-dev:amd64 (2.40.0+dfsg-3ubuntu0.2) ...
+Setting up libxfixes-dev:amd64 (1:5.0.3-2) ...
+Setting up libwayland-bin (1.18.0-1) ...
+Setting up libgraphite2-dev:amd64 (1.3.13-11build1) ...
+Setting up libxrandr-dev:amd64 (2:1.5.2-0ubuntu1) ...
+Setting up libdbus-1-dev:amd64 (1.12.16-2ubuntu2.1) ...
+Setting up libgles1:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up x11proto-input-dev (2019.2-1ubuntu1) ...
+Setting up libxinerama-dev:amd64 (2:1.1.4-2) ...
+Setting up wayland-protocols (1.20-1) ...
+Setting up libdatrie-dev:amd64 (0.2.12-3) ...
+Setting up x11proto-record-dev (2019.2-1ubuntu1) ...
+Setting up libopengl-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libgles-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libxi-dev:amd64 (2:1.7.10-0ubuntu1) ...
+Setting up libatk1.0-dev:amd64 (2.35.1-1ubuntu2) ...
+Setting up libxtst-dev:amd64 (2:1.2.3-1) ...
+Setting up libxdamage-dev:amd64 (1:1.1.5-2) ...
+Setting up libharfbuzz-dev:amd64 (2.6.4-1ubuntu4) ...
+Setting up libxcomposite-dev:amd64 (1:0.4.5-1) ...
+Setting up libxcursor-dev:amd64 (1:1.2.0-2) ...
+Setting up libglvnd-dev:amd64 (1.3.2-1~ubuntu0.20.04.1) ...
+Setting up libwayland-dev:amd64 (1.18.0-1) ...
+Setting up libthai-dev:amd64 (0.1.28-3) ...
+Setting up libgl1-mesa-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Setting up libegl1-mesa-dev:amd64 (21.0.3-0ubuntu0.3~20.04.1) ...
+Setting up libepoxy-dev:amd64 (1.5.4-1) ...
+Setting up libpango1.0-dev:amd64 (1.44.7-2ubuntu4) ...
+Processing triggers for libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.4) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for sgml-base (1.29.1) ...
+Setting up libatspi2.0-dev:amd64 (2.36.0-2) ...
+Setting up libatk-bridge2.0-dev:amd64 (2.34.2-0ubuntu2~20.04.1) ...
+Setting up libgtk-3-dev:amd64 (3.24.20-0ubuntu1) ...
+
+~/EDA/gaw/gaw3-20200922$ ./configure 
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+Configuring gaw3 version 20200922
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for ranlib... ranlib
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for working strtod... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for mkdir... yes
+checking for pow... no
+checking for regcomp... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking libkern/OSByteOrder.h usability... no
+checking libkern/OSByteOrder.h presence... no
+checking for libkern/OSByteOrder.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for alsa/pcm.h... no
+checking for alsa/mixer.h... no
+Alsa libs interface compilation is disabled.
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk+-3.0 >= 3.0.0... yes
+checking for glib-2.0 >= 2.28.0... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating lib/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+** Configuration summary for gaw3 20200922:
+
+   GLIB library version:             2.64.6
+   GTK+ library version:             3.24.20
+   Alsa version:                     
+   data directory:                   /usr/local/share/gaw
+   locale directory:                 /usr/local/share/locale
+
+~/EDA/gaw/gaw3-20200922$ make clean
+Making clean in lib
+make[1]: Entering directory '/home/<user>/EDA/gaw/gaw3-20200922/lib'
+test -z "*.log core FILE *~ prototype.bak" || rm -f *.log core FILE *~ prototype.bak
+test -z "libload.a" || rm -f libload.a
+rm -f *.o
+make[1]: Leaving directory '/home/<user>/EDA/gaw/gaw3-20200922/lib'
+Making clean in src
+make[1]: Entering directory '/home/<user>/EDA/gaw/gaw3-20200922/src'
+test -z "gaw" || rm -f gaw
+test -z "*.log core.* FILE *~ prototype.bak" || rm -f *.log core.* FILE *~ prototype.bak
+rm -f *.o
+test -z "*.log core FILE *~ prototype.bak" || rm -f *.log core FILE *~ prototype.bak
+make[1]: Leaving directory '/home/<user>/EDA/gaw/gaw3-20200922/src'
+Making clean in po
+make[1]: Entering directory '/home/<user>/EDA/gaw/gaw3-20200922/po'
+rm -f *.insert-header
+rm -f remove-potcdate.sed
+rm -f stamp-poT
+rm -f core core.* gaw3.po gaw3.1po gaw3.2po *.new.po
+rm -fr *.o
+make[1]: Leaving directory '/home/<user>/EDA/gaw/gaw3-20200922/po'
+make[1]: Entering directory '/home/<user>/EDA/gaw/gaw3-20200922'
+test -z "*.log core FILE *~" || rm -f *.log core FILE *~
+test -z "*.log core FILE *~" || rm -f *.log core FILE *~
+make[1]: Leaving directory '/home/<user>/EDA/gaw/gaw3-20200922'
+
+~/EDA/gaw/gaw3-20200922$ make -j8 1>gaw.make.log 2>gaw.make.err
+~/EDA/gaw/gaw3-20200922$ sudo make install 1>gaw.install.log 2>gaw.install.err
+~/EDA/gaw/gaw3-20200922$ gaw
+gaw: INFO: up_rc_read_conf: userprefs.c:475: created config file '/home/<user>/.gaw/gawrc'
+~/EDA/gaw/gaw3-20200922$ emacs ~/.gaw/gawrc &
+
+~$ sudo apt-get install apt-transport-https ca-certificates curl gnupg
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ca-certificates is already the newest version (20210119~20.04.1).
+ca-certificates set to manually installed.
+gnupg is already the newest version (2.2.19-3ubuntu2.1).
+gnupg set to manually installed.
+The following NEW packages will be installed:
+  apt-transport-https curl
+0 upgraded, 2 newly installed, 0 to remove and 9 not upgraded.
+Need to get 166 kB of archives.
+After this operation, 572 kB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+Abort.
+
+~$ sudo apt-get install apt-transport-https curl
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  apt-transport-https curl
+0 upgraded, 2 newly installed, 0 to remove and 9 not upgraded.
+Need to get 166 kB of archives.
+After this operation, 572 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 apt-transport-https all 2.0.6 [4.680 B]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.6 [161 kB]
+Fetched 166 kB in 0s (797 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 296997 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.0.6_all.deb ...
+Unpacking apt-transport-https (2.0.6) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.68.0-1ubuntu2.6_amd64.deb ...
+Unpacking curl (7.68.0-1ubuntu2.6) ...
+Setting up apt-transport-https (2.0.6) ...
+Setting up curl (7.68.0-1ubuntu2.6) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+Docker
+
+~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+~$ echo \
+>   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+>   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list >/tmp/docker.list
+
+~$ sudo apt-get update
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Get:2 https://download.docker.com/linux/ubuntu focal InRelease [52,1 kB]                              
+Hit:3 http://de.archive.ubuntu.com/ubuntu focal InRelease                                                         
+Get:4 http://de.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]      
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:6 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [10,7 kB]
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]               
+Get:8 http://de.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [531 kB]
+Get:9 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.204 kB]
+Get:10 http://de.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [631 kB]
+Get:11 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [854 kB]
+Fetched 3.611 kB in 2s (2.101 kB/s)                       
+Reading package lists... Done
+
+~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  docker-ce-rootless-extras docker-scan-plugin pigz slirp4netns
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
+The following NEW packages will be installed:
+  containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras docker-scan-plugin pigz slirp4netns
+0 upgraded, 7 newly installed, 0 to remove and 9 not upgraded.
+Need to get 96,7 MB of archives.
+After this operation, 406 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 pigz amd64 2.4-1 [57,4 kB]
+Get:2 https://download.docker.com/linux/ubuntu focal/stable amd64 containerd.io amd64 1.4.9-1 [24,7 MB] 
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 slirp4netns amd64 0.4.3-1 [74,3 kB]      
+Get:4 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-cli amd64 5:20.10.8~3-0~ubuntu-focal [38,8 MB]
+Get:5 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce amd64 5:20.10.8~3-0~ubuntu-focal [21,2 MB]
+Get:6 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-rootless-extras amd64 5:20.10.8~3-0~ubuntu-focal [7.917 kB]
+Get:7 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-scan-plugin amd64 0.8.0~ubuntu-focal [3.889 kB]
+Fetched 96,7 MB in 5s (19,7 MB/s)             
+Selecting previously unselected package pigz.
+(Reading database ... 297008 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...
+Unpacking pigz (2.4-1) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../1-containerd.io_1.4.9-1_amd64.deb ...
+Unpacking containerd.io (1.4.9-1) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../2-docker-ce-cli_5%3a20.10.8~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce-cli (5:20.10.8~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../3-docker-ce_5%3a20.10.8~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce (5:20.10.8~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../4-docker-ce-rootless-extras_5%3a20.10.8~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:20.10.8~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-scan-plugin.
+Preparing to unpack .../5-docker-scan-plugin_0.8.0~ubuntu-focal_amd64.deb ...
+Unpacking docker-scan-plugin (0.8.0~ubuntu-focal) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../6-slirp4netns_0.4.3-1_amd64.deb ...
+Unpacking slirp4netns (0.4.3-1) ...
+Setting up slirp4netns (0.4.3-1) ...
+Setting up docker-scan-plugin (0.8.0~ubuntu-focal) ...
+Setting up containerd.io (1.4.9-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up docker-ce-cli (5:20.10.8~3-0~ubuntu-focal) ...
+Setting up pigz (2.4-1) ...
+Setting up docker-ce-rootless-extras (5:20.10.8~3-0~ubuntu-focal) ...
+Setting up docker-ce (5:20.10.8~3-0~ubuntu-focal) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.11) ...
+
+~$ sudo groupadd docker
+groupadd: group 'docker' already exists
+
+~$ sudo usermod -aG docker $USER
+
+~$ sudo systemctl enable docker
+Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable docker
+
+~$ ifconfig
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        ether 02:42:6d:fd:be:f5  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+[...]
+
+<reboot>
+
+~/EDA$ sudo docker run hello-world
+[sudo] password for <user>: 
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+b8dfde127a29: Pull complete 
+Digest: sha256:7d91b69e04a9029b99f3585aaaccae2baa80bcf318f4a5d2165a9898cd2dc0a1
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+~$ sudo apt-get install python3-pip
+[sudo] password for <user>: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python-pip-whl python3-setuptools python3-wheel
+Suggested packages:
+  python-setuptools-doc
+The following NEW packages will be installed:
+  python-pip-whl python3-pip python3-setuptools python3-wheel
+0 upgraded, 4 newly installed, 0 to remove and 9 not upgraded.
+Need to get 2.389 kB of archives.
+After this operation, 4.932 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pip-whl all 20.0.2-5ubuntu1.6 [1.805 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/main amd64 python3-setuptools all 45.2.0-1 [330 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 python3-wheel all 0.34.2-1 [23,8 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
+Fetched 2.389 kB in 0s (6.750 kB/s)  
+Selecting previously unselected package python-pip-whl.
+(Reading database ... 297258 files and directories currently installed.)
+Preparing to unpack .../python-pip-whl_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python-pip-whl (20.0.2-5ubuntu1.6) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../python3-setuptools_45.2.0-1_all.deb ...
+Unpacking python3-setuptools (45.2.0-1) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../python3-wheel_0.34.2-1_all.deb ...
+Unpacking python3-wheel (0.34.2-1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../python3-pip_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up python3-setuptools (45.2.0-1) ...
+Setting up python3-wheel (0.34.2-1) ...
+Setting up python-pip-whl (20.0.2-5ubuntu1.6) ...
+Setting up python3-pip (20.0.2-5ubuntu1.6) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+~$ pip3 install pyyaml click
+Requirement already satisfied: pyyaml in /usr/lib/python3/dist-packages (5.3.1)
+Requirement already satisfied: click in /usr/lib/python3/dist-packages (7.0)
+
+~/EDA/OpenLane$ mv openlane.make.err openlane.make.2021JUL29.err
+~/EDA/OpenLane$ mv openlane.make.log openlane.make.2021JUL29.log
+~/EDA/OpenLane$ mv openlane.make_pdk.log openlane.make_pdk.2021JUL29.log
+~/EDA/OpenLane$ mv openlane.make_pdk.err openlane.make_pdk.2021JUL29.err
+~/EDA/OpenLane$ git pull --all
+Fetching origin
+remote: Enumerating objects: 335, done.
+remote: Counting objects: 100% (170/170), done.
+remote: Total 335 (delta 170), reused 170 (delta 170), pack-reused 165
+Receiving objects: 100% (335/335), 27.03 MiB | 15.27 MiB/s, done.
+Resolving deltas: 100% (243/243), completed with 79 local objects.
+From https://github.com/The-OpenROAD-Project/OpenLane
+   8d70ae3..ca93273  master              -> origin/master
+ * [new tag]         2021.07.30_04.34.16 -> 2021.07.30_04.34.16
+ * [new tag]         2021.09.08_03.23.03 -> 2021.09.08_03.23.03
+ * [new tag]         2021.07.31_04.42.28 -> 2021.07.31_04.42.28
+ * [new tag]         2021.08.02_05.21.44 -> 2021.08.02_05.21.44
+ * [new tag]         2021.08.03_05.51.29 -> 2021.08.03_05.51.29
+ * [new tag]         2021.08.17_03.26.57 -> 2021.08.17_03.26.57
+ * [new tag]         2021.08.18_03.21.54 -> 2021.08.18_03.21.54
+ * [new tag]         2021.08.19_04.19.49 -> 2021.08.19_04.19.49
+ * [new tag]         2021.08.20_03.54.43 -> 2021.08.20_03.54.43
+ * [new tag]         2021.08.21_03.41.47 -> 2021.08.21_03.41.47
+ * [new tag]         2021.08.22_03.28.34 -> 2021.08.22_03.28.34
+ * [new tag]         2021.08.23_04.04.57 -> 2021.08.23_04.04.57
+ * [new tag]         2021.08.24_03.42.42 -> 2021.08.24_03.42.42
+ * [new tag]         2021.08.25_03.42.10 -> 2021.08.25_03.42.10
+ * [new tag]         2021.08.26_03.26.32 -> 2021.08.26_03.26.32
+ * [new tag]         2021.08.27_03.15.19 -> 2021.08.27_03.15.19
+ * [new tag]         2021.08.29_03.59.28 -> 2021.08.29_03.59.28
+ * [new tag]         2021.08.30_03.57.56 -> 2021.08.30_03.57.56
+ * [new tag]         2021.08.31_03.44.07 -> 2021.08.31_03.44.07
+ * [new tag]         2021.09.02_03.15.28 -> 2021.09.02_03.15.28
+ * [new tag]         2021.09.03_03.49.05 -> 2021.09.03_03.49.05
+ * [new tag]         2021.09.04_03.41.09 -> 2021.09.04_03.41.09
+ * [new tag]         2021.09.05_03.29.19 -> 2021.09.05_03.29.19
+ * [new tag]         2021.09.06_03.53.07 -> 2021.09.06_03.53.07
+ * [new tag]         2021.09.07_03.42.18 -> 2021.09.07_03.42.18
+Updating 8d70ae3..ca93273
+Fast-forward
+ .github/ISSUE_TEMPLATE/bug_report.md                     |  37 ++--
+ .github/ISSUE_TEMPLATE/feature_request.md                |  13 +-
+ .github/diagrams/flow.png                                | Bin 151690 -> 148578 bytes
+ .github/diagrams/src/flow.dot                            |   8 +-
+ .github/scripts/gh.py                                    |   4 +-
+ .github/scripts/run_tests.py                             |  20 +-
+ .github/scripts/upload_log_tarballs.py                   |  82 ++++++++
+ .github/test_sets/completeTestSet5                       |   1 -
+ .github/test_sets/{completeTestSet1 => extendedTestSet1} |   0
+ .github/test_sets/{completeTestSet2 => extendedTestSet2} |   0
+ .github/test_sets/{completeTestSet3 => extendedTestSet3} |   0
+ .github/test_sets/{completeTestSet4 => extendedTestSet4} |   0
+ .github/test_sets/extendedTestSet5                       |   1 +
+ .github/workflow-documentation.md                        |   1 +
+ .github/workflows/openlane_ci.yml                        |  22 ++-
+ .github/workflows/tool_updater.yml                       |   2 +-
+ .readthedocs.yml                                         |   2 +-
+ CONTRIBUTING.md                                          |   4 +-
+ LOCAL_INSTALL.md                                         |  27 ---
+ Makefile                                                 |  77 ++++----
+ README.md                                                |  40 ++--
+ configuration/README.md                                  |  36 +++-
+ clean_runs.tcl => configuration/extraction.tcl           |  27 +--
+ configuration/general.tcl                                |  12 +-
+ configuration/routing.tcl                                |   8 +-
+ dependencies/get_tag.py                                  |  44 +++++
+ dependencies/macos/run_time.txt                          |  39 ++++
+ dependencies/tool.py                                     |   6 +-
+ dependencies/tool_metadata.yml                           |  29 +--
+ dependencies/ubuntu20.04.txt                             |  50 -----
+ designs/README.md                                        |   2 +-
+ docker_build/Dockerfile                                  |   8 +-
+ docker_build/Makefile                                    |   5 +-
+ docker_build/tar/.gitignore                              |   3 +-
+ docker_build/tar/openroad_app.tar.gz                     | Bin 13904122 -> 14186374 bytes
+ conf.py => docs/configuration.py                         |   0
+ docs/environment.yml                                     |   2 +-
+ docs/source/Manual_PDK_installation.md                   |   2 +-
+ docs/source/OpenLANE_commands.md                         |   4 +-
+ docs/source/PDK_STRUCTURE.md                             |   2 +-
+ docs/source/chip_integration.md                          |   2 +-
+ docs/source/hardening_macros.md                          |   2 +-
+ docs/source/local_installs.md                            |  31 ++++
+ docs/source/using_or_issue.md                            |  58 ++++++
+ flow.tcl                                                 |  20 +-
+ report_generation_wrapper.py => generate_reports.py      | 140 +++++++-------
+ get_tag.py                                               |  36 ----
+ ol_install.py => install.py                              | 155 +++++++++++-----
+ regression_results/README.md                             |  10 +-
+ regression_results/benchmark_results/SW_HD.csv           |  84 ++++-----
+ regression_results/benchmark_results/SW_HDLL.csv         |  84 ++++-----
+ regression_results/benchmark_results/SW_HS.csv           |  84 ++++-----
+ regression_results/benchmark_results/SW_LS.csv           |  84 ++++-----
+ regression_results/benchmark_results/SW_MS.csv           |  84 ++++-----
+ run_designs.py                                           | 682 ++++++++++++++++++++++++++++++++++++++++---------------------------
+ scripts/add_def_obstructions.py                          |   2 +-
+ scripts/compare_regression_reports.py                    |  83 +++++----
+ scripts/config/config.py                                 |  98 ++++++----
+ scripts/contextualize.py                                 |   2 +-
+ scripts/csv2html/csv2html.py                             |   2 +-
+ scripts/get_core_dimensions.py                           |   2 +-
+ scripts/get_docker_config.py                             |  81 ++++++++
+ scripts/io_place.py                                      |   2 +-
+ scripts/klayout/def2gds.sh                               |  17 +-
+ scripts/klayout/mv_shapes.sh                             |   8 +-
+ scripts/klayout/run_drc.sh                               |   2 +-
+ scripts/klayout/xor.sh                                   |   6 +-
+ scripts/label_macro_pins.py                              |   2 +-
+ scripts/label_padframe.py                                |   2 +-
+ scripts/manual_macro_place.py                            |   2 +-
+ scripts/openroad/or_basic_mp.tcl                         |  10 +-
+ scripts/openroad/or_cts.tcl                              |  12 +-
+ scripts/openroad/or_droute.tcl                           |   9 +-
+ scripts/openroad/or_groute.tcl                           |  26 ++-
+ scripts/openroad/or_rcx.tcl                              |  60 ++++++
+ scripts/openroad/or_replace.tcl                          |  18 +-
+ scripts/openroad/or_resizer_routing_timing.tcl           |  55 ++++++
+ scripts/openroad/or_resizer_timing.tcl                   |   9 +-
+ or_issue.py => scripts/or_issue.py                       | 124 ++++++++-----
+ scripts/padringer.py                                     |   2 +-
+ scripts/place_diodes.py                                  |   2 +-
+ scripts/power_route.py                                   |   2 +-
+ scripts/random_place.py                                  |   2 +-
+ scripts/report/get_best.py                               |   0
+ scripts/report/get_file_name.py                          |   0
+ scripts/report/report.py                                 |  84 +++++++--
+ scripts/report/report.sh                                 | 214 ++++++++++++++++-----
+ scripts/report/report_parser.py                          |  52 ++++++
+ scripts/sta.tcl                                          |  13 +-
+ scripts/tcl_commands/all.tcl                             |  53 ++++--
+ scripts/tcl_commands/cvc.tcl                             |  17 +-
+ scripts/tcl_commands/floorplan.tcl                       |   9 +-
+ scripts/tcl_commands/init_design.tcl                     |   2 +-
+ scripts/tcl_commands/klayout.tcl                         |   7 +-
+ scripts/tcl_commands/placement.tcl                       |  29 ++-
+ scripts/tcl_commands/routing.tcl                         |  63 ++++++-
+ scripts/tritonRoute.param                                |   7 -
+ scripts/updateDesignsConfigs.py                          |   2 +-
+ scripts/utils/utils.py                                   |  27 ++-
+ scripts/utils/utils.tcl                                  |   6 +-
+ scripts/verify_versions.py                               | 176 ++++++++++++++++++
+ scripts/write_powered_def.py                             |   2 +-
+ 102 files changed, 2393 insertions(+), 1188 deletions(-)
+ create mode 100644 .github/scripts/upload_log_tarballs.py
+ delete mode 100644 .github/test_sets/completeTestSet5
+ rename .github/test_sets/{completeTestSet1 => extendedTestSet1} (100%)
+ rename .github/test_sets/{completeTestSet2 => extendedTestSet2} (100%)
+ rename .github/test_sets/{completeTestSet3 => extendedTestSet3} (100%)
+ rename .github/test_sets/{completeTestSet4 => extendedTestSet4} (100%)
+ create mode 100644 .github/test_sets/extendedTestSet5
+ delete mode 100644 LOCAL_INSTALL.md
+ rename clean_runs.tcl => configuration/extraction.tcl (52%)
+ mode change 100755 => 100644
+ create mode 100755 dependencies/get_tag.py
+ create mode 100644 dependencies/macos/run_time.txt
+ delete mode 100644 dependencies/ubuntu20.04.txt
+ rename conf.py => docs/configuration.py (100%)
+ create mode 100644 docs/source/local_installs.md
+ create mode 100644 docs/source/using_or_issue.md
+ rename report_generation_wrapper.py => generate_reports.py (59%)
+ delete mode 100644 get_tag.py
+ rename ol_install.py => install.py (75%)
+ create mode 100755 scripts/get_docker_config.py
+ create mode 100644 scripts/openroad/or_rcx.tcl
+ create mode 100644 scripts/openroad/or_resizer_routing_timing.tcl
+ rename or_issue.py => scripts/or_issue.py (70%)
+ mode change 100644 => 100755 scripts/report/get_best.py
+ mode change 100644 => 100755 scripts/report/get_file_name.py
+ mode change 100644 => 100755 scripts/report/report.py
+ create mode 100755 scripts/report/report_parser.py
+ delete mode 100644 scripts/tritonRoute.param
+ create mode 100644 scripts/verify_versions.py
+
+~/EDA/OpenLane$ make openlane 1>make_openlane.log 2>make_openlane.err
+
+~/EDA/OpenLane$ lart make*
+-rw-rw-r-- 1 <user> <user>       0 Sep  8 13:35 make_openlane.err
+-rw-rw-r-- 1 <user> <user>    2901 Sep  8 13:35 make_openlane.log
+-rw-rw-r-- 1 <user> <user>   12086 Sep  8 14:11 make_full-pdk.err
+-rw-rw-r-- 1 <user> <user> 8038953 Sep  8 14:25 make_full-pdk.log
+
+~/EDA/OpenLane/pdks$ lart
+total 20
+drwxrwxr-x 12 <user> <user> 4096 Sep  8 13:47 ..
+drwxrwxr-x  9 <user> <user> 4096 Sep  8 13:50 skywater-pdk
+drwxrwxr-x  9 <user> <user> 4096 Sep  8 14:10 open_pdks
+drwxrwxr-x  5 <user> <user> 4096 Sep  8 14:24 .
+drwxr-xr-x  5 <user> <user> 4096 Sep  8 14:25 sky130A
+
+~/EDA/OpenLane/pdks/skywater-pdk$ git submodule update --init libraries/sky130_fd_pr/latest
+Cloning into '/home/<user>/EDA/OpenLane/pdks/skywater-pdk/libraries/sky130_fd_pr/latest'...
+Submodule path 'libraries/sky130_fd_pr/latest': checked out 'f62031a1be9aefe902d6d54cddd6f59b57627436'
+
+~/EDA/OpenLane$ make test
+cd /home/<user>/EDA/OpenLane && \
+	docker run --rm -v /home/<user>/EDA/OpenLane:/openLANE_flow -v /home/<user>/EDA/OpenLane/pdks:/home/<user>/EDA/OpenLane/pdks -e PDK_ROOT=/home/<user>/EDA/OpenLane/pdks   --user 1000:1000 efabless/openlane:2021.09.08_03.23.03 sh -c "./flow.tcl -design spm -tag openlane_test -disable_output -overwrite"
+[INFO]: 
+	 ___   ____   ___  ____   _       ____  ____     ___
+	/   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
+	|   | |  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
+	| O | |   _/    _]|  |  || |___ |     ||  |  ||    _]
+	|   | |  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
+	\___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+
+
+[INFO]: Version: 2021.09.08_03.23.03
+[INFO]: Running non-interactively
+[INFO]: Using design configuration at /openLANE_flow/designs/spm/config.tcl
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: PDKs root directory: /home/<user>/EDA/OpenLane/pdks
+[INFO]: PDK: sky130A
+[INFO]: Setting PDKPATH to /home/<user>/EDA/OpenLane/pdks/sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library is set to: sky130_fd_sc_hd
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: Current run directory is /openLANE_flow/designs/spm/runs/openlane_test
+[INFO]: Preparing LEF Files
+[INFO]: Extracting the number of available metal layers from /home/<user>/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
+[INFO]: The number of available metal layers is 6
+[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5
+[INFO]: Merging LEF Files...
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+/home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 1
+[INFO]: Changing netlist from 0 to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 2
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 3
+[INFO]: Core area width: 81.42
+[INFO]: Core area height: 81.60000000000001
+[WARNING]: Current core area is too small for a power grid
+[WARNING]: !!! THE POWER GRID WILL BE MINIMIZED. !!!
+[INFO]: Final Vertical PDN Offset: 13.57
+[INFO]: Final Horizontal PDN Offset: 13.600000000000001
+[INFO]: Final Vertical PDN Pitch: 27.14
+[INFO]: Final Horizontal PDN Pitch: 27.200000000000003
+[INFO]: Changing layout from 0 to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/3-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 4
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/3-verilog2def_openroad.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/4-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 5
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/4-ioPlacer.def to /openLANE_flow/designs/spm/runs/openlane_test/results/floorplan/spm.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 6
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/floorplan/spm.floorplan.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/6-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 7
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/6-pdn.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/7-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Generating Exclude List...
+/home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells
+[INFO]: Creating ::env(DONT_USE_CELLS)...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/7-replace.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/7-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 8
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 9
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 10
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/7-resizer.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Running TritonCTS...
+[INFO]: current step index: 11
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+/home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells
+[INFO]: Clock Tree Synthesis was successful
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/cts/spm.cts.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 12
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_cts.v
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/cts/spm.cts.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/12-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 13
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_cts.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 14
+[INFO]: Routing...
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/12-resizer_timing.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/14-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 15
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 16
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 17
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/14-resizer_timing.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Running Global Routing...
+[INFO]: current step index: 18
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.def
+[INFO]: Changing layout from 0 to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.guide
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.guide to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.guide
+[INFO]: Current Def is /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.def
+[INFO]: Current Guide is /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.guide
+[INFO]: Running Fill Insertion...
+[INFO]: current step index: 19
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/18-fastroute.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-addspacers.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 20
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_preroute.v
+[INFO]: Running Detailed Routing...
+[INFO]: current step index: 21
+[INFO]: No DRC violations after detailed routing.
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-addspacers.def to /openLANE_flow/designs/spm/runs/openlane_test/results/routing/20-spm.def
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Routing completed for spm/08-09_12-37 in 0h3m23s
+[INFO]: Writing Powered Verilog...
+[INFO]: current step index: 22
+[INFO]: Writing Verilog...
+[INFO]: current step index: 23
+[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_preroute.v to /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs.powered.v
+[INFO]: Running Magic to generate various views...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 24
+[INFO]: current step index: 25
+[INFO]: current step index: 26
+[INFO]: current step index: 27
+[INFO]: Running Klayout to re-generate GDS-II...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 28
+[INFO]: Back-up GDS-II streamed out.
+[INFO]: Running XOR on the layouts using Klayout...
+[INFO]: current step index: 29
+[INFO]: current step index: 30
+[INFO]: Klayout XOR Complete
+[INFO]: Running Magic Spice Export from LEF...
+[INFO]: current step index: 31
+[INFO]: No Illegal overlaps detected during extraction.
+[INFO]: Running LEF LVS...
+[INFO]: /openLANE_flow/designs/spm/runs/openlane_test/results/magic/spm.spice against /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs.powered.v
+[INFO]: current step index: 32
+[INFO]: No LVS mismatches.
+[INFO]: Running Magic DRC...
+[INFO]: current step index: 33
+[INFO]: Converting Magic DRC Violations to Magic Readable Format...
+[INFO]: Converting Magic DRC Violations to Klayout XML Database...
+[INFO]: Converting DRC Violations to RDB Format...
+[INFO]: Converted DRC Violations to RDB Format
+[INFO]: No DRC violations after GDS streaming out.
+[INFO]: Running Antenna Checks...
+[INFO]: Running OpenROAD Antenna Rule Checker...
+[INFO]: current step index: 34
+[INFO]: current step index: 35
+[INFO]: Running CVC
+[INFO]: current step index: 36
+[INFO]: Calculating Runtime From the Start...
+[INFO]: flow completed for spm/08-09_12-37 in 0h3m55s
+[INFO]: Saving Runtime Environment
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: spm
+Run Directory: /openLANE_flow/designs/spm/runs/openlane_test
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/reports/magic//33-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/reports/routing//35-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/designs/spm/runs/openlane_test/reports/final_summary_report.csv
+[SUCCESS]: Flow Completed Without Fatal Errors.
+Basic test passed
+
+run xschem
+
+/.xschem/xschem_library/xschem_sky130$ git diff -r d307566c6a812fd8d012d0b376bbb260ff3ddf94 xschemrc
+diff --git a/xschemrc b/xschemrc
+index 2d8f821..fb1e732 100644
+--- a/xschemrc
++++ b/xschemrc
+@@ -31,7 +31,6 @@ set XSCHEM_LIBRARY_PATH {}
+ append XSCHEM_LIBRARY_PATH ${XSCHEM_SHAREDIR}/xschem_library
+ #### include skywater libraries. Here i use [pwd]. This works if i start xschem from here.
+ append XSCHEM_LIBRARY_PATH :$env(PWD)
+-# append XSCHEM_LIBRARY_PATH :/mnt/sda7/home/schippes/pdks/sky130A/libs.tech/xschem
+ #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
+ append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
+ 
+@@ -206,6 +205,7 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
+ #### lxterminal is not OK since it will not inherit env vars: 
+ #### In order to reduce memory usage and increase the performance, all instances
+ #### of the lxterminal are sharing a single process. LXTerminal is part of LXDE
++set terminal mate-terminal
+ 
+ ###########################################################################
+ #### EDITOR
+@@ -215,6 +215,7 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
+ # set editor {gvim -f -geometry 90x28}
+ # set editor { xterm -geometry 100x40 -e nano }
+ # set editor { xterm -geometry 100x40 -e pico }
++set editor pluma
+ 
+ #### For Windows
+ # set editor {notepad.exe}
+@@ -274,7 +275,6 @@ lappend tcl_files scripts/sky130_models.tcl
+ ## (spice patched) skywater-pdk install
+ # set SKYWATER_MODELS ~/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+ # set SKYWATER_STDCELLS ~/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+-
+ ## opencircuitdesign pdks install
+-set SKYWATER_MODELS ~/pdks/sky130A/libs.tech/ngspice
+-set SKYWATER_STDCELLS ~/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice
++set SKYWATER_MODELS ~/EDA/OpenLane/pdks/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
++set SKYWATER_STDCELLS ~/EDA/OpenLane/pdks/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+
+~/EDA/OpenLane/pdks/skywater-pdk/libraries$ cp -a sky130_fd_pr sky130_fd_pr_ngspice
+
+~/EDA/OpenLane/pdks/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest$ patch -p2 < /home/<user>/.xschem/xschem_library/xschem_sky130/sky130_fd_pr.patch 
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__fs.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__leak.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__sf.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ss.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt_leak.pm3.spice
+patching file cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__ff.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__fs.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__leak.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__sf.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__ss.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt_leak.pm3.spice
+patching file cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+patching file cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt.pm3.spice
+patching file cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__ff.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__fs.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__leak.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__sf.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__ss.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt_leak.pm3.spice
+patching file cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice
+patching file cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0.pm3.spice
+patching file cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__subcircuit.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__ff.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__fs.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__leak.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__sf.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__ss.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt_leak.pm3.spice
+patching file cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__ff.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__fs.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__leak.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__sf.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__ss.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt_leak.pm3.spice
+patching file cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__ff.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__fs.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__leak.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__sf.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__ss.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt_leak.pm3.spice
+patching file cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.pm3.spice
+patching file cells/pfet_01v8_mvt/sky130_fd_pr__pfet_01v8_mvt.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__ff.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__fs.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__leak.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__sf.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__ss.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt_leak.pm3.spice
+patching file cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.pm3.spice
+patching file cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0.pm3.spice
+patching file cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__subcircuit.pm3.spice
+patching file models/r+c.mrp1monte.spice
+
+~/.xschem/simulations$ echo 'set ngbehavior=hs' > .spiceinit
+
+~/EDA$ sudo ln -s ~/EDA/OpenLane/pdks/sky130A/libs.tech/magic/* /usr/local/lib/magic/sys/
+~/EDA$ lart /usr/local/lib/magic/sys/
+[...]
+lrwxrwxrwx 1 root root     67 Sep  9 09:02 sky130A.tech -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech
+lrwxrwxrwx 1 root root     66 Sep  9 09:02 sky130A.tcl -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tcl
+lrwxrwxrwx 1 root root     70 Sep  9 09:02 sky130A.magicrc -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc
+lrwxrwxrwx 1 root root     71 Sep  9 09:02 sky130A-GDS.tech -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A-GDS.tech
+lrwxrwxrwx 1 root root     71 Sep  9 09:02 sky130A-BindKeys -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A-BindKeys
+lrwxrwxrwx 1 root root     74 Sep  9 09:02 seal_ring_generator -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/seal_ring_generator
+lrwxrwxrwx 1 root root     74 Sep  9 09:02 run_standard_drc.py -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/run_standard_drc.py
+lrwxrwxrwx 1 root root     71 Sep  9 09:02 generate_fill.py -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/generate_fill.py
+lrwxrwxrwx 1 root root     71 Sep  9 09:02 check_density.py -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/check_density.py
+lrwxrwxrwx 1 root root     71 Sep  9 09:02 check_antenna.py -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/check_antenna.py
+lrwxrwxrwx 1 root root     74 Sep  9 09:02 bump_bond_generator -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/magic/bump_bond_generator
+
+/usr/lib/klayout$ sudo mkdir sky130
+/usr/lib/klayout$ sudo ln -s ~/EDA/OpenLane/pdks/sky130A/libs.tech/klayout/* /usr/lib/klayout/sky130/
+
+/usr/lib/klayout$ lart sky130/
+total 32
+drwxr-xr-x 6 root root 12288 Sep  9 09:06 ..
+lrwxrwxrwx 1 root root    70 Sep  9 09:06 sky130A.lydrc -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lydrc
+lrwxrwxrwx 1 root root    68 Sep  9 09:06 sky130A.drc -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.drc
+lrwxrwxrwx 1 root root    68 Sep  9 09:06 sky130A.lyt -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+lrwxrwxrwx 1 root root    68 Sep  9 09:06 sky130A.lyp -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lyp
+drwxr-xr-x 2 root root  4096 Sep  9 09:06 .
+
+~/EDA$ sudo ln -s ~/EDA/OpenLane/pdks/sky130A/libs.tech/netgen/* /usr/local/lib/netgen/tcl/
+
+~/EDA$ lart /usr/local/lib/netgen/tcl/
+[...]
+lrwxrwxrwx 1 root root      73 Sep  9 09:09 sky130A_setup.tcl -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
+lrwxrwxrwx 1 root root      65 Sep  9 09:09 setup.tcl -> /home/<user>/EDA/OpenLane/pdks/sky130A/libs.tech/netgen/setup.tcl
+
+So far, I need to start xschem in
+~/.xschem/xschem_library/xschem_sky130$ xschem &
+
