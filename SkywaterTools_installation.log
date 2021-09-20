@@ -3592,3 +3592,22 @@ remote: Compressing objects: 100% (141/141), done.
 remote: Total 1125 (delta 77), reused 147 (delta 49), pack-reused 931
 Receiving objects: 100% (1125/1125), 45.90 MiB | 13.29 MiB/s, done.
 Resolving deltas: 100% (526/526), done.
+
+~/EDA/caravel_user_project$ make install 1>caravel_user_project.make.log 2>caravel_user_project.make.err
+
+~/EDA/caravel_user_project$ cat roots
+export PDK_ROOT="/home/cmaier/EDA/OpenLane/pdks"
+export OPENLANE_ROOT="/home/cmaier/EDA/OpenLane"
+export CARAVEL_ROOT="/project/caravel"
+
+~/EDA/caravel_user_project$ lart ~/.bashrc
+.bashrc   .bashrc~
+
+~/EDA/caravel_user_project$ diff ~/.bashrc*
+119,123d118
+< 
+< # add path settings for caravel_user_project
+< export PDK_ROOT="/home/cmaier/EDA/OpenLane/pdks"
+< export OPENLANE_ROOT="/home/cmaier/EDA/OpenLane"
+< export CARAVEL_ROOT="/project/caravel"
+
