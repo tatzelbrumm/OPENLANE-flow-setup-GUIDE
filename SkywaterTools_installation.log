@@ -3611,3 +3611,11 @@ export CARAVEL_ROOT="/project/caravel"
 < export OPENLANE_ROOT="/home/cmaier/EDA/OpenLane"
 < export CARAVEL_ROOT="/project/caravel"
 
+~/EDA/caravel_user_project/openlane$ make user_proj_example 1>user_proj_example.make.log 2>user_proj_example.make.err
+
+[INFO]: check full report here: /project/openlane/user_proj_example/runs/user_proj_example/reports/final_summary_report.csv
+[SUCCESS]: Flow Completed Without Fatal Errors.
+mkdir -p ../signoff/user_proj_example/
+cp user_proj_example/runs/user_proj_example/OPENLANE_VERSION ../signoff/user_proj_example/
+cp user_proj_example/runs/user_proj_example/PDK_SOURCES ../signoff/user_proj_example/
+cp user_proj_example/runs/user_proj_example/reports/final_summary_report.csv ../signoff/user_proj_example/
