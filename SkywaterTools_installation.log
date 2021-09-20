@@ -3668,3 +3668,57 @@ Receiving objects: 100% (5508/5508), 74.70 MiB | 556.00 KiB/s, done.
 Resolving deltas: 100% (3357/3357), done.
 fatal: No url found for submodule path 'caravel' in .gitmodules
 make: *** [Makefile:79: install] Error 128
+
+~/EDA/caravel_user_project_analog$ diff .gitmodules ../caravel_user_project/.gitmodules
+2c2
+< 	path = caravel-lite
+---
+> 	path = caravel
+
+~/EDA/caravel_user_project_analog$ rsync -avu ../caravel_user_project/.gitmodules .
+sending incremental file list
+.gitmodules
+
+sent 203 bytes  received 35 bytes  476.00 bytes/sec
+total size is 91  speedup is 0.38
+
+~/EDA$ rm -rf caravel_user_project_analog/
+
+~/EDA$ git clone git@github.com:efabless/caravel_user_project_analog.git
+Cloning into 'caravel_user_project_analog'...
+remote: Enumerating objects: 339, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 339 (delta 27), reused 50 (delta 16), pack-reused 263
+Receiving objects: 100% (339/339), 1.92 MiB | 138.00 KiB/s, done.
+Resolving deltas: 100% (152/152), done.
+
+~/EDA/caravel_user_project_analog$ ln -s caravel-lite caravel
+
+In ~/.bashrc, comment out
+#export CARAVEL_ROOT="/project/caravel"
+
+~/EDA/caravel_user_project_analog$ export CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project_analog/caravel/
+~/EDA/caravel_user_project_analog$ env |  grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project_analog/caravel/
+
+make install 1>caravel_user_project_analog.make.log 2>caravel_user_project_analog.make.err
+
+~/EDA/caravel_user_project_analog$ cat caravel_user_project_analog.make.err 
+Submodule 'caravel-lite' (https://github.com/efabless/caravel-lite) registered for path 'caravel'
+Cloning into '/home/cmaier/EDA/caravel_user_project_analog/caravel'...
+Previous HEAD position was 5712871 [Makefile] Add target for running rc extraction and STA on the DEF file
+Switched to branch 'main'
+
+~/EDA/caravel_user_project_analog$ cat caravel_user_project_analog.make.log
+Installing caravel-lite as a submodule..
+Submodule path 'caravel': checked out '5712871d27c08900d18edc72a7f534cc8be1b2dd'
+Your branch is up to date with 'origin/main'.
+make simlink
+make[1]: Entering directory '/home/cmaier/EDA/caravel_user_project_analog'
+mkdir -p openlane
+cd openlane &&\
+ln -sf ../caravel/openlane/Makefile Makefile
+make[1]: Leaving directory '/home/cmaier/EDA/caravel_user_project_analog'
