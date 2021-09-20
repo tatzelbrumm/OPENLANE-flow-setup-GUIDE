@@ -3254,4 +3254,140 @@ installation failed
 
 After this fails both natively and non-natively, try to skip the make pdk step entirely
 
+rebuild OpenLane
+
+~/EDA/OpenLane$ git pull --all
+Fetching origin
+remote: Enumerating objects: 130, done.
+remote: Counting objects: 100% (87/87), done.
+remote: Total 130 (delta 87), reused 87 (delta 87), pack-reused 43
+Receiving objects: 100% (130/130), 30.27 MiB | 16.50 MiB/s, done.
+Resolving deltas: 100% (97/97), completed with 46 local objects.
+From https://github.com/The-OpenROAD-Project/OpenLane
+   ca93273..6905a12  master              -> origin/master
+ * [new tag]         2021.09.19_20.25.16 -> 2021.09.19_20.25.16
+ * [new tag]         2021.09.09_03.00.48 -> 2021.09.09_03.00.48
+ * [new tag]         2021.09.10_03.18.15 -> 2021.09.10_03.18.15
+ * [new tag]         2021.09.11_03.32.10 -> 2021.09.11_03.32.10
+ * [new tag]         2021.09.12_03.17.39 -> 2021.09.12_03.17.39
+ * [new tag]         2021.09.13_03.43.04 -> 2021.09.13_03.43.04
+ * [new tag]         2021.09.14_03.45.07 -> 2021.09.14_03.45.07
+ * [new tag]         2021.09.15_03.22.49 -> 2021.09.15_03.22.49
+ * [new tag]         2021.09.16_03.28.21 -> 2021.09.16_03.28.21
+Updating ca93273..6905a12
+Fast-forward
+ .github/scripts/generate_tag.py                         |  13 +-
+ .github/scripts/gh.py                                   |   2 +-
+ .github/workflows/openlane_ci.yml                       |  25 ++-
+ Makefile                                                |  16 +-
+ configuration/README.md                                 |   7 +-
+ configuration/extraction.tcl                            |   4 -
+ configuration/floorplan.tcl                             |   2 +
+ configuration/general.tcl                               |   2 +-
+ dependencies/tool_metadata.yml                          |   4 +-
+ designs/APU/config.tcl                                  |   3 +-
+ designs/aes_cipher/config.tcl                           |   2 +
+ designs/aes_core/config.tcl                             |   2 +
+ designs/manual_macro_placement_test/config.tcl          |  14 +-
+ designs/manual_macro_placement_test/macro_placement.cfg |   4 +-
+ designs/s44/config.tcl                                  |   2 +-
+ designs/s44/pdn.tcl                                     |   4 +-
+ docker_build/tar/magic.tar.gz                           | Bin 3602293 -> 3610319 bytes
+ flow.tcl                                                |   2 +-
+ generate_reports.py                                     |   6 +-
+ run_designs.py                                          |   4 +-
+ scripts/config/regression.config                        |   8 +-
+ scripts/io_place.py                                     |  10 +-
+ scripts/openroad/or_cts.tcl                             |  15 +-
+ scripts/openroad/or_groute.tcl                          |  15 +-
+ scripts/openroad/or_pdn.tcl                             |  31 +++-
+ scripts/openroad/or_replace.tcl                         |  15 +-
+ scripts/openroad/or_resizer_routing_timing.tcl          |  15 +-
+ scripts/or_issue.py                                     |   2 +-
+ scripts/place_diodes.py                                 |  18 ++-
+ scripts/report/get_file_name.py                         |  50 ++++--
+ scripts/report/report.py                                | 574 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ scripts/report/report.sh                                |  92 +++++------
+ scripts/report/report_parser.py                         |  52 -------
+ scripts/sta.tcl                                         |  20 ++-
+ scripts/tcl_commands/all.tcl                            |   7 +-
+ scripts/tcl_commands/floorplan.tcl                      |  46 ++++++
+ scripts/tcl_commands/routing.tcl                        |  15 +-
+ scripts/utils/utils.tcl                                 |  14 +-
+ scripts/write_powered_def.py                            |  20 ++-
+ 39 files changed, 864 insertions(+), 273 deletions(-)
+ delete mode 100755 scripts/report/report_parser.py
+
+
+~/EDA/OpenLane$ mv make_openlane.err make_openlane.2021SEP08.err
+~/EDA/OpenLane$ mv make_openlane.log make_openlane.2021SEP08.log
+~/EDA/OpenLane$ mv make_full-pdk.log make_full-pdk.2021SEP08.log
+
+~/EDA/OpenLane$ make clean_all
+Runs cleaned successfully.
+Results cleaned successfully.
+
+~/EDA/OpenLane$ make openlane 1>make_openlane.log 2>make_openlane.err
+
+~/EDA/OpenLane/pdks/skywater-pdk$ git submodule update --init libraries/sky130_fd_pr/latest/
+
+
+~/EDA/OpenLane$ make test
+cd /home/cmaier/EDA/OpenLane && \
+	docker run --rm -v /home/cmaier/EDA/OpenLane:/openLANE_flow -v /home/cmaier/EDA/OpenLane/pdks:/home/cmaier/EDA/OpenLane/pdks -e PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks   --user 1000:1000 efabless/openlane:2021.09.19_20.25.16 sh -c "./flow.tcl -design spm -tag openlane_test -disable_output -overwrite"
+[INFO]: 
+	 ___   ____   ___  ____   _       ____  ____     ___
+	/   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
+	|   | |  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
+	| O | |   _/    _]|  |  || |___ |     ||  |  ||    _]
+	|   | |  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
+	\___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+
+
+[INFO]: Version: 2021.09.19_20.25.16
+[INFO]: Running non-interactively
+[INFO]: Using design configuration at /openLANE_flow/designs/spm/config.tcl
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: PDKs root directory: /home/cmaier/EDA/OpenLane/pdks
+[INFO]: PDK: sky130A
+[INFO]: Setting PDKPATH to /home/cmaier/EDA/OpenLane/pdks/sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library is set to: sky130_fd_sc_hd
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: Current run directory is /openLANE_flow/designs/spm/runs/openlane_test
+[INFO]: Preparing LEF Files
+[INFO]: Extracting the number of available metal layers from /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
+[INFO]: The number of available metal layers is 6
+[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5
+[INFO]: Merging LEF Files...
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 1
+[INFO]: Changing netlist from 0 to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 2
+
+OpenLane is corrupted. Rebuild from scratch.
+
+~/EDA$ mv OpenLane/ /media/cmaier/4TBext4bak/EDA/OpenLane.crashed.2021SEP20
+
+~/EDA$ git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+Cloning into 'OpenLane'...
+remote: Enumerating objects: 11520, done.
+remote: Total 11520 (delta 0), reused 0 (delta 0), pack-reused 11520
+Receiving objects: 100% (11520/11520), 689.38 MiB | 19.69 MiB/s, done.
+Resolving deltas: 100% (8322/8322), done.
+
+~/EDA/OpenLane$ make openlane 1>make_openlane.log 2>make_openlane.err
+~/EDA/OpenLane$ cat make_openlane.log 
+docker pull efabless/openlane:2021.09.19_20.25.16
+2021.09.19_20.25.16: Pulling from efabless/openlane
+Digest: sha256:324fa3db0c148158c3233d4b7ec503640cc6338fcee7f97001b2399f42597e8d
+Status: Image is up to date for efabless/openlane:2021.09.19_20.25.16
+docker.io/efabless/openlane:2021.09.19_20.25.16
+
+~/EDA/OpenLane$ make full-pdk 1>make_full-pdk.log 2>make_full-pdk.err
 
