@@ -3571,3 +3571,24 @@ symlinks in
 /usr/lib/klayout/sky130/
 /usr/local/lib/netgen/tcl/
 still exist
+
+rsync --progress -avu ~/EDA/OpenLane <backup drive>
+sent 28,598,013,560 bytes  received 2,130,194 bytes  92,407,572.71 bytes/sec
+total size is 28,583,188,195  speedup is 1.00
+
+rsync --progress -avu /home/cmaier/EDA/caravel_user_project <backup drive>
+sent 201,118,976 bytes  received 7,917 bytes  80,450,757.20 bytes/sec
+total size is 201,039,350  speedup is 1.00
+
+now following https://github.com/PraveenRajAyyappan/Caravel_soc_practice/blob/main/caravel_user_project
+
+~/EDA$ rm -rf caravel_user_project
+
+~/EDA$ git clone https://github.com/efabless/caravel_user_project.git
+Cloning into 'caravel_user_project'...
+remote: Enumerating objects: 1125, done.
+remote: Counting objects: 100% (194/194), done.
+remote: Compressing objects: 100% (141/141), done.
+remote: Total 1125 (delta 77), reused 147 (delta 49), pack-reused 931
+Receiving objects: 100% (1125/1125), 45.90 MiB | 13.29 MiB/s, done.
+Resolving deltas: 100% (526/526), done.
