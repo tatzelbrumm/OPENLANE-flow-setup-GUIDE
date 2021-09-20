@@ -3632,3 +3632,39 @@ rsync -avu /home/cmaier/EDA/caravel_user_project <backup directory>
 [...]
 sent 387,478,852 bytes  received 13,986 bytes  258,328,558.67 bytes/sec
 total size is 387,329,183  speedup is 1.00
+
+~/EDA$ rm -rf caravel_user_project_analog/
+
+~/EDA$ git clone git@github.com:efabless/caravel_user_project_analog.git
+Cloning into 'caravel_user_project_analog'...
+remote: Enumerating objects: 339, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 339 (delta 27), reused 50 (delta 16), pack-reused 263
+Receiving objects: 100% (339/339), 1.92 MiB | 4.08 MiB/s, done.
+Resolving deltas: 100% (152/152), done.
+
+~/EDA/caravel_user_project_analog$ rsync -avu ../caravel_user_project/roots .
+sending incremental file list
+roots
+
+sent 243 bytes  received 35 bytes  556.00 bytes/sec
+total size is 137  speedup is 0.49
+
+~/EDA/caravel_user_project_analog$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/project/caravel
+
+~/EDA/caravel_user_project_analog$ make install
+realpath: /project/caravel: No such file or directory
+Installing caravel-lite as a submodule..
+Cloning into '/home/cmaier/EDA/caravel_user_project_analog/caravel-lite'...
+remote: Enumerating objects: 5508, done.
+remote: Counting objects: 100% (1893/1893), done.
+remote: Compressing objects: 100% (946/946), done.
+remote: Total 5508 (delta 1018), reused 1765 (delta 935), pack-reused 3615
+Receiving objects: 100% (5508/5508), 74.70 MiB | 556.00 KiB/s, done.
+Resolving deltas: 100% (3357/3357), done.
+fatal: No url found for submodule path 'caravel' in .gitmodules
+make: *** [Makefile:79: install] Error 128
