@@ -3391,3 +3391,15 @@ docker.io/efabless/openlane:2021.09.19_20.25.16
 
 ~/EDA/OpenLane$ make full-pdk 1>make_full-pdk.log 2>make_full-pdk.err
 
+~/EDA/OpenLane/pdks/skywater-pdk$ git submodule update --init libraries/sky130_fd_pr/latest/
+~/EDA/OpenLane/pdks/skywater-pdk$ git submodule update --init libraries/sky130_fd_pr/latest/
+Cloning into '/home/cmaier/EDA/OpenLane/pdks/skywater-pdk/libraries/sky130_fd_pr/latest'...
+Submodule path 'libraries/sky130_fd_pr/latest': checked out 'f62031a1be9aefe902d6d54cddd6f59b57627436'
+
+~/EDA/OpenLane$ make test 1>make_test.log 2>make_test.err
+
+Log file:
+[...]
+[INFO]: check full report here: /openLANE_flow/designs/spm/runs/openlane_test/reports/final_summary_report.csv
+[SUCCESS]: Flow Completed Without Fatal Errors.
+Basic test passed
