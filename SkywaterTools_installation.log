@@ -3619,3 +3619,16 @@ mkdir -p ../signoff/user_proj_example/
 cp user_proj_example/runs/user_proj_example/OPENLANE_VERSION ../signoff/user_proj_example/
 cp user_proj_example/runs/user_proj_example/PDK_SOURCES ../signoff/user_proj_example/
 cp user_proj_example/runs/user_proj_example/reports/final_summary_report.csv ../signoff/user_proj_example/
+
+Now I have another docker image running ..
+docker images
+REPOSITORY          TAG                   IMAGE ID       CREATED        SIZE
+efabless/openlane   2021.09.19_20.25.16   6baea60256a6   25 hours ago   1.3GB
+efabless/openlane   2021.09.08_03.23.03   ed9efe12b80a   12 days ago    1.3GB
+efabless/openlane   v0.20                 a763f7b15a0a   3 months ago   1.37GB
+hello-world         latest                d1165f221234   6 months ago   13.3kB
+
+rsync -avu /home/cmaier/EDA/caravel_user_project <backup directory>
+[...]
+sent 387,478,852 bytes  received 13,986 bytes  258,328,558.67 bytes/sec
+total size is 387,329,183  speedup is 1.00
