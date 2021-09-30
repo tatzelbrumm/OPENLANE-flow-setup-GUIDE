@@ -3722,3 +3722,184 @@ mkdir -p openlane
 cd openlane &&\
 ln -sf ../caravel/openlane/Makefile Makefile
 make[1]: Leaving directory '/home/cmaier/EDA/caravel_user_project_analog'
+
+on recommendation of Praveen Raj, reinstall caravel_user_project from scratch
+
+~/EDA$ rm -rf caravel_user_project
+
+~/EDA$ git clone https://github.com/efabless/caravel_user_project.git
+
+~/EDA/caravel_user_project$ make install
+Installing caravel-lite as a submodule..
+Submodule 'caravel-lite' (https://github.com/efabless/caravel-lite) registered for path 'caravel'
+Cloning into '/home/cmaier/EDA/caravel_user_project/caravel'...
+Submodule path 'caravel': checked out '0f16ba8eaae841a6f122fc0d5837005d3312fd2b'
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+make simlink
+make[1]: Entering directory '/home/cmaier/EDA/caravel_user_project'
+mkdir -p openlane
+mkdir -p openlane/user_project_wrapper
+cd openlane &&\
+ln -sf ../caravel/openlane/Makefile Makefile
+cd openlane/user_project_wrapper &&\
+ln -sf ../../caravel/openlane/user_project_wrapper_empty/pin_order.cfg pin_order.cfg
+make[1]: Leaving directory '/home/cmaier/EDA/caravel_user_project'
+
+~/EDA$ rm -rf caravel_user_project
+
+According to
+https://blog.baudson.de/blog/stop-and-remove-all-docker-containers-and-images
+
+~/EDA$ docker ps -aq
+6cee237dccb9
+a7eacd20726f
+e4af785d62d3
+d9ad57115de4
+6f8a926e4caa
+
+~/EDA$ docker stop $(docker ps -aq)
+6cee237dccb9
+a7eacd20726f
+e4af785d62d3
+d9ad57115de4
+6f8a926e4caa
+
+~/EDA$ docker rm $(docker ps -aq)
+6cee237dccb9
+a7eacd20726f
+e4af785d62d3
+d9ad57115de4
+6f8a926e4caa
+
+~/EDA$ docker rmi $(docker images -q)
+Untagged: efabless/openlane:2021.09.19_20.25.16
+Untagged: efabless/openlane@sha256:324fa3db0c148158c3233d4b7ec503640cc6338fcee7f97001b2399f42597e8d
+Deleted: sha256:6baea60256a635165cef263b14b4e5d0bad69d005ef85a3e189fb6cb51fcc214
+Deleted: sha256:b00febb4547fb23fb3b132eed8f4d974683f754db4e7c7c1bd09b29d202272cb
+Deleted: sha256:edcfd8a784bdaa1b104743d7602d7b12a644a82fdeb89e431e19437c368abf5a
+Deleted: sha256:eceb7d8ecea57b3a37d699f4e9ebb04d2e604a71faa61a1455c734bc293b1bd4
+Deleted: sha256:d2e761c8afaffb3ba66e760dd62b30add83dcd7dd2972def9acece7381036c9d
+Deleted: sha256:8d0b03642c6aad59d6599f7b1f0dc4a81869af9626123f46eea45b19647f1908
+Deleted: sha256:5f5e39150b36c8a3bdf8981c14a501110294abf8ceca3bc17a58e848baf1b3ae
+Deleted: sha256:12e8bd2a8399bcc687c98add908b5e7f16d781ec7863a1109479898b4af4dc44
+Deleted: sha256:ca142cebd789a5fb4539b2c15eaac220a21be3c7ad05a12af15b135c60f7d233
+Deleted: sha256:ccc35f4f0d6914e2e8cdec3d423a5a19434b0a004f51149c165b88a64e2125da
+Deleted: sha256:b822691354de0eb400b532bfe2fb982153aeddd1a244d13689c24368f708246e
+Deleted: sha256:f8d1da0b534f82d284fedaaf7a801e910fdafc08c259a0c6f82cbdf139868e9d
+Deleted: sha256:9ec148f00b2b8336d7fb1014dd3bcea8bc79e6ca8d62b92cd644cffa8f9719ad
+Deleted: sha256:dcea0d33d7e2a3988a6a0c128e346dd5ff953a07827e6a6576f78ad521a907c7
+Deleted: sha256:9e0ed9c30fb59fd73fdb115cbff53931dad923d8995d4d2e96b04bbeb3b33a7a
+Deleted: sha256:69a97469636d55b0c3d10a276313aaa92b329fb128bf6d343d235dbe25fc50d2
+Deleted: sha256:9cd4bb4e6f910ef1d9bef1c23dfc907dfc0d0d2e151db16ab437cbefd9bea521
+Deleted: sha256:e27abd0ef94df8015c9f04261944469b7b1bd0616058d90add1278bed0e05320
+Deleted: sha256:3053699485a2d2da19465643900098017931c8e3673b55d91d2ff8815bf93a84
+Untagged: efabless/openlane:2021.09.08_03.23.03
+Untagged: efabless/openlane@sha256:fe62c6ec759868ee2eedffc9e4b0c6ba3b0c396d30fc3b996f4362577ef2d7b1
+Deleted: sha256:ed9efe12b80a36db6f779de13a9b8b0f8009db1a46a4d818461b7ea96151b461
+Deleted: sha256:3cf04a81991d6e856ce45ad71435fe8275448279123a623c284518652d3ab737
+Deleted: sha256:7b01dc304a5967e13a75718e4c71546f85852567fb7853d0935948e2f6465022
+Deleted: sha256:fc174a9f9a8741b5508df93b08e43878d7f1ef253547aee8f62259f4e5dd914f
+Deleted: sha256:7a48adb640ad0315b18eedf690c8b58cd27827e3ac74084c984ea531fc6b743d
+Deleted: sha256:8742cb7c588b1c613ab0ff9a82b33eb6697e1741f7b30fa8ab63d8e4217284aa
+Deleted: sha256:fcff8c28f8eeeea4c21175e63993f26eea66abdc79789f405a030f7469d3a891
+Deleted: sha256:307910a4901ce4b67a44d165fff4d1975ed84a7cc99fdd7db1bcb03bf9b8ec18
+Deleted: sha256:dd532d2f3325d9e4356bc5a3437bd342ba176050abdbd731de95c61cb0a9c2f5
+Deleted: sha256:9f15db2729055e5de4a84a112117d3056a91e98d0aeb42b48ac561df8affe862
+Deleted: sha256:abca019c76d981f81d9e8ce82f9677c35c0ef3b680bdf3d4371d5b4355210d54
+Deleted: sha256:c33fcf74e805921e50794347ac2bd327ece14ac97c7f1bcae61cd07fdb70594c
+Deleted: sha256:b9e2bb2e32c60e2e3a69b486fae1a372c5fc6fbdbab6c060868581690009f316
+Deleted: sha256:6a12706004cde717f012a571ab6f85aa52d2f42317a073063ce4cef69bda7321
+Deleted: sha256:659159e4156f05ea129bd0f2e6bc85eb2b1fa35c1641776b4565f4a3361ba788
+Deleted: sha256:ce1d5c7180fb1003a85fc978640b1bd8dddc1fc3b11871efc4e150074a06c278
+Deleted: sha256:9670bec19c1fa415db1829768d4fe58d07f962524fe98c764933bef759871f2e
+Deleted: sha256:717a512b2b618ce65d4eaaff5161875973f46a1ded38520d240c067b079c8d3f
+Deleted: sha256:d7d4b2be63296a7e6f1611c039303865e923e39f5f267dd279643918397f0440
+Untagged: efabless/openlane:v0.20
+Untagged: efabless/openlane@sha256:8e12084878ea029f8cfe67d488d0d0ec6ee990a039e6dba72714451499f01621
+Deleted: sha256:a763f7b15a0a6c3157a2d5a36c1c0ca3e4017a303d7882e4dd6af7ddf6d5e138
+Deleted: sha256:7f11baa9dc5309cde4dc2a4a3de0b9f8cbd86a9d820f8a7cb7e5325f47c48ffe
+Deleted: sha256:afcbe63d3776a6d2ff1a4a4e06166e146d20b5a1e6aab83e8aa75e24cbe69e31
+Deleted: sha256:03b9af5c11818ddee6751b551562477feb8d3fa2add6de2b49afd235f2231b91
+Deleted: sha256:caf1eacaceb4dd5fb4852f29cf9125b6b153343252bdaa91ac73eddde31cd2f9
+Deleted: sha256:51eb01b0645620babccbc8e820055c40f40788e3ceeae3c6fa090d929305c976
+Deleted: sha256:a5a888b3d0249b5a83fe0f6d81a4e183252e56a80535c1ba2e5df22f4f5e00b1
+Deleted: sha256:b0af1fd25583ad35aa3812184c0b19c39a9b815492b748ded33ba799debc7200
+Deleted: sha256:4546e463cfe99597afb1f3d4877aa45b9da7693cec3f19f85792a2712678f20b
+Deleted: sha256:e350b3b8f8ed2ba9661ee32c6d938f1c7f0dac14d3d59fb242e1fe0ff6cd0932
+Deleted: sha256:9c5ce6e587013d801b3b902a6e0d41146fed108abc1a307a339401a2f344bc6f
+Deleted: sha256:70adb2305d2def18f8add30c9f3ef7f7703836f9d02e92f21a6cf4e342bae696
+Deleted: sha256:317a13c79b64b80168042da61bd450dfced675a046da4db9b85ae7c18f57a8bc
+Deleted: sha256:230e4be13b97af473b4f0b3ad7b09a109ecc9f7e1d9b96c21619df5d97003405
+Deleted: sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:7d91b69e04a9029b99f3585aaaccae2baa80bcf318f4a5d2165a9898cd2dc0a1
+Deleted: sha256:d1165f2212346b2bab48cb01c1e39ee8ad1be46b87873d9ca7a4e434980a7726
+Deleted: sha256:f22b99068db93900abe17f7f5e09ec775c2826ecfe9db961fea68293744144bd
+
+~/EDA$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel
+
+~/EDA$ git clone https://github.com/efabless/caravel_user_project.git
+Cloning into 'caravel_user_project'...
+remote: Enumerating objects: 1167, done.
+remote: Counting objects: 100% (236/236), done.
+remote: Compressing objects: 100% (169/169), done.
+remote: Total 1167 (delta 99), reused 176 (delta 63), pack-reused 931
+Receiving objects: 100% (1167/1167), 45.92 MiB | 3.41 MiB/s, done.
+Resolving deltas: 100% (547/547), done.
+
+~/EDA/caravel_user_project$ make install
+Installing caravel-lite as a submodule..
+Submodule 'caravel-lite' (https://github.com/efabless/caravel-lite) registered for path 'caravel'
+Cloning into '/home/cmaier/EDA/caravel_user_project/caravel'...
+Submodule path 'caravel': checked out '0f16ba8eaae841a6f122fc0d5837005d3312fd2b'
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+make simlink
+make[1]: Entering directory '/home/cmaier/EDA/caravel_user_project'
+mkdir -p openlane
+mkdir -p openlane/user_project_wrapper
+cd openlane &&\
+ln -sf ../caravel/openlane/Makefile Makefile
+cd openlane/user_project_wrapper &&\
+ln -sf ../../caravel/openlane/user_project_wrapper_empty/pin_order.cfg pin_order.cfg
+make[1]: Leaving directory '/home/cmaier/EDA/caravel_user_project'
+
+~/EDA/caravel_user_project/openlane$ make user_proj_example 1>make_user_proj_example.log 2>make_user_proj_example.err
+
+~/EDA/caravel_user_project/openlane$ ls -lart
+total 1540
+-rw-rw-r--  1 cmaier cmaier      21 Sep 28 17:42 .gitignore
+drwxrwxr-x 15 cmaier cmaier    4096 Sep 28 17:43 ..
+lrwxrwxrwx  1 cmaier cmaier      28 Sep 28 17:43 Makefile -> ../caravel/openlane/Makefile
+drwxrwxr-x  2 cmaier cmaier    4096 Sep 28 17:43 user_project_wrapper
+-rw-rw-r--  1 cmaier cmaier    2938 Sep 28 17:49 make_user_proj_example.err
+drwxrwxr-x  3 cmaier cmaier    4096 Sep 28 17:49 user_proj_example
+-rw-r--r--  1 cmaier cmaier     963 Sep 28 17:59 default.cvcrc
+drwxrwxr-x  4 cmaier cmaier    4096 Sep 28 17:59 .
+-rw-rw-r--  1 cmaier cmaier 1547636 Sep 28 17:59 make_user_proj_example.log
+
+/EDA/caravel_user_project/openlane$ make user_project_wrapper 1>make_user_project_wrapper.log 2>make_user_project_wrapper.err
+
+~/EDA/caravel_user_project/openlane$ ls -lart
+total 2040
+-rw-rw-r--  1 cmaier cmaier      21 Sep 28 17:42 .gitignore
+drwxrwxr-x 15 cmaier cmaier    4096 Sep 28 17:43 ..
+lrwxrwxrwx  1 cmaier cmaier      28 Sep 28 17:43 Makefile -> ../caravel/openlane/Makefile
+-rw-rw-r--  1 cmaier cmaier    2938 Sep 28 17:49 make_user_proj_example.err
+drwxrwxr-x  3 cmaier cmaier    4096 Sep 28 17:49 user_proj_example
+-rw-r--r--  1 cmaier cmaier     963 Sep 28 17:59 default.cvcrc
+-rw-rw-r--  1 cmaier cmaier 1547636 Sep 28 17:59 make_user_proj_example.log
+-rw-rw-r--  1 cmaier cmaier       0 Sep 28 18:05 make_user_project_wrapper.err
+drwxrwxr-x  4 cmaier cmaier    4096 Sep 28 18:05 .
+drwxrwxr-x  3 cmaier cmaier    4096 Sep 28 18:05 user_project_wrapper
+-rw-rw-r--  1 cmaier cmaier  508099 Sep 28 18:12 make_user_project_wrapper.log
+
+~/EDA/caravel_user_project/openlane$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel
+
