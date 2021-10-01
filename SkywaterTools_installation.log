@@ -3903,3 +3903,66 @@ PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
 OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
 CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel
 
+Now try caravel_user_project_analog
+
+~/EDA/caravel_user_project_analog$ export CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project_analog/caravel
+cmaier@DoktorEvil:~/EDA/caravel_user_project_analog$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project_analog/caravel
+
+/EDA/caravel_user_project_analog$ git submodule
++0f16ba8eaae841a6f122fc0d5837005d3312fd2b caravel (mpw-one-final-275-g0f16ba8)
+
+~/EDA/caravel_user_project_analog$ git submodule update --init
+Submodule path 'caravel': checked out '5712871d27c08900d18edc72a7f534cc8be1b2dd'
+
+~/EDA/caravel_user_project_analog$ git pull --all
+Fetching origin
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 23 (delta 11), reused 17 (delta 10), pack-reused 0
+Unpacking objects: 100% (23/23), 10.96 KiB | 748.00 KiB/s, done.
+From https://github.com/efabless/caravel_user_project_analog
+   f2d0147..ab6ba9c  main       -> origin/main
+ * [new tag]         mpw-3      -> mpw-3
+Updating f2d0147..ab6ba9c
+Fast-forward
+ .github/workflows/caravan_build.yml       |   1 +
+ .github/workflows/user_project_ci.yml     |   1 +
+ caravel                                   |   2 +-
+ docs/source/index.rst                     |   7 ++
+ mag/user_analog_project_wrapper.mag       |  36 ++++++
+ mag/user_analog_project_wrapper_empty.mag |  40 ++++++-
+ netgen/user_analog_project_wrapper.spice  | 510 +++++++++++++++++++++++++++++++++++++++++-----------------------------------------
+ 7 files changed, 341 insertions(+), 256 deletions(-)
+
+rebuild from scratch
+~/EDA$ git clone https://github.com/efabless/caravel_user_project_analog.git
+Cloning into 'caravel_user_project_analog'...
+remote: Enumerating objects: 362, done.
+remote: Counting objects: 100% (99/99), done.
+remote: Compressing objects: 100% (78/78), done.
+remote: Total 362 (delta 34), reused 60 (delta 19), pack-reused 263
+Receiving objects: 100% (362/362), 1.96 MiB | 1.99 MiB/s, done.
+Resolving deltas: 100% (159/159), done.
+
+~/EDA/caravel_user_project_analog$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project_analog/caravel
+
+make install 1>caravel_user_project_analog.make.log 2>caravel_user_project_analog.make.err
+
+follow instructions in https://github.com/efabless/caravel_user_project_analog/blob/main/docs/source/index.rst
+
+~/EDA/caravel_user_project_analog$ make update_caravel 
+cd /home/cmaier/EDA/caravel_user_project_analog/caravel && \
+git checkout main && \
+git pull
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+
+~/EDA/caravel_user_project_analog$ make simenv 1>make_simenv.log 2>make_simenv.err
