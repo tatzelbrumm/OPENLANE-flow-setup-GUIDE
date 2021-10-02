@@ -3966,3 +3966,522 @@ Your branch is up to date with 'origin/main'.
 Already up to date.
 
 ~/EDA/caravel_user_project_analog$ make simenv 1>make_simenv.log 2>make_simenv.err
+
+I find a simulation tool chain unneceesarily hidden within a docker file system less than useless, so I install locally, outside docker.
+
+Following
+https://github.com/efabless/caravel_user_project_analog/blob/main/verilog/dv/README.md
+
+To prevent unnecessarily reinstalling existing packages, do
+~/EDA$ apt list autoconf automake autotools-dev curl libmpc-dev \
+>     libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo \
+>     gperf libtool patchutils bc zlib1g-dev git libexpat1-dev
+Listing... Done
+autoconf/focal,focal,now 2.69-11.1 all [installed]
+automake/focal,focal,now 1:1.16.1-4ubuntu6 all [installed]
+autotools-dev/focal,focal,now 20180224.1 all [installed,automatic]
+bc/focal,now 1.07.1-2build1 amd64 [installed,automatic]
+bc/focal 1.07.1-2build1 i386
+bison/focal,now 2:3.5.1+dfsg-1 amd64 [installed]
+bison/focal 2:3.5.1+dfsg-1 i386
+build-essential/focal-updates,now 12.8ubuntu1.1 amd64 [installed]
+build-essential/focal-updates 12.8ubuntu1.1 i386
+curl/focal-updates,focal-security,now 7.68.0-1ubuntu2.7 amd64 [installed]
+curl/focal-updates,focal-security 7.68.0-1ubuntu2.7 i386
+flex/focal,now 2.6.4-6.2 amd64 [installed]
+flex/focal 2.6.4-6.2 i386
+gawk/focal,now 1:5.0.1+dfsg-1 amd64 [installed]
+gawk/focal 1:5.0.1+dfsg-1 i386
+git/focal-updates,focal-security,now 1:2.25.1-1ubuntu3.2 amd64 [installed]
+git/focal-updates,focal-security 1:2.25.1-1ubuntu3.2 i386
+gperf/focal,now 3.1-1build1 amd64 [installed]
+gperf/focal 3.1-1build1 i386
+libexpat1-dev/focal,now 2.2.9-1build1 amd64 [installed,automatic]
+libexpat1-dev/focal 2.2.9-1build1 i386
+libgmp-dev/focal 2:6.2.0+dfsg-4 amd64
+libgmp-dev/focal 2:6.2.0+dfsg-4 i386
+libmpc-dev/focal 1.1.0-1 amd64
+libmpc-dev/focal 1.1.0-1 i386
+libmpfr-dev/focal 4.0.2-1 amd64
+libmpfr-dev/focal 4.0.2-1 i386
+libtool/focal,focal,now 2.4.6-14 all [installed]
+patchutils/focal,now 0.3.4-2 amd64 [installed,automatic]
+patchutils/focal 0.3.4-2 i386
+texinfo/focal 6.7.0.dfsg.2-5 amd64
+texinfo/focal 6.7.0.dfsg.2-5 i386
+zlib1g-dev/focal-updates,now 1:1.2.11.dfsg-2ubuntu1.2 amd64 [installed]
+zlib1g-dev/focal-updates 1:1.2.11.dfsg-2ubuntu1.2 i386
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ sudo apt-get install texinfo
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27 linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libtext-unidecode-perl tex-common
+Suggested packages:
+  debhelper texlive-base texlive-latex-base texlive-plain-generic texlive-fonts-recommended
+The following NEW packages will be installed:
+  libtext-unidecode-perl tex-common texinfo
+0 upgraded, 3 newly installed, 0 to remove and 40 not upgraded.
+Need to get 1.506 kB of archives.
+After this operation, 12,4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 tex-common all 6.13 [32,7 kB]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 libtext-unidecode-perl all 1.30-1 [99,0 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/universe amd64 texinfo amd64 6.7.0.dfsg.2-5 [1.375 kB]
+Fetched 1.506 kB in 0s (4.941 kB/s)
+Selecting previously unselected package tex-common.
+(Reading database ... 335791 files and directories currently installed.)
+Preparing to unpack .../tex-common_6.13_all.deb ...
+Unpacking tex-common (6.13) ...
+Selecting previously unselected package libtext-unidecode-perl.
+Preparing to unpack .../libtext-unidecode-perl_1.30-1_all.deb ...
+Unpacking libtext-unidecode-perl (1.30-1) ...
+Selecting previously unselected package texinfo.
+Preparing to unpack .../texinfo_6.7.0.dfsg.2-5_amd64.deb ...
+Unpacking texinfo (6.7.0.dfsg.2-5) ...
+Setting up tex-common (6.13) ...
+update-language: texlive-base not installed and configured, doing nothing!
+Setting up libtext-unidecode-perl (1.30-1) ...
+Setting up texinfo (6.7.0.dfsg.2-5) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+
+~/EDA$ mkdir rv32i
+
+~/EDA$ export GCC_PATH=/home/cmaier/EDA/rv32i/
+
+~/EDA$ git clone https://github.com/riscv/riscv-gnu-toolchain riscv-gnu-toolchain-rv32i
+Cloning into 'riscv-gnu-toolchain-rv32i'...
+remote: Enumerating objects: 7901, done.
+remote: Counting objects: 100% (363/363), done.
+remote: Compressing objects: 100% (325/325), done.
+remote: Total 7901 (delta 49), reused 307 (delta 35), pack-reused 7538
+Receiving objects: 100% (7901/7901), 5.48 MiB | 6.18 MiB/s, done.
+Resolving deltas: 100% (3769/3769), done.
+
+~/EDA/riscv-gnu-toolchain-rv32i$ git submodule update --init --recursive
+
+~/EDA/riscv-gnu-toolchain-rv32i$ git submodule update --init --recursive
+Submodule 'qemu' (https://git.qemu.org/git/qemu.git) registered for path 'qemu'
+Submodule 'riscv-binutils' (https://github.com/riscv-collab/riscv-binutils-gdb.git) registered for path 'riscv-binutils'
+Submodule 'riscv-dejagnu' (https://github.com/riscv-collab/riscv-dejagnu.git) registered for path 'riscv-dejagnu'
+Submodule 'riscv-gcc' (https://github.com/riscv-collab/riscv-gcc.git) registered for path 'riscv-gcc'
+Submodule 'riscv-gdb' (https://github.com/riscv-collab/riscv-binutils-gdb.git) registered for path 'riscv-gdb'
+Submodule 'riscv-glibc' (git://sourceware.org/git/glibc.git) registered for path 'riscv-glibc'
+Submodule 'riscv-newlib' (git://sourceware.org/git/newlib-cygwin.git) registered for path 'riscv-newlib'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu'...
+warning: redirecting to https://gitlab.com/qemu-project/qemu.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-binutils'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-dejagnu'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-gcc'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-gdb'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-glibc'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib'...
+Submodule path 'qemu': checked out '553032db17440f8de011390e5a1cfddd13751b0b'
+Submodule 'capstone' (https://git.qemu.org/git/capstone.git) registered for path 'qemu/capstone'
+Submodule 'dtc' (https://git.qemu.org/git/dtc.git) registered for path 'qemu/dtc'
+Submodule 'meson' (https://git.qemu.org/git/meson.git) registered for path 'qemu/meson'
+Submodule 'roms/QemuMacDrivers' (https://git.qemu.org/git/QemuMacDrivers.git) registered for path 'qemu/roms/QemuMacDrivers'
+Submodule 'roms/SLOF' (https://git.qemu.org/git/SLOF.git) registered for path 'qemu/roms/SLOF'
+Submodule 'roms/edk2' (https://git.qemu.org/git/edk2.git) registered for path 'qemu/roms/edk2'
+Submodule 'roms/ipxe' (https://git.qemu.org/git/ipxe.git) registered for path 'qemu/roms/ipxe'
+Submodule 'roms/openbios' (https://git.qemu.org/git/openbios.git) registered for path 'qemu/roms/openbios'
+Submodule 'roms/opensbi' (https://git.qemu.org/git/opensbi.git) registered for path 'qemu/roms/opensbi'
+Submodule 'roms/qboot' (https://git.qemu.org/git/qboot.git) registered for path 'qemu/roms/qboot'
+Submodule 'roms/qemu-palcode' (https://git.qemu.org/git/qemu-palcode.git) registered for path 'qemu/roms/qemu-palcode'
+Submodule 'roms/seabios' (https://git.qemu.org/git/seabios.git/) registered for path 'qemu/roms/seabios'
+Submodule 'roms/seabios-hppa' (https://git.qemu.org/git/seabios-hppa.git) registered for path 'qemu/roms/seabios-hppa'
+Submodule 'roms/sgabios' (https://git.qemu.org/git/sgabios.git) registered for path 'qemu/roms/sgabios'
+Submodule 'roms/skiboot' (https://git.qemu.org/git/skiboot.git) registered for path 'qemu/roms/skiboot'
+Submodule 'roms/u-boot' (https://git.qemu.org/git/u-boot.git) registered for path 'qemu/roms/u-boot'
+Submodule 'roms/u-boot-sam460ex' (https://git.qemu.org/git/u-boot-sam460ex.git) registered for path 'qemu/roms/u-boot-sam460ex'
+Submodule 'roms/vbootrom' (https://git.qemu.org/git/vbootrom.git) registered for path 'qemu/roms/vbootrom'
+Submodule 'slirp' (https://git.qemu.org/git/libslirp.git) registered for path 'qemu/slirp'
+Submodule 'tests/fp/berkeley-softfloat-3' (https://git.qemu.org/git/berkeley-softfloat-3.git) registered for path 'qemu/tests/fp/berkeley-softfloat-3'
+Submodule 'tests/fp/berkeley-testfloat-3' (https://git.qemu.org/git/berkeley-testfloat-3.git) registered for path 'qemu/tests/fp/berkeley-testfloat-3'
+Submodule 'ui/keycodemapdb' (https://git.qemu.org/git/keycodemapdb.git) registered for path 'qemu/ui/keycodemapdb'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/capstone'...
+warning: redirecting to https://gitlab.com/qemu-project/capstone.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/dtc'...
+warning: redirecting to https://gitlab.com/qemu-project/dtc.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/meson'...
+warning: redirecting to https://gitlab.com/qemu-project/meson.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/QemuMacDrivers'...
+warning: redirecting to https://gitlab.com/qemu-project/QemuMacDrivers.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/SLOF'...
+warning: redirecting to https://gitlab.com/qemu-project/SLOF.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2'...
+warning: redirecting to https://gitlab.com/qemu-project/edk2.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/ipxe'...
+warning: redirecting to https://gitlab.com/qemu-project/ipxe.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/openbios'...
+warning: redirecting to https://gitlab.com/qemu-project/openbios.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/opensbi'...
+warning: redirecting to https://gitlab.com/qemu-project/opensbi.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/qboot'...
+warning: redirecting to https://gitlab.com/qemu-project/qboot.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/qemu-palcode'...
+warning: redirecting to https://gitlab.com/qemu-project/qemu-palcode.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/seabios'...
+warning: redirecting to https://gitlab.com/qemu-project/seabios.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/seabios-hppa'...
+warning: redirecting to https://gitlab.com/qemu-project/seabios-hppa.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/sgabios'...
+warning: redirecting to https://gitlab.com/qemu-project/sgabios.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/skiboot'...
+warning: redirecting to https://gitlab.com/qemu-project/skiboot.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/u-boot'...
+warning: redirecting to https://gitlab.com/qemu-project/u-boot.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/u-boot-sam460ex'...
+warning: redirecting to https://gitlab.com/qemu-project/u-boot-sam460ex.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/vbootrom'...
+warning: redirecting to https://gitlab.com/qemu-project/vbootrom.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/slirp'...
+warning: redirecting to https://gitlab.com/qemu-project/libslirp.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/tests/fp/berkeley-softfloat-3'...
+warning: redirecting to https://gitlab.com/qemu-project/berkeley-softfloat-3.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/tests/fp/berkeley-testfloat-3'...
+warning: redirecting to https://gitlab.com/qemu-project/berkeley-testfloat-3.git/
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/ui/keycodemapdb'...
+warning: redirecting to https://gitlab.com/qemu-project/keycodemapdb.git/
+Submodule path 'qemu/capstone': checked out 'f8b1b833015a4ae47110ed068e0deb7106ced66d'
+Submodule path 'qemu/dtc': checked out '85e5d839847af54efab170f2b1331b2a6421e647'
+Submodule path 'qemu/meson': checked out '776acd2a805c9b42b4f0375150977df42130317f'
+Submodule path 'qemu/roms/QemuMacDrivers': checked out '90c488d5f4a407342247b9ea869df1c2d9c8e266'
+Submodule path 'qemu/roms/SLOF': checked out 'e18ddad8516ff2cfe36ec130200318f7251aa78c'
+Submodule path 'qemu/roms/edk2': checked out '06dc822d045c2bb42e497487935485302486e151'
+Submodule 'SoftFloat' (https://github.com/ucb-bar/berkeley-softfloat-3.git) registered for path 'qemu/roms/edk2/ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3'
+Submodule 'BaseTools/Source/C/BrotliCompress/brotli' (https://github.com/google/brotli) registered for path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli'
+Submodule 'CryptoPkg/Library/OpensslLib/openssl' (https://github.com/openssl/openssl) registered for path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl'
+Submodule 'MdeModulePkg/Library/BrotliCustomDecompressLib/brotli' (https://github.com/google/brotli) registered for path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli'
+Submodule 'MdeModulePkg/Universal/RegularExpressionDxe/oniguruma' (https://github.com/kkos/oniguruma) registered for path 'qemu/roms/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma'
+Submodule 'UnitTestFrameworkPkg/Library/CmockaLib/cmocka' (https://git.cryptomilk.org/projects/cmocka.git) registered for path 'qemu/roms/edk2/UnitTestFrameworkPkg/Library/CmockaLib/cmocka'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/UnitTestFrameworkPkg/Library/CmockaLib/cmocka'...
+Submodule path 'qemu/roms/edk2/ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3': checked out 'b64af41c3276f97f0e181920400ee056b9c88037'
+Submodule path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli': checked out '666c3280cc11dc433c303d79a83d4ffbdd12cc8d'
+Submodule 'research/esaxx' (https://github.com/hillbig/esaxx) registered for path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/esaxx'
+Submodule 'research/libdivsufsort' (https://github.com/y-256/libdivsufsort.git) registered for path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/libdivsufsort'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/esaxx'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/libdivsufsort'...
+Submodule path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/esaxx': checked out 'ca7cb332011ec37a8436487f210f396b84bd8273'
+Submodule path 'qemu/roms/edk2/BaseTools/Source/C/BrotliCompress/brotli/research/libdivsufsort': checked out '5f60d6f026c30fb4ac296f696b3c8b0eb71bd428'
+Submodule path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl': checked out 'e2e09d9fba1187f8d6aafaa34d4172f56f1ffb72'
+Submodule 'boringssl' (https://boringssl.googlesource.com/boringssl) registered for path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/boringssl'
+Submodule 'krb5' (https://github.com/krb5/krb5) registered for path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/krb5'
+Submodule 'pyca.cryptography' (https://github.com/pyca/cryptography.git) registered for path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/pyca-cryptography'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/boringssl'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/krb5'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/pyca-cryptography'...
+Submodule path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/boringssl': checked out '2070f8ad9151dc8f3a73bffaa146b5e6937a583f'
+Submodule path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/krb5': checked out '890ca2f401924cdcb88f493950b04700bbe52db3'
+Submodule path 'qemu/roms/edk2/CryptoPkg/Library/OpensslLib/openssl/pyca-cryptography': checked out '09403100de2f6f1cdd0d484dcb8e620f1c335c8f'
+Submodule path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli': checked out '666c3280cc11dc433c303d79a83d4ffbdd12cc8d'
+Submodule 'research/esaxx' (https://github.com/hillbig/esaxx) registered for path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/esaxx'
+Submodule 'research/libdivsufsort' (https://github.com/y-256/libdivsufsort.git) registered for path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/libdivsufsort'
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/esaxx'...
+Cloning into '/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/libdivsufsort'...
+Submodule path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/esaxx': checked out 'ca7cb332011ec37a8436487f210f396b84bd8273'
+Submodule path 'qemu/roms/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/research/libdivsufsort': checked out '5f60d6f026c30fb4ac296f696b3c8b0eb71bd428'
+Submodule path 'qemu/roms/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma': checked out 'abfc8ff81df4067f309032467785e06975678f0d'
+Submodule path 'qemu/roms/edk2/UnitTestFrameworkPkg/Library/CmockaLib/cmocka': checked out '1cc9cde3448cdd2e000886a26acf1caac2db7cf1'
+Submodule path 'qemu/roms/ipxe': checked out '4bd064de239dab2426b31c9789a1f4d78087dc63'
+Submodule path 'qemu/roms/openbios': checked out '7f28286f5cb1ca682e3ba0a8706d8884f12bc49e'
+Submodule path 'qemu/roms/opensbi': checked out 'a98258d0b537a295f517bbc8d813007336731fa9'
+Submodule path 'qemu/roms/qboot': checked out 'a5300c4949b8d4de2d34bedfaed66793f48ec948'
+Submodule path 'qemu/roms/qemu-palcode': checked out 'bf0e13698872450164fa7040da36a95d2d4b326f'
+Submodule path 'qemu/roms/seabios': checked out '155821a1990b6de78dde5f98fa5ab90e802021e0'
+Submodule path 'qemu/roms/seabios-hppa': checked out '73b740f77190643b2ada5ee97a9a108c6ef2a37b'
+Submodule path 'qemu/roms/sgabios': checked out 'cbaee52287e5f32373181cff50a00b6c4ac9015a'
+Submodule path 'qemu/roms/skiboot': checked out '3a6fdede6ce117facec0108afe716cf5d0472c3f'
+Submodule path 'qemu/roms/u-boot': checked out 'd3689267f92c5956e09cc7d1baa4700141662bff'
+Submodule path 'qemu/roms/u-boot-sam460ex': checked out '60b3916f33e617a815973c5a6df77055b2e3a588'
+Submodule path 'qemu/roms/vbootrom': checked out '0c37a43527f0ee2b9584e7fb2fdc805e902635ac'
+Submodule path 'qemu/slirp': checked out '8f43a99191afb47ca3f3c6972f6306209f367ece'
+Submodule path 'qemu/tests/fp/berkeley-softfloat-3': checked out 'b64af41c3276f97f0e181920400ee056b9c88037'
+Submodule path 'qemu/tests/fp/berkeley-testfloat-3': checked out '5a59dcec19327396a011a17fd924aed4fec416b3'
+Submodule path 'qemu/ui/keycodemapdb': checked out '6b3d716e2b6472eb7189d3220552280ef3d832ce'
+Submodule path 'riscv-binutils': checked out '116a737f438d03a1bd6aa706b6ea0b4022f3b7e2'
+Submodule path 'riscv-dejagnu': checked out '4ea498a8e1fafeb568530d84db1880066478c86b'
+Submodule path 'riscv-gcc': checked out '5964b5cd72721186ea2195a7be8d40cfe6554023'
+Submodule path 'riscv-gdb': checked out '5da071ef0965b8054310d8dde9975037b0467311'
+Submodule path 'riscv-glibc': checked out '9826b03b747b841f5fc6de2054bf1ef3f5c4bdf3'
+Submodule path 'riscv-newlib': checked out '415fdd4279b85eeec9d54775ce13c5c412451e08'
+
+~/EDA/riscv-gnu-toolchain-rv32i$ mkdir build
+~/EDA/riscv-gnu-toolchain-rv32i$ cd build
+~/EDA/riscv-gnu-toolchain-rv32i/build$ echo $GCC_PATH
+/home/cmaier/EDA/rv32i/
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ ../configure --with-arch=rv32i --prefix=$GCC_PATH
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for fgrep... /usr/bin/grep -F
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for bash... /bin/bash
+checking for __gmpz_init in -lgmp... no
+checking for mpfr_init in -lmpfr... no
+checking for mpc_init2 in -lmpc... no
+checking for curl... /usr/bin/curl
+checking for wget... /usr/bin/wget
+checking for ftp... /usr/bin/ftp
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/wrapper/awk/awk
+config.status: creating scripts/wrapper/sed/sed
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ sudo apt-get install libmpc-dev libmpfr-dev libgmp-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27 linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libgmpxx4ldbl
+Suggested packages:
+  gmp-doc libgmp10-doc libmpfr-doc
+The following NEW packages will be installed:
+  libgmp-dev libgmpxx4ldbl libmpc-dev libmpfr-dev
+0 upgraded, 4 newly installed, 0 to remove and 40 not upgraded.
+Need to get 620 kB of archives.
+After this operation, 3.286 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libgmpxx4ldbl amd64 2:6.2.0+dfsg-4 [9.128 B]
+Get:2 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libgmp-dev amd64 2:6.2.0+dfsg-4 [320 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libmpfr-dev amd64 4.0.2-1 [240 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu focal/main amd64 libmpc-dev amd64 1.1.0-1 [50,5 kB]
+Fetched 620 kB in 0s (2.667 kB/s)     
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 336890 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.2.0+dfsg-4_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.2.0+dfsg-4) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.2.0+dfsg-4_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.2.0+dfsg-4) ...
+Selecting previously unselected package libmpfr-dev:amd64.
+Preparing to unpack .../libmpfr-dev_4.0.2-1_amd64.deb ...
+Unpacking libmpfr-dev:amd64 (4.0.2-1) ...
+Selecting previously unselected package libmpc-dev:amd64.
+Preparing to unpack .../libmpc-dev_1.1.0-1_amd64.deb ...
+Unpacking libmpc-dev:amd64 (1.1.0-1) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.2.0+dfsg-4) ...
+Setting up libgmp-dev:amd64 (2:6.2.0+dfsg-4) ...
+Setting up libmpfr-dev:amd64 (4.0.2-1) ...
+Setting up libmpc-dev:amd64 (1.1.0-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+/EDA/riscv-gnu-toolchain-rv32i/build$ ../configure --with-arch=rv32i --prefix=$GCC_PATH
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for fgrep... /usr/bin/grep -F
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for bash... /bin/bash
+checking for __gmpz_init in -lgmp... yes
+checking for mpfr_init in -lmpfr... yes
+checking for mpc_init2 in -lmpc... yes
+checking for curl... /usr/bin/curl
+checking for wget... /usr/bin/wget
+checking for ftp... /usr/bin/ftp
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/wrapper/awk/awk
+config.status: creating scripts/wrapper/sed/sed
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ make clean
+rm -rf build-* stamps install-newlib-nano
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ make -j$8 1>make.log 2>make.err
+
+this time, it seems to have passed
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ ls -lart
+total 7224
+drwxrwxr-x 17 cmaier cmaier    4096 Okt  2 09:18 ..
+drwxrwxr-x  3 cmaier cmaier    4096 Okt  2 09:20 scripts
+-rw-rw-r--  1 cmaier cmaier  378694 Okt  2 09:23 make.FAIL.01.log
+-rw-rw-r--  1 cmaier cmaier    3957 Okt  2 09:23 make.FAIL.01.err
+-rwxrwxr-x  1 cmaier cmaier   25553 Okt  2 09:34 config.status
+-rw-rw-r--  1 cmaier cmaier   35027 Okt  2 09:34 Makefile
+-rw-rw-r--  1 cmaier cmaier    9721 Okt  2 09:34 config.log
+drwxrwxr-x 13 cmaier cmaier    4096 Okt  2 09:37 build-binutils-newlib
+drwxrwxr-x 15 cmaier cmaier    4096 Okt  2 09:37 build-gdb-newlib
+drwxrwxr-x 12 cmaier cmaier    4096 Okt  2 09:43 build-gcc-newlib-stage1
+drwxrwxr-x  4 cmaier cmaier    4096 Okt  2 09:53 build-newlib
+drwxrwxr-x  4 cmaier cmaier    4096 Okt  2 09:53 build-newlib-nano
+drwxrwxr-x  3 cmaier cmaier    4096 Okt  2 09:54 install-newlib-nano
+drwxrwxr-x 11 cmaier cmaier    4096 Okt  2 09:54 .
+drwxrwxr-x 15 cmaier cmaier    4096 Okt  2 10:05 build-gcc-newlib-stage2
+-rw-rw-r--  1 cmaier cmaier  169550 Okt  2 10:06 make.err
+-rw-rw-r--  1 cmaier cmaier 6711192 Okt  2 10:06 make.log
+drwxrwxr-x  2 cmaier cmaier    4096 Okt  2 10:06 stamps
+
+~/EDA/rv32i$ du -h -d 1
+90M	./riscv32-unknown-elf
+20K	./include
+410M	./bin
+27M	./lib
+28M	./share
+713M	./libexec
+1,3G	.
+
+~/EDA/rv32i$ ls -la
+total 32
+drwxrwxr-x  8 cmaier cmaier 4096 Okt  2 09:53 .
+drwxrwxr-x 41 cmaier cmaier 4096 Okt  2 09:00 ..
+drwxrwxr-x  2 cmaier cmaier 4096 Okt  2 10:06 bin
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 09:43 include
+drwxrwxr-x  4 cmaier cmaier 4096 Okt  2 10:06 lib
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 09:53 libexec
+drwxrwxr-x  5 cmaier cmaier 4096 Okt  2 09:54 riscv32-unknown-elf
+drwxrwxr-x  7 cmaier cmaier 4096 Okt  2 10:06 share
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ export PDK_PATH=/home/cmaier/EDA/OpenLane/pdks/sky130A/
+
+~/EDA/riscv-gnu-toolchain-rv32i/build$ env | grep PATH
+GCC_PATH=/home/cmaier/EDA/rv32i/
+[...]
+PDK_PATH=/home/cmaier/EDA/OpenLane/pdks/sky130A/
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ ll
+total 20
+drwxrwxr-x 2 cmaier cmaier 4096 Okt  1 16:47 ./
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  1 16:47 ../
+-rw-rw-r-- 1 cmaier cmaier 2976 Okt  1 16:47 Makefile
+-rw-rw-r-- 1 cmaier cmaier 1584 Okt  1 16:47 mprj_por.c
+-rw-rw-r-- 1 cmaier cmaier 4068 Okt  1 16:47 mprj_por_tb.v
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ export GCC_PATH=/home/cmaier/EDA/rv32i
+cmaier@DoktorEvil:~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ env | grep GCC_PATH
+GCC_PATH=/home/cmaier/EDA/rv32i
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ make clean
+rm -f *.elf *.hex *.bin *.vvp *.vcd *.log
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ export GCC_PATH=/home/cmaier/EDA/rv32i/bin
+cmaier@DoktorEvil:~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ env | grep GCC_
+GCC_PATH=/home/cmaier/EDA/rv32i/bin
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ cat make_RTL.log 
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-gcc -I ../../../caravel -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,../../../caravel/verilog/dv/caravel/sections.lds,--strip-debug -ffreestanding -nostdlib -o mprj_por.elf ../../../caravel/verilog/dv/caravel/start.s mprj_por.c
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-objcopy -O verilog mprj_por.elf mprj_por.hex 
+# to fix flash base address
+sed -i 's/@10000000/@00000000/g' mprj_por.hex
+iverilog -DFUNCTIONAL -DSIM -I /home/cmaier/EDA/OpenLane/pdks/sky130A \
+-I ../../../caravel/verilog/dv/caravel -I ../../../caravel/verilog/rtl \
+-I ../    -I ../../../verilog/rtl \
+mprj_por_tb.v -o mprj_por.vvp 
+vvp mprj_por.vvp
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading mprj_por.hex
+mprj_por.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+VCD info: dumpfile mprj_por.vcd opened for output.
+Monitor: mprj_por test started
+Monitor: mprj_por test Passed
+rm mprj_por.elf mprj_por.vvp
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ cat make_RTL.err
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+../../../caravel/verilog/rtl/caravan.v:272: warning: input port clock is coerced to inout.
+
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ SIM=GL make 1>make_GL.log 2>make_GL.err
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ cat make_GL.log
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-gcc -I ../../../caravel -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,../../../caravel/verilog/dv/caravel/sections.lds,--strip-debug -ffreestanding -nostdlib -o mprj_por.elf ../../../caravel/verilog/dv/caravel/start.s mprj_por.c
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-objcopy -O verilog mprj_por.elf mprj_por.hex 
+# to fix flash base address
+sed -i 's/@10000000/@00000000/g' mprj_por.hex
+iverilog -DFUNCTIONAL -DSIM -DGL -I /home/cmaier/EDA/OpenLane/pdks/sky130A \
+-I ../../../caravel/verilog/dv/caravel -I ../../../caravel/verilog/rtl -I ../../../caravel/verilog \
+-I ../ -I../../../verilog/rtl   -I ../../../verilog \
+mprj_por_tb.v -o mprj_por.vvp 
+vvp mprj_por.vvp
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading mprj_por.hex
+mprj_por.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+VCD info: dumpfile mprj_por.vcd opened for output.
+Monitor: mprj_por test started
+Monitor: mprj_por test Passed
+rm mprj_por.elf mprj_por.vvp
+
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ cat make_GL.err
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+../../../caravel/verilog/gl/mgmt_protect.v:4878: warning: input port vssd is coerced to inout.
+../../../caravel/verilog/gl/mgmt_protect.v:4880: warning: input port vssa1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3101: warning: input port vssd is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3102: warning: input port vssd1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3103: warning: input port vssd2 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3099: warning: input port vssa1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3100: warning: input port vssa2 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3140: warning: input port clock is coerced to inout.
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ diff make_RTL.log make_GL.log 
+5,7c5,7
+< iverilog -DFUNCTIONAL -DSIM -I /home/cmaier/EDA/OpenLane/pdks/sky130A \
+< -I ../../../caravel/verilog/dv/caravel -I ../../../caravel/verilog/rtl \
+< -I ../    -I ../../../verilog/rtl \
+---
+> iverilog -DFUNCTIONAL -DSIM -DGL -I /home/cmaier/EDA/OpenLane/pdks/sky130A \
+> -I ../../../caravel/verilog/dv/caravel -I ../../../caravel/verilog/rtl -I ../../../caravel/verilog \
+> -I ../ -I../../../verilog/rtl   -I ../../../verilog \
+
+~/EDA/caravel_user_project_analog/verilog/dv/mprj_por$ diff make_RTL.err make_GL.err
+11c11,18
+< ../../../caravel/verilog/rtl/caravan.v:272: warning: input port clock is coerced to inout.
+---
+> ../../../caravel/verilog/gl/mgmt_protect.v:4878: warning: input port vssd is coerced to inout.
+> ../../../caravel/verilog/gl/mgmt_protect.v:4880: warning: input port vssa1 is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3101: warning: input port vssd is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3102: warning: input port vssd1 is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3103: warning: input port vssd2 is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3099: warning: input port vssa1 is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3100: warning: input port vssa2 is coerced to inout.
+> ../../../caravel/verilog/gl/caravan.v:3140: warning: input port clock is coerced to inout.
