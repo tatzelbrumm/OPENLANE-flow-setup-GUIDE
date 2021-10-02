@@ -1,0 +1,291 @@
+total 196
+-rw-rw-r--  1 cmaier cmaier 17496 Apr 30 15:27 magic.installation.log
+-rw-rw-r--  1 cmaier cmaier 15127 Mai  4 04:08 xschem.config.log
+-rw-rw-r--  1 cmaier cmaier    81 Aug 16 04:11 magic.reinstallation.err
+-rw-rw-r--  1 cmaier cmaier  5006 Aug 16 04:11 magic.reinstallation.log
+-rw-rw-r--  1 cmaier cmaier 90134 Sep  8 01:01 ngspice_installation.log
+drwxrwxr-x  4 cmaier cmaier  4096 Okt  2 14:00 ..
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:03 cmake-3.21.2
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:04 yosys
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:05 netgen
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:10 OpenSTA
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:13 OpenTimer
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:16 magic
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:19 xschem
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:21 gaw
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:23 OpenLane
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:26 caravel_user_project
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:30 caravel_user_project_analog
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:34 riscv-gnu-toolchain-rv32i
+drwxrwxr-x 14 cmaier cmaier  4096 Okt  2 14:43 .
+-rw-rw-r--  1 cmaier cmaier     0 Okt  2 14:43 file_list
+
+
+-rw-rw-r-- 1 cmaier cmaier 17496 Apr 30 15:27 logfiles/magic.installation.log
+-rw-rw-r-- 1 cmaier cmaier 15127 Mai  4 04:08 logfiles/xschem.config.log
+-rw-rw-r-- 1 cmaier cmaier    81 Aug 16 04:11 logfiles/magic.reinstallation.err
+-rw-rw-r-- 1 cmaier cmaier  5006 Aug 16 04:11 logfiles/magic.reinstallation.log
+-rw-rw-r-- 1 cmaier cmaier 90134 Sep  8 01:01 logfiles/ngspice_installation.log
+-rw-rw-r-- 1 cmaier cmaier  1226 Okt  2 14:43 logfiles/file_list
+
+logfiles/cmake-3.21.2:
+total 584
+-rw-rw-r--  1 cmaier cmaier 148842 Sep  8 03:36 cmake-3.21.2.bootstrap.log
+-rw-rw-r--  1 cmaier cmaier      0 Sep  8 03:38 cmake-3.21.2.make.err
+-rw-rw-r--  1 cmaier cmaier  96584 Sep  8 03:45 cmake-3.21.2.make.log
+-rw-rw-r--  1 cmaier cmaier     32 Sep  8 03:49 cmake-3.21.2.test.err
+-rw-rw-r--  1 cmaier cmaier  89150 Sep  8 04:09 cmake-3.21.2.test.log
+-rw-rw-r--  1 cmaier cmaier      0 Sep  8 04:18 cmake-3.21.2.make_install.err
+-rw-rw-r--  1 cmaier cmaier 244896 Sep  8 04:19 cmake-3.21.2.make_install.log
+drwxrwxr-x  2 cmaier cmaier   4096 Okt  2 14:03 .
+drwxrwxr-x 14 cmaier cmaier   4096 Okt  2 14:43 ..
+
+logfiles/yosys:
+total 208
+-rw-rw-r--  1 cmaier cmaier    763 Jul 28 04:05 yosys.make.2021JUL28.err
+-rw-rw-r--  1 cmaier cmaier 136784 Jul 28 04:10 yosys.make.2021JUL28.log
+-rw-rw-r--  1 cmaier cmaier      0 Jul 28 04:22 yosys.install.2021JUL28.err
+-rw-rw-r--  1 cmaier cmaier    269 Jul 28 04:22 yosys.install.2021JUL28.log
+-rw-rw-r--  1 cmaier cmaier   1154 Sep  8 04:27 yosys.make_config-gcc.err
+-rw-rw-r--  1 cmaier cmaier  15147 Sep  8 04:27 yosys.make_config-gcc.log
+-rw-rw-r--  1 cmaier cmaier   4735 Sep  8 04:53 yosys.make.err
+-rw-rw-r--  1 cmaier cmaier  21064 Sep  8 05:03 yosys.make.log
+-rw-rw-r--  1 cmaier cmaier      0 Sep  8 05:05 yosys.install.err
+-rw-rw-r--  1 cmaier cmaier    299 Sep  8 05:06 yosys.install.log
+drwxrwxr-x  2 cmaier cmaier   4096 Okt  2 14:04 .
+drwxrwxr-x 14 cmaier cmaier   4096 Okt  2 14:43 ..
+
+logfiles/netgen:
+total 60
+-rw-rw-r--  1 cmaier cmaier 47129 Sep  8 05:21 make.log
+-rw-r--r--  1 cmaier cmaier  3356 Sep  8 05:22 install.log
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:05 .
+drwxrwxr-x 14 cmaier cmaier  4096 Okt  2 14:43 ..
+
+logfiles/OpenSTA:
+total 12
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:10 .
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:10 build
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+logfiles/OpenTimer:
+total 12
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:13 .
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:14 build
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+logfiles/magic:
+total 784
+-rw-rw-r--  1 cmaier cmaier 777223 Sep  8 05:47 make.log
+-rw-r--r--  1 cmaier cmaier  15076 Sep  8 05:47 install.log
+drwxrwxr-x  2 cmaier cmaier   4096 Okt  2 14:16 .
+drwxrwxr-x 14 cmaier cmaier   4096 Okt  2 14:43 ..
+
+logfiles/xschem:
+total 32
+-rw-rw-r--  1 cmaier cmaier 1267 Sep  8 07:25 xschem.make.err
+-rw-rw-r--  1 cmaier cmaier 9653 Sep  8 07:25 xschem.make.log
+-rw-rw-r--  1 cmaier cmaier    0 Sep  8 07:27 xschem.install.err
+-rw-rw-r--  1 cmaier cmaier 6752 Sep  8 07:27 xschem.install.log
+drwxrwxr-x  2 cmaier cmaier 4096 Okt  2 14:19 .
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+logfiles/gaw:
+total 28
+-rw-rw-r--  1 cmaier cmaier 15358 Jul  3 23:14 gaw.preinstall.log
+drwxrwxr-x  3 cmaier cmaier  4096 Okt  2 14:21 .
+drwxrwxr-x  2 cmaier cmaier  4096 Okt  2 14:21 gaw3-20200922
+drwxrwxr-x 14 cmaier cmaier  4096 Okt  2 14:43 ..
+
+logfiles/OpenLane:
+total 7900
+-rw-rw-r--  1 cmaier cmaier       0 Sep 20 17:03 make_openlane.err
+-rw-rw-r--  1 cmaier cmaier     300 Sep 20 17:03 make_openlane.log
+-rw-rw-r--  1 cmaier cmaier   12224 Sep 20 17:34 make_full-pdk.err
+-rw-rw-r--  1 cmaier cmaier 8052196 Sep 20 17:48 make_full-pdk.log
+-rw-rw-r--  1 cmaier cmaier       0 Sep 20 17:52 make_test.err
+-rw-rw-r--  1 cmaier cmaier   11942 Sep 20 17:56 make_test.log
+drwxrwxr-x  2 cmaier cmaier    4096 Okt  2 14:23 .
+drwxrwxr-x 14 cmaier cmaier    4096 Okt  2 14:43 ..
+
+logfiles/caravel_user_project:
+total 20
+-rw-rw-r--  1 cmaier cmaier  188 Sep 28 17:43 make_install.err
+-rw-rw-r--  1 cmaier cmaier  556 Sep 28 17:43 make_install.log
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:26 .
+drwxrwxr-x  2 cmaier cmaier 4096 Okt  2 14:26 openlane
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+logfiles/caravel_user_project_analog:
+total 44
+-rw-rw-r--  1 cmaier cmaier  195 Okt  1 16:50 caravel_user_project_analog.make.err
+-rw-rw-r--  1 cmaier cmaier  409 Okt  1 16:50 caravel_user_project_analog.make.log
+-rw-rw-r--  1 cmaier cmaier    0 Okt  1 17:24 make_simenv.err
+-rw-rw-r--  1 cmaier cmaier 1725 Okt  1 17:47 make_simenv.log
+-rw-rw-r--  1 cmaier cmaier   44 Okt  2 12:05 make_precheck.err
+-rw-rw-r--  1 cmaier cmaier 2236 Okt  2 12:06 make_precheck.log
+-rw-rw-r--  1 cmaier cmaier 7365 Okt  2 13:42 make_run_precheck.log
+-rw-rw-r--  1 cmaier cmaier   47 Okt  2 13:42 make_run_precheck.err
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:30 .
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:30 verilog
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+logfiles/riscv-gnu-toolchain-rv32i:
+total 12
+drwxrwxr-x  3 cmaier cmaier 4096 Okt  2 14:34 .
+drwxrwxr-x  2 cmaier cmaier 4096 Okt  2 14:35 build
+drwxrwxr-x 14 cmaier cmaier 4096 Okt  2 14:43 ..
+
+
+
+-rw-rw-r-- 1 cmaier cmaier   15358 Jul  3 23:14 logfiles/gaw/gaw.preinstall.log
+-rw-rw-r-- 1 cmaier cmaier     763 Jul 28 04:05 logfiles/yosys/yosys.make.2021JUL28.err
+-rw-rw-r-- 1 cmaier cmaier  136784 Jul 28 04:10 logfiles/yosys/yosys.make.2021JUL28.log
+-rw-rw-r-- 1 cmaier cmaier       0 Jul 28 04:22 logfiles/yosys/yosys.install.2021JUL28.err
+-rw-rw-r-- 1 cmaier cmaier     269 Jul 28 04:22 logfiles/yosys/yosys.install.2021JUL28.log
+-rw-rw-r-- 1 cmaier cmaier  148842 Sep  8 03:36 logfiles/cmake-3.21.2/cmake-3.21.2.bootstrap.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 03:38 logfiles/cmake-3.21.2/cmake-3.21.2.make.err
+-rw-rw-r-- 1 cmaier cmaier   96584 Sep  8 03:45 logfiles/cmake-3.21.2/cmake-3.21.2.make.log
+-rw-rw-r-- 1 cmaier cmaier      32 Sep  8 03:49 logfiles/cmake-3.21.2/cmake-3.21.2.test.err
+-rw-rw-r-- 1 cmaier cmaier   89150 Sep  8 04:09 logfiles/cmake-3.21.2/cmake-3.21.2.test.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 04:18 logfiles/cmake-3.21.2/cmake-3.21.2.make_install.err
+-rw-rw-r-- 1 cmaier cmaier  244896 Sep  8 04:19 logfiles/cmake-3.21.2/cmake-3.21.2.make_install.log
+-rw-rw-r-- 1 cmaier cmaier    1154 Sep  8 04:27 logfiles/yosys/yosys.make_config-gcc.err
+-rw-rw-r-- 1 cmaier cmaier   15147 Sep  8 04:27 logfiles/yosys/yosys.make_config-gcc.log
+-rw-rw-r-- 1 cmaier cmaier    4735 Sep  8 04:53 logfiles/yosys/yosys.make.err
+-rw-rw-r-- 1 cmaier cmaier   21064 Sep  8 05:03 logfiles/yosys/yosys.make.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 05:05 logfiles/yosys/yosys.install.err
+-rw-rw-r-- 1 cmaier cmaier     299 Sep  8 05:06 logfiles/yosys/yosys.install.log
+-rw-rw-r-- 1 cmaier cmaier   47129 Sep  8 05:21 logfiles/netgen/make.log
+-rw-r--r-- 1 cmaier cmaier    3356 Sep  8 05:22 logfiles/netgen/install.log
+-rw-rw-r-- 1 cmaier cmaier  777223 Sep  8 05:47 logfiles/magic/make.log
+-rw-r--r-- 1 cmaier cmaier   15076 Sep  8 05:47 logfiles/magic/install.log
+-rw-rw-r-- 1 cmaier cmaier    1267 Sep  8 07:25 logfiles/xschem/xschem.make.err
+-rw-rw-r-- 1 cmaier cmaier    9653 Sep  8 07:25 logfiles/xschem/xschem.make.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 07:27 logfiles/xschem/xschem.install.err
+-rw-rw-r-- 1 cmaier cmaier    6752 Sep  8 07:27 logfiles/xschem/xschem.install.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep 20 17:03 logfiles/OpenLane/make_openlane.err
+-rw-rw-r-- 1 cmaier cmaier     300 Sep 20 17:03 logfiles/OpenLane/make_openlane.log
+-rw-rw-r-- 1 cmaier cmaier   12224 Sep 20 17:34 logfiles/OpenLane/make_full-pdk.err
+-rw-rw-r-- 1 cmaier cmaier 8052196 Sep 20 17:48 logfiles/OpenLane/make_full-pdk.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep 20 17:52 logfiles/OpenLane/make_test.err
+-rw-rw-r-- 1 cmaier cmaier   11942 Sep 20 17:56 logfiles/OpenLane/make_test.log
+-rw-rw-r-- 1 cmaier cmaier     188 Sep 28 17:43 logfiles/caravel_user_project/make_install.err
+-rw-rw-r-- 1 cmaier cmaier     556 Sep 28 17:43 logfiles/caravel_user_project/make_install.log
+-rw-rw-r-- 1 cmaier cmaier     195 Okt  1 16:50 logfiles/caravel_user_project_analog/caravel_user_project_analog.make.err
+-rw-rw-r-- 1 cmaier cmaier     409 Okt  1 16:50 logfiles/caravel_user_project_analog/caravel_user_project_analog.make.log
+-rw-rw-r-- 1 cmaier cmaier       0 Okt  1 17:24 logfiles/caravel_user_project_analog/make_simenv.err
+-rw-rw-r-- 1 cmaier cmaier    1725 Okt  1 17:47 logfiles/caravel_user_project_analog/make_simenv.log
+-rw-rw-r-- 1 cmaier cmaier      44 Okt  2 12:05 logfiles/caravel_user_project_analog/make_precheck.err
+-rw-rw-r-- 1 cmaier cmaier    2236 Okt  2 12:06 logfiles/caravel_user_project_analog/make_precheck.log
+-rw-rw-r-- 1 cmaier cmaier    7365 Okt  2 13:42 logfiles/caravel_user_project_analog/make_run_precheck.log
+-rw-rw-r-- 1 cmaier cmaier      47 Okt  2 13:42 logfiles/caravel_user_project_analog/make_run_precheck.err
+
+logfiles/OpenSTA/build:
+total 104
+-rw-rw-r-- 1 cmaier cmaier   101 Sep  8 06:32 OpenSTA.make.err
+-rw-rw-r-- 1 cmaier cmaier 88491 Sep  8 06:35 OpenSTA.make.log
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:10 ..
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:10 .
+drwxrwxr-x 2 cmaier cmaier  4096 Okt  2 14:11 CMakeFiles
+
+logfiles/OpenTimer/build:
+total 48
+-rw-rw-r-- 1 cmaier cmaier     0 Sep  8 06:46 OpenTimer.cmake.err
+-rw-rw-r-- 1 cmaier cmaier  2296 Sep  8 06:46 OpenTimer.cmake.log
+-rw-rw-r-- 1 cmaier cmaier     0 Sep  8 06:49 OpenTimer.make.err
+-rw-rw-r-- 1 cmaier cmaier 32051 Sep  8 07:01 OpenTimer.make.log
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:13 ..
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:14 .
+drwxrwxr-x 2 cmaier cmaier  4096 Okt  2 14:14 CMakeFiles
+
+logfiles/gaw/gaw3-20200922:
+total 68
+-rw-rw-r-- 1 cmaier cmaier  7259 Sep  8 08:02 gaw.make.err
+-rw-rw-r-- 1 cmaier cmaier 45967 Sep  8 08:02 gaw.make.log
+-rw-rw-r-- 1 cmaier cmaier     0 Sep  8 08:04 gaw.install.err
+-rw-rw-r-- 1 cmaier cmaier  2105 Sep  8 08:04 gaw.install.log
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:21 ..
+drwxrwxr-x 2 cmaier cmaier  4096 Okt  2 14:21 .
+
+logfiles/caravel_user_project/openlane:
+total 2024
+-rw-rw-r-- 1 cmaier cmaier    2938 Sep 28 17:49 make_user_proj_example.err
+-rw-rw-r-- 1 cmaier cmaier 1547636 Sep 28 17:59 make_user_proj_example.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep 28 18:05 make_user_project_wrapper.err
+-rw-rw-r-- 1 cmaier cmaier  508099 Sep 28 18:12 make_user_project_wrapper.log
+drwxrwxr-x 3 cmaier cmaier    4096 Okt  2 14:26 ..
+drwxrwxr-x 2 cmaier cmaier    4096 Okt  2 14:26 .
+
+logfiles/caravel_user_project_analog/verilog:
+total 12
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 ..
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 .
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 dv
+
+logfiles/riscv-gnu-toolchain-rv32i/build:
+total 7120
+-rw-rw-r-- 1 cmaier cmaier  378694 Okt  2 09:23 make.FAIL.01.log
+-rw-rw-r-- 1 cmaier cmaier    3957 Okt  2 09:23 make.FAIL.01.err
+-rw-rw-r-- 1 cmaier cmaier    9721 Okt  2 09:34 config.log
+-rw-rw-r-- 1 cmaier cmaier  169550 Okt  2 10:06 make.err
+-rw-rw-r-- 1 cmaier cmaier 6711192 Okt  2 10:06 make.log
+drwxrwxr-x 3 cmaier cmaier    4096 Okt  2 14:34 ..
+drwxrwxr-x 2 cmaier cmaier    4096 Okt  2 14:35 .
+
+
+-rw-rw-r-- 1 cmaier cmaier     101 Sep  8 06:32 logfiles/OpenSTA/build/OpenSTA.make.err
+-rw-rw-r-- 1 cmaier cmaier   88491 Sep  8 06:35 logfiles/OpenSTA/build/OpenSTA.make.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 06:46 logfiles/OpenTimer/build/OpenTimer.cmake.err
+-rw-rw-r-- 1 cmaier cmaier    2296 Sep  8 06:46 logfiles/OpenTimer/build/OpenTimer.cmake.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 06:49 logfiles/OpenTimer/build/OpenTimer.make.err
+-rw-rw-r-- 1 cmaier cmaier   32051 Sep  8 07:01 logfiles/OpenTimer/build/OpenTimer.make.log
+-rw-rw-r-- 1 cmaier cmaier    7259 Sep  8 08:02 logfiles/gaw/gaw3-20200922/gaw.make.err
+-rw-rw-r-- 1 cmaier cmaier   45967 Sep  8 08:02 logfiles/gaw/gaw3-20200922/gaw.make.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep  8 08:04 logfiles/gaw/gaw3-20200922/gaw.install.err
+-rw-rw-r-- 1 cmaier cmaier    2105 Sep  8 08:04 logfiles/gaw/gaw3-20200922/gaw.install.log
+-rw-rw-r-- 1 cmaier cmaier    2938 Sep 28 17:49 logfiles/caravel_user_project/openlane/make_user_proj_example.err
+-rw-rw-r-- 1 cmaier cmaier 1547636 Sep 28 17:59 logfiles/caravel_user_project/openlane/make_user_proj_example.log
+-rw-rw-r-- 1 cmaier cmaier       0 Sep 28 18:05 logfiles/caravel_user_project/openlane/make_user_project_wrapper.err
+-rw-rw-r-- 1 cmaier cmaier  508099 Sep 28 18:12 logfiles/caravel_user_project/openlane/make_user_project_wrapper.log
+-rw-rw-r-- 1 cmaier cmaier  378694 Okt  2 09:23 logfiles/riscv-gnu-toolchain-rv32i/build/make.FAIL.01.log
+-rw-rw-r-- 1 cmaier cmaier    3957 Okt  2 09:23 logfiles/riscv-gnu-toolchain-rv32i/build/make.FAIL.01.err
+-rw-rw-r-- 1 cmaier cmaier    9721 Okt  2 09:34 logfiles/riscv-gnu-toolchain-rv32i/build/config.log
+-rw-rw-r-- 1 cmaier cmaier  169550 Okt  2 10:06 logfiles/riscv-gnu-toolchain-rv32i/build/make.err
+-rw-rw-r-- 1 cmaier cmaier 6711192 Okt  2 10:06 logfiles/riscv-gnu-toolchain-rv32i/build/make.log
+
+logfiles/OpenSTA/build/CMakeFiles:
+total 36
+-rw-rw-r-- 1 cmaier cmaier  2924 Sep  8 06:31 CMakeError.log
+-rw-rw-r-- 1 cmaier cmaier 24490 Sep  8 06:31 CMakeOutput.log
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:10 ..
+drwxrwxr-x 2 cmaier cmaier  4096 Okt  2 14:11 .
+
+logfiles/OpenTimer/build/CMakeFiles:
+total 60
+-rw-rw-r-- 1 cmaier cmaier  2873 Sep  8 06:46 CMakeError.log
+-rw-rw-r-- 1 cmaier cmaier 46119 Sep  8 06:46 CMakeOutput.log
+drwxrwxr-x 3 cmaier cmaier  4096 Okt  2 14:14 ..
+drwxrwxr-x 2 cmaier cmaier  4096 Okt  2 14:14 .
+
+logfiles/caravel_user_project_analog/verilog/dv:
+total 12
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 ..
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 .
+drwxrwxr-x 2 cmaier cmaier 4096 Okt  2 14:31 mprj_por
+
+
+-rw-rw-r-- 1 cmaier cmaier  2924 Sep  8 06:31 logfiles/OpenSTA/build/CMakeFiles/CMakeError.log
+-rw-rw-r-- 1 cmaier cmaier 24490 Sep  8 06:31 logfiles/OpenSTA/build/CMakeFiles/CMakeOutput.log
+-rw-rw-r-- 1 cmaier cmaier  2873 Sep  8 06:46 logfiles/OpenTimer/build/CMakeFiles/CMakeError.log
+-rw-rw-r-- 1 cmaier cmaier 46119 Sep  8 06:46 logfiles/OpenTimer/build/CMakeFiles/CMakeOutput.log
+
+logfiles/caravel_user_project_analog/verilog/dv/mprj_por:
+total 28
+-rw-rw-r-- 1 cmaier cmaier  145 Okt  2 10:22 make_RTL.FAIL.01.err
+-rw-rw-r-- 1 cmaier cmaier 1341 Okt  2 10:47 make_RTL.err
+-rw-rw-r-- 1 cmaier cmaier  947 Okt  2 10:48 make_RTL.log
+-rw-rw-r-- 1 cmaier cmaier 1986 Okt  2 10:59 make_GL.err
+-rw-rw-r-- 1 cmaier cmaier  998 Okt  2 11:00 make_GL.log
+drwxrwxr-x 3 cmaier cmaier 4096 Okt  2 14:30 ..
+drwxrwxr-x 2 cmaier cmaier 4096 Okt  2 14:31 .
