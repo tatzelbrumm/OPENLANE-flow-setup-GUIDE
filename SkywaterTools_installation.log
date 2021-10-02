@@ -4584,3 +4584,16 @@ No DRC Violations found
 {{FAILURE}} 1 Check(s) Failed: ['Default'] !!!
 
 Precheck passes, failed check flags that project is unmodified so far.
+
+Now try this for caravel_user_project.
+
+~/EDA/caravel_user_project$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+PRECHECK_ROOT=/home/cmaier/EDA/precheck
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel/
+
+~/EDA/caravel_user_project$ make run-precheck 1>make_run-precheck.log 2>make_run-precheck.err
+
+Precheck passes except for ['Default'] check.
+
