@@ -1,0 +1,12 @@
+Installing caravel-lite as a submodule..
+Submodule path 'caravel': checked out '0f16ba8eaae841a6f122fc0d5837005d3312fd2b'
+Your branch is up to date with 'origin/main'.
+make simlink
+make[1]: Entering directory '/home/cmaier/EDA/caravel_user_project'
+mkdir -p openlane
+mkdir -p openlane/user_project_wrapper
+cd openlane &&\
+ln -sf ../caravel/openlane/Makefile Makefile
+cd openlane/user_project_wrapper &&\
+ln -sf ../../caravel/openlane/user_project_wrapper_empty/pin_order.cfg pin_order.cfg
+make[1]: Leaving directory '/home/cmaier/EDA/caravel_user_project'

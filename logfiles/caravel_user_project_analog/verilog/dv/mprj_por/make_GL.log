@@ -1,0 +1,17 @@
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-gcc -I ../../../caravel -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,../../../caravel/verilog/dv/caravel/sections.lds,--strip-debug -ffreestanding -nostdlib -o mprj_por.elf ../../../caravel/verilog/dv/caravel/start.s mprj_por.c
+/home/cmaier/EDA/rv32i/bin/riscv32-unknown-elf-objcopy -O verilog mprj_por.elf mprj_por.hex 
+# to fix flash base address
+sed -i 's/@10000000/@00000000/g' mprj_por.hex
+iverilog -DFUNCTIONAL -DSIM -DGL -I /home/cmaier/EDA/OpenLane/pdks/sky130A \
+-I ../../../caravel/verilog/dv/caravel -I ../../../caravel/verilog/rtl -I ../../../caravel/verilog \
+-I ../ -I../../../verilog/rtl   -I ../../../verilog \
+mprj_por_tb.v -o mprj_por.vvp 
+vvp mprj_por.vvp
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading mprj_por.hex
+mprj_por.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+VCD info: dumpfile mprj_por.vcd opened for output.
+Monitor: mprj_por test started
+Monitor: mprj_por test Passed
+rm mprj_por.elf mprj_por.vvp

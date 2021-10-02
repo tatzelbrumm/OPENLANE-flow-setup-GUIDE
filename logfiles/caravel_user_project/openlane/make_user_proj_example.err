@@ -1,0 +1,94 @@
+Unable to find image 'efabless/openlane:2021.09.19_20.25.16' locally
+2021.09.19_20.25.16: Pulling from efabless/openlane
+2d473b07cdd5: Pulling fs layer
+a7425801e148: Pulling fs layer
+3aa6b445566b: Pulling fs layer
+6a9356ff2005: Pulling fs layer
+d85083e63207: Pulling fs layer
+3f36885119cd: Pulling fs layer
+0590c2d48307: Pulling fs layer
+9e06cf6416dd: Pulling fs layer
+5d0d4004e0d3: Pulling fs layer
+03395e8ac870: Pulling fs layer
+d4fc6a0fd237: Pulling fs layer
+8e57889845d2: Pulling fs layer
+71a085d84c3f: Pulling fs layer
+23a5c138d34d: Pulling fs layer
+328a523b4081: Pulling fs layer
+2054366ff08e: Pulling fs layer
+427806b42d00: Pulling fs layer
+c0490149b92a: Pulling fs layer
+923cfe53e30c: Pulling fs layer
+6a9356ff2005: Waiting
+d85083e63207: Waiting
+3f36885119cd: Waiting
+23a5c138d34d: Waiting
+0590c2d48307: Waiting
+328a523b4081: Waiting
+9e06cf6416dd: Waiting
+2054366ff08e: Waiting
+427806b42d00: Waiting
+5d0d4004e0d3: Waiting
+71a085d84c3f: Waiting
+8e57889845d2: Waiting
+03395e8ac870: Waiting
+c0490149b92a: Waiting
+3aa6b445566b: Verifying Checksum
+3aa6b445566b: Download complete
+6a9356ff2005: Verifying Checksum
+6a9356ff2005: Download complete
+d85083e63207: Verifying Checksum
+d85083e63207: Download complete
+a7425801e148: Verifying Checksum
+a7425801e148: Download complete
+2d473b07cdd5: Verifying Checksum
+2d473b07cdd5: Download complete
+2d473b07cdd5: Pull complete
+0590c2d48307: Verifying Checksum
+0590c2d48307: Download complete
+a7425801e148: Pull complete
+3aa6b445566b: Pull complete
+6a9356ff2005: Pull complete
+d85083e63207: Pull complete
+9e06cf6416dd: Verifying Checksum
+9e06cf6416dd: Download complete
+3f36885119cd: Verifying Checksum
+3f36885119cd: Download complete
+03395e8ac870: Verifying Checksum
+03395e8ac870: Download complete
+3f36885119cd: Pull complete
+0590c2d48307: Pull complete
+8e57889845d2: Verifying Checksum
+8e57889845d2: Download complete
+9e06cf6416dd: Pull complete
+71a085d84c3f: Verifying Checksum
+71a085d84c3f: Download complete
+23a5c138d34d: Verifying Checksum
+23a5c138d34d: Download complete
+d4fc6a0fd237: Verifying Checksum
+d4fc6a0fd237: Download complete
+2054366ff08e: Verifying Checksum
+2054366ff08e: Download complete
+427806b42d00: Verifying Checksum
+427806b42d00: Download complete
+c0490149b92a: Verifying Checksum
+c0490149b92a: Download complete
+923cfe53e30c: Verifying Checksum
+923cfe53e30c: Download complete
+5d0d4004e0d3: Verifying Checksum
+5d0d4004e0d3: Download complete
+5d0d4004e0d3: Pull complete
+03395e8ac870: Pull complete
+d4fc6a0fd237: Pull complete
+8e57889845d2: Pull complete
+71a085d84c3f: Pull complete
+23a5c138d34d: Pull complete
+328a523b4081: Verifying Checksum
+328a523b4081: Download complete
+328a523b4081: Pull complete
+2054366ff08e: Pull complete
+427806b42d00: Pull complete
+c0490149b92a: Pull complete
+923cfe53e30c: Pull complete
+Digest: sha256:324fa3db0c148158c3233d4b7ec503640cc6338fcee7f97001b2399f42597e8d
+Status: Downloaded newer image for efabless/openlane:2021.09.19_20.25.16

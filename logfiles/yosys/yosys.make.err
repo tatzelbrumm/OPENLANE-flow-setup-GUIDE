@@ -1,0 +1,44 @@
+kernel/satgen.cc: In member function ‘bool Yosys::SatGen::importCell(Yosys::RTLIL::Cell*, int)’:
+kernel/satgen.cc:1137:32: warning: ‘undef_srst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1137 |      std::tie(d, undef_d) = mux(srst, undef_srst, rval, undef_rval, d, undef_d);
+      |                             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel/satgen.cc:1123:32: warning: ‘undef_en’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1123 |      std::tie(d, undef_d) = mux(en, undef_en, d, undef_d, old_q, undef_old_q);
+      |                             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel/satgen.cc:1109:32: warning: ‘undef_srst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1109 |      std::tie(d, undef_d) = mux(srst, undef_srst, rval, undef_rval, d, undef_d);
+      |                             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from libs/minisat/Sort.h:24,
+                 from libs/minisat/SimpSolver.cc:27:
+libs/minisat/Vec.h: In instantiation of ‘void Minisat::vec<T, _Size>::capacity(Minisat::vec<T, _Size>::Size) [with T = Minisat::vec<unsigned int>; _Size = int; Minisat::vec<T, _Size>::Size = int]’:
+libs/minisat/Vec.h:119:5:   required from ‘void Minisat::vec<T, _Size>::growTo(Minisat::vec<T, _Size>::Size) [with T = Minisat::vec<unsigned int>; _Size = int; Minisat::vec<T, _Size>::Size = int]’
+libs/minisat/IntMap.h:48:48:   required from ‘void Minisat::IntMap<K, V, MkIndex>::reserve(K) [with K = int; V = Minisat::vec<unsigned int>; MkIndex = Minisat::MkIndexDefault<int>]’
+libs/minisat/SolverTypes.h:338:37:   required from ‘void Minisat::OccLists<K, Vec, Deleted, MkIndex>::init(const K&) [with K = int; Vec = Minisat::vec<unsigned int>; Deleted = Minisat::SimpSolver::ClauseDeleted; MkIndex = Minisat::MkIndexDefault<int>]’
+libs/minisat/SimpSolver.cc:92:28:   required from here
+libs/minisat/Vec.h:103:33: warning: ‘void* realloc(void*, size_t)’ moving an object of non-trivially copyable type ‘class Minisat::vec<unsigned int>’; use ‘new’ and ‘delete’ instead [-Wclass-memaccess]
+  103 |     ||   (((data = (T*)::realloc(data, (cap += add) * sizeof(T))) == NULL) && errno == ENOMEM) )
+      |                        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from libs/minisat/Sort.h:24,
+                 from libs/minisat/SimpSolver.cc:27:
+libs/minisat/Vec.h:39:7: note: ‘class Minisat::vec<unsigned int>’ declared here
+   39 | class vec {
+      |       ^~~
+In file included from libs/minisat/Alg.h:24,
+                 from libs/minisat/Solver.cc:29:
+libs/minisat/Vec.h: In instantiation of ‘void Minisat::vec<T, _Size>::capacity(Minisat::vec<T, _Size>::Size) [with T = Minisat::vec<Minisat::Solver::Watcher>; _Size = int; Minisat::vec<T, _Size>::Size = int]’:
+libs/minisat/Vec.h:119:5:   required from ‘void Minisat::vec<T, _Size>::growTo(Minisat::vec<T, _Size>::Size) [with T = Minisat::vec<Minisat::Solver::Watcher>; _Size = int; Minisat::vec<T, _Size>::Size = int]’
+libs/minisat/IntMap.h:48:48:   required from ‘void Minisat::IntMap<K, V, MkIndex>::reserve(K) [with K = Minisat::Lit; V = Minisat::vec<Minisat::Solver::Watcher>; MkIndex = Minisat::MkIndexLit]’
+libs/minisat/SolverTypes.h:338:37:   required from ‘void Minisat::OccLists<K, Vec, Deleted, MkIndex>::init(const K&) [with K = Minisat::Lit; Vec = Minisat::vec<Minisat::Solver::Watcher>; Deleted = Minisat::Solver::WatcherDeleted; MkIndex = Minisat::MkIndexLit]’
+libs/minisat/Solver.cc:134:35:   required from here
+libs/minisat/Vec.h:103:33: warning: ‘void* realloc(void*, size_t)’ moving an object of non-trivially copyable type ‘class Minisat::vec<Minisat::Solver::Watcher>’; use ‘new’ and ‘delete’ instead [-Wclass-memaccess]
+  103 |     ||   (((data = (T*)::realloc(data, (cap += add) * sizeof(T))) == NULL) && errno == ENOMEM) )
+      |                        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from libs/minisat/Alg.h:24,
+                 from libs/minisat/Solver.cc:29:
+libs/minisat/Vec.h:39:7: note: ‘class Minisat::vec<Minisat::Solver::Watcher>’ declared here
+   39 | class vec {
+      |       ^~~
+passes/techmap/abc.cc: In member function ‘virtual void {anonymous}::AbcPass::execute(std::vector<std::__cxx11::basic_string<char> >, Yosys::RTLIL::Design*)’:
+passes/techmap/abc.cc:1806:15: warning: ‘g_argidx’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1806 |      cmd_error(args, g_argidx, stringf("Unsupported gate type: %s", g.c_str()));
+      |      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,55 @@
+-- CMAKE_ROOT: /usr/local/share/cmake-3.21
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMAKE_HOST_SYSTEM: Linux-5.11.0-27-generic
+-- CMAKE_CXX_COMPILER_VERSION: 9.3.0
+-- CMAKE_BUILD_TYPE: 
+-- CMAKE_SYSTEM_NAME: Linux
+-- CMAKE_CXX_COMPILER: /usr/bin/c++
+-- CMAKE_CXX_FLAGS:  -Wall -O2
+-- CMAKE_CXX_FLAGS_DEBUG: -g
+-- CMAKE_CXX_FLAGS_RELEASE: -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG
+-- CMAKE_CXX_FLAGS_MINSIZEREL: -Os -DNDEBUG
+-- CMAKE_EXE_LINKER_FLAGS: 
+-- CMAKE_INSTALL_PREFIX: /usr/local
+-- CMAKE_MODULE_PATH: 
+-- OT_VERSION: 2.1.0
+-- OT_HOME: /home/cmaier/EDA/OpenTimer
+-- OT_BENCHMARK_DIR: /home/cmaier/EDA/OpenTimer/benchmark
+-- OT_UNITTEST_DIR: /home/cmaier/EDA/OpenTimer/unittest
+-- OT_LICENSE: /home/cmaier/EDA/OpenTimer/LICENSE
+-- CMAKE_ARCHIVE_OUTPUT_DIRECTORY: /home/cmaier/EDA/OpenTimer/lib
+-- PYTHON_EXECUTABLE: PYTHON_EXECUTABLE-NOTFOUND
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Building executables ...
+-- OT_LINK_FLAGS: OpenTimer;Threads::Threads;stdc++fs
+-- TAU15 executable: /home/cmaier/EDA/OpenTimer/bin/ot-tau15
+-- TAU18 executable: /home/cmaier/EDA/OpenTimer/bin/ot-tau18
+-- Utility executable: /home/cmaier/EDA/OpenTimer/bin/ot-utility
+-- OpenTimer shell: /home/cmaier/EDA/OpenTimer/bin/ot-shell
+-- Building unit tests ...
+-- Building TAU15 integration tests ...
+-- Building Shell integration tests ...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cmaier/EDA/OpenTimer/build

@@ -1,0 +1,125 @@
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default   -c -o hooks.o hooks.c
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_cc.c -o src//default/find_cc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_compile.c -o src//default/lib_compile.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_uniqinc.c -o src//default/lib_uniqinc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_file.c -o src//default/lib_file.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_try.c -o src//default/lib_try.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/str.c -o src//default/str.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/ht.c -o src//default/ht.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/log.c -o src//default/log.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/arg.c -o src//default/arg.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/db.c -o src//default/db.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/dep.c -o src//default/dep.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/deps_default.c -o src//default/deps_default.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_libs.c -o src//default/find_libs.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_fscalls.c -o src//default/find_fscalls.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_printf.c -o src//default/find_printf.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_proc.c -o src//default/find_proc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_fstools.c -o src//default/find_fstools.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_uname.c -o src//default/find_uname.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_target.c -o src//default/find_target.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_thread.c -o src//default/find_thread.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_io.c -o src//default/find_io.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_time.c -o src//default/find_time.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_types.c -o src//default/find_types.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_signal.c -o src//default/find_signal.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_environ.c -o src//default/find_environ.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/regex.c -o src//default/regex.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_filelist.c -o src//default/lib_filelist.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_srctree.c -o src//default/lib_srctree.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/lib_pkg_config.c -o src//default/lib_pkg_config.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_str.c -o src//default/find_str.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/find_sys.c -o src//default/find_sys.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/scripts.c -o src//scripts/scripts.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_gpmi.c -o src//scripts/find_gpmi.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_tcl.c -o src//scripts/find_tcl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_ruby.c -o src//scripts/find_ruby.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mruby.c -o src//scripts/find_mruby.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_python.c -o src//scripts/find_python.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_perl.c -o src//scripts/find_perl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mawk.c -o src//scripts/find_mawk.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_lua.c -o src//scripts/find_lua.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_guile.c -o src//scripts/find_guile.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_stutter.c -o src//scripts/find_stutter.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_funlisp.c -o src//scripts/find_funlisp.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_duktape.c -o src//scripts/find_duktape.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_mujs.c -o src//scripts/find_mujs.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_fungw.c -o src//scripts/find_fungw.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_m4.c -o src//scripts/find_m4.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_welltype.c -o src//scripts/find_welltype.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//scripts/find_picol.c -o src//scripts/find_picol.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/tmpasm.c -o src//tmpasm/tmpasm.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/tmpasm_scconfig.c -o src//tmpasm/tmpasm_scconfig.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//tmpasm/openfiles.c -o src//tmpasm/openfiles.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//parsgen/find_parsgen.c -o src//parsgen/find_parsgen.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gtk2.c -o src//gui/find_gtk2.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gtk3.c -o src//gui/find_gtk3.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_lesstif2.c -o src//gui/find_lesstif2.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_x.c -o src//gui/find_x.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gd.c -o src//gui/find_gd.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_cairo.c -o src//gui/find_cairo.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_misc.c -o src//gui/find_misc.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/find_gl.c -o src//gui/find_gl.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//gui/gui.c -o src//gui/gui.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main.c -o src//default/main.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main_custom_args.c -o src//default/main_custom_args.o
+cc -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -c src//default/main_lib.c -o src//default/main_lib.o
+cc -o configure  hooks.o src//default/find_cc.o src//default/lib_compile.o src//default/lib_uniqinc.o src//default/lib_file.o src//default/lib_try.o src//default/str.o src//default/ht.o src//default/log.o src//default/arg.o src//default/db.o src//default/dep.o src//default/deps_default.o src//default/find_libs.o src//default/find_fscalls.o src//default/find_printf.o src//default/find_proc.o src//default/find_fstools.o src//default/find_uname.o src//default/find_target.o src//default/find_thread.o src//default/find_io.o src//default/find_time.o src//default/find_types.o src//default/find_signal.o src//default/find_environ.o src//default/regex.o src//default/lib_filelist.o src//default/lib_srctree.o src//default/lib_pkg_config.o src//default/find_str.o src//default/find_sys.o src//scripts/scripts.o src//scripts/find_gpmi.o src//scripts/find_tcl.o src//scripts/find_ruby.o src//scripts/find_mruby.o src//scripts/find_python.o src//scripts/find_perl.o src//scripts/find_mawk.o src//scripts/find_lua.o src//scripts/find_guile.o src//scripts/find_stutter.o src//scripts/find_funlisp.o src//scripts/find_duktape.o src//scripts/find_mujs.o src//scripts/find_fungw.o src//scripts/find_m4.o src//scripts/find_welltype.o src//scripts/find_picol.o   src//tmpasm/tmpasm.o src//tmpasm/tmpasm_scconfig.o src//tmpasm/openfiles.o  src//parsgen/find_parsgen.o    src//gui/find_gtk2.o src//gui/find_gtk3.o src//gui/find_lesstif2.o src//gui/find_x.o src//gui/find_gd.o src//gui/find_cairo.o src//gui/find_misc.o src//gui/find_gl.o src//gui/gui.o    src//default/main.o src//default/main_custom_args.o src//default/main_lib.o
+cc -c -DGENCALL -DRUNTIME -g  -DPLUGIN_SCRIPTS   -Isrc//tmpasm  -DPLUGIN_PARSGEN    -DPLUGIN_GUI     -Isrc//default -o src/util/sccbox.o src/util/sccbox.c
+cc                 -o sccbox src/util/sccbox.o
+--- Detecting host
+Looking for a shell... /bin/sh -c
+Looking for a shell escape character... found: '\'
+Detecting temp dir... validated /home/cmaier/EDA/xschem/scconfig/
+Checking for system type... OK (name: Linux; class: UNIX)
+--- Detecting target (same as host)
+Checking for cc (target)... OK ('gcc', ' -pipe', '')
+Checking for -fpic... OK (-fPIC)
+Checking for popen(3)... OK ('#define _XOPEN_SOURCE\n', '' and '')
+Checking for flex... Found.
+Checking for bison... Found.
+Checking for XOpenDisplay... OK ('', '' and '-lX11')
+Checking for tk... 8.6... OK ('', '-I/usr/include/tcl8.6' and '-ltcl8.6')
+OK ('', '-I/usr/include/tcl8.6 ' and '-ltcl8.6  -ltk8.6')
+Checking for awk... OK (awk)
+Checking for xpm... OK ('', '' and '-lX11 -lXpm')
+Checking for cairo... OK ('', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12' and '-lcairo')
+Checking for Xrender... OK ('', '' and '-lX11 -lXrender')
+Checking for cairo... OK ('', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12' and '-lcairo')
+Checking for cairo-xcb... OK ('#include <cairo-xcb.h>\n', '-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12' and '-lcairo')
+Checking for xcb... OK ('', '' and '-lX11 -lxcb')
+Checking for xgetxcbconnection... OK ('', '' and '-lX11 -lX11-xcb')
+Checking for xcb_render... OK ('', '' and '-lX11 -lxcb-render')
+--- Detecting runtime (same as host)
+
+--- Generating build and config files
+config.h:              ok
+Makefile.conf:         ok
+doc/manpages/xschem.1: ok
+src/Makefile:          ok
+
+
+=====================
+Configuration summary
+=====================
+
+Compilation:
+ CC:        gcc
+ debug:     no
+ profiling: no
+
+Paths:
+ prefix:        /usr/local
+ user-conf-dir: ~/.xschem
+ user-lib-path: ~/.xschem/xschem_library
+ sys-lib-path:  /usr/local/share/xschem/xschem_library/devices
+
+Libs & features:
+ tcl:       -ltcl8.6
+ tk:        -ltcl8.6  -ltk8.6
+ cairo:     yes
+ xrender:   yes
+ xcb:       yes
+
+Configuration complete, ready to compile.
+

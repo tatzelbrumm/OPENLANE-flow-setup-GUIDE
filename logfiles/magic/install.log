@@ -1,0 +1,262 @@
+make[1]: Entering directory '/home/cmaier/EDA/magic'
+./scripts/mkdirs /usr/local/bin \
+/usr/local/share/man /usr/local/lib/magic/sys \
+/usr/local/lib/magic/tcl /usr/local/lib/magic/tcl/bitmaps
+mkdir /usr/local/lib/magic
+mkdir /usr/local/lib/magic/sys
+mkdir /usr/local/lib/magic/tcl
+mkdir /usr/local/lib/magic/tcl/bitmaps
+for dir in windows doc scmos graphics tcltk magic net2ir tcltk; do \
+	(cd $dir && make install-tcl); done
+make[2]: Entering directory '/home/cmaier/EDA/magic/windows'
+--- installing glyphs to /usr/local/lib/magic/sys
+for i in windows7.glyphs windows11.glyphs windows14.glyphs windows22.glyphs  vfont.B.12 vfont.I.12 vfont.R.8; do \
+	(cd /usr/local/lib/magic/sys && rm -f $i); \
+	cp $i /usr/local/lib/magic/sys; done
+make[2]: Leaving directory '/home/cmaier/EDA/magic/windows'
+make[2]: Entering directory '/home/cmaier/EDA/magic/doc'
+cd latexfiles && make install
+make[3]: Entering directory '/home/cmaier/EDA/magic/doc/latexfiles'
+../../scripts/mkdirs /usr/local/lib/magic/doc
+mkdir /usr/local/lib/magic/doc
+cp ../psfiles/tut1.ps /usr/local/lib/magic/doc/tut1.ps
+cp ../psfiles/tut2.ps /usr/local/lib/magic/doc/tut2.ps
+cp ../psfiles/tut3.ps /usr/local/lib/magic/doc/tut3.ps
+cp ../psfiles/tut4.ps /usr/local/lib/magic/doc/tut4.ps
+cp ../psfiles/tut5.ps /usr/local/lib/magic/doc/tut5.ps
+cp ../psfiles/tut6.ps /usr/local/lib/magic/doc/tut6.ps
+cp ../psfiles/tut7.ps /usr/local/lib/magic/doc/tut7.ps
+cp ../psfiles/tut8.ps /usr/local/lib/magic/doc/tut8.ps
+cp ../psfiles/tut9.ps /usr/local/lib/magic/doc/tut9.ps
+cp ../psfiles/tut10.ps /usr/local/lib/magic/doc/tut10.ps
+cp ../psfiles/tut11.ps /usr/local/lib/magic/doc/tut11.ps
+cp ../psfiles/maint1.ps /usr/local/lib/magic/doc/maint1.ps
+cp ../psfiles/maint2.ps /usr/local/lib/magic/doc/maint2.ps
+cp ../psfiles/maint3.ps /usr/local/lib/magic/doc/maint3.ps
+cp ../psfiles/maint4.ps /usr/local/lib/magic/doc/maint4.ps
+cp ../psfiles/introduction.ps /usr/local/lib/magic/doc/introduction.ps
+cp ../psfiles/copyright.ps /usr/local/lib/magic/doc/copyright.ps
+cp ../psfiles/addendum6_5.ps /usr/local/lib/magic/doc/addendum6_5.ps
+cp ../psfiles/tutscm1.ps /usr/local/lib/magic/doc/tutscm1.ps
+cp ../psfiles/tutscm2.ps /usr/local/lib/magic/doc/tutscm2.ps
+cp ../psfiles/tutscm3.ps /usr/local/lib/magic/doc/tutscm3.ps
+cp ../psfiles/tutscm4.ps /usr/local/lib/magic/doc/tutscm4.ps
+cp ../psfiles/tuttcl1.ps /usr/local/lib/magic/doc/tuttcl1.ps
+cp ../psfiles/tuttcl2.ps /usr/local/lib/magic/doc/tuttcl2.ps
+cp ../psfiles/tuttcl3.ps /usr/local/lib/magic/doc/tuttcl3.ps
+cp ../psfiles/tuttcl4.ps /usr/local/lib/magic/doc/tuttcl4.ps
+cp ../psfiles/tuttcl5.ps /usr/local/lib/magic/doc/tuttcl5.ps
+cp ../psfiles/tutwrl1.ps /usr/local/lib/magic/doc/tutwrl1.ps
+make[3]: Leaving directory '/home/cmaier/EDA/magic/doc/latexfiles'
+cd man && make install
+make[3]: Entering directory '/home/cmaier/EDA/magic/doc/man'
+cp ext2spice.1 /usr/local/share/man/man1/ext2spice.1
+cp extcheck.1 /usr/local/share/man/man1/extcheck.1
+cp ext2sim.1 /usr/local/share/man/man1/ext2sim.1
+cp magic.1 /usr/local/share/man/man1/magic.1
+../../scripts/mkdirs /usr/local/share/man/man5
+mkdir /usr/local/share/man/man5
+cp cmap.5 /usr/local/share/man/man5/cmap.5
+cp displays.5 /usr/local/share/man/man5/displays.5
+cp dlys.5 /usr/local/share/man/man5/dlys.5
+cp dstyle.5 /usr/local/share/man/man5/dstyle.5
+cp ext.5 /usr/local/share/man/man5/ext.5
+cp glyphs.5 /usr/local/share/man/man5/glyphs.5
+cp mag.5 /usr/local/share/man/man5/mag.5
+cp net.5 /usr/local/share/man/man5/net.5
+cp sim.5 /usr/local/share/man/man5/sim.5
+make[3]: Leaving directory '/home/cmaier/EDA/magic/doc/man'
+cd tutcells && make install
+make[3]: Entering directory '/home/cmaier/EDA/magic/doc/tutcells'
+../../scripts/mkdirs /usr/local/lib/magic/tutorial
+mkdir /usr/local/lib/magic/tutorial
+cp m3a.mag /usr/local/lib/magic/tutorial/m3a.mag
+cp maint2a.mag /usr/local/lib/magic/tutorial/maint2a.mag
+cp tut1.mag /usr/local/lib/magic/tutorial/tut1.mag
+cp tut2a.mag /usr/local/lib/magic/tutorial/tut2a.mag
+cp tut2b.mag /usr/local/lib/magic/tutorial/tut2b.mag
+cp tut2c.mag /usr/local/lib/magic/tutorial/tut2c.mag
+cp tut2d.mag /usr/local/lib/magic/tutorial/tut2d.mag
+cp tut3a.mag /usr/local/lib/magic/tutorial/tut3a.mag
+cp tut3b.mag /usr/local/lib/magic/tutorial/tut3b.mag
+cp tut3c.mag /usr/local/lib/magic/tutorial/tut3c.mag
+cp tut3d.mag /usr/local/lib/magic/tutorial/tut3d.mag
+cp tut3e.mag /usr/local/lib/magic/tutorial/tut3e.mag
+cp tut3f.mag /usr/local/lib/magic/tutorial/tut3f.mag
+cp tut3g.mag /usr/local/lib/magic/tutorial/tut3g.mag
+cp tut3h.mag /usr/local/lib/magic/tutorial/tut3h.mag
+cp tut4a.mag /usr/local/lib/magic/tutorial/tut4a.mag
+cp tut4x.mag /usr/local/lib/magic/tutorial/tut4x.mag
+cp tut4y.mag /usr/local/lib/magic/tutorial/tut4y.mag
+cp tut4z.mag /usr/local/lib/magic/tutorial/tut4z.mag
+cp tut5a.mag /usr/local/lib/magic/tutorial/tut5a.mag
+cp tut5b.mag /usr/local/lib/magic/tutorial/tut5b.mag
+cp tut6a.mag /usr/local/lib/magic/tutorial/tut6a.mag
+cp tut6b.mag /usr/local/lib/magic/tutorial/tut6b.mag
+cp tut6c.mag /usr/local/lib/magic/tutorial/tut6c.mag
+cp tut6x.mag /usr/local/lib/magic/tutorial/tut6x.mag
+cp tut6y.mag /usr/local/lib/magic/tutorial/tut6y.mag
+cp tut7a.mag /usr/local/lib/magic/tutorial/tut7a.mag
+cp tut7b.mag /usr/local/lib/magic/tutorial/tut7b.mag
+cp tut7b.net /usr/local/lib/magic/tutorial/tut7b.net
+cp tut7c.mag /usr/local/lib/magic/tutorial/tut7c.mag
+cp tut7d.mag /usr/local/lib/magic/tutorial/tut7d.mag
+cp tut7d.net /usr/local/lib/magic/tutorial/tut7d.net
+cp tut8a.mag /usr/local/lib/magic/tutorial/tut8a.mag
+cp tut8b.mag /usr/local/lib/magic/tutorial/tut8b.mag
+cp tut8c.mag /usr/local/lib/magic/tutorial/tut8c.mag
+cp tut8d.mag /usr/local/lib/magic/tutorial/tut8d.mag
+cp tut8e.mag /usr/local/lib/magic/tutorial/tut8e.mag
+cp tut8f.mag /usr/local/lib/magic/tutorial/tut8f.mag
+cp tut8g.mag /usr/local/lib/magic/tutorial/tut8g.mag
+cp tut8h.mag /usr/local/lib/magic/tutorial/tut8h.mag
+cp tut8i.mag /usr/local/lib/magic/tutorial/tut8i.mag
+cp tut8j.mag /usr/local/lib/magic/tutorial/tut8j.mag
+cp tut8k.mag /usr/local/lib/magic/tutorial/tut8k.mag
+cp tut8l.mag /usr/local/lib/magic/tutorial/tut8l.mag
+cp tut8m.mag /usr/local/lib/magic/tutorial/tut8m.mag
+cp tut8n.mag /usr/local/lib/magic/tutorial/tut8n.mag
+cp tut8r.mag /usr/local/lib/magic/tutorial/tut8r.mag
+cp tut9a.mag /usr/local/lib/magic/tutorial/tut9a.mag
+cp tut9b.mag /usr/local/lib/magic/tutorial/tut9b.mag
+cp tut9x.mag /usr/local/lib/magic/tutorial/tut9x.mag
+cp tut9y.mag /usr/local/lib/magic/tutorial/tut9y.mag
+cp tut11a.mag /usr/local/lib/magic/tutorial/tut11a.mag
+cp tut11b.mag /usr/local/lib/magic/tutorial/tut11b.mag
+cp tut11c.mag /usr/local/lib/magic/tutorial/tut11c.mag
+cp tut11d.mag /usr/local/lib/magic/tutorial/tut11d.mag
+cp tut11a.al /usr/local/lib/magic/tutorial/tut11a.al
+cp tut11a.cmd /usr/local/lib/magic/tutorial/tut11a.cmd
+cp tut11a.ext /usr/local/lib/magic/tutorial/tut11a.ext
+cp tut11a.nodes /usr/local/lib/magic/tutorial/tut11a.nodes
+cp tut11a.sim /usr/local/lib/magic/tutorial/tut11a.sim
+cp tut11b.ext /usr/local/lib/magic/tutorial/tut11b.ext
+cp tut11c.ext /usr/local/lib/magic/tutorial/tut11c.ext
+cp tut11d.ext /usr/local/lib/magic/tutorial/tut11d.ext
+make[3]: Leaving directory '/home/cmaier/EDA/magic/doc/tutcells'
+cd html && make install
+make[3]: Entering directory '/home/cmaier/EDA/magic/doc/html'
+../../scripts/mkdirs /usr/local/lib/magic/doc/html
+mkdir /usr/local/lib/magic/doc/html
+tar cf - . | (cd /usr/local/lib/magic/doc/html; tar xf - )
+make[3]: Leaving directory '/home/cmaier/EDA/magic/doc/html'
+make[2]: Leaving directory '/home/cmaier/EDA/magic/doc'
+make[2]: Entering directory '/home/cmaier/EDA/magic/scmos'
+cd cif_template; make clean; make;
+make[3]: Entering directory '/home/cmaier/EDA/magic/scmos/cif_template'
+rm -rf objs
+make[3]: Leaving directory '/home/cmaier/EDA/magic/scmos/cif_template'
+make[3]: Entering directory '/home/cmaier/EDA/magic/scmos/cif_template'
+../../scripts/mkdirs objs
+mkdir objs
+rm -f objs/CIFin
+gcc -E -DSTANDARD cifin.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/CIFin
+rm -f objs/CIFout
+gcc -E -DSTANDARD cifout.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/CIFout
+rm -f objs/IBMCIFin
+gcc -E -DIBM cifin.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/IBMCIFin
+rm -f objs/IBMCIFout
+gcc -E -DIBM cifout.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/IBMCIFout
+rm -f objs/TMCIFin
+gcc -E -DTIGHTMETAL cifin.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/TMCIFin
+rm -f objs/TMCIFout
+gcc -E -DTIGHTMETAL cifout.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/TMCIFout
+rm -f objs/SUBCIFin
+gcc -E -DSUBMICRON cifin.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/SUBCIFin
+rm -f objs/SUBCIFout
+gcc -E -DSUBMICRON cifout.c | sed -e "s/\\\\/\\\\\\\\/" -e "/^#/D" -e "s/(gen )/(gen)/" -e "s/(nowell )/(nowell)/" -e "s/(nwell )/(nwell)/" -e "s/(pwell )/(pwell)/" > objs/SUBCIFout
+make[3]: Leaving directory '/home/cmaier/EDA/magic/scmos/cif_template'
+../scripts/preproc.py -ccomm -I./extract_template minimum.tech.in > minimum.tech
+../scripts/preproc.py -ccomm -I./extract_template gdsquery.tech.in > gdsquery.tech
+cat scmos.tech.in > scmos.tech.out
+../scripts/preproc.py -ccomm -I./extract_template -DV5 -DSTANDARD scmos.tech.out > scmos.tech
+rm -f scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+../scripts/preproc.py -ccomm -I./extract_template -DV5 -DHPTECH -DTIGHTMETAL scmos.tech.out > scmos-tm.tech
+rm -f scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+../scripts/preproc.py -ccomm -I./extract_template -DV5 -DSUBMICRON scmos.tech.out > scmos-sub.tech
+rm -f scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+cat scmos.tech.in > scmos.tech.out
+../scripts/preproc.py -ccomm -I./extract_template -DV5 -DSTANDARD -DWELL_ROUTE_CHECK scmos.tech.out > scmosWR.tech
+rm -f scmos.tech.out
+cp nmos.tech.in nmos.tech
+for i in mos.7bit.dstyle mos.7bit.std.cmap mos.24bit.dstyle mos.24bit.std.cmap mos.7bit.mraster_dstyle mos.7bit.mraster.cmap mos.OpenGL.dstyle mos.OpenGL.std.cmap minimum.tech gdsquery.tech scmos.tech scmos-tm.tech scmos-sub.tech scmosWR.tech nmos.tech; do \
+	cp $i /usr/local/lib/magic/sys; done
+make[2]: Leaving directory '/home/cmaier/EDA/magic/scmos'
+make[2]: Entering directory '/home/cmaier/EDA/magic/graphics'
+for i in bw.glyphs color.glyphs; do \
+rm -f /usr/local/lib/magic/sys/$i; \
+cp $i /usr/local/lib/magic/sys; done
+for i in FreeSerif.pt3 FreeSans.pt3 FreeMono.pt3; do \
+rm -f /usr/local/lib/magic/sys/$i; \
+cp $i /usr/local/lib/magic/sys; done
+make[2]: Leaving directory '/home/cmaier/EDA/magic/graphics'
+make[2]: Entering directory '/home/cmaier/EDA/magic/tcltk'
+rm -f /usr/local/bin/magic.sh /usr/local/bin/magic
+cp magic.sh /usr/local/bin/magic
+(cd /usr/local/bin; chmod 0755 magic)
+rm -f /usr/local/bin/ext2spice
+cp ext2spice.sh /usr/local/bin/ext2spice
+(cd /usr/local/bin; chmod 0755 ext2spice)
+rm -f /usr/local/bin/ext2sim
+cp ext2sim.sh /usr/local/bin/ext2sim
+(cd /usr/local/bin; chmod 0755 ext2sim)
+rm -f /usr/local/lib/magic/tcl/magicexec
+cp magicexec /usr/local/lib/magic/tcl/magicexec
+rm -f /usr/local/lib/magic/tcl/magicdnull
+cp magicdnull /usr/local/lib/magic/tcl/magicdnull
+(cd /usr/local/lib/magic/tcl; rm -f tkcon.tcl tkshell.tcl wrapper.tcl console.tcl techbuilder.tcl cellmgr.tcl drcmgr.tcl libmgr.tcl texthelper.tcl tools.tcl mazeroute.tcl strip_reflibs.tcl toolkit.tcl toolkit_rev0.tcl bsitools.tcl socketcmd.tcl readspice.tcl magic.tcl)
+for i in tkcon.tcl tkshell.tcl wrapper.tcl console.tcl techbuilder.tcl cellmgr.tcl drcmgr.tcl libmgr.tcl texthelper.tcl tools.tcl mazeroute.tcl strip_reflibs.tcl toolkit.tcl toolkit_rev0.tcl bsitools.tcl socketcmd.tcl readspice.tcl magic.tcl; do \
+	cp $i /usr/local/lib/magic/tcl; done
+(cd /usr/local/lib/magic/tcl; chmod 0755 tkcon.tcl tkshell.tcl)
+make[2]: Leaving directory '/home/cmaier/EDA/magic/tcltk'
+make[2]: Entering directory '/home/cmaier/EDA/magic/magic'
+rm -f /usr/local/lib/magic/tcl/tclmagic.so
+cp tclmagic.so /usr/local/lib/magic/tcl/tclmagic.so
+rm -f /usr/local/lib/magic/sys/.magicrc
+cp proto.magicrc /usr/local/lib/magic/sys/.magicrc
+rm -f /usr/local/lib/magic/sys/.initrc
+cp proto.initrc /usr/local/lib/magic/sys/.initrc
+rm -f /usr/local/lib/magic/sys/magicps.pro
+cp magicps.pro /usr/local/lib/magic/sys/magicps.pro
+rm -f /usr/local/lib/magic/tcl/bitmaps/up.gif
+cp bitmaps/up.gif /usr/local/lib/magic/tcl/bitmaps/up.gif
+rm -f /usr/local/lib/magic/tcl/bitmaps/down.gif
+cp bitmaps/down.gif /usr/local/lib/magic/tcl/bitmaps/down.gif
+rm -f /usr/local/lib/magic/tcl/bitmaps/left.gif
+cp bitmaps/left.gif /usr/local/lib/magic/tcl/bitmaps/left.gif
+rm -f /usr/local/lib/magic/tcl/bitmaps/right.gif
+cp bitmaps/right.gif /usr/local/lib/magic/tcl/bitmaps/right.gif
+rm -f /usr/local/lib/magic/tcl/bitmaps/zoom.gif
+cp bitmaps/zoom.gif /usr/local/lib/magic/tcl/bitmaps/zoom.gif
+rm -f /usr/local/lib/magic/tcl/bitmaps/lock.xbm
+cp bitmaps/lock.xbm /usr/local/lib/magic/tcl/bitmaps/lock.xbm
+make[2]: Leaving directory '/home/cmaier/EDA/magic/magic'
+make[2]: Entering directory '/home/cmaier/EDA/magic/net2ir'
+echo "Nothing to do here"
+Nothing to do here
+make[2]: Leaving directory '/home/cmaier/EDA/magic/net2ir'
+make[2]: Entering directory '/home/cmaier/EDA/magic/tcltk'
+rm -f /usr/local/bin/magic.sh /usr/local/bin/magic
+cp magic.sh /usr/local/bin/magic
+(cd /usr/local/bin; chmod 0755 magic)
+rm -f /usr/local/bin/ext2spice
+cp ext2spice.sh /usr/local/bin/ext2spice
+(cd /usr/local/bin; chmod 0755 ext2spice)
+rm -f /usr/local/bin/ext2sim
+cp ext2sim.sh /usr/local/bin/ext2sim
+(cd /usr/local/bin; chmod 0755 ext2sim)
+rm -f /usr/local/lib/magic/tcl/magicexec
+cp magicexec /usr/local/lib/magic/tcl/magicexec
+rm -f /usr/local/lib/magic/tcl/magicdnull
+cp magicdnull /usr/local/lib/magic/tcl/magicdnull
+(cd /usr/local/lib/magic/tcl; rm -f tkcon.tcl tkshell.tcl wrapper.tcl console.tcl techbuilder.tcl cellmgr.tcl drcmgr.tcl libmgr.tcl texthelper.tcl tools.tcl mazeroute.tcl strip_reflibs.tcl toolkit.tcl toolkit_rev0.tcl bsitools.tcl socketcmd.tcl readspice.tcl magic.tcl)
+for i in tkcon.tcl tkshell.tcl wrapper.tcl console.tcl techbuilder.tcl cellmgr.tcl drcmgr.tcl libmgr.tcl texthelper.tcl tools.tcl mazeroute.tcl strip_reflibs.tcl toolkit.tcl toolkit_rev0.tcl bsitools.tcl socketcmd.tcl readspice.tcl magic.tcl; do \
+	cp $i /usr/local/lib/magic/tcl; done
+(cd /usr/local/lib/magic/tcl; chmod 0755 tkcon.tcl tkshell.tcl)
+make[2]: Leaving directory '/home/cmaier/EDA/magic/tcltk'
+make[1]: Leaving directory '/home/cmaier/EDA/magic'

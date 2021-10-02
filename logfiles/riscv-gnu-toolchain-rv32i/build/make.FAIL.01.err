@@ -1,0 +1,62 @@
+configure: WARNING: neither ld nor gold are enabled
+*** This configuration is not supported in the following subdirectories:
+     gdbserver binutils gas gprof
+    (Any other directories should still work fine.)
+*** This configuration is not supported in the following subdirectories:
+     gdbserver readline libdecnumber sim gdb
+    (Any other directories should still work fine.)
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-gdb/missing: 81: makeinfo: not found
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-binutils/missing: 81: makeinfo: not found
+configure: WARNING:
+*** Makeinfo is missing. Info documentation will not be built.
+configure: WARNING:
+*** Makeinfo is missing. Info documentation will not be built.
+configure: WARNING: decimal float is not supported for this target, ignored
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+configure: WARNING: libdebuginfod is missing or unusable; some features may be unavailable.
+In file included from /usr/include/string.h:495,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:38:
+In function ‘strncpy’,
+    inlined from ‘dyn_string_insert_cstr’ at /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:280:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c: In function ‘dyn_string_insert_cstr’:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:272:16: note: length computed here
+  272 |   int length = strlen (src);
+      |                ^~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-binutils/missing: 81: makeinfo: not found
+WARNING: 'makeinfo' is missing on your system.
+         You should only need it if you modified a '.texi' file, or
+         any other file indirectly affecting the aspect of the manual.
+         You might want to install the Texinfo package:
+         <http://www.gnu.org/software/texinfo/>
+         The spurious makeinfo call might also be the consequence of
+         using a buggy 'make' (AIX, DU, IRIX), in which case you might
+         want to install GNU make:
+         <http://www.gnu.org/software/make/>
+make[4]: *** [Makefile:543: bfd.info] Error 127
+make[3]: *** [Makefile:1643: info-recursive] Error 1
+make[2]: *** [Makefile:2816: all-bfd] Error 2
+make[1]: *** [Makefile:902: all] Error 2
+make: *** [Makefile:480: stamps/build-binutils-newlib] Error 2
+make: *** Waiting for unfinished jobs....
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-gdb/missing: 81: makeinfo: not found
+WARNING: 'makeinfo' is missing on your system.
+         You should only need it if you modified a '.texi' file, or
+         any other file indirectly affecting the aspect of the manual.
+         You might want to install the Texinfo package:
+         <http://www.gnu.org/software/texinfo/>
+         The spurious makeinfo call might also be the consequence of
+         using a buggy 'make' (AIX, DU, IRIX), in which case you might
+         want to install GNU make:
+         <http://www.gnu.org/software/make/>
+make[4]: *** [Makefile:542: bfd.info] Error 127
+make[3]: *** [Makefile:1643: info-recursive] Error 1
+make[2]: *** [Makefile:2764: all-bfd] Error 2
+make[2]: *** Waiting for unfinished jobs....
+configure: WARNING: libipt is missing or unusable; some features may be unavailable.
+make[1]: *** [Makefile:853: all] Error 2
+make: *** [Makefile:499: stamps/build-gdb-newlib] Error 2

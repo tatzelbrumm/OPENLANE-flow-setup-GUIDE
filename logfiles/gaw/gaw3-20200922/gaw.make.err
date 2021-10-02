@@ -1,0 +1,113 @@
+ar: `u' modifier ignored since `D' is the default (see `U')
+gawzoom.c: In function ‘az_cmd_zoom_absolute’:
+gawzoom.c:82:4: warning: ‘gtk_adjustment_value_changed’ is deprecated [-Wdeprecated-declarations]
+   82 |    gtk_adjustment_value_changed (ud->xadj);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:38,
+                 from gawzoom.c:9:
+/usr/include/gtk-3.0/gtk/gtkadjustment.h:89:12: note: declared here
+   89 | void       gtk_adjustment_value_changed         (GtkAdjustment   *adjustment);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gawmain.c: In function ‘aw_submenu_activate_gaction’:
+gawmain.c:120:17: warning: unused variable ‘name’ [-Wunused-variable]
+  120 |    const gchar *name = g_action_get_name (G_ACTION (action));
+      |                 ^~~~
+In file included from ./userprefs.h:35,
+                 from ./gaw.h:6,
+                 from gawio.c:24:
+../lib/fdbuf.h:9: warning: "_GNU_SOURCE" redefined
+    9 | #define _GNU_SOURCE      /* off_t */
+      | 
+gawio.c:6: note: this is the location of the previous definition
+    6 | #define _GNU_SOURCE 1   /* netdb.h */
+      | 
+gawmain.c: In function ‘aw_create_main_window’:
+gawmain.c:643:7: warning: ‘gdk_screen_get_monitor_workarea’ is deprecated: Use 'gdk_monitor_get_workarea' instead [-Wdeprecated-declarations]
+  643 |       gdk_screen_get_monitor_workarea (screen, 0, &dest);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:31,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from gawmain.c:22:
+/usr/include/gtk-3.0/gdk/gdkscreen.h:82:14: note: declared here
+   82 | void         gdk_screen_get_monitor_workarea  (GdkScreen    *screen,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+datafile.c: In function ‘datafile_list_button_press_cb’:
+datafile.c:151:7: warning: ‘gtk_menu_popup’ is deprecated: Use '(gtk_menu_popup_at_widget, gtk_menu_popup_at_pointer, gtk_menu_popup_at_rect)' instead [-Wdeprecated-declarations]
+  151 |       gtk_menu_popup (GTK_MENU (wdata->lbpopmenu), NULL, NULL,
+      |       ^~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtklabel.h:34,
+                 from /usr/include/gtk-3.0/gtk/gtkaccellabel.h:35,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:33,
+                 from datafile.c:9:
+/usr/include/gtk-3.0/gtk/gtkmenu.h:138:9: note: declared here
+  138 | void    gtk_menu_popup    (GtkMenu        *menu,
+      |         ^~~~~~~~~~~~~~
+gawda.c: In function ‘da_set_gdk_cursor’:
+gawda.c:55:7: warning: ‘gdk_cursor_new’ is deprecated: Use 'gdk_cursor_new_for_display' instead [-Wdeprecated-declarations]
+   55 |       cursor = gdk_cursor_new(cursorType);
+      |       ^~~~~~
+In file included from /usr/include/gtk-3.0/gdk/gdk.h:34,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from gawda.c:10:
+/usr/include/gtk-3.0/gdk/gdkcursor.h:228:12: note: declared here
+  228 | GdkCursor* gdk_cursor_new   (GdkCursorType    cursor_type);
+      |            ^~~~~~~~~~~~~~
+gawda.c: In function ‘da_drawing_button_press_cb’:
+gawda.c:462:7: warning: ‘gtk_menu_popup’ is deprecated: Use '(gtk_menu_popup_at_widget, gtk_menu_popup_at_pointer, gtk_menu_popup_at_rect)' instead [-Wdeprecated-declarations]
+  462 |       gtk_menu_popup (GTK_MENU (menu), NULL, NULL,
+      |       ^~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtklabel.h:34,
+                 from /usr/include/gtk-3.0/gtk/gtkaccellabel.h:35,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:33,
+                 from gawda.c:10:
+/usr/include/gtk-3.0/gtk/gtkmenu.h:138:9: note: declared here
+  138 | void    gtk_menu_popup    (GtkMenu        *menu,
+      |         ^~~~~~~~~~~~~~
+gawwave.c: In function ‘wave_vw_button_press_cb’:
+gawwave.c:142:7: warning: ‘gtk_menu_popup’ is deprecated: Use '(gtk_menu_popup_at_widget, gtk_menu_popup_at_pointer, gtk_menu_popup_at_rect)' instead [-Wdeprecated-declarations]
+  142 |       gtk_menu_popup (GTK_MENU (vw->buttonpopup), NULL, NULL,
+      |       ^~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtklabel.h:34,
+                 from /usr/include/gtk-3.0/gtk/gtkaccellabel.h:35,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:33,
+                 from gawwave.c:9:
+/usr/include/gtk-3.0/gtk/gtkmenu.h:138:9: note: declared here
+  138 | void    gtk_menu_popup    (GtkMenu        *menu,
+      |         ^~~~~~~~~~~~~~
+gawgrip.c: In function ‘ag_grip_crossing_cb’:
+gawgrip.c:102:7: warning: ‘gdk_cursor_new’ is deprecated: Use 'gdk_cursor_new_for_display' instead [-Wdeprecated-declarations]
+  102 |       GdkCursor *cursor = gdk_cursor_new(GDK_SB_H_DOUBLE_ARROW);
+      |       ^~~~~~~~~
+In file included from /usr/include/gtk-3.0/gdk/gdk.h:34,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from gawgrip.c:10:
+/usr/include/gtk-3.0/gdk/gdkcursor.h:228:12: note: declared here
+  228 | GdkCursor* gdk_cursor_new   (GdkCursorType    cursor_type);
+      |            ^~~~~~~~~~~~~~
+gawtext.c: In function ‘gawtext_select_font_cb’:
+gawtext.c:213:4: warning: ‘gtk_font_button_get_font_name’ is deprecated [-Wdeprecated-declarations]
+  213 |    font = gtk_font_button_get_font_name (GTK_FONT_BUTTON (button));
+      |    ^~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:109,
+                 from gawtext.c:10:
+/usr/include/gtk-3.0/gtk/gtkfontbutton.h:96:23: note: declared here
+   96 | const gchar *         gtk_font_button_get_font_name  (GtkFontButton *font_button);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gawhelp.c: In function ‘ah_show_page’:
+gawhelp.c:45:4: warning: ignoring return value of ‘system’, declared with attribute warn_unused_result [-Wunused-result]
+   45 |    system( cmdline);
+      |    ^~~~~~~~~~~~~~~~
+gawmenus.c: In function ‘gm_create_layout’:
+gawmenus.c:1227:14: warning: assignment to ‘GMenuModel *’ {aka ‘struct _GMenuModel *’} from incompatible pointer type ‘GObject *’ {aka ‘struct _GObject *’} [-Wincompatible-pointer-types]
+ 1227 |    menumodel = g_object_ref (gtk_builder_get_object (builder,"menubar" ));
+      |              ^
+gawmenus.c:1235:18: warning: assignment to ‘GMenuModel *’ {aka ‘struct _GMenuModel *’} from incompatible pointer type ‘GObject *’ {aka ‘struct _GObject *’} [-Wincompatible-pointer-types]
+ 1235 |    ud->algomodel = g_object_ref (gtk_builder_get_object (builder,"algomenu" ));
+      |                  ^
+gawmenus.c:1238:19: warning: assignment to ‘GMenuModel *’ {aka ‘struct _GMenuModel *’} from incompatible pointer type ‘GObject *’ {aka ‘struct _GObject *’} [-Wincompatible-pointer-types]
+ 1238 |    ud->xconvmodel = g_object_ref (gtk_builder_get_object (builder,"xconvmenu" ));
+      |                   ^
+gawmenus.c:1241:17: warning: assignment to ‘GMenuModel *’ {aka ‘struct _GMenuModel *’} from incompatible pointer type ‘GObject *’ {aka ‘struct _GObject *’} [-Wincompatible-pointer-types]
+ 1241 |    ud->vlmmodel = g_object_ref (gtk_builder_get_object (builder,"VarList" ));
+      |                 ^

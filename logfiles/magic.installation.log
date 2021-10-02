@@ -1,0 +1,376 @@
+first ./configure output
+-----------------------------------------------------------
+Configuration Summary (principle requirements):
+
+X11:          yes
+Python3:      yes
+OpenGL:       yes
+Vector fonts: yes
+Cairo:        no
+
+  OpenGL graphics are available so Cairo is purely optional
+  unless there are issues with the video card driver's
+  implementation of OpenGL.
+Tcl/Tk:       no
+
+  Without Tcl/Tk, you cannot run the enhanced version of magic
+  with the toolbar and menus, and a number of other functions
+  are disabled.  If you did not specifically disable Tcl/Tk on
+  the configure command line, then getting this message means
+  that you do not have Tcl/Tk headers and or libraries installed,
+  or they are not in a standard path.  Try using configure options
+  --with-tcl=<DIR> and --with-tk=<DIR>.
+
+-----------------------------------------------------------
+
+Use 'make' to compile and 'make install' to install.
+
+Errors may not be printed to stdout:  see files 'make.log' 
+  and 'install.log' for complete error summary.
+
+-----------------------------------------------------------
+
+with synaptic, get:
+tcl-dev
+tcl-doc
+tk-dev
+tk-doc
+
+cmaier@DrEvil:~/EDA/magic$ ./configure --help
+`configure' configures this package to adapt to many kinds of systems.
+
+Usage: ./configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking ...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR            user executables [EPREFIX/bin]
+  --sbindir=DIR           system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR        program executables [EPREFIX/libexec]
+  --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --libdir=DIR            object code libraries [EPREFIX/lib]
+  --includedir=DIR        C header files [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc [/usr/include]
+  --datarootdir=DIR       read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR           read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR           info documentation [DATAROOTDIR/info]
+  --localedir=DIR         locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR            man documentation [DATAROOTDIR/man]
+  --docdir=DIR            documentation root [DATAROOTDIR/doc/PACKAGE]
+  --htmldir=DIR           html documentation [DOCDIR]
+  --dvidir=DIR            dvi documentation [DOCDIR]
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+X features:
+  --x-includes=DIR    X include files are in DIR
+  --x-libraries=DIR   X library files are in DIR
+
+System types:
+  --build=BUILD     configure for building on BUILD [guessed]
+  --host=HOST       cross-compile to build programs to run on HOST [BUILD]
+  --target=TARGET   configure for building compilers for TARGET [HOST]
+
+Optional Features:
+  --disable-option-checking  ignore unrecognized --enable/--with options
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --enable-memdebug            enable memory debugging
+  --enable-modular        embed ext2sim and ext2spice packages
+  --disable-locking        disable file locking
+  --disable-calma        disable calma package
+  --disable-cif        disable cif package
+  --disable-client-render        disable OpenGL client-side rendering
+  --enable-invert-y        invert screen top to bottom in OpenGL
+  --disable-framebuffer-backing-store     disable OpenGL framebuffer backing store
+  --disable-plot	disable plot package
+  --disable-lef	disable LEF package
+  --disable-readline	disable readline package
+  --disable-threads        disable threaded graphics
+  --disable-route        disable routing package
+  --disable-rsim        disable IRSIM tool
+  --disable-new-macros        disable new macro set
+  --enable-cairo-offscreen        Use Cairo for off-screen rendering
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-gnu-ld           assume the C compiler uses GNU ld [default=no]
+  --with-x                use the X Window System
+  --with-distdir=DIR	    install into location DIR for distribution
+  --with-interpreter=arg	enable interpreter (tcl, scheme, or no)
+  --with-tcl=DIR          Find tclConfig.sh in DIR
+  --with-tk=DIR           Find tkConfig.sh in DIR
+  --with-tclincls=DIR     Find tcl.h in DIR
+  --with-tkincls=DIR      Find tk.h in DIR
+  --with-tcllibs=DIR      Find Tcl library in DIR
+  --with-tklibs=DIR       Find Tk library in DIR
+  --with-openaccess=DIR	use OpenAccess libraries in DIR
+  --with-opengl=DIR          use OpenGL include files in DIR
+  --with-cairo=DIR          use Cairo include files in DIR
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  CPP         C preprocessor
+  CXX         C++ compiler command
+  CXXFLAGS    C++ compiler flags
+  XMKMF       Path to xmkmf, Makefile generator for X Window System
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to the package provider.
+
+cmaier@DrEvil:~/EDA/magic$ ./configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for library containing strerror... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of unsigned long long... 8
+checking whether byte ordering is bigendian... no
+checking for ANSI C header files... (cached) yes
+checking for setenv... yes
+checking for putenv... yes
+checking for vfork... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking param.h usability... no
+checking param.h presence... no
+checking for param.h... no
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking for va_copy... yes
+checking for __va_copy... yes
+checking for gcore... /usr/bin/gcore
+checking for csh... no
+checking for python3... /usr/bin/python3
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for XOpenDevice in -lXi... yes
+checking for XmuInternAtom in -lXmu... no
+checking for XextFindDisplay in -lXext... yes
+checking for tclConfig.sh... /usr/lib/tcl8.6/tclConfig.sh
+checking for tkConfig.sh... /usr/lib/tk8.6/tkConfig.sh
+checking for wish executable... /usr/bin/wish
+checking for tclsh executable... /usr/bin/tclsh
+checking GL/gl.h usability... yes
+checking GL/gl.h presence... yes
+checking for GL/gl.h... yes
+checking for glXCreateContext in -lGL... yes
+checking for gluNewTess in -lGLU... yes
+checking cairo/cairo.h usability... no
+checking cairo/cairo.h presence... no
+checking for cairo/cairo.h... no
+Cairo header files not found, disabling Cairo
+configure: creating ./config.status
+config.status: creating defs.mak
+config.status: WARNING:  'defs.mak.in' seems to ignore the --datarootdir setting
+
+-----------------------------------------------------------
+Configuration Summary (principle requirements):
+
+X11:          yes
+Python3:      yes
+OpenGL:       yes
+Vector fonts: yes
+Cairo:        no
+
+  OpenGL graphics are available so Cairo is purely optional
+  unless there are issues with the video card driver's
+  implementation of OpenGL.
+Tcl/Tk:       yes
+-----------------------------------------------------------
+
+Use 'make' to compile and 'make install' to install.
+
+Errors may not be printed to stdout:  see files 'make.log' 
+  and 'install.log' for complete error summary.
+
+-----------------------------------------------------------
+
+cmaier@DrEvil:~/EDA/magic$ make
+--- errors and warnings logged in file make.log
+--- making header file database/database.h
+
+cmaier@DrEvil:~/EDA/magic$ cat make.log
+make[1]: Entering directory '/home/cmaier/EDA/magic'
+--- making header file database/database.h
+./scripts/makedbh database/database.h.in database/database.h
+/bin/bash: ./scripts/makedbh: /bin/csh: bad interpreter: No such file or directory
+Makefile:47: recipe for target 'database/database.h' failed
+make[1]: *** [database/database.h] Error 126
+make[1]: Leaving directory '/home/cmaier/EDA/magic'
+
+cmaier@DrEvil:~/EDA/magic$ sudo apt-get install csh
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  distro-info linux-hwe-tools-4.15.0-123 linux-hwe-tools-4.15.0-128 linux-hwe-tools-4.15.0-129 linux-hwe-tools-4.15.0-132
+  linux-hwe-tools-4.15.0-133 linux-hwe-tools-4.15.0-136 linux-hwe-tools-4.15.0-137 linux-hwe-tools-4.15.0-139 python3-distro-info
+  python3-yaml
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  csh
+0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+Need to get 235 kB of archives.
+After this operation, 367 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/universe amd64 csh amd64 20110502-2.1ubuntu1 [235 kB]
+Fetched 235 kB in 0s (1.326 kB/s)
+Selecting previously unselected package csh.
+(Reading database ... 539141 files and directories currently installed.)
+Preparing to unpack .../csh_20110502-2.1ubuntu1_amd64.deb ...
+Unpacking csh (20110502-2.1ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for menu (2.1.47ubuntu1.16.04.1) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Registering documents with scrollkeeper...
+Setting up csh (20110502-2.1ubuntu1) ...
+update-alternatives: using /bin/bsd-csh to provide /bin/csh (csh) in auto mode
+Processing triggers for menu (2.1.47ubuntu1.16.04.1) ...
+
+make
+[result in make.log]
+
+cmaier@DrEvil:~/EDA/magic$ make install
+--- installing executable to /usr/local/bin
+--- installing runtime files to /usr/local/lib
+mkdir: cannot create directory ‘/usr/local/lib/magic’: Permission denied
+mkdir: cannot create directory ‘/usr/local/lib/magic/sys’: No such file or directory
+mkdir: cannot create directory ‘/usr/local/lib/magic’: Permission denied
+mkdir: cannot create directory ‘/usr/local/lib/magic/tcl’: No such file or directory
+mkdir: cannot create directory ‘/usr/local/lib/magic’: Permission denied
+mkdir: cannot create directory ‘/usr/local/lib/magic/tcl’: No such file or directory
+mkdir: cannot create directory ‘/usr/local/lib/magic/tcl/bitmaps’: No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+/bin/bash: line 1: cd: /usr/local/lib/magic/sys: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+make[2]: *** [install-tcl] Error 1
+mkdir: cannot create directory ‘/usr/local/lib/magic’: Permission denied
+mkdir: cannot create directory ‘/usr/local/lib/magic/doc’: No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/doc/tut1.ps': No such file or directory
+make[3]: *** [/usr/local/lib/magic/doc/tut1.ps] Error 1
+make[2]: *** [install-tcl] Error 2
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+make[2]: *** [install-tcl] Error 1
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+cp: cannot create regular file '/usr/local/lib/magic/sys': No such file or directory
+make[2]: *** [glyphs] Error 1
+cp: cannot create regular file '/usr/local/bin/magic': Permission denied
+make[2]: *** [/usr/local/bin/magic.sh] Error 1
+cp: cannot create regular file '/usr/local/lib/magic/tcl/tclmagic.so': No such file or directory
+make[2]: *** [/usr/local/lib/magic/tcl/tclmagic.so] Error 1
+cp: cannot create regular file '/usr/local/bin/magic': Permission denied
+make[2]: *** [/usr/local/bin/magic.sh] Error 1
+make[1]: *** [install-tcl-real] Error 2
+Makefile:90: recipe for target 'install-tcl' failed
+make: *** [install-tcl] Error 2
+
+cmaier@DrEvil:~/EDA/magic$ sudo make install
+--- installing executable to /usr/local/bin
+--- installing runtime files to /usr/local/lib

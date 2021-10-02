@@ -1,0 +1,69 @@
+make[1]: Entering directory '/home/cmaier/EDA/netgen'
+./scripts/mkdirs /usr/local/bin \
+	/usr/local/lib/netgen/tcl /usr/local/lib/netgen/python
+mkdir /usr/local/lib/netgen
+mkdir /usr/local/lib/netgen/tcl
+mkdir /usr/local/lib/netgen/python
+for dir in lib doc tcltk netgen python tcltk; do \
+	(cd $dir && make install-tcl); done
+make[2]: Entering directory '/home/cmaier/EDA/netgen/lib'
+../scripts/mkdirs /usr/local/lib/netgen
+rm -f /usr/local/lib/netgen/ntk2adl.sh
+cp ntk2adl.sh /usr/local/lib/netgen/ntk2adl.sh
+../scripts/mkdirs /usr/local/lib/netgen
+rm -f /usr/local/lib/netgen/spice
+cp spice /usr/local/lib/netgen/spice
+../scripts/mkdirs /usr/local/lib/netgen
+rm -f /usr/local/lib/netgen/spice.bot
+cp spice.bot /usr/local/lib/netgen/spice.bot
+../scripts/mkdirs /usr/local/lib/netgen
+rm -f /usr/local/lib/netgen/spice.top
+cp spice.top /usr/local/lib/netgen/spice.top
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/lib'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/doc'
+../scripts/mkdirs /usr/local/lib/netgen/doc
+mkdir /usr/local/lib/netgen/doc
+cp netgen.doc /usr/local/lib/netgen/doc/netgen.doc
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/doc'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+rm -f /usr/local/bin/netgen.sh /usr/local/bin/netgen
+cp netgen.sh /usr/local/bin/netgen
+(cd /usr/local/bin; chmod 0755 netgen)
+rm -f /usr/local/lib/netgen/tcl/tkcon.tcl
+cp tkcon.tcl /usr/local/lib/netgen/tcl/tkcon.tcl
+rm -f /usr/local/lib/netgen/tcl/console.tcl
+cp console.tcl /usr/local/lib/netgen/tcl/console.tcl
+rm -f /usr/local/lib/netgen/tcl/netgen.tcl
+cp netgen.tcl /usr/local/lib/netgen/tcl/netgen.tcl
+rm -f /usr/local/lib/netgen/tcl/netgenexec
+cp netgenexec /usr/local/lib/netgen/tcl/netgenexec
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/netgen'
+rm -f /usr/local/lib/netgen/tcl/tclnetgen.so
+cp tclnetgen.so /usr/local/lib/netgen/tcl/tclnetgen.so
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/netgen'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/python'
+rm -f /usr/local/lib/netgen/python/consoletext.py
+cp consoletext.py /usr/local/lib/netgen/python/consoletext.py
+rm -f /usr/local/lib/netgen/python/helpwindow.py
+cp helpwindow.py /usr/local/lib/netgen/python/helpwindow.py
+rm -f /usr/local/lib/netgen/python/lvs_manager.py
+cp lvs_manager.py /usr/local/lib/netgen/python/lvs_manager.py
+chmod a+x /usr/local/lib/netgen/python/lvs_manager.py
+rm -f /usr/local/lib/netgen/python/treeviewsplit.py
+cp treeviewsplit.py /usr/local/lib/netgen/python/treeviewsplit.py
+rm -f /usr/local/lib/netgen/python/tksimpledialog.py
+cp tksimpledialog.py /usr/local/lib/netgen/python/tksimpledialog.py
+rm -f /usr/local/lib/netgen/python/tooltip.py
+cp tooltip.py /usr/local/lib/netgen/python/tooltip.py
+rm -f /usr/local/lib/netgen/python/lvs_help.txt
+cp lvs_help.txt /usr/local/lib/netgen/python/lvs_help.txt
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/python'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+rm -f /usr/local/bin/netgen.sh /usr/local/bin/netgen
+cp netgen.sh /usr/local/bin/netgen
+(cd /usr/local/bin; chmod 0755 netgen)
+rm -f /usr/local/lib/netgen/tcl/netgenexec
+cp netgenexec /usr/local/lib/netgen/tcl/netgenexec
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+make[1]: Leaving directory '/home/cmaier/EDA/netgen'

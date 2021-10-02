@@ -1,0 +1,1 @@
+Makefile:84: *** /home/cmaier/EDA/rv32i//riscv32-unknown-elf-gcc is not found, please export GCC_PATH and GCC_PREFIX before running make.  Stop.

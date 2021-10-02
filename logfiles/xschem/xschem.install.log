@@ -1,0 +1,81 @@
+cd src && make install
+make[1]: Entering directory '/home/cmaier/EDA/xschem/src'
+../scconfig/sccbox mkdir -p "/usr/local/bin"
+../scconfig/sccbox mkdir -p "/usr/local/share/xschem"
+../scconfig/sccbox install -f xschem "/usr/local/bin"/xschem
+../scconfig/sccbox install -f rawtovcd "/usr/local/bin"/rawtovcd
+../scconfig/sccbox install -f -d systemlib/* "/usr/local/share/xschem"/systemlib 
+../scconfig/sccbox install -f keys.help  "/usr/local/share/xschem"/keys.help 
+../scconfig/sccbox install -f xschem.help  "/usr/local/share/xschem"/xschem.help 
+../scconfig/sccbox install -f xschem.tcl  "/usr/local/share/xschem"/xschem.tcl 
+../scconfig/sccbox install -f break.awk  "/usr/local/share/xschem"/break.awk 
+../scconfig/sccbox install -f convert_to_verilog2001.awk  "/usr/local/share/xschem"/convert_to_verilog2001.awk 
+../scconfig/sccbox install -f flatten.awk  "/usr/local/share/xschem"/flatten.awk 
+../scconfig/sccbox install -f flatten_tedax.awk  "/usr/local/share/xschem"/flatten_tedax.awk 
+../scconfig/sccbox install -f flatten_savenodes.awk  "/usr/local/share/xschem"/flatten_savenodes.awk 
+../scconfig/sccbox install -f make_sym.awk  "/usr/local/share/xschem"/make_sym.awk 
+../scconfig/sccbox install -f make_sym_lcc.awk  "/usr/local/share/xschem"/make_sym_lcc.awk 
+../scconfig/sccbox install -f symgen.awk  "/usr/local/share/xschem"/symgen.awk 
+../scconfig/sccbox install -f order_labels.awk  "/usr/local/share/xschem"/order_labels.awk 
+../scconfig/sccbox install -f sort_labels.awk  "/usr/local/share/xschem"/sort_labels.awk 
+../scconfig/sccbox install -f spice.awk  "/usr/local/share/xschem"/spice.awk 
+../scconfig/sccbox install -f tedax.awk  "/usr/local/share/xschem"/tedax.awk 
+../scconfig/sccbox install -f verilog.awk  "/usr/local/share/xschem"/verilog.awk 
+../scconfig/sccbox install -f vhdl.awk  "/usr/local/share/xschem"/vhdl.awk 
+../scconfig/sccbox install -f hspice_backannotate.tcl  "/usr/local/share/xschem"/hspice_backannotate.tcl 
+../scconfig/sccbox install -f add_custom_menu.tcl  "/usr/local/share/xschem"/add_custom_menu.tcl 
+../scconfig/sccbox install -f change_index.tcl  "/usr/local/share/xschem"/change_index.tcl 
+../scconfig/sccbox install -f resources.tcl  "/usr/local/share/xschem"/resources.tcl 
+../scconfig/sccbox install -f xschemrc  "/usr/local/share/xschem"/xschemrc 
+../scconfig/sccbox install -f ngspice_backannotate.tcl  "/usr/local/share/xschem"/ngspice_backannotate.tcl 
+../scconfig/sccbox install -f rawtovcd  "/usr/local/share/xschem"/rawtovcd 
+../scconfig/sccbox install -f gschemtoxschem.awk  "/usr/local/share/xschem"/gschemtoxschem.awk 
+make[1]: Leaving directory '/home/cmaier/EDA/xschem/src'
+cd xschem_library && make install
+make[1]: Entering directory '/home/cmaier/EDA/xschem/xschem_library'
+../scconfig/sccbox mkdir -p "/usr/local/share/xschem/xschem_library/devices" "/usr/local/share/doc/xschem"/examples "/usr/local/share/doc/xschem"/pcb
+../scconfig/sccbox mkdir -p "/usr/local/share/doc/xschem"/logic "/usr/local/share/doc/xschem"/xTAG "/usr/local/share/doc/xschem"/binto7seg 
+../scconfig/sccbox mkdir -p "/usr/local/share/doc/xschem"/symgen "/usr/local/share/doc/xschem"/ngspice "/usr/local/share/doc/xschem"/rulz-r8c33
+../scconfig/sccbox mkdir -p "/usr/local/share/doc/xschem"/rom8k "/usr/local/share/doc/xschem"/gschem_import/sym
+../scconfig/sccbox install -f -d devices/*.sym "/usr/local/share/xschem/xschem_library/devices"
+../scconfig/sccbox install -f -d devices/*.sch "/usr/local/share/xschem/xschem_library/devices"
+../scconfig/sccbox install -f -d examples/*.sym "/usr/local/share/doc/xschem"/examples
+../scconfig/sccbox install -f -d examples/*.sch "/usr/local/share/doc/xschem"/examples
+../scconfig/sccbox install -f -d examples/stimuli.* "/usr/local/share/doc/xschem"/examples
+../scconfig/sccbox install -f -d binto7seg/*.sym "/usr/local/share/doc/xschem"/binto7seg
+../scconfig/sccbox install -f -d binto7seg/*.sch "/usr/local/share/doc/xschem"/binto7seg
+../scconfig/sccbox install -f -d xTAG/*.sym* "/usr/local/share/doc/xschem"/xTAG
+../scconfig/sccbox install -f -d xTAG/*.sch "/usr/local/share/doc/xschem"/xTAG
+../scconfig/sccbox install -f -d logic/*.sym "/usr/local/share/doc/xschem"/logic
+../scconfig/sccbox install -f -d logic/*.sch "/usr/local/share/doc/xschem"/logic
+../scconfig/sccbox install -f -d logic/stimuli.* "/usr/local/share/doc/xschem"/logic
+../scconfig/sccbox install -f -d rulz-r8c33/*.sch "/usr/local/share/doc/xschem"/rulz-r8c33
+../scconfig/sccbox install -f -d rulz-r8c33/*.sym* "/usr/local/share/doc/xschem"/rulz-r8c33
+../scconfig/sccbox install -f -d pcb/*.sch "/usr/local/share/doc/xschem"/pcb
+../scconfig/sccbox install -f -d pcb/*.sym "/usr/local/share/doc/xschem"/pcb
+../scconfig/sccbox install -f -d ngspice/*.sym "/usr/local/share/doc/xschem"/ngspice
+../scconfig/sccbox install -f -d ngspice/*.sch "/usr/local/share/doc/xschem"/ngspice
+../scconfig/sccbox install -f -d ngspice/stimuli.* "/usr/local/share/doc/xschem"/ngspice
+../scconfig/sccbox install -f -d rom8k/*.sym "/usr/local/share/doc/xschem"/rom8k
+../scconfig/sccbox install -f -d rom8k/*.sch "/usr/local/share/doc/xschem"/rom8k
+../scconfig/sccbox install -f -d xschem_simulator/*.sym "/usr/local/share/doc/xschem"/xschem_simulator
+../scconfig/sccbox install -f -d xschem_simulator/*.sch "/usr/local/share/doc/xschem"/xschem_simulator
+../scconfig/sccbox install -f -d rom8k/stimuli.* "/usr/local/share/doc/xschem"/rom8k
+../scconfig/sccbox install -f -d symgen/*.sym* "/usr/local/share/doc/xschem"/symgen
+../scconfig/sccbox install -f -d gschem_import/*.sym "/usr/local/share/doc/xschem"/gschem_import
+../scconfig/sccbox install -f -d gschem_import/*.sch "/usr/local/share/doc/xschem"/gschem_import
+../scconfig/sccbox install -f -d gschem_import/sym/*.sym "/usr/local/share/doc/xschem"/gschem_import/sym
+make[1]: Leaving directory '/home/cmaier/EDA/xschem/xschem_library'
+cd doc && make install
+make[1]: Entering directory '/home/cmaier/EDA/xschem/doc'
+../scconfig/sccbox mkdir -p "/usr/local/share/doc/xschem" "/usr/local/share/doc/xschem"/xschem_man "/usr/local/share/man"/man1
+../scconfig/sccbox install -f -d *.svg *.html *.css *.png "/usr/local/share/doc/xschem"
+../scconfig/sccbox install -f -d xschem_man/*.html xschem_man/*.css xschem_man/*.png "/usr/local/share/doc/xschem"/xschem_man
+../scconfig/sccbox install -f manpages/xschem.1 "/usr/local/share/man"/man1/xschem.1
+make[1]: Leaving directory '/home/cmaier/EDA/xschem/doc'
+cd src/utile && make install
+make[1]: Entering directory '/home/cmaier/EDA/xschem/src/utile'
+../../scconfig/sccbox mkdir -p "/usr/local/share/xschem/utile"
+../../scconfig/sccbox install -f -d * "/usr/local/share/xschem/utile"
+../../scconfig/sccbox rm "/usr/local/share/xschem/utile/Makefile"
+make[1]: Leaving directory '/home/cmaier/EDA/xschem/src/utile'

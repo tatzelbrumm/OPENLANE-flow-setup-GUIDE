@@ -1,0 +1,18 @@
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11378: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11379: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11380: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11381: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+/home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v:11382: warning: choosing typ expression.
+../../../caravel/verilog/gl/mgmt_protect.v:4878: warning: input port vssd is coerced to inout.
+../../../caravel/verilog/gl/mgmt_protect.v:4880: warning: input port vssa1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3101: warning: input port vssd is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3102: warning: input port vssd1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3103: warning: input port vssd2 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3099: warning: input port vssa1 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3100: warning: input port vssa2 is coerced to inout.
+../../../caravel/verilog/gl/caravan.v:3140: warning: input port clock is coerced to inout.

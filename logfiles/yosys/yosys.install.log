@@ -1,0 +1,8 @@
+[Makefile.conf] CONFIG := gcc
+mkdir -p /usr/local/bin
+cp yosys yosys-config yosys-abc yosys-filterlib yosys-smtbmc /usr/local/bin
+strip -S /usr/local/bin/yosys
+strip /usr/local/bin/yosys-abc
+strip /usr/local/bin/yosys-filterlib
+mkdir -p /usr/local/share/yosys
+cp -r share/. /usr/local/share/yosys/.

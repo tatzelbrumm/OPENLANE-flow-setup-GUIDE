@@ -1,0 +1,496 @@
+[Makefile.conf] CONFIG := gcc
+[  0%] Building kernel/version_50be8fd0.cc
+[  0%] Building kernel/version_50be8fd0.o
+[  0%] Building kernel/driver.o
+[  0%] Building techlibs/common/simlib_help.inc
+[  0%] Building techlibs/common/simcells_help.inc
+[  1%] Building kernel/register.o
+[  1%] Building kernel/rtlil.o
+[  1%] Building kernel/log.o
+[  2%] Building kernel/calc.o
+[  2%] Building kernel/yosys.o
+[  2%] Building kernel/binding.o
+[  3%] Building kernel/cellaigs.o
+[  3%] Building kernel/celledges.o
+[  3%] Building kernel/satgen.o
+[  4%] Building kernel/qcsat.o
+[  4%] Building kernel/mem.o
+[  5%] Building kernel/ffmerge.o
+[  5%] Building libs/bigint/BigIntegerAlgorithms.o
+[  5%] Building libs/bigint/BigInteger.o
+[  6%] Building libs/bigint/BigIntegerUtils.o
+[  6%] Building libs/bigint/BigUnsigned.o
+[  6%] Building libs/bigint/BigUnsignedInABase.o
+[  7%] Building libs/sha1/sha1.o
+[  7%] Building libs/json11/json11.o
+[  7%] Building libs/subcircuit/subcircuit.o
+[  8%] Building libs/ezsat/ezsat.o
+[  8%] Building libs/ezsat/ezminisat.o
+[  8%] Building libs/minisat/Options.o
+[  9%] Building libs/minisat/SimpSolver.o
+[  9%] Building libs/minisat/Solver.o
+[ 10%] Building libs/minisat/System.o
+[ 10%] Building frontends/aiger/aigerparse.o
+[ 10%] Building frontends/rpc/rpc_frontend.o
+[ 11%] Building frontends/verific/verific.o
+[ 11%] Building frontends/json/jsonparse.o
+[ 11%] Building frontends/verilog/verilog_parser.tab.cc
+[ 11%] Building frontends/verilog/verilog_parser.tab.o
+[ 11%] Building frontends/verilog/verilog_lexer.cc
+[ 12%] Building frontends/verilog/verilog_lexer.o
+[ 12%] Building frontends/verilog/preproc.o
+[ 12%] Building frontends/verilog/verilog_frontend.o
+[ 13%] Building frontends/verilog/const2ast.o
+[ 13%] Building frontends/ast/ast.o
+[ 13%] Building frontends/ast/simplify.o
+[ 14%] Building frontends/ast/genrtlil.o
+[ 14%] Building frontends/ast/dpicall.o
+[ 15%] Building frontends/ast/ast_binding.o
+[ 15%] Building frontends/blif/blifparse.o
+[ 15%] Building frontends/liberty/liberty.o
+[ 15%] Building frontends/rtlil/rtlil_parser.tab.cc
+[ 16%] Building frontends/rtlil/rtlil_parser.tab.o
+[ 16%] Building frontends/rtlil/rtlil_lexer.cc
+[ 16%] Building frontends/rtlil/rtlil_lexer.o
+[ 16%] Building frontends/rtlil/rtlil_frontend.o
+[ 17%] Building passes/tests/test_autotb.o
+[ 17%] Building passes/tests/test_cell.o
+[ 17%] Building passes/tests/test_abcloop.o
+[ 18%] Building passes/sat/sat.o
+[ 18%] Building passes/sat/freduce.o
+[ 19%] Building passes/sat/eval.o
+[ 19%] Building passes/sat/sim.o
+[ 19%] Building passes/sat/miter.o
+[ 20%] Building passes/sat/expose.o
+[ 20%] Building passes/sat/assertpmux.o
+[ 20%] Building passes/sat/clk2fflogic.o
+[ 21%] Building passes/sat/async2sync.o
+[ 21%] Building passes/sat/supercover.o
+[ 21%] Building passes/sat/fmcombine.o
+[ 22%] Building passes/sat/mutate.o
+[ 22%] Building passes/sat/cutpoint.o
+[ 22%] Building passes/sat/fminit.o
+[ 23%] Building passes/sat/qbfsat.o
+[ 23%] Building passes/cmds/exec.o
+[ 24%] Building passes/cmds/add.o
+[ 24%] Building passes/cmds/delete.o
+[ 24%] Building passes/cmds/design.o
+[ 25%] Building passes/cmds/select.o
+[ 25%] Building passes/cmds/show.o
+[ 25%] Building passes/cmds/rename.o
+[ 26%] Building passes/cmds/autoname.o
+[ 26%] Building passes/cmds/connect.o
+[ 26%] Building passes/cmds/scatter.o
+[ 27%] Building passes/cmds/setundef.o
+[ 27%] Building passes/cmds/splitnets.o
+[ 27%] Building passes/cmds/stat.o
+[ 28%] Building passes/cmds/setattr.o
+[ 28%] Building passes/cmds/copy.o
+[ 29%] Building passes/cmds/splice.o
+[ 29%] Building passes/cmds/scc.o
+[ 29%] Building passes/cmds/torder.o
+[ 30%] Building passes/cmds/logcmd.o
+[ 30%] Building passes/cmds/tee.o
+[ 30%] Building passes/cmds/write_file.o
+[ 31%] Building passes/cmds/connwrappers.o
+[ 31%] Building passes/cmds/cover.o
+[ 31%] Building passes/cmds/trace.o
+[ 32%] Building passes/cmds/plugin.o
+[ 32%] Building passes/cmds/check.o
+[ 32%] Building passes/cmds/qwp.o
+[ 33%] Building passes/cmds/edgetypes.o
+[ 33%] Building passes/cmds/portlist.o
+[ 34%] Building passes/cmds/chformal.o
+[ 34%] Building passes/cmds/chtype.o
+[ 34%] Building passes/cmds/blackbox.o
+[ 35%] Building passes/cmds/ltp.o
+[ 35%] Building passes/cmds/bugpoint.o
+[ 35%] Building passes/cmds/scratchpad.o
+[ 36%] Building passes/cmds/logger.o
+[ 36%] Building passes/cmds/printattrs.o
+[ 36%] Building passes/memory/memory.o
+[ 37%] Building passes/memory/memory_dff.o
+[ 37%] Building passes/memory/memory_share.o
+[ 38%] Building passes/memory/memory_collect.o
+[ 38%] Building passes/memory/memory_unpack.o
+[ 38%] Building passes/memory/memory_bram.o
+[ 39%] Building passes/memory/memory_map.o
+[ 39%] Building passes/memory/memory_memx.o
+[ 39%] Building passes/memory/memory_nordff.o
+[ 40%] Building passes/memory/memory_narrow.o
+[ 40%] Building passes/techmap/flatten.o
+[ 40%] Building passes/techmap/techmap.o
+[ 41%] Building passes/techmap/simplemap.o
+[ 41%] Building passes/techmap/dfflibmap.o
+[ 41%] Building passes/techmap/maccmap.o
+[ 42%] Building passes/techmap/libparse.o
+[ 42%] Building passes/techmap/abc.o
+[ 43%] Building passes/techmap/abc9.o
+[ 43%] Building passes/techmap/abc9_exe.o
+[ 43%] Building passes/techmap/abc9_ops.o
+[ 44%] Building passes/techmap/iopadmap.o
+[ 44%] Building passes/techmap/clkbufmap.o
+[ 44%] Building passes/techmap/hilomap.o
+[ 45%] Building passes/techmap/extract.o
+[ 45%] Building passes/techmap/extract_fa.o
+[ 45%] Building passes/techmap/extract_counter.o
+[ 46%] Building passes/techmap/extract_reduce.o
+[ 46%] Building passes/techmap/alumacc.o
+[ 46%] Building passes/techmap/dffinit.o
+[ 47%] Building passes/techmap/pmuxtree.o
+[ 47%] Building passes/techmap/muxcover.o
+[ 48%] Building passes/techmap/aigmap.o
+[ 48%] Building passes/techmap/tribuf.o
+[ 48%] Building passes/techmap/lut2mux.o
+[ 49%] Building passes/techmap/nlutmap.o
+[ 49%] Building passes/techmap/shregmap.o
+[ 49%] Building passes/techmap/deminout.o
+[ 50%] Building passes/techmap/insbuf.o
+[ 50%] Building passes/techmap/attrmvcp.o
+[ 50%] Building passes/techmap/attrmap.o
+[ 51%] Building passes/techmap/zinit.o
+[ 51%] Building passes/techmap/dfflegalize.o
+[ 51%] Building passes/techmap/dffunmap.o
+[ 52%] Building passes/techmap/flowmap.o
+[ 52%] Building passes/techmap/extractinv.o
+[ 52%] Building passes/pmgen/test_pmgen_pm.h
+[ 52%] Building passes/pmgen/ice40_dsp_pm.h
+[ 52%] Building passes/pmgen/peepopt_pm.h
+[ 52%] Building passes/pmgen/xilinx_srl_pm.h
+[ 53%] Building passes/pmgen/test_pmgen.o
+[ 53%] Building passes/pmgen/ice40_dsp.o
+[ 53%] Building passes/pmgen/ice40_wrapcarry_pm.h
+[ 53%] Building passes/pmgen/ice40_wrapcarry.o
+[ 53%] Building passes/pmgen/xilinx_dsp_pm.h
+[ 53%] Building passes/pmgen/xilinx_dsp48a_pm.h
+[ 53%] Building passes/pmgen/xilinx_dsp_CREG_pm.h
+[ 53%] Building passes/pmgen/xilinx_dsp_cascade_pm.h
+[ 54%] Building passes/pmgen/xilinx_dsp.o
+[ 54%] Building passes/pmgen/peepopt.o
+[ 54%] Building passes/pmgen/xilinx_srl.o
+[ 55%] Building passes/opt/opt.o
+[ 55%] Building passes/opt/opt_merge.o
+[ 55%] Building passes/opt/opt_mem.o
+[ 56%] Building passes/opt/opt_mem_feedback.o
+[ 56%] Building passes/opt/opt_mem_priority.o
+[ 57%] Building passes/opt/opt_mem_widen.o
+[ 57%] Building passes/opt/opt_muxtree.o
+[ 57%] Building passes/opt/opt_reduce.o
+[ 58%] Building passes/opt/opt_dff.o
+[ 58%] Building passes/opt/opt_share.o
+[ 58%] Building passes/opt/opt_clean.o
+[ 59%] Building passes/opt/opt_expr.o
+[ 59%] Building passes/opt/share.o
+[ 59%] Building passes/opt/wreduce.o
+[ 60%] Building passes/opt/opt_demorgan.o
+[ 60%] Building passes/opt/rmports.o
+[ 60%] Building passes/opt/opt_lut.o
+[ 61%] Building passes/opt/opt_lut_ins.o
+[ 61%] Building passes/opt/pmux2shiftx.o
+[ 62%] Building passes/opt/muxpack.o
+[ 62%] Building passes/hierarchy/hierarchy.o
+[ 62%] Building passes/hierarchy/uniquify.o
+[ 63%] Building passes/hierarchy/submod.o
+[ 63%] Building passes/equiv/equiv_make.o
+[ 63%] Building passes/equiv/equiv_miter.o
+[ 64%] Building passes/equiv/equiv_simple.o
+[ 64%] Building passes/equiv/equiv_status.o
+[ 64%] Building passes/equiv/equiv_add.o
+[ 65%] Building passes/equiv/equiv_remove.o
+[ 65%] Building passes/equiv/equiv_induct.o
+[ 65%] Building passes/equiv/equiv_struct.o
+[ 66%] Building passes/equiv/equiv_purge.o
+[ 66%] Building passes/equiv/equiv_mark.o
+[ 67%] Building passes/equiv/equiv_opt.o
+[ 67%] Building passes/fsm/fsm.o
+[ 67%] Building passes/fsm/fsm_detect.o
+[ 68%] Building passes/fsm/fsm_extract.o
+[ 68%] Building passes/fsm/fsm_opt.o
+[ 68%] Building passes/fsm/fsm_expand.o
+[ 69%] Building passes/fsm/fsm_recode.o
+[ 69%] Building passes/fsm/fsm_info.o
+[ 69%] Building passes/fsm/fsm_export.o
+[ 70%] Building passes/fsm/fsm_map.o
+[ 70%] Building passes/proc/proc.o
+[ 70%] Building passes/proc/proc_prune.o
+[ 71%] Building passes/proc/proc_clean.o
+[ 71%] Building passes/proc/proc_rmdead.o
+[ 72%] Building passes/proc/proc_init.o
+[ 72%] Building passes/proc/proc_arst.o
+[ 72%] Building passes/proc/proc_mux.o
+[ 73%] Building passes/proc/proc_dlatch.o
+[ 73%] Building passes/proc/proc_dff.o
+[ 73%] Building passes/proc/proc_memwr.o
+[ 74%] Building backends/firrtl/firrtl.o
+[ 74%] Building backends/simplec/simplec.o
+[ 74%] Building backends/edif/edif.o
+[ 75%] Building backends/cxxrtl/cxxrtl_backend.o
+[ 75%] Building backends/aiger/aiger.o
+[ 76%] Building backends/aiger/xaiger.o
+[ 76%] Building backends/smt2/smt2.o
+[ 76%] Building backends/table/table.o
+[ 77%] Building backends/btor/btor.o
+[ 77%] Building backends/intersynth/intersynth.o
+[ 77%] Building backends/json/json.o
+[ 78%] Building backends/verilog/verilog_backend.o
+[ 78%] Building backends/smv/smv.o
+[ 78%] Building backends/blif/blif.o
+[ 79%] Building backends/rtlil/rtlil_backend.o
+[ 79%] Building backends/spice/spice.o
+[ 79%] Building techlibs/easic/synth_easic.o
+[ 80%] Building techlibs/xilinx/synth_xilinx.o
+[ 80%] Building techlibs/xilinx/xilinx_dffopt.o
+[ 81%] Building techlibs/gowin/synth_gowin.o
+[ 81%] Building techlibs/ice40/synth_ice40.o
+[ 81%] Building techlibs/ice40/ice40_braminit.o
+[ 82%] Building techlibs/ice40/ice40_opt.o
+[ 82%] Building techlibs/nexus/synth_nexus.o
+[ 82%] Building techlibs/machxo2/synth_machxo2.o
+[ 83%] Building techlibs/intel/synth_intel.o
+[ 83%] Building techlibs/ecp5/synth_ecp5.o
+[ 83%] Building techlibs/ecp5/ecp5_gsr.o
+[ 84%] Building techlibs/coolrunner2/synth_coolrunner2.o
+[ 84%] Building techlibs/coolrunner2/coolrunner2_sop.o
+[ 84%] Building techlibs/coolrunner2/coolrunner2_fixup.o
+[ 85%] Building techlibs/efinix/synth_efinix.o
+[ 85%] Building techlibs/efinix/efinix_fixcarry.o
+[ 86%] Building techlibs/anlogic/synth_anlogic.o
+[ 86%] Building techlibs/anlogic/anlogic_eqn.o
+[ 86%] Building techlibs/anlogic/anlogic_fixcarry.o
+[ 87%] Building techlibs/greenpak4/synth_greenpak4.o
+[ 87%] Building techlibs/greenpak4/greenpak4_dffinv.o
+[ 87%] Building techlibs/achronix/synth_achronix.o
+[ 88%] Building techlibs/common/synth.o
+[ 88%] Building techlibs/common/prep.o
+[ 88%] Building techlibs/quicklogic/synth_quicklogic.o
+[ 89%] Building techlibs/intel_alm/synth_intel_alm.o
+[ 89%] Building techlibs/sf2/synth_sf2.o
+[100%] Building yosys
+[100%] Building yosys-config
+[100%] Building yosys-abc
+[100%] Building passes/techmap/filterlib.o
+[100%] Building yosys-filterlib
+[100%] Building yosys-smtbmc
+[100%] Building share/include/kernel/yosys.h
+[100%] Building share/include/kernel/hashlib.h
+[100%] Building share/include/kernel/log.h
+[100%] Building share/include/kernel/rtlil.h
+[100%] Building share/include/kernel/binding.h
+[100%] Building share/include/kernel/register.h
+[100%] Building share/include/kernel/celltypes.h
+[100%] Building share/include/kernel/celledges.h
+[100%] Building share/include/kernel/consteval.h
+[100%] Building share/include/kernel/constids.inc
+[100%] Building share/include/kernel/sigtools.h
+[100%] Building share/include/kernel/modtools.h
+[100%] Building share/include/kernel/macc.h
+[100%] Building share/include/kernel/utils.h
+[100%] Building share/include/kernel/satgen.h
+[100%] Building share/include/kernel/qcsat.h
+[100%] Building share/include/kernel/ff.h
+[100%] Building share/include/kernel/ffinit.h
+[100%] Building share/include/kernel/mem.h
+[100%] Building share/include/libs/ezsat/ezsat.h
+[100%] Building share/include/libs/ezsat/ezminisat.h
+[100%] Building share/include/libs/sha1/sha1.h
+[100%] Building share/include/libs/json11/json11.hpp
+[100%] Building share/include/passes/fsm/fsmdata.h
+[100%] Building share/include/frontends/ast/ast.h
+[100%] Building share/include/frontends/ast/ast_binding.h
+[100%] Building share/include/frontends/blif/blifparse.h
+[100%] Building share/include/backends/rtlil/rtlil_backend.h
+[100%] Building share/include/backends/cxxrtl/cxxrtl.h
+[100%] Building share/include/backends/cxxrtl/cxxrtl_vcd.h
+[100%] Building share/include/backends/cxxrtl/cxxrtl_capi.cc
+[100%] Building share/include/backends/cxxrtl/cxxrtl_capi.h
+[100%] Building share/include/backends/cxxrtl/cxxrtl_vcd_capi.cc
+[100%] Building share/include/backends/cxxrtl/cxxrtl_vcd_capi.h
+[100%] Building share/python3/smtio.py
+[100%] Building share/xilinx/cells_map.v
+[100%] Building share/xilinx/cells_sim.v
+[100%] Building share/xilinx/cells_xtra.v
+[100%] Building share/xilinx/xc2v_brams.txt
+[100%] Building share/xilinx/xc2v_brams_map.v
+[100%] Building share/xilinx/xc3sa_brams.txt
+[100%] Building share/xilinx/xc3sda_brams.txt
+[100%] Building share/xilinx/xc6s_brams.txt
+[100%] Building share/xilinx/xc6s_brams_map.v
+[100%] Building share/xilinx/xc7_xcu_brams.txt
+[100%] Building share/xilinx/xc7_brams_map.v
+[100%] Building share/xilinx/xcu_brams_map.v
+[100%] Building share/xilinx/xcup_urams.txt
+[100%] Building share/xilinx/xcup_urams_map.v
+[100%] Building share/xilinx/lut4_lutrams.txt
+[100%] Building share/xilinx/lut6_lutrams.txt
+[100%] Building share/xilinx/lutrams_map.v
+[100%] Building share/xilinx/arith_map.v
+[100%] Building share/xilinx/ff_map.v
+[100%] Building share/xilinx/lut_map.v
+[100%] Building share/xilinx/mux_map.v
+[100%] Building share/xilinx/xc3s_mult_map.v
+[100%] Building share/xilinx/xc3sda_dsp_map.v
+[100%] Building share/xilinx/xc6s_dsp_map.v
+[100%] Building share/xilinx/xc4v_dsp_map.v
+[100%] Building share/xilinx/xc5v_dsp_map.v
+[100%] Building share/xilinx/xc7_dsp_map.v
+[100%] Building share/xilinx/xcu_dsp_map.v
+[100%] Building share/xilinx/abc9_model.v
+[100%] Building techlibs/xilinx/brams_init.mk
+[100%] Building share/xilinx/brams_init_36.vh
+[100%] Building share/xilinx/brams_init_32.vh
+[100%] Building share/xilinx/brams_init_18.vh
+[100%] Building share/xilinx/brams_init_16.vh
+[100%] Building share/xilinx/brams_init_9.vh
+[100%] Building share/xilinx/brams_init_8.vh
+[100%] Building share/gowin/cells_map.v
+[100%] Building share/gowin/cells_sim.v
+[100%] Building share/gowin/arith_map.v
+[100%] Building share/gowin/brams_map.v
+[100%] Building share/gowin/brams.txt
+[100%] Building share/gowin/lutrams_map.v
+[100%] Building share/gowin/lutrams.txt
+[100%] Building share/gowin/brams_init3.vh
+[100%] Building techlibs/gowin/brams_init.mk
+[100%] Building share/gowin/bram_init_16.vh
+[100%] Building share/ice40/arith_map.v
+[100%] Building share/ice40/cells_map.v
+[100%] Building share/ice40/ff_map.v
+[100%] Building share/ice40/cells_sim.v
+[100%] Building share/ice40/latches_map.v
+[100%] Building share/ice40/brams.txt
+[100%] Building share/ice40/brams_map.v
+[100%] Building share/ice40/dsp_map.v
+[100%] Building share/ice40/abc9_model.v
+[100%] Building techlibs/ice40/brams_init.mk
+[100%] Building share/ice40/brams_init1.vh
+[100%] Building share/ice40/brams_init2.vh
+[100%] Building share/ice40/brams_init3.vh
+[100%] Building share/nexus/cells_map.v
+[100%] Building share/nexus/cells_sim.v
+[100%] Building share/nexus/parse_init.vh
+[100%] Building share/nexus/cells_xtra.v
+[100%] Building share/nexus/lutrams_map.v
+[100%] Building share/nexus/lutrams.txt
+[100%] Building share/nexus/brams_init.vh
+[100%] Building share/nexus/brams_map.v
+[100%] Building share/nexus/brams.txt
+[100%] Building share/nexus/lrams_init.vh
+[100%] Building share/nexus/lrams_map.v
+[100%] Building share/nexus/lrams.txt
+[100%] Building share/nexus/arith_map.v
+[100%] Building share/nexus/latches_map.v
+[100%] Building share/nexus/dsp_map.v
+[100%] Building share/machxo2/cells_map.v
+[100%] Building share/machxo2/cells_sim.v
+[100%] Building share/intel/common/m9k_bb.v
+[100%] Building share/intel/common/altpll_bb.v
+[100%] Building share/intel/common/brams_m9k.txt
+[100%] Building share/intel/common/brams_map_m9k.v
+[100%] Building share/intel/common/ff_map.v
+[100%] Building share/intel/max10/cells_sim.v
+[100%] Building share/intel/cyclone10lp/cells_sim.v
+[100%] Building share/intel/cycloneiv/cells_sim.v
+[100%] Building share/intel/cycloneive/cells_sim.v
+[100%] Building share/intel/max10/cells_map.v
+[100%] Building share/intel/cyclone10lp/cells_map.v
+[100%] Building share/intel/cycloneiv/cells_map.v
+[100%] Building share/intel/cycloneive/cells_map.v
+[100%] Building share/ecp5/cells_ff.vh
+[100%] Building share/ecp5/cells_io.vh
+[100%] Building share/ecp5/cells_map.v
+[100%] Building share/ecp5/cells_sim.v
+[100%] Building share/ecp5/cells_bb.v
+[100%] Building share/ecp5/lutrams_map.v
+[100%] Building share/ecp5/lutrams.txt
+[100%] Building share/ecp5/brams_map.v
+[100%] Building share/ecp5/brams.txt
+[100%] Building share/ecp5/arith_map.v
+[100%] Building share/ecp5/latches_map.v
+[100%] Building share/ecp5/dsp_map.v
+[100%] Building techlibs/ecp5/brams_init.mk
+[100%] Building share/ecp5/bram_init_1_2_4.vh
+[100%] Building share/ecp5/bram_init_9_18_36.vh
+[100%] Building techlibs/ecp5/brams_connect.mk
+[100%] Building share/ecp5/bram_conn_1.vh
+[100%] Building share/ecp5/bram_conn_2.vh
+[100%] Building share/ecp5/bram_conn_4.vh
+[100%] Building share/ecp5/bram_conn_9.vh
+[100%] Building share/ecp5/bram_conn_18.vh
+[100%] Building share/ecp5/bram_conn_36.vh
+[100%] Building share/coolrunner2/cells_latch.v
+[100%] Building share/coolrunner2/cells_sim.v
+[100%] Building share/coolrunner2/cells_counter_map.v
+[100%] Building share/coolrunner2/tff_extract.v
+[100%] Building share/coolrunner2/xc2_dff.lib
+[100%] Building share/efinix/cells_map.v
+[100%] Building share/efinix/arith_map.v
+[100%] Building share/efinix/cells_sim.v
+[100%] Building share/efinix/brams_map.v
+[100%] Building share/efinix/gbuf_map.v
+[100%] Building share/efinix/brams.txt
+[100%] Building share/anlogic/cells_map.v
+[100%] Building share/anlogic/arith_map.v
+[100%] Building share/anlogic/cells_sim.v
+[100%] Building share/anlogic/eagle_bb.v
+[100%] Building share/anlogic/lutrams.txt
+[100%] Building share/anlogic/lutrams_map.v
+[100%] Building share/anlogic/lutram_init_16x4.vh
+[100%] Building share/greenpak4/cells_blackbox.v
+[100%] Building share/greenpak4/cells_latch.v
+[100%] Building share/greenpak4/cells_map.v
+[100%] Building share/greenpak4/cells_sim.v
+[100%] Building share/greenpak4/cells_sim_ams.v
+[100%] Building share/greenpak4/cells_sim_digital.v
+[100%] Building share/greenpak4/cells_sim_wip.v
+[100%] Building share/greenpak4/gp_dff.lib
+[100%] Building share/achronix/speedster22i/cells_sim.v
+[100%] Building share/achronix/speedster22i/cells_map.v
+[100%] Building share/simlib.v
+[100%] Building share/simcells.v
+[100%] Building share/techmap.v
+[100%] Building share/pmux2mux.v
+[100%] Building share/adff2dff.v
+[100%] Building share/dff2ff.v
+[100%] Building share/gate2lut.v
+[100%] Building share/cmp2lut.v
+[100%] Building share/cells.lib
+[100%] Building share/mul2dsp.v
+[100%] Building share/abc9_model.v
+[100%] Building share/abc9_map.v
+[100%] Building share/abc9_unmap.v
+[100%] Building share/cmp2lcu.v
+[100%] Building share/quicklogic/pp3_ffs_map.v
+[100%] Building share/quicklogic/pp3_lut_map.v
+[100%] Building share/quicklogic/pp3_latches_map.v
+[100%] Building share/quicklogic/pp3_cells_map.v
+[100%] Building share/quicklogic/cells_sim.v
+[100%] Building share/quicklogic/lut_sim.v
+[100%] Building share/quicklogic/pp3_cells_sim.v
+[100%] Building share/quicklogic/abc9_model.v
+[100%] Building share/quicklogic/abc9_map.v
+[100%] Building share/quicklogic/abc9_unmap.v
+[100%] Building share/intel_alm/common/abc9_map.v
+[100%] Building share/intel_alm/common/abc9_unmap.v
+[100%] Building share/intel_alm/common/abc9_model.v
+[100%] Building share/intel_alm/common/alm_map.v
+[100%] Building share/intel_alm/common/alm_sim.v
+[100%] Building share/intel_alm/common/arith_alm_map.v
+[100%] Building share/intel_alm/common/dff_map.v
+[100%] Building share/intel_alm/common/dff_sim.v
+[100%] Building share/intel_alm/common/dsp_sim.v
+[100%] Building share/intel_alm/common/dsp_map.v
+[100%] Building share/intel_alm/common/mem_sim.v
+[100%] Building share/intel_alm/common/misc_sim.v
+[100%] Building share/intel_alm/cyclonev/cells_sim.v
+[100%] Building share/intel_alm/common/bram_m10k.txt
+[100%] Building share/intel_alm/common/bram_m20k.txt
+[100%] Building share/intel_alm/common/bram_m20k_map.v
+[100%] Building share/intel_alm/common/lutram_mlab.txt
+[100%] Building share/intel_alm/common/megafunction_bb.v
+[100%] Building share/intel_alm/common/quartus_rename.v
+[100%] Building share/sf2/arith_map.v
+[100%] Building share/sf2/cells_map.v
+[100%] Building share/sf2/cells_sim.v
+
+  Build successful.
+

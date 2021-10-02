@@ -1,0 +1,374 @@
+make[1]: Entering directory '/home/cmaier/EDA/netgen'
+--- making modules
+for dir in base tcltk; do \
+	(cd $dir && make module); done
+make[2]: Entering directory '/home/cmaier/EDA/netgen/base'
+--- compiling base/actel.o
+rm -f actel.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c actel.c
+--- compiling base/ccode.o
+rm -f ccode.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c ccode.c
+--- compiling base/greedy.o
+rm -f greedy.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c greedy.c
+--- compiling base/ntk.o
+rm -f ntk.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c ntk.c
+ntk.c: In function ‘ReadNtk’:
+ntk.c:292:23: warning: ‘pin’ directive writing 3 bytes into a region of size between 0 and 99 [-Wformat-overflow=]
+  292 |    sprintf(name, "%s%spin%d", instancename, SEPARATOR, i+1);
+      |                       ^~~
+ntk.c:292:4: note: ‘sprintf’ output between 6 and 115 bytes into a destination of size 100
+  292 |    sprintf(name, "%s%spin%d", instancename, SEPARATOR, i+1);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- compiling base/print.o
+rm -f print.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c print.c
+--- compiling base/actellib.o
+rm -f actellib.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c actellib.c
+--- compiling base/embed.o
+rm -f embed.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c embed.c
+--- compiling base/hash.o
+rm -f hash.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c hash.c
+--- compiling base/netfile.o
+rm -f netfile.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c netfile.c
+--- compiling base/objlist.o
+rm -f objlist.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c objlist.c
+--- compiling base/query.o
+rm -f query.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c query.c
+--- compiling base/anneal.o
+rm -f anneal.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c anneal.c
+--- compiling base/ext.o
+rm -f ext.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c ext.c
+ext.c: In function ‘simCell’:
+ext.c:500:10: warning: implicit declaration of function ‘tolower’ [-Wimplicit-function-declaration]
+  500 |      if (tolower(ob->model.class[0]) == 'p')
+      |          ^~~~~~~
+ext.c: In function ‘StrIsInt’:
+ext.c:622:14: warning: implicit declaration of function ‘isdigit’ [-Wimplicit-function-declaration]
+  622 |         if (!isdigit(*s++))
+      |              ^~~~~~~
+ext.c: In function ‘ReadSim’:
+ext.c:693:2: warning: implicit declaration of function ‘AddProperty’; did you mean ‘NewProperty’? [-Wimplicit-function-declaration]
+  693 |  AddProperty(&kvlist, "length", vstr);
+      |  ^~~~~~~~~~~
+      |  NewProperty
+ext.c:938:5: warning: implicit declaration of function ‘DeleteProperties’; did you mean ‘ResolveProperties’? [-Wimplicit-function-declaration]
+  938 |     DeleteProperties(&kvlist);
+      |     ^~~~~~~~~~~~~~~~
+      |     ResolveProperties
+--- compiling base/netcmp.o
+rm -f netcmp.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c netcmp.c
+netcmp.c: In function ‘PrintElementClasses’:
+netcmp.c:310:9: warning: implicit declaration of function ‘check_interrupt’ [-Wimplicit-function-declaration]
+  310 |     if (check_interrupt()) break;
+      |         ^~~~~~~~~~~~~~~
+netcmp.c: In function ‘series_sort’:
+netcmp.c:4173:4: warning: implicit declaration of function ‘qsort’ [-Wimplicit-function-declaration]
+ 4173 |    qsort(&proplist[0], run, sizeof(propsort), compsort);
+      |    ^~~~~
+netcmp.c: In function ‘parallel_sort’:
+netcmp.c:4330:30: warning: implicit declaration of function ‘toupper’ [-Wimplicit-function-declaration]
+ 4330 |      if ((ca == (char)0) || (toupper(vl->key[0]) > ca)) {
+      |                              ^~~~~~~
+netcmp.c: In function ‘PropertySortAndCombine’:
+netcmp.c:4422:14: warning: implicit declaration of function ‘remove_group_tags’ [-Wimplicit-function-declaration]
+ 4422 |       while (remove_group_tags(pre1));
+      |              ^~~~~~~~~~~~~~~~~
+netcmp.c: In function ‘PropertyOptimize’:
+netcmp.c:4871:15: warning: implicit declaration of function ‘abs’ [-Wimplicit-function-declaration]
+ 4871 |        ival = abs(vl->value.ival - vl2->value.ival);
+      |               ^~~
+netcmp.c: In function ‘IgnoreClass’:
+netcmp.c:6755:7: warning: implicit declaration of function ‘ClassDelete’; did you mean ‘HashDelete’? [-Wimplicit-function-declaration]
+ 6755 |       ClassDelete(name, file);
+      |       ^~~~~~~~~~~
+      |       HashDelete
+netcmp.c:6757:7: warning: implicit declaration of function ‘RemoveShorted’ [-Wimplicit-function-declaration]
+ 6757 |       RemoveShorted(name, file);
+      |       ^~~~~~~~~~~~~
+netcmp.c: In function ‘MatchPins’:
+netcmp.c:7571:43: warning: implicit declaration of function ‘rand’ [-Wimplicit-function-declaration]
+ 7571 |             sprintf(obn->name, "proxy%d", rand() & 0x3ffffff);
+      |                                           ^~~~
+--- compiling base/netgen.o
+rm -f netgen.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c netgen.c
+--- compiling base/pdutils.o
+rm -f pdutils.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c pdutils.c
+--- compiling base/random.o
+rm -f random.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c random.c
+--- compiling base/timing.o
+rm -f timing.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c timing.c
+--- compiling base/bottomup.o
+rm -f bottomup.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c bottomup.c
+--- compiling base/flatten.o
+rm -f flatten.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c flatten.c
+--- compiling base/place.o
+rm -f place.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c place.c
+--- compiling base/spice.o
+rm -f spice.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c spice.c
+spice.c: In function ‘ReadSpiceFile’:
+spice.c:590:3: warning: implicit declaration of function ‘CellRehash’ [-Wimplicit-function-declaration]
+  590 |   CellRehash(nexttok, model, filenum);
+      |   ^~~~~~~~~~
+spice.c:760:18: warning: implicit declaration of function ‘ChangeScopeCurrent’ [-Wimplicit-function-declaration]
+  760 |       numnodes = ChangeScopeCurrent(nexttok, NODE, GLOBAL);
+      |                  ^~~~~~~~~~~~~~~~~~
+spice.c:886:14: warning: implicit declaration of function ‘toupper’ [-Wimplicit-function-declaration]
+  886 |     else if (toupper(nexttok[0]) == 'Q') {
+      |              ^~~~~~~
+spice.c:920:6: warning: implicit declaration of function ‘AddProperty’; did you mean ‘NewProperty’? [-Wimplicit-function-declaration]
+  920 |      AddProperty(&kvlist, nexttok, eqptr + 1);
+      |      ^~~~~~~~~~~
+      |      NewProperty
+spice.c:944:7: warning: implicit declaration of function ‘DeleteProperties’; did you mean ‘ResolveProperties’? [-Wimplicit-function-declaration]
+  944 |       DeleteProperties(&kvlist);
+      |       ^~~~~~~~~~~~~~~~
+      |       ResolveProperties
+spice.c:1830:57: warning: implicit declaration of function ‘isascii’ [-Wimplicit-function-declaration]
+ 1830 |        for (sstr = nexttok; *sstr != '\0'; sstr++) if (!isascii(*sstr)) ntotal++;
+      |                                                         ^~~~~~~
+spice.c:1733:37: warning: ‘%s’ directive output may be truncated writing up to 99 bytes into a region of size 98 [-Wformat-truncation=]
+ 1733 |          snprintf(subcktname, 99, "/%s", instancename);
+      |                                     ^~   ~~~~~~~~~~~~
+spice.c:1733:10: note: ‘snprintf’ output between 2 and 101 bytes into a destination of size 99
+ 1733 |          snprintf(subcktname, 99, "/%s", instancename);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1729:40: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1729 |          snprintf(subcktname, 99, "%s%s", scan->name, instancename);
+      |                                        ^
+spice.c:1729:10: note: ‘snprintf’ output 1 or more bytes (assuming 100) into a destination of size 99
+ 1729 |          snprintf(subcktname, 99, "%s%s", scan->name, instancename);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1417:34: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1417 |       snprintf(instname, 255, "%s%s", model, inst);
+      |                                  ^~          ~~~~
+spice.c:1417:7: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1417 |       snprintf(instname, 255, "%s%s", model, inst);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1334:29: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1334 |  snprintf(instname, 255, "%s%s", model, inst);
+      |                             ^~          ~~~~
+spice.c:1334:2: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1334 |  snprintf(instname, 255, "%s%s", model, inst);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1255:34: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1255 |       snprintf(instname, 255, "%s%s", model, inst);
+      |                                  ^~          ~~~~
+spice.c:1255:7: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1255 |       snprintf(instname, 255, "%s%s", model, inst);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1197:29: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1197 |  snprintf(instname, 255, "%s%s", model, inst);
+      |                             ^~          ~~~~
+spice.c:1197:2: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1197 |  snprintf(instname, 255, "%s%s", model, inst);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1104:29: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1104 |  snprintf(instname, 255, "%s%s", model, inst);
+      |                             ^~          ~~~~
+spice.c:1104:2: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1104 |  snprintf(instname, 255, "%s%s", model, inst);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:1013:34: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+ 1013 |       snprintf(instname, 255, "%s%s", model, inst);
+      |                                  ^~          ~~~~
+spice.c:1013:7: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+ 1013 |       snprintf(instname, 255, "%s%s", model, inst);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spice.c:940:34: warning: ‘%s’ directive output may be truncated writing up to 255 bytes into a region of size between 0 and 255 [-Wformat-truncation=]
+  940 |       snprintf(instname, 255, "%s%s", model, inst);
+      |                                  ^~          ~~~~
+spice.c:940:7: note: ‘snprintf’ output between 1 and 511 bytes into a destination of size 255
+  940 |       snprintf(instname, 255, "%s%s", model, inst);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- compiling base/verilog.o
+rm -f verilog.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c verilog.c
+verilog.c: In function ‘ReadVerilogFile’:
+verilog.c:737:7: warning: implicit declaration of function ‘ConvertStringToInteger’; did you mean ‘ConvertStringToFloat’? [-Wimplicit-function-declaration]
+  737 |   if (ConvertStringToInteger(paramval, &ival) == 1) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+      |       ConvertStringToFloat
+verilog.c:825:3: warning: implicit declaration of function ‘CellRehash’ [-Wimplicit-function-declaration]
+  825 |   CellRehash(nexttok, model, filenum);
+      |   ^~~~~~~~~~
+verilog.c:1360:8: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1360 |        sprintf(nodename, lhs->name);
+      |        ^~~~~~~
+verilog.c:1364:8: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1364 |        sprintf(assignname, rhs->name);
+      |        ^~~~~~~
+verilog.c:1479:14: warning: implicit declaration of function ‘AddProperty’; did you mean ‘NewProperty’? [-Wimplicit-function-declaration]
+ 1479 |              AddProperty(&kvlist, paramname, nexttok);
+      |              ^~~~~~~~~~~
+      |              NewProperty
+verilog.c:2162:7: warning: implicit declaration of function ‘DeleteProperties’; did you mean ‘ResolveProperties’? [-Wimplicit-function-declaration]
+ 2162 |       DeleteProperties(&kvlist);
+      |       ^~~~~~~~~~~~~~~~
+      |       ResolveProperties
+--- compiling base/wombat.o
+rm -f wombat.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c wombat.c
+--- compiling base/xilinx.o
+rm -f xilinx.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c xilinx.c
+xilinx.c: In function ‘Xilinx’:
+xilinx.c:162:3: warning: implicit declaration of function ‘xilinxCell’ [-Wimplicit-function-declaration]
+  162 |   xilinxCell(cellname);
+      |   ^~~~~~~~~~
+xilinx.c: At top level:
+xilinx.c:166:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  166 | xilinxCell(cell)
+      | ^~~~~~~~~~
+xilinx.c: In function ‘xilinxCell’:
+xilinx.c:176:2: warning: implicit declaration of function ‘flattenCell’ [-Wimplicit-function-declaration]
+  176 |  flattenCell(cell, -1);
+      |  ^~~~~~~~~~~
+xilinx.c:186:2: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+  186 |  time(&t);
+      |  ^~~~
+xilinx.c:191:3: warning: implicit declaration of function ‘ctime’ [-Wimplicit-function-declaration]
+  191 |   ctime(&t)
+      |   ^~~~~
+xilinx.c: In function ‘xilinx_gate’:
+xilinx.c:251:2: warning: implicit declaration of function ‘xilinx_sym’; did you mean ‘xilinx_name’? [-Wimplicit-function-declaration]
+  251 |  xilinx_sym(nl,ob);
+      |  ^~~~~~~~~~
+      |  xilinx_name
+xilinx.c: At top level:
+xilinx.c:255:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  255 | xilinx_sym(nl,gob)
+      | ^~~~~~~~~~
+--- compiling base/xillib.o
+rm -f xillib.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DX11 -DXLIB -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c xillib.c
+--- linking libbase.o
+rm -f libbase.o
+/usr/bin/ld -r actel.o ccode.o greedy.o ntk.o print.o actellib.o embed.o hash.o netfile.o objlist.o query.o anneal.o ext.o netcmp.o netgen.o pdutils.o random.o timing.o bottomup.o flatten.o place.o spice.o verilog.o wombat.o xilinx.o xillib.o -o libbase.o 
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/base'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+--- compiling tcltk/tclnetgen.o
+rm -f tclnetgen.o
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6 -I../base -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\"  -DUSE_TCL_STUBS -DUSE_TK_STUBS -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG -DNETGEN_DATE="\"`date`\""  -c tclnetgen.c
+tclnetgen.c: In function ‘_netgen_readnet’:
+tclnetgen.c:824:6: warning: implicit declaration of function ‘XilinxLib’ [-Wimplicit-function-declaration]
+  824 |      XilinxLib();
+      |      ^~~~~~~~~
+tclnetgen.c: In function ‘_netgen_writenet’:
+tclnetgen.c:969:7: warning: implicit declaration of function ‘ActelLibPresent’ [-Wimplicit-function-declaration]
+  969 |   if (ActelLibPresent() == 0) {
+      |       ^~~~~~~~~~~~~~~
+tclnetgen.c:979:10: warning: implicit declaration of function ‘VerilogModule’ [-Wimplicit-function-declaration]
+  979 |          VerilogModule(repstr, filenum, "");
+      |          ^~~~~~~~~~~~~
+tclnetgen.c:994:7: warning: implicit declaration of function ‘XilinxLibPresent’ [-Wimplicit-function-declaration]
+  994 |   if (XilinxLibPresent() == 0) {
+      |       ^~~~~~~~~~~~~~~~
+tclnetgen.c:998:10: warning: implicit declaration of function ‘Xilinx’ [-Wimplicit-function-declaration]
+  998 |          Xilinx(repstr,"");
+      |          ^~~~~~
+tclnetgen.c: In function ‘_netcmp_compare’:
+tclnetgen.c:2185:4: warning: implicit declaration of function ‘UniquePins’ [-Wimplicit-function-declaration]
+ 2185 |    UniquePins(name1, fnum1);  // Check for and remove duplicate pins
+      |    ^~~~~~~~~~
+tclnetgen.c: In function ‘_netcmp_summary’:
+tclnetgen.c:2280:7: warning: implicit declaration of function ‘SummarizeElementClasses’; did you mean ‘SummarizeNodeClasses’? [-Wimplicit-function-declaration]
+ 2280 |       SummarizeElementClasses(ElementClasses);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+      |       SummarizeNodeClasses
+tclnetgen.c: In function ‘_netcmp_run’:
+tclnetgen.c:2461:25: warning: implicit declaration of function ‘ResolveAutomorphsByProperty’ [-Wimplicit-function-declaration]
+ 2461 |         automorphisms = ResolveAutomorphsByProperty();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+tclnetgen.c:2467:21: warning: implicit declaration of function ‘ResolveAutomorphsByPin’; did you mean ‘ResolveAutomorphisms’? [-Wimplicit-function-declaration]
+ 2467 |     automorphisms = ResolveAutomorphsByPin();
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+      |                     ResolveAutomorphisms
+tclnetgen.c: In function ‘_netcmp_verify’:
+tclnetgen.c:2571:10: warning: implicit declaration of function ‘FormatIllegalNodeClasses’; did you mean ‘PrintIllegalNodeClasses’? [-Wimplicit-function-declaration]
+ 2571 |          FormatIllegalNodeClasses(); // Side-by-side, to log file
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+      |          PrintIllegalNodeClasses
+tclnetgen.c:2584:10: warning: implicit declaration of function ‘FormatIllegalElementClasses’; did you mean ‘PrintIllegalElementClasses’? [-Wimplicit-function-declaration]
+ 2584 |          FormatIllegalElementClasses(); // Side-by-side, to log file
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          PrintIllegalElementClasses
+tclnetgen.c: In function ‘_netcmp_restart’:
+tclnetgen.c:4091:4: warning: implicit declaration of function ‘RegroupDataStructures’ [-Wimplicit-function-declaration]
+ 4091 |    RegroupDataStructures();
+      |    ^~~~~~~~~~~~~~~~~~~~~
+--- linking libtcltk.o
+rm -f libtcltk.o
+/usr/bin/ld -r tclnetgen.o -o libtcltk.o 
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+--- making Tcl shared-object libraries
+for dir in netgen python tcltk; do \
+	(cd $dir && make tcl-main); done
+make[2]: Entering directory '/home/cmaier/EDA/netgen/netgen'
+--- making netgen Tcl library (tclnetgen.so)
+rm -f tclnetgen.so
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6  -I../base -I. -I..  -o tclnetgen.so -shared -Wl,-soname,tclnetgen.so -Wl,--version-script=../netgen/symbol.map \
+	 ../base/libbase.o ../tcltk/libtcltk.o  \
+	-lc -lX11  -lm -L/usr/lib/x86_64-linux-gnu -ltkstub8.6 -L/usr/lib/x86_64-linux-gnu -ltclstub8.6 
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/netgen'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/python'
+sed -e '/SUBST_SCRIPT_DIR/s#SUBST_SCRIPT_DIR#/usr/local/lib/netgen/python#' \
+	lvs_manager.py.in > lvs_manager.py
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/python'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+gcc -g -m64 -fPIC -fPIC  -I/usr/include/tcl8.6/tk-private/generic -I/usr/include/tcl8.6 -I../base -I. -I..  -DCAD_DIR=\"/usr/local/lib\" -DTCL_DIR=\"/usr/local/lib/netgen/tcl\" -DPACKAGE_NAME=\"netgen\" -DPACKAGE_TARNAME=\"netgen\" -DPACKAGE_VERSION=\"1.3\" -DPACKAGE_STRING=\"netgen\ 1.3\" -DPACKAGE_BUGREPORT=\"eda-dev@opencircuitdesign.com\" -DPACKAGE_URL=\"\" -DNETGEN_VERSION=\"1.5\" -DNETGEN_REVISION=\"196\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_VOID_P=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_LONG_LONG=8 -DSTDC_HEADERS=1 -DHAVE_SETENV=1 -DHAVE_PUTENV=1 -DHAVE_DIRENT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_VA_COPY=1 -DHAVE___VA_COPY=1 -DDBUG_OFF=1 -DTCL_NETGEN=1 -Dlinux=1 -DSYSV=1 -DISC=1 -DSHDLIB_EXT=\".so\" -DNDEBUG netgenexec.c \
+	-o netgenexec \
+	-L/usr/lib/x86_64-linux-gnu -ltk8.6 -L/usr/lib/x86_64-linux-gnu -ltcl8.6  -lm -lX11 
+sed -e 's%TCL_DIR%/usr/local/lib/netgen/tcl%g' \
+    -e 's%SHDLIB_EXT%.so%g' \
+    netgen.tcl.in > netgen.tcl
+sed -e 's%TCL_DIR%/usr/local/lib/netgen/tcl%g' \
+    -e 's%PY_DIR%/usr/local/lib/netgen/python%g' \
+    -e 's%TCLLIB_DIR%/usr/lib%g' \
+    -e 's%WISH_EXE%/usr/bin/wish%g' \
+    netgen.sh.in > netgen.sh
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+make[1]: Leaving directory '/home/cmaier/EDA/netgen'
+make[1]: Entering directory '/home/cmaier/EDA/netgen'
+--- making modules
+for dir in base tcltk; do \
+	(cd $dir && make module); done
+make[2]: Entering directory '/home/cmaier/EDA/netgen/base'
+make[2]: Nothing to be done for 'module'.
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/base'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+make[2]: Nothing to be done for 'module'.
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+--- making Tcl shared-object libraries
+for dir in netgen python tcltk; do \
+	(cd $dir && make tcl-main); done
+make[2]: Entering directory '/home/cmaier/EDA/netgen/netgen'
+make[2]: Nothing to be done for 'tcl-main'.
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/netgen'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/python'
+sed -e '/SUBST_SCRIPT_DIR/s#SUBST_SCRIPT_DIR#/usr/local/lib/netgen/python#' \
+	lvs_manager.py.in > lvs_manager.py
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/python'
+make[2]: Entering directory '/home/cmaier/EDA/netgen/tcltk'
+make[2]: Nothing to be done for 'tcl-main'.
+make[2]: Leaving directory '/home/cmaier/EDA/netgen/tcltk'
+make[1]: Leaving directory '/home/cmaier/EDA/netgen'

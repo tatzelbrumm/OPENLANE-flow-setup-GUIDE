@@ -1,0 +1,195 @@
+cd /home/cmaier/EDA/OpenLane && \
+	docker run --rm -v /home/cmaier/EDA/OpenLane:/openLANE_flow -v /home/cmaier/EDA/OpenLane/pdks:/home/cmaier/EDA/OpenLane/pdks -e PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks   --user 1000:1000 efabless/openlane:2021.09.19_20.25.16 sh -c "./flow.tcl -design spm -tag openlane_test -disable_output -overwrite"
+[INFO]: 
+	 ___   ____   ___  ____   _       ____  ____     ___
+	/   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
+	|   | |  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
+	| O | |   _/    _]|  |  || |___ |     ||  |  ||    _]
+	|   | |  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
+	\___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+
+
+[INFO]: Version: 2021.09.19_20.25.16
+[INFO]: Running non-interactively
+[INFO]: Using design configuration at /openLANE_flow/designs/spm/config.tcl
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: PDKs root directory: /home/cmaier/EDA/OpenLane/pdks
+[INFO]: PDK: sky130A
+[INFO]: Setting PDKPATH to /home/cmaier/EDA/OpenLane/pdks/sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library is set to: sky130_fd_sc_hd
+[INFO]: Sourcing Configurations from /openLANE_flow/designs/spm/config.tcl
+[INFO]: Current run directory is /openLANE_flow/designs/spm/runs/openlane_test
+[INFO]: Preparing LEF Files
+[INFO]: Extracting the number of available metal layers from /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
+[INFO]: The number of available metal layers is 6
+[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5
+[INFO]: Merging LEF Files...
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 1
+[INFO]: Changing netlist from 0 to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 2
+[INFO]: Synthesis was successful
+[INFO]: Running Floorplanning...
+[INFO]: Running Initial Floorplanning...
+[INFO]: current step index: 3
+[INFO]: Core area width: 81.42
+[INFO]: Core area height: 81.60000000000001
+[WARNING]: Current core area is too small for a power grid
+[WARNING]: !!! THE POWER GRID WILL BE MINIMIZED. !!!
+[INFO]: Final Vertical PDN Offset: 13.57
+[INFO]: Final Horizontal PDN Offset: 13.600000000000001
+[INFO]: Final Vertical PDN Pitch: 27.14
+[INFO]: Final Horizontal PDN Pitch: 27.200000000000003
+[INFO]: Changing layout from 0 to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/3-verilog2def_openroad.def
+[INFO]: Running IO Placement...
+[INFO]: current step index: 4
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/3-verilog2def_openroad.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/4-ioPlacer.def
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: current step index: 5
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/4-ioPlacer.def to /openLANE_flow/designs/spm/runs/openlane_test/results/floorplan/spm.floorplan.def
+[INFO]: Power planning the following nets
+[INFO]: Power: VPWR
+[INFO]: Ground: VGND
+[INFO]: Generating PDN...
+[INFO]: current step index: 6
+[INFO]: current step index: 7
+[INFO]: PDN generation was successful.
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/floorplan/spm.floorplan.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/6-pdn.def
+[INFO]: Running Placement...
+[INFO]: Running Global Placement...
+[INFO]: current step index: 8
+[INFO]: Global placement was successful
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/floorplan/6-pdn.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/8-replace.def
+[INFO]: Running Resizer Design Optimizations...
+[INFO]: Generating Exclude List...
+[INFO]: Creating ::env(DONT_USE_CELLS)...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/8-replace.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/8-resizer.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 9
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 10
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 11
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/8-resizer.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Running TritonCTS...
+[INFO]: current step index: 12
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Clock Tree Synthesis was successful
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/cts/spm.cts.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 13
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_cts.v
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/cts/spm.cts.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/13-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 14
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_cts.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 15
+[INFO]: Routing...
+[INFO]: Running Resizer Timing Optimizations...
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/13-resizer_timing.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/15-resizer_timing.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 16
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v
+[INFO]: Running Static Timing Analysis...
+[INFO]: current step index: 17
+[INFO]: Running Detailed Placement...
+[INFO]: current step index: 18
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/placement/15-resizer_timing.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def
+[INFO]: Running Global Routing...
+[INFO]: current step index: 19
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/results/placement/spm.placement.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.def
+[INFO]: Changing layout from 0 to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.guide
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.def
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.guide to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.guide
+[INFO]: Current Def is /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.def
+[INFO]: Current Guide is /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.guide
+[INFO]: Running Fill Insertion...
+[INFO]: current step index: 20
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/19-fastroute.def to /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/20-addspacers.def
+[INFO]: Writing Verilog...
+[INFO]: current step index: 21
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_optimized.v to /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_preroute.v
+[INFO]: Running Detailed Routing...
+[INFO]: current step index: 22
+[INFO]: No DRC violations after detailed routing.
+[INFO]: Changing layout from /openLANE_flow/designs/spm/runs/openlane_test/tmp/routing/20-addspacers.def to /openLANE_flow/designs/spm/runs/openlane_test/results/routing/21-spm.def
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Routing completed for spm/20-09_15-52 in 0h3m21s
+[INFO]: Writing Powered Verilog...
+[INFO]: current step index: 23
+[INFO]: Writing Verilog...
+[INFO]: current step index: 24
+[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
+[INFO]: Changing netlist from /openLANE_flow/designs/spm/runs/openlane_test/results/synthesis/spm.synthesis_preroute.v to /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs.powered.v
+[INFO]: Running Magic to generate various views...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 25
+[INFO]: current step index: 26
+[INFO]: current step index: 27
+[INFO]: current step index: 28
+[INFO]: Running Klayout to re-generate GDS-II...
+[INFO]: Streaming out GDS II...
+[INFO]: current step index: 29
+[INFO]: Back-up GDS-II streamed out.
+[INFO]: Running XOR on the layouts using Klayout...
+[INFO]: current step index: 30
+[INFO]: current step index: 31
+[INFO]: Klayout XOR Complete
+[INFO]: Running Magic Spice Export from LEF...
+[INFO]: current step index: 32
+[INFO]: No Illegal overlaps detected during extraction.
+[INFO]: Running LEF LVS...
+[INFO]: /openLANE_flow/designs/spm/runs/openlane_test/results/magic/spm.spice against /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs.powered.v
+[INFO]: current step index: 33
+[INFO]: No LVS mismatches.
+[INFO]: Running Magic DRC...
+[INFO]: current step index: 34
+[INFO]: Converting Magic DRC Violations to Magic Readable Format...
+[INFO]: Converting Magic DRC Violations to Klayout XML Database...
+[INFO]: Converting DRC Violations to RDB Format...
+[INFO]: Converted DRC Violations to RDB Format
+[INFO]: No DRC violations after GDS streaming out.
+[INFO]: Running Antenna Checks...
+[INFO]: Running OpenROAD Antenna Rule Checker...
+[INFO]: current step index: 35
+[INFO]: current step index: 36
+[INFO]: Running CVC
+[INFO]: current step index: 37
+[INFO]: Calculating Runtime From the Start...
+[INFO]: flow completed for spm/20-09_15-52 in 0h3m54s
+[INFO]: Saving Runtime Environment
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: spm
+Run Directory: /openLANE_flow/designs/spm/runs/openlane_test
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/reports/magic/34-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/results/lvs/spm.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/spm/runs/openlane_test/reports/routing/36-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0
+[INFO]: check full report here: /openLANE_flow/designs/spm/runs/openlane_test/reports/final_summary_report.csv
+[SUCCESS]: Flow Completed Without Fatal Errors.
+Basic test passed

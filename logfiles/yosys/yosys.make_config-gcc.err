@@ -1,0 +1,25 @@
+/bin/sh: 1: clang: not found
+find ./PRESENTATION_ExAdv/ -name '*.dot' | xargs rm -f
+find ./PRESENTATION_Prog/ -name 'my_cmd.so' | xargs rm -f
+find ./PRESENTATION_Prog/ -name 'my_cmd.d' | xargs rm -f
+find ./CHAPTER_Prog/ -name 'stubnets.so' | xargs rm -f
+find ./CHAPTER_Prog/ -name 'stubnets.d' | xargs rm -f
+find ./CHAPTER_Prog/ -name '*.log' | xargs rm -f
+find ./ -name '*.aux' | xargs rm -f
+find ./ -name '*.bbl' | xargs rm -f
+find ./ -name '*.blg' | xargs rm -f
+find ./ -name '*.idx' | xargs rm -f
+find ./ -name '*.log' | xargs rm -f
+find ./ -name '*.out' | xargs rm -f
+find ./ -name '*.pdf' | xargs rm -f
+find ./ -name '*.toc' | xargs rm -f
+find ./ -name '*.snm' | xargs rm -f
+find ./ -name '*.nav' | xargs rm -f
+find ./ -name '*.vrb' | xargs rm -f
+find ./ -name '*.ok' | xargs rm -f
+find ./PRESENTATION_ExOth/ -name '*.dot' | xargs rm -f
+find ./PRESENTATION_Intro/ -name 'counter_00.dot' | xargs rm -f
+find ./PRESENTATION_Intro/ -name 'counter_01.dot' | xargs rm -f
+find ./PRESENTATION_Intro/ -name 'counter_02.dot' | xargs rm -f
+find ./PRESENTATION_Intro/ -name 'counter_03.dot' | xargs rm -f
+find ./PRESENTATION_ExSyn/ -name '*.dot' | xargs rm -f

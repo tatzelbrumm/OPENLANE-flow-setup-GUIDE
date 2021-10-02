@@ -1,0 +1,1896 @@
+configure: WARNING: neither ld nor gold are enabled
+*** This configuration is not supported in the following subdirectories:
+     gdbserver binutils gas gprof
+    (Any other directories should still work fine.)
+*** This configuration is not supported in the following subdirectories:
+     gdbserver readline libdecnumber sim gdb
+    (Any other directories should still work fine.)
+configure: WARNING: decimal float is not supported for this target, ignored
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+configure: WARNING: libdebuginfod is missing or unusable; some features may be unavailable.
+In file included from /usr/include/string.h:495,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:38:
+In function ‘strncpy’,
+    inlined from ‘dyn_string_insert_cstr’ at /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:280:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c: In function ‘dyn_string_insert_cstr’:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/libiberty/dyn-string.c:272:16: note: length computed here
+  272 |   int length = strlen (src);
+      |                ^~~~~~~~~~~~
+configure: WARNING: libipt is missing or unusable; some features may be unavailable.
+ar: `u' modifier ignored since `D' is the default (see `U')
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/gas/doc/../../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[5]: [Makefile:963: as.1] Error 255 (ignored)
+pod2man: unable to format as.pod
+configure: WARNING: libdebuginfod is missing or unusable; some features may be unavailable.
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+configure: WARNING: python is missing or unusable; some features may be unavailable.
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:920: addr2line.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:934: dlltool.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:941: nm.1] Error 255 (ignored)
+make[4]: [Makefile:927: ar.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:948: objcopy.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:962: ranlib.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:955: objdump.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:969: readelf.1] Error 255 (ignored)
+pod2man: unable to format nm.pod
+pod2man: unable to format dlltool.pod
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:976: size.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:983: strings.1] Error 255 (ignored)
+pod2man: unable to format objcopy.pod
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:990: strip.1] Error 255 (ignored)
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+pod2man: unable to format ar.pod
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/mcparse.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/rcparse.ymake[4]: [Makefile:997: elfedit.1] Error 255 (ignored)
+: warning: 58 shift/reduce conflicts [-Wconflicts-sr]
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/rcparse.y: warning: 10 reduce/reduce conflicts [-Wconflicts-rr]
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:1004: windres.1] Error 255 (ignored)
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/defparse.y: warning: 27 shift/reduce conflicts [-Wconflicts-sr]
+pod2man: unable to format addr2line.pod
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/sysinfo.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+pod2man: unable to format ranlib.pod
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:1011: windmc.1] Error 255 (ignored)
+pod2man: unable to format readelf.pod
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/binutils/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[4]: [Makefile:1018: cxxfilt.man] Error 255 (ignored)
+pod2man: unable to format objdump.pod
+pod2man: unable to format windres.pod
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/gprof/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[5]: [Makefile:1194: gprof.1] Error 255 (ignored)
+pod2man: unable to format size.pod
+pod2man: unable to format strings.pod
+pod2man: unable to format strip.pod
+pod2man: unable to format elfedit.pod
+pod2man: unable to format windmc.pod
+pod2man: unable to format c++filt.pod
+pod2man: unable to format gprof.pod
+configure: WARNING: libipt is missing or unusable; some features may be unavailable.
+configure: WARNING: babeltrace is missing or unusable; GDB is unable to read CTF data.
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/ld/deffilep.y: warning: 76 shift/reduce conflicts [-Wconflicts-sr]
+usage: /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-binutils/ld/../etc/texi2pod.pl [-D toggle...] [infile [outfile]]
+make[5]: [Makefile:2650: ld.1] Error 255 (ignored)
+pod2man: unable to format ld.pod
+libtool: link: warning: ignoring multiple `-rpath's for a libtool library
+libtool: install: warning: remember to run `libtool --finish /nowhere'
+*** This configuration is not supported in the following subdirectories:
+     zlib target-libquadmath target-libatomic target-libitm target-libsanitizer target-libvtv target-libphobos gnattools gotools target-libada target-libhsail-rt target-zlib target-libbacktrace target-libgfortran target-libgo target-libffi target-libobjc target-libgomp target-liboffloadmic target-libssp
+    (Any other directories should still work fine.)
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/cp-name-parser.y:34.1-12: warning: POSIX Yacc does not support %pure-parser [-Wyacc]
+   34 | %pure-parser
+      | ^~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/cp-name-parser.y:34.1-12: warning: deprecated directive: ‘%pure-parser’, use ‘%define api.pure’ [-Wdeprecated]
+   34 | %pure-parser
+      | ^~~~~~~~~~~~
+      | %define api.pure
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/c-exp.y: warning: 153 shift/reduce conflicts [-Wconflicts-sr]
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/c-exp.y: warning: 70 reduce/reduce conflicts [-Wconflicts-rr]
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/rust-exp.y:23.1-12: warning: POSIX Yacc does not support %pure-parser [-Wyacc]
+   23 | %pure-parser
+      | ^~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/rust-exp.y:23.1-12: warning: deprecated directive: ‘%pure-parser’, use ‘%define api.pure’ [-Wdeprecated]
+   23 | %pure-parser
+      | ^~~~~~~~~~~~
+      | %define api.pure
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/rust-exp.y:28.1-7: warning: POSIX Yacc does not support %expect [-Wyacc]
+   28 | %expect 1
+      | ^~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/cp-name-parser.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-gdb/gdb/rust-exp.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+configure: WARNING: decimal float is not supported for this target, ignored
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+../../../../riscv-gcc/libcpp/macro.c: In member function ‘vaopt_state::update_type vaopt_state::update(const cpp_token*)’:
+../../../../riscv-gcc/libcpp/macro.c:184:23: warning: format not a string literal and no format arguments [-Wformat-security]
+  184 |      vaopt_paste_error);
+      |                       ^
+../../../../riscv-gcc/libcpp/macro.c:213:24: warning: format not a string literal and no format arguments [-Wformat-security]
+  213 |       vaopt_paste_error);
+      |                        ^
+../../../../riscv-gcc/libcpp/expr.c: In function ‘unsigned int cpp_classify_number(cpp_reader*, const cpp_token*, const char**, location_t)’:
+../../../../riscv-gcc/libcpp/expr.c:812:18: warning: format not a string literal and no format arguments [-Wformat-security]
+  812 |        0, message);
+      |                  ^
+../../../../riscv-gcc/libcpp/expr.c:815:39: warning: format not a string literal and no format arguments [-Wformat-security]
+  815 |           virtual_location, 0, message);
+      |                                       ^
+../../../../riscv-gcc/libcpp/macro.c: In function ‘cpp_macro* create_iso_definition(cpp_reader*)’:
+../../../../riscv-gcc/libcpp/macro.c:3605:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3605 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+../../../../riscv-gcc/libcpp/expr.c:825:34: warning: format not a string literal and no format arguments [-Wformat-security]
+  825 |      virtual_location, 0, message);
+      |                                  ^
+../../../../riscv-gcc/libcpp/macro.c:3620:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3620 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: install: warning: remember to run `libtool --finish /home/cmaier/EDA/rv32i/libexec/gcc/riscv32-unknown-elf/11.1.0'
+../../../riscv-gcc/libcpp/expr.c: In function ‘unsigned int cpp_classify_number(cpp_reader*, const cpp_token*, const char**, location_t)’:
+../../../riscv-gcc/libcpp/expr.c:812:18: warning: format not a string literal and no format arguments [-Wformat-security]
+  812 |        0, message);
+      |                  ^
+../../../riscv-gcc/libcpp/expr.c:815:39: warning: format not a string literal and no format arguments [-Wformat-security]
+  815 |           virtual_location, 0, message);
+      |                                       ^
+../../../riscv-gcc/libcpp/expr.c:825:34: warning: format not a string literal and no format arguments [-Wformat-security]
+  825 |      virtual_location, 0, message);
+      |                                  ^
+../../../riscv-gcc/libcpp/macro.c: In member function ‘vaopt_state::update_type vaopt_state::update(const cpp_token*)’:
+../../../riscv-gcc/libcpp/macro.c:184:23: warning: format not a string literal and no format arguments [-Wformat-security]
+  184 |      vaopt_paste_error);
+      |                       ^
+../../../riscv-gcc/libcpp/macro.c:213:24: warning: format not a string literal and no format arguments [-Wformat-security]
+  213 |       vaopt_paste_error);
+      |                        ^
+../../../riscv-gcc/libcpp/macro.c: In function ‘cpp_macro* create_iso_definition(cpp_reader*)’:
+../../../riscv-gcc/libcpp/macro.c:3605:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3605 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+../../../riscv-gcc/libcpp/macro.c:3620:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3620 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+configure: WARNING: decimal float is not supported for this target, ignored
+configure: WARNING: fixed-point is not supported for this target, ignored
+Links are now set up to build a cross-compiler
+ from x86_64-pc-linux-gnu to riscv32-unknown-elf.
+../../../riscv-gcc/gcc/genhooks.c: In function ‘void emit_documentation(const char*)’:
+../../../riscv-gcc/gcc/genhooks.c:131:17: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  131 |   while (fscanf (f, "%*[^@]"), buf[0] = '\0',
+      |          ~~~~~~~^~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:140:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  140 |       fscanf (f, "%999s", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:193:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  193 |       fscanf (f, "%5[^ \n]", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:199:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  199 |       fscanf (f, "%999s", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l: In function ‘int yylex(const char**)’:
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:119:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  119 | "GTY"/{EOID}   { return GTY_TOKEN; }
+      | ^~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:114:1: note: here
+  114 | "^"     |
+      | ^~~~
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:139:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  139 | 
+      | ^                  
+../../../riscv-gcc/gcc/gengtype-lex.l:135:1: note: here
+  135 |   size_t len;
+      | ^ ~~
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc: In member function ‘virtual label_text {anonymous}::path_label::get_text(unsigned int) const’:
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:23: warning: unknown conversion type character ‘@’ in format [-Wformat=]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                       ^
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:26: warning: format ‘%s’ expects argument of type ‘char*’, but argument 3 has type ‘diagnostic_event_id_t*’ [-Wformat=]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                         ~^   ~~~~~~~~~
+      |                          |   |
+      |                          |   diagnostic_event_id_t*
+      |                          char*
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:21: warning: too many arguments for format [-Wformat-extra-args]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                     ^~~~~~~
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc: In member function ‘void {anonymous}::event_range::print(diagnostic_context*)’:
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:24: warning: unknown conversion type character ‘@’ in format [-Wformat=]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                        ^
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:28: warning: format ‘%s’ expects argument of type ‘char*’, but argument 3 has type ‘diagnostic_event_id_t*’ [-Wformat=]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                           ~^   ~~~~~~~~~
+      |                            |   |
+      |                            |   diagnostic_event_id_t*
+      |                            char*
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:21: warning: too many arguments for format [-Wformat-extra-args]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                     ^~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l: In function ‘int yylex(const char**)’:
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:119:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  119 | "GTY"/{EOID}   { return GTY_TOKEN; }
+      | ^~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:114:1: note: here
+  114 | "^"     |
+      | ^~~~
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:139:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  139 | 
+      | ^                  
+../../../riscv-gcc/gcc/gengtype-lex.l:135:1: note: here
+  135 |   size_t len;
+      | ^ ~~
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2330:1: warning: operand 0 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2352:1: warning: operand 1 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2375:1: warning: operand 0 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2398:1: warning: operand 1 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2468:1: warning: source missing a mode?
+Statistics for recog:
+  Number of decisions:   1735
+  longest path:            36 (code:    293)
+  longest backtrack:       13 (code:    341)
+Statistics for split_insns:
+  Number of decisions:    208
+  longest path:            30 (code:     41)
+  longest backtrack:        3 (code:     41)
+Statistics for peephole2_insns:
+  Number of decisions:     22
+  longest path:            22 (code:      1)
+  longest backtrack:        0 (code:      1)
+Shared 1237 out of 3108 states by creating 373 new states, saving 864
+../../../riscv-gcc/gcc/../libgcc/libgcov-util.c: In function ‘gcov_info* gcov_read_profile_dir(const char*, int)’:
+../../../riscv-gcc/gcc/../libgcc/libgcov-util.c:462:9: warning: ignoring return value of ‘int chdir(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  462 |   chdir (pwd);
+      |   ~~~~~~^~~~~
+../../../riscv-gcc/gcc/diagnostic.c: In function ‘void fancy_abort(const char*, int, const char*)’:
+../../../riscv-gcc/gcc/diagnostic.c:1887:52: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1887 |       fnotice (stderr, diagnostic_kind_text[DK_ICE]);
+      |                                                    ^
+../../../riscv-gcc/gcc/lto-wrapper.c: In function ‘bool find_and_merge_options(int, off_t, const char*, cl_decoded_option*, unsigned int, cl_decoded_option**, unsigned int*, const char*)’:
+../../../riscv-gcc/gcc/lto-wrapper.c:1099:8: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 1099 |   read (fd, data, length);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c: In function ‘long unsigned int get_random_number()’:
+../../../riscv-gcc/gcc/gcc.c:10438:12: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+10438 |       read (fd, &ret, sizeof (HOST_WIDE_INT));
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c: In function ‘void do_report_bug(const char**, int, char**, char**)’:
+../../../riscv-gcc/gcc/gcc.c:7655:9: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7655 |   write (fd, "\n//", 3);
+      |   ~~~~~~^~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7658:13: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7658 |       write (fd, " ", 1);
+      |       ~~~~~~^~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7659:13: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7659 |       write (fd, new_argv[i], strlen (new_argv[i]));
+      |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7661:9: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7661 |   write (fd, "\n\n", 2);
+      |   ~~~~~~^~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c: In function ‘void lto_resolution_read(splay_tree, FILE*, lto_file*)’:
+../../../riscv-gcc/gcc/lto/lto-common.c:2071:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2071 |   fscanf (resolution, " ");   /* Read white space.  */
+      |   ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c:2073:9: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2073 |   fread (obj_name, sizeof (char), name_len, resolution);
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c:2093:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2093 |   fscanf (resolution, "%u", &num_symbols);
+      |   ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIMPLE decision tree has 3776 leafs, maximum depth 28 and a total number of 16107 nodes
+removed 2476 duplicate tails
+GENERIC decision tree has 3511 leafs, maximum depth 13 and a total number of 14666 nodes
+removed 2400 duplicate tails
+../../../riscv-gcc/gcc/reload1.c: In function ‘void elimination_costs_in_insn(rtx_insn*)’:
+../../../riscv-gcc/gcc/reload1.c:3655:28: warning: ‘orig_dup[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 3655 |     *recog_data.dup_loc[i] = orig_dup[i];
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+cc1: note: self-tests are not enabled in this build
+cc1plus: note: self-tests are not enabled in this build
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c: In function 'aligned_alloc':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c:35:10: warning: implicit declaration of function '_memalign_r' [-Wimplicit-function-declaration]
+   35 |   return _memalign_r (_REENT, align, size);
+      |          ^~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c:35:10: warning: returning 'int' from a function with return type 'void *' makes pointer from integer without a cast [-Wint-conversion]
+   35 |   return _memalign_r (_REENT, align, size);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/__call_atexit.c:46:1: warning: constructor priorities from 0 to 100 are reserved for the implementation [-Wprio-ctor-dtor]
+   46 | register_fini(void) __attribute__((constructor (0)));
+      | ^~~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c: In function 'aligned_alloc':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c:35:10: warning: implicit declaration of function '_memalign_r' [-Wimplicit-function-declaration]
+   35 |   return _memalign_r (_REENT, align, size);
+      |          ^~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/aligned_alloc.c:35:10: warning: returning 'int' from a function with return type 'void *' makes pointer from integer without a cast [-Wint-conversion]
+   35 |   return _memalign_r (_REENT, align, size);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:43: warning: "assert" redefined
+   43 | #define assert(x) ((void)0)
+      | 
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/sys/reent.h:503,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/stdio.h:60,
+                 from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/stdlib/nano-mallocr.c:35:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/riscv-newlib/newlib/libc/include/assert.h:16: note: this is the location of the previous definition
+   16 | # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+      | 
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/closer.c: In function '_close_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/closer.c:47:14: warning: implicit declaration of function '_close'; did you mean 'close'? [-Wimplicit-function-declaration]
+   47 |   if ((ret = _close (fd)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              close
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fstatr.c: In function '_fstat_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fstatr.c:55:14: warning: implicit declaration of function '_fstat'; did you mean 'fstat'? [-Wimplicit-function-declaration]
+   55 |   if ((ret = _fstat (fd, pstat)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              fstat
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fcntlr.c: In function '_fcntl_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fcntlr.c:51:14: warning: implicit declaration of function '_fcntl'; did you mean 'fcntl'? [-Wimplicit-function-declaration]
+   51 |   if ((ret = _fcntl (fd, cmd, arg)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              fcntl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/gettimeofdayr.c: In function '_gettimeofday_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/gettimeofdayr.c:62:14: warning: implicit declaration of function '_gettimeofday'; did you mean 'gettimeofday'? [-Wimplicit-function-declaration]
+   62 |   if ((ret = _gettimeofday (ptimeval, ptimezone)) == -1 && errno != 0)
+      |              ^~~~~~~~~~~~~
+      |              gettimeofday
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/lseekr.c: In function '_lseek_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/lseekr.c:49:14: warning: implicit declaration of function '_lseek'; did you mean 'lseek'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = _lseek (fd, pos, whence)) == (_off_t) -1 && errno != 0)
+      |              ^~~~~~
+      |              lseek
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/isattyr.c: In function '_isatty_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/isattyr.c:52:14: warning: implicit declaration of function '_isatty'; did you mean 'isatty'? [-Wimplicit-function-declaration]
+   52 |   if ((ret = _isatty (fd)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              isatty
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/mkdirr.c: In function '_mkdir_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/mkdirr.c:50:14: warning: implicit declaration of function '_mkdir'; did you mean 'mkdir'? [-Wimplicit-function-declaration]
+   50 |   if ((ret = _mkdir (path, mode)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              mkdir
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/linkr.c: In function '_link_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/linkr.c:53:14: warning: implicit declaration of function '_link'; did you mean 'link'? [-Wimplicit-function-declaration]
+   53 |   if ((ret = _link (old, new)) == -1 && errno != 0)
+      |              ^~~~~
+      |              link
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/openr.c: In function '_open_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/openr.c:50:14: warning: implicit declaration of function '_open'; did you mean 'open'? [-Wimplicit-function-declaration]
+   50 |   if ((ret = _open (file, flags, mode)) == -1 && errno != 0)
+      |              ^~~~~
+      |              open
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c: In function '_kill_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c:53:14: warning: implicit declaration of function '_kill'; did you mean 'kill'? [-Wimplicit-function-declaration]
+   53 |   if ((ret = _kill (pid, sig)) == -1 && errno != 0)
+      |              ^~~~~
+      |              kill
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c: In function '_getpid_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c:83:9: warning: implicit declaration of function '_getpid'; did you mean 'getpid'? [-Wimplicit-function-declaration]
+   83 |   ret = _getpid ();
+      |         ^~~~~~~
+      |         getpid
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/readr.c: In function '_read_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/readr.c:49:24: warning: implicit declaration of function '_read'; did you mean 'read'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = (_ssize_t)_read (fd, buf, cnt)) == -1 && errno != 0)
+      |                        ^~~~~
+      |                        read
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/statr.c: In function '_stat_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/statr.c:55:14: warning: implicit declaration of function '_stat'; did you mean 'stat'? [-Wimplicit-function-declaration]
+   55 |   if ((ret = _stat (file, pstat)) == -1 && errno != 0)
+      |              ^~~~~
+      |              stat
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/writer.c: In function '_write_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/writer.c:49:24: warning: implicit declaration of function '_write'; did you mean 'write'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = (_ssize_t)_write (fd, buf, cnt)) == -1 && errno != 0)
+      |                        ^~~~~~
+      |                        write
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/unlinkr.c: In function '_unlink_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/unlinkr.c:47:14: warning: implicit declaration of function '_unlink'; did you mean 'unlink'? [-Wimplicit-function-declaration]
+   47 |   if ((ret = _unlink (file)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              unlink
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/timesr.c: In function '_times_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/timesr.c:52:9: warning: implicit declaration of function '_times'; did you mean 'times'? [-Wimplicit-function-declaration]
+   52 |   ret = _times (ptms);
+      |         ^~~~~~
+      |         times
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c: In function '_execve_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c:56:14: warning: implicit declaration of function '_execve'; did you mean 'fexecve'? [-Wimplicit-function-declaration]
+   56 |   if ((ret = _execve (name, argv, env)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              fexecve
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c: In function '_fork_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c:88:14: warning: implicit declaration of function '_fork'; did you mean 'vfork'? [-Wimplicit-function-declaration]
+   88 |   if ((ret = _fork ()) == -1 && errno != 0)
+      |              ^~~~~
+      |              vfork
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/closer.c: In function '_close_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/closer.c:47:14: warning: implicit declaration of function '_close'; did you mean 'close'? [-Wimplicit-function-declaration]
+   47 |   if ((ret = _close (fd)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              close
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/lseekr.c: In function '_lseek_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/lseekr.c:49:14: warning: implicit declaration of function '_lseek'; did you mean 'lseek'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = _lseek (fd, pos, whence)) == (_off_t) -1 && errno != 0)
+      |              ^~~~~~
+      |              lseek
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fcntlr.c: In function '_fcntl_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fcntlr.c:51:14: warning: implicit declaration of function '_fcntl'; did you mean 'fcntl'? [-Wimplicit-function-declaration]
+   51 |   if ((ret = _fcntl (fd, cmd, arg)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              fcntl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/isattyr.c: In function '_isatty_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/isattyr.c:52:14: warning: implicit declaration of function '_isatty'; did you mean 'isatty'? [-Wimplicit-function-declaration]
+   52 |   if ((ret = _isatty (fd)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              isatty
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/gettimeofdayr.c: In function '_gettimeofday_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/gettimeofdayr.c:62:14: warning: implicit declaration of function '_gettimeofday'; did you mean 'gettimeofday'? [-Wimplicit-function-declaration]
+   62 |   if ((ret = _gettimeofday (ptimeval, ptimezone)) == -1 && errno != 0)
+      |              ^~~~~~~~~~~~~
+      |              gettimeofday
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/linkr.c: In function '_link_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/linkr.c:53:14: warning: implicit declaration of function '_link'; did you mean 'link'? [-Wimplicit-function-declaration]
+   53 |   if ((ret = _link (old, new)) == -1 && errno != 0)
+      |              ^~~~~
+      |              link
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fstatr.c: In function '_fstat_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/fstatr.c:55:14: warning: implicit declaration of function '_fstat'; did you mean 'fstat'? [-Wimplicit-function-declaration]
+   55 |   if ((ret = _fstat (fd, pstat)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              fstat
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/mkdirr.c: In function '_mkdir_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/mkdirr.c:50:14: warning: implicit declaration of function '_mkdir'; did you mean 'mkdir'? [-Wimplicit-function-declaration]
+   50 |   if ((ret = _mkdir (path, mode)) == -1 && errno != 0)
+      |              ^~~~~~
+      |              mkdir
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/openr.c: In function '_open_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/openr.c:50:14: warning: implicit declaration of function '_open'; did you mean 'open'? [-Wimplicit-function-declaration]
+   50 |   if ((ret = _open (file, flags, mode)) == -1 && errno != 0)
+      |              ^~~~~
+      |              open
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/readr.c: In function '_read_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/readr.c:49:24: warning: implicit declaration of function '_read'; did you mean 'read'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = (_ssize_t)_read (fd, buf, cnt)) == -1 && errno != 0)
+      |                        ^~~~~
+      |                        read
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/timesr.c: In function '_times_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/timesr.c:52:9: warning: implicit declaration of function '_times'; did you mean 'times'? [-Wimplicit-function-declaration]
+   52 |   ret = _times (ptms);
+      |         ^~~~~~
+      |         times
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c: In function '_kill_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c:53:14: warning: implicit declaration of function '_kill'; did you mean 'kill'? [-Wimplicit-function-declaration]
+   53 |   if ((ret = _kill (pid, sig)) == -1 && errno != 0)
+      |              ^~~~~
+      |              kill
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c: In function '_getpid_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/signalr.c:83:9: warning: implicit declaration of function '_getpid'; did you mean 'getpid'? [-Wimplicit-function-declaration]
+   83 |   ret = _getpid ();
+      |         ^~~~~~~
+      |         getpid
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/unlinkr.c: In function '_unlink_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/unlinkr.c:47:14: warning: implicit declaration of function '_unlink'; did you mean 'unlink'? [-Wimplicit-function-declaration]
+   47 |   if ((ret = _unlink (file)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              unlink
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/statr.c: In function '_stat_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/statr.c:55:14: warning: implicit declaration of function '_stat'; did you mean 'stat'? [-Wimplicit-function-declaration]
+   55 |   if ((ret = _stat (file, pstat)) == -1 && errno != 0)
+      |              ^~~~~
+      |              stat
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/writer.c: In function '_write_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/writer.c:49:24: warning: implicit declaration of function '_write'; did you mean 'write'? [-Wimplicit-function-declaration]
+   49 |   if ((ret = (_ssize_t)_write (fd, buf, cnt)) == -1 && errno != 0)
+      |                        ^~~~~~
+      |                        write
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c: In function '_execve_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c:56:14: warning: implicit declaration of function '_execve'; did you mean 'fexecve'? [-Wimplicit-function-declaration]
+   56 |   if ((ret = _execve (name, argv, env)) == -1 && errno != 0)
+      |              ^~~~~~~
+      |              fexecve
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c: In function '_fork_r':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/reent/execr.c:88:14: warning: implicit declaration of function '_fork'; did you mean 'vfork'? [-Wimplicit-function-declaration]
+   88 |   if ((ret = _fork ()) == -1 && errno != 0)
+      |              ^~~~~
+      |              vfork
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/syscalls/sysisatty.c: In function 'isatty':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/syscalls/sysisatty.c:12:10: warning: implicit declaration of function '_isatty'; did you mean 'isatty'? [-Wimplicit-function-declaration]
+   12 |   return _isatty (fd);
+      |          ^~~~~~~
+      |          isatty
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/syscalls/sysisatty.c: In function 'isatty':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libc/syscalls/sysisatty.c:12:10: warning: implicit declaration of function '_isatty'; did you mean 'isatty'? [-Wimplicit-function-declaration]
+   12 |   return _isatty (fd);
+      |          ^~~~~~~
+      |          isatty
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c: In function 'ccoshl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:13: warning: implicit declaration of function 'coshl'; did you mean 'ccoshl'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |             ^~~~~
+      |             ccoshl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:24: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                        ^~~~
+      |                        cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:35: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                                   ^~~~~
+      |                                   sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:46: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                                              ^~~~
+      |                                              sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cargl.c: In function 'cargl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c: In function 'clogl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c:42:13: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   42 |         p = logl(rr);
+      |             ^~~~
+      |             logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c:43:14: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   43 |         rr = atan2l(cimagl(z), creall(z));
+      |              ^~~~~~
+      |              atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cargl.c:16:17: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   16 |          return atan2l (cimagl (z), creall (z));
+      |                 ^~~~~~
+      |                 atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c: In function 'ccosl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c:43:13: warning: implicit declaration of function 'cosl'; did you mean 'ccosl'? [-Wimplicit-function-declaration]
+   43 |         w = cosl(creall(z)) * ch - (sinl(creall(z)) * sh) * I;
+      |             ^~~~
+      |             ccosl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c:43:37: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = cosl(creall(z)) * ch - (sinl(creall(z)) * sh) * I;
+      |                                     ^~~~
+      |                                     sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c: In function 'cexpl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:43:13: warning: implicit declaration of function 'expl'; did you mean 'cexpl'? [-Wimplicit-function-declaration]
+   43 |         r = expl(x);
+      |             ^~~~
+      |             cexpl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:44:17: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   44 |         w = r * cosl(y) + r * sinl(y) * I;
+      |                 ^~~~
+      |                 cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c: In function '_cchshl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c: In function 'csqrtl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:43:13: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   43 |         if (fabsl(x) <= 0.5L) {
+      |             ^~~~~
+      |             fabsf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:80:40: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   80 |                         return (cpackl(fabsl(b - b), copysignl(a, b)));
+      |                                        ^~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:50:24: note: in definition of macro 'cpackl'
+   50 | #define cpackl(r, i) ((r) + (i) * I)
+      |                        ^
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:44:22: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   44 |                 *c = coshl(x);
+      |                      ^~~~~
+      |                      coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:45:22: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   45 |                 *s = sinhl(x);
+      |                      ^~~~~
+      |                      sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:47:21: warning: implicit declaration of function 'expl'; did you mean 'expf'? [-Wimplicit-function-declaration]
+   47 |                 e = expl(x);
+      |                     ^~~~
+      |                     expf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:80:54: warning: implicit declaration of function 'copysignl'; did you mean 'copysignf'? [-Wimplicit-function-declaration]
+   80 |                         return (cpackl(fabsl(b - b), copysignl(a, b)));
+      |                                                      ^~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:50:30: note: in definition of macro 'cpackl'
+   50 | #define cpackl(r, i) ((r) + (i) * I)
+      |                              ^
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:44:31: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   44 |         w = r * cosl(y) + r * sinl(y) * I;
+      |                               ^~~~
+      |                               sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cprojl.c: In function 'cprojl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cprojl.c:60:32: warning: implicit declaration of function 'copysignl'; did you mean 'copysignf'? [-Wimplicit-function-declaration]
+   60 |                 IMAG_PART(w) = copysignl(0.0L, cimagl(z));
+      |                                ^~~~~~~~~
+      |                                copysignf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c: In function 'ctanhl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:43:13: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         d = coshl(2.0L * x) + cosl(2.0L * y);
+      |             ^~~~~
+      |             coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:43:31: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         d = coshl(2.0L * x) + cosl(2.0L * y);
+      |                               ^~~~
+      |                               cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:44:13: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   44 |         w = sinhl(2.0L * x) / d  +  (sinl(2.0L * y) / d) * I;
+      |             ^~~~~
+      |             sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:44:38: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   44 |         w = sinhl(2.0L * x) / d  +  (sinl(2.0L * y) / d) * I;
+      |                                      ^~~~
+      |                                      sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c: In function 'cpowl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:48:13: warning: implicit declaration of function 'powl'; did you mean 'cpowl'? [-Wimplicit-function-declaration]
+   48 |         r = powl(absa, x);
+      |             ^~~~
+      |             cpowl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c: In function 'ctanl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:51:25: warning: implicit declaration of function 'expl'; did you mean 'expf'? [-Wimplicit-function-declaration]
+   51 |                 r = r * expl(-y * arga);
+      |                         ^~~~
+      |                         expf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:43:13: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         d = cosl(2.0L * creall(z)) + coshl(2.0L * cimagl(z));
+      |             ^~~~
+      |             cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:52:37: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   52 |                 theta = theta + y * logl(absa);
+      |                                     ^~~~
+      |                                     logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:43:38: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         d = cosl(2.0L * creall(z)) + coshl(2.0L * cimagl(z));
+      |                                      ^~~~~
+      |                                      coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:54:17: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   54 |         w = r * cosl(theta) + (r * sinl(theta)) * I;
+      |                 ^~~~
+      |                 cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:54:36: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   54 |         w = r * cosl(theta) + (r * sinl(theta)) * I;
+      |                                    ^~~~
+      |                                    sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:45:13: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   45 |         if (fabsl(d) < 0.25L)
+      |             ^~~~~
+      |             fabsf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:54:13: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   54 |         w = sinl(2.0L * creall(z)) / d + (sinhl(2.0L * cimagl(z)) / d) * I;
+      |             ^~~~
+      |             sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:54:43: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   54 |         w = sinl(2.0L * creall(z)) / d + (sinhl(2.0L * cimagl(z)) / d) * I;
+      |                                           ^~~~~
+      |                                           sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c: In function 'csinhl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:13: warning: implicit declaration of function 'sinhl'; did you mean 'csinhl'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |             ^~~~~
+      |             csinhl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:24: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                        ^~~~
+      |                        cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:35: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                                   ^~~~~
+      |                                   coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:46: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                                              ^~~~
+      |                                              sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c: In function 'catanl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c:57:20: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   57 |         t = 0.5L * atan2l(2.0L * x, a);
+      |                    ^~~~~~
+      |                    atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c:67:26: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   67 |         w = w + (0.25L * logl(a)) * I;
+      |                          ^~~~
+      |                          logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c: In function 'csinl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c:43:13: warning: implicit declaration of function 'sinl'; did you mean 'csinl'? [-Wimplicit-function-declaration]
+   43 |         w = sinl(creall(z)) * ch + (cosl(creall(z)) * sh) * I;
+      |             ^~~~
+      |             csinl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c:43:37: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = sinl(creall(z)) * ch + (cosl(creall(z)) * sh) * I;
+      |                                     ^~~~
+      |                                     cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c: In function 'ccoshl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:13: warning: implicit declaration of function 'coshl'; did you mean 'ccoshl'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |             ^~~~~
+      |             ccoshl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:24: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                        ^~~~
+      |                        cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:35: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                                   ^~~~~
+      |                                   sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccoshl.c:43:46: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = coshl(x) * cosl(y) + (sinhl(x) * sinl(y)) * I;
+      |                                              ^~~~
+      |                                              sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c: In function 'csqrtl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:80:40: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   80 |                         return (cpackl(fabsl(b - b), copysignl(a, b)));
+      |                                        ^~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:50:24: note: in definition of macro 'cpackl'
+   50 | #define cpackl(r, i) ((r) + (i) * I)
+      |                        ^
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:80:54: warning: implicit declaration of function 'copysignl'; did you mean 'copysignf'? [-Wimplicit-function-declaration]
+   80 |                         return (cpackl(fabsl(b - b), copysignl(a, b)));
+      |                                                      ^~~~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csqrtl.c:50:30: note: in definition of macro 'cpackl'
+   50 | #define cpackl(r, i) ((r) + (i) * I)
+      |                              ^
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cargl.c: In function 'cargl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cargl.c:16:17: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   16 |          return atan2l (cimagl (z), creall (z));
+      |                 ^~~~~~
+      |                 atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c: In function 'clogl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c:42:13: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   42 |         p = logl(rr);
+      |             ^~~~
+      |             logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/clogl.c:43:14: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   43 |         rr = atan2l(cimagl(z), creall(z));
+      |              ^~~~~~
+      |              atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c: In function 'cexpl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:43:13: warning: implicit declaration of function 'expl'; did you mean 'cexpl'? [-Wimplicit-function-declaration]
+   43 |         r = expl(x);
+      |             ^~~~
+      |             cexpl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:44:17: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   44 |         w = r * cosl(y) + r * sinl(y) * I;
+      |                 ^~~~
+      |                 cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cexpl.c:44:31: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   44 |         w = r * cosl(y) + r * sinl(y) * I;
+      |                               ^~~~
+      |                               sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c: In function '_cchshl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:43:13: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   43 |         if (fabsl(x) <= 0.5L) {
+      |             ^~~~~
+      |             fabsf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:44:22: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   44 |                 *c = coshl(x);
+      |                      ^~~~~
+      |                      coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:45:22: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   45 |                 *s = sinhl(x);
+      |                      ^~~~~
+      |                      sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cephes_subrl.c:47:21: warning: implicit declaration of function 'expl'; did you mean 'expf'? [-Wimplicit-function-declaration]
+   47 |                 e = expl(x);
+      |                     ^~~~
+      |                     expf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c: In function 'ccosl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c:43:13: warning: implicit declaration of function 'cosl'; did you mean 'ccosl'? [-Wimplicit-function-declaration]
+   43 |         w = cosl(creall(z)) * ch - (sinl(creall(z)) * sh) * I;
+      |             ^~~~
+      |             ccosl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ccosl.c:43:37: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = cosl(creall(z)) * ch - (sinl(creall(z)) * sh) * I;
+      |                                     ^~~~
+      |                                     sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cprojl.c: In function 'cprojl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cprojl.c:60:32: warning: implicit declaration of function 'copysignl'; did you mean 'copysignf'? [-Wimplicit-function-declaration]
+   60 |                 IMAG_PART(w) = copysignl(0.0L, cimagl(z));
+      |                                ^~~~~~~~~
+      |                                copysignf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c: In function 'ctanhl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:43:13: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         d = coshl(2.0L * x) + cosl(2.0L * y);
+      |             ^~~~~
+      |             coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:43:31: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         d = coshl(2.0L * x) + cosl(2.0L * y);
+      |                               ^~~~
+      |                               cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:44:13: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   44 |         w = sinhl(2.0L * x) / d  +  (sinl(2.0L * y) / d) * I;
+      |             ^~~~~
+      |             sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanhl.c:44:38: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   44 |         w = sinhl(2.0L * x) / d  +  (sinl(2.0L * y) / d) * I;
+      |                                      ^~~~
+      |                                      sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c: In function 'cpowl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:48:13: warning: implicit declaration of function 'powl'; did you mean 'cpowl'? [-Wimplicit-function-declaration]
+   48 |         r = powl(absa, x);
+      |             ^~~~
+      |             cpowl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:51:25: warning: implicit declaration of function 'expl'; did you mean 'expf'? [-Wimplicit-function-declaration]
+   51 |                 r = r * expl(-y * arga);
+      |                         ^~~~
+      |                         expf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:52:37: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   52 |                 theta = theta + y * logl(absa);
+      |                                     ^~~~
+      |                                     logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:54:17: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   54 |         w = r * cosl(theta) + (r * sinl(theta)) * I;
+      |                 ^~~~
+      |                 cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/cpowl.c:54:36: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   54 |         w = r * cosl(theta) + (r * sinl(theta)) * I;
+      |                                    ^~~~
+      |                                    sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c: In function 'csinhl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:13: warning: implicit declaration of function 'sinhl'; did you mean 'csinhl'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |             ^~~~~
+      |             csinhl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:24: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                        ^~~~
+      |                        cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:35: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                                   ^~~~~
+      |                                   coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinhl.c:43:46: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   43 |         w = sinhl(x) * cosl(y) + (coshl(x) * sinl(y)) * I;
+      |                                              ^~~~
+      |                                              sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c: In function 'ctanl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:43:13: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         d = cosl(2.0L * creall(z)) + coshl(2.0L * cimagl(z));
+      |             ^~~~
+      |             cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:43:38: warning: implicit declaration of function 'coshl'; did you mean 'coshf'? [-Wimplicit-function-declaration]
+   43 |         d = cosl(2.0L * creall(z)) + coshl(2.0L * cimagl(z));
+      |                                      ^~~~~
+      |                                      coshf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:45:13: warning: implicit declaration of function 'fabsl'; did you mean 'fabsf'? [-Wimplicit-function-declaration]
+   45 |         if (fabsl(d) < 0.25L)
+      |             ^~~~~
+      |             fabsf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:54:13: warning: implicit declaration of function 'sinl'; did you mean 'sinf'? [-Wimplicit-function-declaration]
+   54 |         w = sinl(2.0L * creall(z)) / d + (sinhl(2.0L * cimagl(z)) / d) * I;
+      |             ^~~~
+      |             sinf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/ctanl.c:54:43: warning: implicit declaration of function 'sinhl'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+   54 |         w = sinl(2.0L * creall(z)) / d + (sinhl(2.0L * cimagl(z)) / d) * I;
+      |                                           ^~~~~
+      |                                           sinhf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c: In function 'csinl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c:43:13: warning: implicit declaration of function 'sinl'; did you mean 'csinl'? [-Wimplicit-function-declaration]
+   43 |         w = sinl(creall(z)) * ch + (cosl(creall(z)) * sh) * I;
+      |             ^~~~
+      |             csinl
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c: In function 'catanl':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c:57:20: warning: implicit declaration of function 'atan2l'; did you mean 'atan2f'? [-Wimplicit-function-declaration]
+   57 |         t = 0.5L * atan2l(2.0L * x, a);
+      |                    ^~~~~~
+      |                    atan2f
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/csinl.c:43:37: warning: implicit declaration of function 'cosl'; did you mean 'cosf'? [-Wimplicit-function-declaration]
+   43 |         w = sinl(creall(z)) * ch + (cosl(creall(z)) * sh) * I;
+      |                                     ^~~~
+      |                                     cosf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/newlib/libm/complex/catanl.c:67:26: warning: implicit declaration of function 'logl'; did you mean 'logf'? [-Wimplicit-function-declaration]
+   67 |         w = w + (0.25L * logl(a)) * I;
+      |                          ^~~~
+      |                          logf
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c: In function '_access':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_access, 2, file, mode, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c: In function '_fstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:12:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   12 |   int rv = syscall_errno (SYS_fstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c: In function '_link':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:48: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                                ^~~~~~~~
+      |                                                |
+      |                                                const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c: In function '_faccessat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:7:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_faccessat, 4, dirfd, file, mode, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c: In function '_fstatat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:56: warning: passing argument 5 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                        ^~~~
+      |                                                        |
+      |                                                        struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:58: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                                     ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c: In function '_read':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:8:44: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_read, 3, file, ptr, len, 0, 0, 0);
+      |                                            ^~~
+      |                                            |
+      |                                            void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c: In function '_open':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:8:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_open, 3, name, flags, mode, 0, 0, 0);
+      |                                      ^~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c: In function '_stat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:46: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                              ^~~~
+      |                                              |
+      |                                              struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c: In function '_openat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:7:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_openat, 4, dirfd, name, flags, mode, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c: In function '_gettimeofday':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c: In function '_lstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:41: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                         ^~~~
+      |                                         |
+      |                                         const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:9:46: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_gettimeofday, 1, tp, 0, 0, 0, 0, 0);
+      |                                              ^~
+      |                                              |
+      |                                              struct timeval *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'struct timeval *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c: In function '_unlink':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_unlink, 1, name, 0, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c: In function '_write':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:9:45: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_write, 3, file, ptr, len, 0, 0, 0);
+      |                                             ^~~
+      |                                             |
+      |                                             const void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c: In function '_access':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_access, 2, file, mode, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c: In function '_faccessat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:7:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_faccessat, 4, dirfd, file, mode, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c: In function '_fstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:12:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   12 |   int rv = syscall_errno (SYS_fstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c: In function '_fstatat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:56: warning: passing argument 5 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                        ^~~~
+      |                                                        |
+      |                                                        struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:58: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                                     ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c: In function '_access':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_access, 2, file, mode, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c: In function '_link':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c: In function '_gettimeofday':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:9:46: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_gettimeofday, 1, tp, 0, 0, 0, 0, 0);
+      |                                              ^~
+      |                                              |
+      |                                              struct timeval *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'struct timeval *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:48: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                                ^~~~~~~~
+      |                                                |
+      |                                                const char *
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c: In function '_openat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:7:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_openat, 4, dirfd, name, flags, mode, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c: In function '_lstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:41: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                         ^~~~
+      |                                         |
+      |                                         const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c: In function '_read':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:8:44: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_read, 3, file, ptr, len, 0, 0, 0);
+      |                                            ^~~
+      |                                            |
+      |                                            void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c: In function '_open':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:8:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_open, 3, name, flags, mode, 0, 0, 0);
+      |                                      ^~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c: In function '_unlink':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_unlink, 1, name, 0, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c: In function '_stat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:46: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                              ^~~~
+      |                                              |
+      |                                              struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c: In function '_faccessat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:7:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_faccessat, 4, dirfd, file, mode, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c: In function '_write':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:9:45: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_write, 3, file, ptr, len, 0, 0, 0);
+      |                                             ^~~
+      |                                             |
+      |                                             const void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c: In function '_fstatat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:56: warning: passing argument 5 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                        ^~~~
+      |                                                        |
+      |                                                        struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:58: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                                     ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c: In function '_fstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:12:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   12 |   int rv = syscall_errno (SYS_fstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c: In function '_gettimeofday':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:9:46: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_gettimeofday, 1, tp, 0, 0, 0, 0, 0);
+      |                                              ^~
+      |                                              |
+      |                                              struct timeval *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'struct timeval *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c: In function '_link':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:48: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                                ^~~~~~~~
+      |                                                |
+      |                                                const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c: In function '_lstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:41: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                         ^~~~
+      |                                         |
+      |                                         const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c: In function '_openat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:7:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_openat, 4, dirfd, name, flags, mode, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c: In function '_read':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:8:44: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_read, 3, file, ptr, len, 0, 0, 0);
+      |                                            ^~~
+      |                                            |
+      |                                            void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c: In function '_open':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:8:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_open, 3, name, flags, mode, 0, 0, 0);
+      |                                      ^~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c: In function '_stat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:46: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                              ^~~~
+      |                                              |
+      |                                              struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c: In function '_unlink':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_unlink, 1, name, 0, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c: In function '_write':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:9:45: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_write, 3, file, ptr, len, 0, 0, 0);
+      |                                             ^~~
+      |                                             |
+      |                                             const void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c: In function '_access':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_access, 2, file, mode, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_access.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c: In function '_faccessat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:7:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_faccessat, 4, dirfd, file, mode, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_faccessat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c: In function '_fstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:12:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   12 |   int rv = syscall_errno (SYS_fstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c: In function '_fstatat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:50: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                  ^~~~
+      |                                                  |
+      |                                                  const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:11:56: warning: passing argument 5 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_fstatat, 4, dirfd, file, &kst, flags, 0, 0);
+      |                                                        ^~~~
+      |                                                        |
+      |                                                        struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_fstatat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:58: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                                     ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c: In function '_link':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:7:48: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_link, 2, old_name, new_name, 0, 0, 0, 0);
+      |                                                ^~~~~~~~
+      |                                                |
+      |                                                const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_link.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c: In function '_gettimeofday':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:9:46: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_gettimeofday, 1, tp, 0, 0, 0, 0, 0);
+      |                                              ^~
+      |                                              |
+      |                                              struct timeval *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_gettimeofday.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'struct timeval *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c: In function '_read':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:8:44: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_read, 3, file, ptr, len, 0, 0, 0);
+      |                                            ^~~
+      |                                            |
+      |                                            void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_read.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c: In function '_openat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:7:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    7 |   return syscall_errno (SYS_openat, 4, dirfd, name, flags, mode, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_openat.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c: In function '_open':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:8:38: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_open, 3, name, flags, mode, 0, 0, 0);
+      |                                      ^~~~
+      |                                      |
+      |                                      const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_open.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c: In function '_lstat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:41: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                         ^~~~
+      |                                         |
+      |                                         const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:10:47: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   10 |   int rv = syscall_errno (SYS_lstat, 2, file, &kst, 0, 0, 0, 0);
+      |                                               ^~~~
+      |                                               |
+      |                                               struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_lstat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c: In function '_stat':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:11:46: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+   11 |   int rv = syscall_errno (SYS_stat, 2, file, &kst, 0, 0, 0, 0);
+      |                                              ^~~~
+      |                                              |
+      |                                              struct kernel_stat *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_stat.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'struct kernel_stat *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c: In function '_unlink':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:8:40: warning: passing argument 3 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    8 |   return syscall_errno (SYS_unlink, 1, name, 0, 0, 0, 0, 0);
+      |                                        ^~~~
+      |                                        |
+      |                                        const char *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_unlink.c:2:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:38: note: expected 'long int' but argument is of type 'const char *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                 ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+riscv32-unknown-elf-ar: creating libnosys.a
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c: In function '_write':
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:9:45: warning: passing argument 4 of 'syscall_errno' makes integer from pointer without a cast [-Wint-conversion]
+    9 |   return syscall_errno (SYS_write, 3, file, ptr, len, 0, 0, 0);
+      |                                             ^~~
+      |                                             |
+      |                                             const void *
+In file included from /home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_write.c:3:
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/internal_syscall.h:66:48: note: expected 'long int' but argument is of type 'const void *'
+   66 | syscall_errno(long n, int argc, long _a0, long _a1, long _a2, long _a3, long _a4, long _a5)
+      |                                           ~~~~~^~~
+/home/cmaier/EDA/riscv-gnu-toolchain-rv32i/build/../riscv-newlib/libgloss/riscv/sys_utime.c:5:39: warning: 'struct utimbuf' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | _utime(const char *path, const struct utimbuf *times)
+      |                                       ^~~~~~~
+riscv32-unknown-elf-ar: creating libnosys.a
+*** This configuration is not supported in the following subdirectories:
+     zlib target-libquadmath target-libatomic target-libitm target-libsanitizer target-libvtv target-libphobos gnattools gotools target-libada target-libhsail-rt target-zlib target-libbacktrace target-libgfortran target-libgo target-libffi target-libobjc target-libgomp target-liboffloadmic target-libssp
+    (Any other directories should still work fine.)
+configure: WARNING: decimal float is not supported for this target, ignored
+ar: `u' modifier ignored since `D' is the default (see `U')
+../../../../riscv-gcc/libcpp/macro.c: In member function ‘vaopt_state::update_type vaopt_state::update(const cpp_token*)’:
+../../../../riscv-gcc/libcpp/macro.c:184:23: warning: format not a string literal and no format arguments [-Wformat-security]
+  184 |      vaopt_paste_error);
+      |                       ^
+../../../../riscv-gcc/libcpp/macro.c:213:24: warning: format not a string literal and no format arguments [-Wformat-security]
+  213 |       vaopt_paste_error);
+      |                        ^
+../../../../riscv-gcc/libcpp/macro.c: In function ‘cpp_macro* create_iso_definition(cpp_reader*)’:
+../../../../riscv-gcc/libcpp/macro.c:3605:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3605 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+../../../../riscv-gcc/libcpp/macro.c:3620:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3620 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+../../../../riscv-gcc/libcpp/expr.c: In function ‘unsigned int cpp_classify_number(cpp_reader*, const cpp_token*, const char**, location_t)’:
+../../../../riscv-gcc/libcpp/expr.c:812:18: warning: format not a string literal and no format arguments [-Wformat-security]
+  812 |        0, message);
+      |                  ^
+../../../../riscv-gcc/libcpp/expr.c:815:39: warning: format not a string literal and no format arguments [-Wformat-security]
+  815 |           virtual_location, 0, message);
+      |                                       ^
+../../../../riscv-gcc/libcpp/expr.c:825:34: warning: format not a string literal and no format arguments [-Wformat-security]
+  825 |      virtual_location, 0, message);
+      |                                  ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: install: warning: remember to run `libtool --finish /home/cmaier/EDA/rv32i/libexec/gcc/riscv32-unknown-elf/11.1.0'
+../../../riscv-gcc/libcpp/expr.c: In function ‘unsigned int cpp_classify_number(cpp_reader*, const cpp_token*, const char**, location_t)’:
+../../../riscv-gcc/libcpp/expr.c:812:18: warning: format not a string literal and no format arguments [-Wformat-security]
+  812 |        0, message);
+      |                  ^
+../../../riscv-gcc/libcpp/expr.c:815:39: warning: format not a string literal and no format arguments [-Wformat-security]
+  815 |           virtual_location, 0, message);
+      |                                       ^
+../../../riscv-gcc/libcpp/expr.c:825:34: warning: format not a string literal and no format arguments [-Wformat-security]
+  825 |      virtual_location, 0, message);
+      |                                  ^
+../../../riscv-gcc/libcpp/macro.c: In member function ‘vaopt_state::update_type vaopt_state::update(const cpp_token*)’:
+../../../riscv-gcc/libcpp/macro.c:184:23: warning: format not a string literal and no format arguments [-Wformat-security]
+  184 |      vaopt_paste_error);
+      |                       ^
+../../../riscv-gcc/libcpp/macro.c:213:24: warning: format not a string literal and no format arguments [-Wformat-security]
+  213 |       vaopt_paste_error);
+      |                        ^
+../../../riscv-gcc/libcpp/macro.c: In function ‘cpp_macro* create_iso_definition(cpp_reader*)’:
+../../../riscv-gcc/libcpp/macro.c:3605:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3605 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+../../../riscv-gcc/libcpp/macro.c:3620:58: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3620 |        cpp_error (pfile, CPP_DL_ERROR, paste_op_error_msg);
+      |                                                          ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+configure: WARNING: decimal float is not supported for this target, ignored
+configure: WARNING: fixed-point is not supported for this target, ignored
+Links are now set up to build a cross-compiler
+ from x86_64-pc-linux-gnu to riscv32-unknown-elf.
+../../../riscv-gcc/gcc/genhooks.c: In function ‘void emit_documentation(const char*)’:
+../../../riscv-gcc/gcc/genhooks.c:131:17: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  131 |   while (fscanf (f, "%*[^@]"), buf[0] = '\0',
+      |          ~~~~~~~^~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:140:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  140 |       fscanf (f, "%999s", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:193:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  193 |       fscanf (f, "%5[^ \n]", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/genhooks.c:199:14: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  199 |       fscanf (f, "%999s", buf);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l: In function ‘int yylex(const char**)’:
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:119:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  119 | "GTY"/{EOID}   { return GTY_TOKEN; }
+      | ^~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:114:1: note: here
+  114 | "^"     |
+      | ^~~~
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:139:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  139 | 
+      | ^                  
+../../../riscv-gcc/gcc/gengtype-lex.l:135:1: note: here
+  135 |   size_t len;
+      | ^ ~~
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc: In member function ‘virtual label_text {anonymous}::path_label::get_text(unsigned int) const’:
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:23: warning: unknown conversion type character ‘@’ in format [-Wformat=]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                       ^
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:26: warning: format ‘%s’ expects argument of type ‘char*’, but argument 3 has type ‘diagnostic_event_id_t*’ [-Wformat=]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                         ~^   ~~~~~~~~~
+      |                          |   |
+      |                          |   diagnostic_event_id_t*
+      |                          char*
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:68:21: warning: too many arguments for format [-Wformat-extra-args]
+   68 |     pp_printf (&pp, "%@ %s", &event_id, event_text.m_buffer);
+      |                     ^~~~~~~
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc: In member function ‘void {anonymous}::event_range::print(diagnostic_context*)’:
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:24: warning: unknown conversion type character ‘@’ in format [-Wformat=]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                        ^
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:28: warning: format ‘%s’ expects argument of type ‘char*’, but argument 3 has type ‘diagnostic_event_id_t*’ [-Wformat=]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                           ~^   ~~~~~~~~~
+      |                            |   |
+      |                            |   diagnostic_event_id_t*
+      |                            char*
+../../../riscv-gcc/gcc/tree-diagnostic-path.cc:177:21: warning: too many arguments for format [-Wformat-extra-args]
+  177 |      pp_printf (pp, " %@: %s", &event_id, event_text.m_buffer);
+      |                     ^~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l: In function ‘int yylex(const char**)’:
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:119:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  119 | "GTY"/{EOID}   { return GTY_TOKEN; }
+      | ^~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:114:1: note: here
+  114 | "^"     |
+      | ^~~~
+gengtype-lex.c:357:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  357 | #define YY_DO_BEFORE_ACTION \
+      |  ~~~~~~~~~~~~~^~~~~~~
+../../../riscv-gcc/gcc/gengtype-lex.l:139:1: note: in expansion of macro ‘YY_DO_BEFORE_ACTION’
+  139 | 
+      | ^                  
+../../../riscv-gcc/gcc/gengtype-lex.l:135:1: note: here
+  135 |   size_t len;
+      | ^ ~~
+../../../riscv-gcc/gcc/diagnostic.c: In function ‘void fancy_abort(const char*, int, const char*)’:
+../../../riscv-gcc/gcc/diagnostic.c:1887:52: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1887 |       fnotice (stderr, diagnostic_kind_text[DK_ICE]);
+      |                                                    ^
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2330:1: warning: operand 0 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2352:1: warning: operand 1 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2375:1: warning: operand 0 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2398:1: warning: operand 1 missing mode?
+../../../riscv-gcc/gcc/config/riscv/riscv.md:2468:1: warning: source missing a mode?
+Statistics for recog:
+  Number of decisions:   1735
+  longest path:            36 (code:    293)
+  longest backtrack:       13 (code:    341)
+Statistics for split_insns:
+  Number of decisions:    208
+  longest path:            30 (code:     41)
+  longest backtrack:        3 (code:     41)
+Statistics for peephole2_insns:
+  Number of decisions:     22
+  longest path:            22 (code:      1)
+  longest backtrack:        0 (code:      1)
+Shared 1237 out of 3108 states by creating 373 new states, saving 864
+../../../riscv-gcc/gcc/gcc.c: In function ‘long unsigned int get_random_number()’:
+../../../riscv-gcc/gcc/gcc.c:10438:12: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+10438 |       read (fd, &ret, sizeof (HOST_WIDE_INT));
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/../libgcc/libgcov-util.c: In function ‘gcov_info* gcov_read_profile_dir(const char*, int)’:
+../../../riscv-gcc/gcc/../libgcc/libgcov-util.c:462:9: warning: ignoring return value of ‘int chdir(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  462 |   chdir (pwd);
+      |   ~~~~~~^~~~~
+../../../riscv-gcc/gcc/lto-wrapper.c: In function ‘bool find_and_merge_options(int, off_t, const char*, cl_decoded_option*, unsigned int, cl_decoded_option**, unsigned int*, const char*)’:
+../../../riscv-gcc/gcc/lto-wrapper.c:1099:8: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 1099 |   read (fd, data, length);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c: In function ‘void do_report_bug(const char**, int, char**, char**)’:
+../../../riscv-gcc/gcc/gcc.c:7655:9: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7655 |   write (fd, "\n//", 3);
+      |   ~~~~~~^~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7658:13: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7658 |       write (fd, " ", 1);
+      |       ~~~~~~^~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7659:13: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7659 |       write (fd, new_argv[i], strlen (new_argv[i]));
+      |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/gcc.c:7661:9: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+ 7661 |   write (fd, "\n\n", 2);
+      |   ~~~~~~^~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c: In function ‘void lto_resolution_read(splay_tree, FILE*, lto_file*)’:
+../../../riscv-gcc/gcc/lto/lto-common.c:2071:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2071 |   fscanf (resolution, " ");   /* Read white space.  */
+      |   ~~~~~~~^~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c:2073:9: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2073 |   fread (obj_name, sizeof (char), name_len, resolution);
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../riscv-gcc/gcc/lto/lto-common.c:2093:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+ 2093 |   fscanf (resolution, "%u", &num_symbols);
+      |   ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIMPLE decision tree has 3776 leafs, maximum depth 28 and a total number of 16107 nodes
+removed 2476 duplicate tails
+GENERIC decision tree has 3511 leafs, maximum depth 13 and a total number of 14666 nodes
+removed 2400 duplicate tails
+../../../riscv-gcc/gcc/reload1.c: In function ‘void elimination_costs_in_insn(rtx_insn*)’:
+../../../riscv-gcc/gcc/reload1.c:3655:28: warning: ‘orig_dup[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 3655 |     *recog_data.dup_loc[i] = orig_dup[i];
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+Applying sysv68_string            to string.h
+Applying sun_malloc               to malloc.h
+cc1: note: self-tests are not enabled in this build
+cc1plus: note: self-tests are not enabled in this build
+configure: WARNING: decimal float is not supported for this target, ignored
+configure: WARNING: No native atomic operations are provided for this platform.
+configure: WARNING: They cannot be faked when thread support is disabled.
+configure: WARNING: Thread-safety of certain classes is not guaranteed.
+make[3]: [Makefile:1767: riscv32-unknown-elf/bits/largefile-config.h] Error 1 (ignored)
+make[3]: [Makefile:1768: riscv32-unknown-elf/bits/largefile-config.h] Error 1 (ignored)
