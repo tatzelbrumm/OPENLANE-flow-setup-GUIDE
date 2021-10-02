@@ -1,0 +1,13 @@
+https://github.com/PraveenRajAyyappan/Opensouce_Design_Setup/blob/main/OpenLANE%20flow%20setup.txt
+
+~/EDA$ env | grep ROOT
+PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel
+
+git clone https://github.com/efabless/caravel_user_project.git -b mpw-3
+cd caravel_user_project
+make install
+cd openlane
+make user_proj_example
+make user_project_wrapper
