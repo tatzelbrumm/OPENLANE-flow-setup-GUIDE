@@ -1,4 +1,4 @@
-PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
-OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
-PRECHECK_ROOT=/home/cmaier/EDA/precheck
-CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel/
+export PDK_ROOT=/home/cmaier/EDA/OpenLane/pdks
+export OPENLANE_ROOT=/home/cmaier/EDA/OpenLane
+export PRECHECK_ROOT=/home/cmaier/EDA/precheck
+export CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel/
