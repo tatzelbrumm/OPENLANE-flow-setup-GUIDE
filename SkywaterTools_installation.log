@@ -4597,3 +4597,148 @@ CARAVEL_ROOT=/home/cmaier/EDA/caravel_user_project/caravel/
 
 Precheck passes except for ['Default'] check.
 
+Get xschem simulation to work in caravel_user_project_analog
+
+/usr/share/pdk$ sudo ln -s /home/cmaier/EDA/OpenLane/pdks/sky130A .
+
+There seems to be a missing file in OpenLane
+=> COMPLETE reinstall is necessary once again.
+
+~/EDA/OpenLane$ git pull --all
+Fetching origin
+remote: Enumerating objects: 81, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Total 81 (delta 57), reused 57 (delta 57), pack-reused 24
+Unpacking objects: 100% (81/81), 13.48 MiB | 5.88 MiB/s, done.
+From https://github.com/The-OpenROAD-Project/OpenLane
+   6905a12..be255aa  master                     -> origin/master
+ * [new branch]      ahmednofal-patch-1         -> origin/ahmednofal-patch-1
+ * [new branch]      configuration_readme_patch -> origin/configuration_readme_patch
+ * [new tag]         2021.10.08_02.00.18        -> 2021.10.08_02.00.18
+ * [new tag]         2021.09.23_03.17.13        -> 2021.09.23_03.17.13
+ * [new tag]         2021.09.29_01.57.15        -> 2021.09.29_01.57.15
+ * [new tag]         2021.09.30_02.12.16        -> 2021.09.30_02.12.16
+Updating 6905a12..be255aa
+Fast-forward
+ .github/scripts/gh.py                                     |   2 +-
+ .github/scripts/run_tests.py                              |  25 ++++++-----
+ .github/test_sets/Readme.txt                              |   5 ---
+ .github/test_sets/extendedTestSet1                        |   1 -
+ .github/test_sets/extendedTestSet2                        |   1 -
+ .github/test_sets/extendedTestSet3                        |   1 -
+ .github/test_sets/extendedTestSet4                        |   1 -
+ .github/test_sets/extendedTestSet5                        |   1 -
+ .github/test_sets/extended_test_set                       |   1 +
+ .github/test_sets/fastestTestSet1                         |   1 -
+ .github/test_sets/fastestTestSet2                         |   1 -
+ .github/test_sets/fastestTestSet3                         |   1 -
+ .github/test_sets/fastestTestSet4                         |   1 -
+ .github/test_sets/fastestTestSet5                         |   1 -
+ .github/test_sets/fastest_test_set                        |   1 +
+ .github/test_sets/{get_test_set.py => get_test_matrix.py} |  11 +++--
+ .github/workflows/openlane_ci.yml                         | 138 +++++++++++++++++++++++++++++-----------------------------
+ Makefile                                                  |  15 ++++---
+ README.md                                                 |   8 ++--
+ dependencies/tool_metadata.yml                            |   4 +-
+ designs/manual_macro_placement_test/base.sdc              | 157 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ designs/manual_macro_placement_test/config.tcl            |   2 +-
+ docker_build/Makefile                                     |   4 +-
+ docker_build/hooks/build                                  |   5 ---
+ docker_build/tar/openroad_app.tar.gz                      | Bin 14186374 -> 14241072 bytes
+ scripts/base.sdc                                          |   7 ++-
+ scripts/openroad/or_cts.tcl                               |  10 +++--
+ scripts/openroad/or_floorplan.tcl                         |   3 ++
+ scripts/openroad/or_groute.tcl                            |  13 +++---
+ scripts/openroad/or_pdn.tcl                               |  21 +--------
+ scripts/openroad/or_rcx.tcl                               |  14 ++----
+ scripts/openroad/or_replace.tcl                           |   6 ++-
+ scripts/openroad/or_resizer.tcl                           |   5 ++-
+ scripts/openroad/or_resizer_routing_timing.tcl            |  12 +++--
+ scripts/openroad/or_resizer_timing.tcl                    |  14 +++---
+ scripts/openroad/or_set_rc.tcl                            |  22 ++++++++++
+ scripts/{sta.tcl => openroad/or_sta.tcl}                  |  10 ++---
+ scripts/or_issue.py                                       |   2 +-
+ scripts/tcl_commands/cts.tcl                              |   2 +
+ scripts/tcl_commands/floorplan.tcl                        |   2 +
+ scripts/tcl_commands/placement.tcl                        |   4 ++
+ scripts/tcl_commands/routing.tcl                          |   4 +-
+ scripts/tcl_commands/synthesis.tcl                        |   3 +-
+ 43 files changed, 351 insertions(+), 191 deletions(-)
+ delete mode 100644 .github/test_sets/Readme.txt
+ delete mode 100644 .github/test_sets/extendedTestSet1
+ delete mode 100644 .github/test_sets/extendedTestSet2
+ delete mode 100644 .github/test_sets/extendedTestSet3
+ delete mode 100644 .github/test_sets/extendedTestSet4
+ delete mode 100644 .github/test_sets/extendedTestSet5
+ create mode 100644 .github/test_sets/extended_test_set
+ delete mode 100644 .github/test_sets/fastestTestSet1
+ delete mode 100644 .github/test_sets/fastestTestSet2
+ delete mode 100644 .github/test_sets/fastestTestSet3
+ delete mode 100644 .github/test_sets/fastestTestSet4
+ delete mode 100644 .github/test_sets/fastestTestSet5
+ create mode 100644 .github/test_sets/fastest_test_set
+ rename .github/test_sets/{get_test_set.py => get_test_matrix.py} (77%)
+ mode change 100644 => 100755
+ create mode 100644 designs/manual_macro_placement_test/base.sdc
+ delete mode 100644 docker_build/hooks/build
+ create mode 100644 scripts/openroad/or_set_rc.tcl
+ rename scripts/{sta.tcl => openroad/or_sta.tcl} (83%)
+
+~/EDA/OpenLane$ make 
+all                     clean_runs              mount                   open_pdks               skywater-pdk
+all-skywater-libraries  extended_test_set       native-build-pdk        pdk                     test
+build-pdk               fastest_test_set        native-full-pdk         regression              test_design_list
+clean_all               full-pdk                native-pdk              regression_test         
+clean_results           gen-sources             openlane                skywater-library        
+
+~/EDA/OpenLane$ make native-full-pdk 1>make_native-full-pdk.log 2>make_native-full-pdk.err
+
+~/EDA/OpenLane$ mv make_test.log make_test.2021SEP20.log
+~/EDA/OpenLane$ mv make_test.err make_test.2021SEP20.err
+
+~/EDA/OpenLane$ make test 1>make_test.log 2>make_test.err
+
+debug caravel_user_project_analog xschem in close collaboration with Tim Edwards
+See https://github.com/tatzelbrumm/caravel_user_project_analog/tree/tatzelbranch for details
+
+The new PDKPATH environment variable works like:
+~/EDA/caravel_user_project_analog/xschem$ PDKPATH=/home/cmaier/EDA/OpenLane/pdks/sky130A xschem
+
+~/EDA/caravel_user_project_analog$ make run-precheck 1>make_run_precheck.log 2>make_run_precheck.err
+still fails only the Default check, which is to be expected.
+
+tbd: document the proper configuration of xschem and ngspice
+
+https://skywater-pdk.slack.com/archives/C017P3RAD42/p1634268887142700?thread_ts=1633985464.135100&cid=C017P3RAD42
+Stefan Schippers  3 days ago
+@Christoph Maier I understand the frustration, since i several times got into similar sinkholes. In some cases there are too many levels of indirection (variables, expansions and so on).
+Moreover each tool has its own substitution mechanism. The bash shell has variables, tcl has variables, xschem itself has a mechanism for variable substitution, to enable parametric symbols. In some cases this leads to the "escape nightmare", where escaping or quoting is needed to protect some special characters (notably $, ", space  and other). To reduce the size of the black hole try removing some variables and hardcode paths, see if that solves.
+Of course i am open to change the way schematics locate model files. Currently the idea is to place a code.sym block (or code_shown.sym, they are equivalent, latter one shows the value string in schematic), this has a value attribute that is dumped verbatim to the netlist. Xschem components can have any number of attribute=value assignments, for example a code block has a name attribute (just a unique ID in the design) and a value attribute. You can edit the whole attribute string, however note that some special characters must be escaped , like in:
+name=s1 value=".control
+.tran 1n 100n
+plot v(\"data[4]\")
+.endc"
+the quotes in the plot line must be escaped to avoid interpreting them as a close quote of the value attribute.
+However you can set the Edit Attr selector to 'value' in the edit attributes dialog and you will be editing the part inside the quotes of the value attribute. if you write quotes xschem will do the escaping automatically.
+In the picture you see an example. Why is the $ character escaped? because $ is used internally by xshem to do parameter substitution. If a component has a foo=bar attribute and the symbol has $foo in the format attribute (format specifies what goes in the netlist) the $foo becomes bar. However if format string contains \$foo then netlist will contain $foo. Moreover in the picture the component redefines format: the symbol default is format=@value, meaning the value attribute goes directly in the netlist. The redefinition specifies tcleval(@value ) so before putting value in the netlist the whole string is evaluated by the tcl interpreter. So if $foo is encountered it is replaced with the value of the foo tcl global variable.
+you have seen xschem has 2 substitution characters, $ and @.
+$foo expands to bar if instance has a foo=bar attribute or just foo if no such attribute assignment is found. @foo expands to bar if instance assigns it to bar or the empty string if no such assignment exists.
+When a code.sym block has the right attributes set and the final netlist has the right .lib /.include statements for ngspice to find spice models, you should just copy/paste this instance in all designs you work with.
+This is a bit of xschem internals to understand how the assignments in the dialog shown in picture work.  In this case the SKYWATER_MODELS global tcl variable is expanded by tcl. This variable is set in the xschemrc init file, typically.
+As a result of all this mechanisms if user A creates a schematic and sends this schematic to user B (together with all custom symbols and sub-schematics if any) User B should be able to simulate the design without any changes, provided he sets the correct paths in his xschemrc file.
+
+
+https://app.slack.com/client/T01699QAZBQ/C02096M650E/thread/C02096M650E-1634085791.054400
+Tim Edwards
+The best practice is to copy <path_to>/sky130A/libs.tech/magic/sky130A.magicrc to the local directory where you're doing layout and rename it to .magicrc, or make a symbolic link.
+The alternative is to run magic with -rcfile <path_to>/sky130A/libs.tech/magic/sky130A.magicrc .
+If you just run magic with no options, it will use the local .magicrc if there is one, and otherwise it will not use a startup file at all.
+
+~/EDA/caravel_user_project_analog/mag$ cp -p  ~/EDA/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc .
+~/EDA/caravel_user_project_analog/mag$ ln -s sky130A.magicrc .magicrc
+
+~/EDA/caravel_user_project_analog/mag$ magic
+
+Now 
+~/EDA/caravel_user_project_analog/mag$ magic user_analog_project_wrapper.mag
+has access to all cells and can be expanded all the way down to polygon level.
