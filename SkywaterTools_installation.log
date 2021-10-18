@@ -4742,3 +4742,67 @@ If you just run magic with no options, it will use the local .magicrc if there i
 Now 
 ~/EDA/caravel_user_project_analog/mag$ magic user_analog_project_wrapper.mag
 has access to all cells and can be expanded all the way down to polygon level.
+
+In magic:
+% extract
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_PKVMTM geometry by factor of 2
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_ZK8HQC geometry by factor of 2
+Processing timestamp mismatches: sky130_fd_sc_hvl__schmittbuf_1, sky130_fd_sc_hvl__buf_8, sky130_fd_sc_hvl__fill_4, sky130_fd_sc_hvl__inv_8.
+Extracting sky130_fd_pr__nfet_g5v0d10v5_TGFUGS into sky130_fd_pr__nfet_g5v0d10v5_TGFUGS.ext:
+Extracting sky130_fd_pr__nfet_g5v0d10v5_ZK8HQC into sky130_fd_pr__nfet_g5v0d10v5_ZK8HQC.ext:
+Extracting sky130_fd_pr__pfet_g5v0d10v5_ZEUEFZ into sky130_fd_pr__pfet_g5v0d10v5_ZEUEFZ.ext:
+Extracting sky130_fd_pr__nfet_g5v0d10v5_PKVMTM into sky130_fd_pr__nfet_g5v0d10v5_PKVMTM.ext:
+Extracting sky130_fd_pr__pfet_g5v0d10v5_YUHPBG into sky130_fd_pr__pfet_g5v0d10v5_YUHPBG.ext:
+Extracting sky130_fd_pr__pfet_g5v0d10v5_YEUEBV into sky130_fd_pr__pfet_g5v0d10v5_YEUEBV.ext:
+Extracting sky130_fd_pr__pfet_g5v0d10v5_YUHPXE into sky130_fd_pr__pfet_g5v0d10v5_YUHPXE.ext:
+Extracting sky130_fd_pr__pfet_g5v0d10v5_3YBPVB into sky130_fd_pr__pfet_g5v0d10v5_3YBPVB.ext:
+Extracting sky130_fd_pr__res_xhigh_po_0p69_S5N9F3 into sky130_fd_pr__res_xhigh_po_0p69_S5N9F3.ext:
+Extracting sky130_fd_pr__cap_mim_m3_2_W5U4AW into sky130_fd_pr__cap_mim_m3_2_W5U4AW.ext:
+Extracting sky130_fd_pr__cap_mim_m3_1_WRT4AW into sky130_fd_pr__cap_mim_m3_1_WRT4AW.ext:
+Extracting sky130_fd_sc_hvl__schmittbuf_1 into /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/mag/sky130_fd_sc_hvl__schmittbuf_1.ext:
+Extracting sky130_fd_sc_hvl__buf_8 into /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/mag/sky130_fd_sc_hvl__buf_8.ext:
+Extracting sky130_fd_sc_hvl__fill_4 into /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/mag/sky130_fd_sc_hvl__fill_4.ext:
+Extracting sky130_fd_sc_hvl__inv_8 into /home/cmaier/EDA/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/mag/sky130_fd_sc_hvl__inv_8.ext:
+Extracting example_por into example_por.ext:
+Extracting user_analog_proj_example into user_analog_proj_example.ext:
+Extracting user_analog_project_wrapper into user_analog_project_wrapper.ext:
+Completed 52%
+user_analog_project_wrapper: 36 warnings
+Total of 36 warnings.
+Loading DRC CIF style.
+
+~/EDA/caravel_user_project_analog/mag$ ls -lart
+total 608
+-rw-rw-r--  1 <user> <group>    262 Okt  1 16:47 user_analog_proj_example.mag
+-rw-rw-r--  1 <user> <group> 100253 Okt  1 16:47 user_analog_project_wrapper.mag
+-rw-rw-r--  1 <user> <group>  90795 Okt  1 16:47 user_analog_project_wrapper_empty.mag
+-rw-rw-r--  1 <user> <group>   4682 Okt  1 16:47 sky130_fd_pr__res_xhigh_po_0p69_S5N9F3.mag
+-rw-rw-r--  1 <user> <group>   8591 Okt  1 16:47 sky130_fd_pr__pfet_g5v0d10v5_ZEUEFZ.mag
+-rw-rw-r--  1 <user> <group>   2761 Okt  1 16:47 sky130_fd_pr__pfet_g5v0d10v5_YUHPXE.mag
+-rw-rw-r--  1 <user> <group>   2758 Okt  1 16:47 sky130_fd_pr__pfet_g5v0d10v5_YUHPBG.mag
+-rw-rw-r--  1 <user> <group>   7715 Okt  1 16:47 sky130_fd_pr__pfet_g5v0d10v5_YEUEBV.mag
+-rw-rw-r--  1 <user> <group>   2589 Okt  1 16:47 sky130_fd_pr__pfet_g5v0d10v5_3YBPVB.mag
+-rw-rw-r--  1 <user> <group>   2271 Okt  1 16:47 sky130_fd_pr__nfet_g5v0d10v5_ZK8HQC.mag
+-rw-rw-r--  1 <user> <group>   7655 Okt  1 16:47 sky130_fd_pr__nfet_g5v0d10v5_TGFUGS.mag
+-rw-rw-r--  1 <user> <group>   2392 Okt  1 16:47 sky130_fd_pr__nfet_g5v0d10v5_PKVMTM.mag
+-rw-rw-r--  1 <user> <group>    905 Okt  1 16:47 sky130_fd_pr__cap_mim_m3_2_W5U4AW.mag
+-rw-rw-r--  1 <user> <group>    897 Okt  1 16:47 sky130_fd_pr__cap_mim_m3_1_WRT4AW.mag
+drwxrwxr-x 13 <user> <group>   4096 Okt 12 22:01 ..
+-rw-rw-r--  1 <user> <group>   3103 Okt 18 01:43 sky130A.magicrc
+lrwxrwxrwx  1 <user> <group>     15 Okt 18 01:44 .magicrc -> sky130A.magicrc
+-rw-rw-r--  1 <user> <group>  15940 Okt 18 01:48 example_por.mag
+-rw-rw-r--  1 <user> <group>   1210 Okt 18 17:39 sky130_fd_pr__nfet_g5v0d10v5_ZK8HQC.ext
+-rw-rw-r--  1 <user> <group>   4972 Okt 18 17:39 sky130_fd_pr__nfet_g5v0d10v5_TGFUGS.ext
+-rw-rw-r--  1 <user> <group>   6480 Okt 18 17:39 sky130_fd_pr__pfet_g5v0d10v5_ZEUEFZ.ext
+-rw-rw-r--  1 <user> <group>   1216 Okt 18 17:39 sky130_fd_pr__nfet_g5v0d10v5_PKVMTM.ext
+-rw-rw-r--  1 <user> <group>   1489 Okt 18 17:39 sky130_fd_pr__pfet_g5v0d10v5_YUHPBG.ext
+-rw-rw-r--  1 <user> <group>   1490 Okt 18 17:39 sky130_fd_pr__pfet_g5v0d10v5_YUHPXE.ext
+-rw-rw-r--  1 <user> <group>   5737 Okt 18 17:39 sky130_fd_pr__pfet_g5v0d10v5_YEUEBV.ext
+-rw-rw-r--  1 <user> <group>   1489 Okt 18 17:39 sky130_fd_pr__pfet_g5v0d10v5_3YBPVB.ext
+-rw-rw-r--  1 <user> <group>  20184 Okt 18 17:39 sky130_fd_pr__res_xhigh_po_0p69_S5N9F3.ext
+-rw-rw-r--  1 <user> <group>    937 Okt 18 17:39 sky130_fd_pr__cap_mim_m3_2_W5U4AW.ext
+-rw-rw-r--  1 <user> <group>    932 Okt 18 17:39 sky130_fd_pr__cap_mim_m3_1_WRT4AW.ext
+-rw-rw-r--  1 <user> <group>  97678 Okt 18 17:39 example_por.ext
+-rw-rw-r--  1 <user> <group>    689 Okt 18 17:39 user_analog_proj_example.ext
+drwxrwxr-x  2 <user> <group>   4096 Okt 18 17:39 .
+-rw-rw-r--  1 <user> <group> 148107 Okt 18 17:39 user_analog_project_wrapper.ext
