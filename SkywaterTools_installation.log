@@ -4806,3 +4806,29 @@ lrwxrwxrwx  1 <user> <group>     15 Okt 18 01:44 .magicrc -> sky130A.magicrc
 -rw-rw-r--  1 <user> <group>    689 Okt 18 17:39 user_analog_proj_example.ext
 drwxrwxr-x  2 <user> <group>   4096 Okt 18 17:39 .
 -rw-rw-r--  1 <user> <group> 148107 Okt 18 17:39 user_analog_project_wrapper.ext
+
+% ext2spice hierarchy on
+% ext2spice scale off
+% ext2spice
+exttospice finished.
+
+~/EDA/caravel_user_project_analog/mag$ ln -s ../xschem/user_analog_project_wrapper.spice user_analog_project_wrapper.xschem.spice
+
+~/EDA/caravel_user_project_analog/mag$ netgen
+% lvs user_analog_project_wrapper.spice user_analog_project_wrapper.xschem.spice
+
+see comp.out for comparison results
+
+retry magic with
+% ext2spice rthresh infinite
+% ext2spice cthresh infinite
+% ext2spice hierarchy on
+% ext2spice
+
+retry magic with
+% ext2spice lvs
+% ext2spice
+
+result is almost identical
+(spice3 and ngspice doesn't seem to make much of a difference)
+
