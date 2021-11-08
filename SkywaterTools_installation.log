@@ -4832,3 +4832,82 @@ retry magic with
 result is almost identical
 (spice3 and ngspice doesn't seem to make much of a difference)
 
+~/EDA/caravel_user_project$ git stash
+~/EDA/caravel_user_project$ git pull --all
+Fetching origin
+remote: Enumerating objects: 47, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Total 47 (delta 17), reused 17 (delta 17), pack-reused 30
+Unpacking objects: 100% (47/47), 1.05 MiB | 5.23 MiB/s, done.
+From https://github.com/efabless/caravel_user_project
+   fc583ec..dfc479e  main       -> origin/main
+Fetching submodule caravel
+From https://github.com/efabless/caravel-lite
+   0f16ba8..c294344  main       -> origin/main
+Updating fc583ec..dfc479e
+Fast-forward
+ caravel                                   |   2 +-
+ docs/source/_static/empty.png             | Bin 0 -> 47729 bytes
+ docs/source/_static/layout.png            | Bin 0 -> 475206 bytes
+ docs/source/_static/option1.png           | Bin 0 -> 146017 bytes
+ docs/source/_static/option2.png           | Bin 0 -> 173176 bytes
+ docs/source/_static/option3.png           | Bin 0 -> 69410 bytes
+ docs/source/_static/pitch.png             | Bin 0 -> 182963 bytes
+ docs/source/index.rst                     | 140 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ info.yaml                                 |  19 -----------
+ openlane/user_proj_example/config.json    |  21 +++++++++++++
+ openlane/user_proj_example/config.tcl     |   3 ++
+ openlane/user_project_wrapper/config.json |  58 ++++++++++++++++++++++++++++++++++
+ openlane/user_project_wrapper/config.tcl  |   3 ++
+ 13 files changed, 207 insertions(+), 39 deletions(-)
+ create mode 100644 docs/source/_static/empty.png
+ create mode 100644 docs/source/_static/layout.png
+ create mode 100644 docs/source/_static/option1.png
+ create mode 100644 docs/source/_static/option2.png
+ create mode 100644 docs/source/_static/option3.png
+ create mode 100644 docs/source/_static/pitch.png
+ delete mode 100644 info.yaml
+ create mode 100644 openlane/user_proj_example/config.json
+ create mode 100644 openlane/user_project_wrapper/config.json
+
+~/EDA/caravel_user_project$ make update_caravel
+Submodule path 'caravel': checked out 'c2943440e278814787f761585b99b9ea3c1f4121'
+cd /home/cmaier/EDA/caravel_user_project/caravel && \
+git checkout main && \
+git pull
+D	gds/user_project_wrapper_empty.gds.gz
+Previous HEAD position was c294344 Merge pull request #82 from Manarabdelaty/update_wrapper
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 7 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Updating 0f16ba8..c294344
+Fast-forward
+ Makefile                                     |   9 +++----
+ gds/user_analog_project_wrapper_empty.gds.gz | Bin 23030 -> 23195 bytes
+ info.yaml                                    |  19 ---------------
+ mag/user_analog_project_wrapper_empty.mag    |   1 -
+ openlane/Makefile                            |   4 ++--
+ utils/rcx.sh                                 | 103 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 110 insertions(+), 26 deletions(-)
+ delete mode 100644 info.yaml
+ delete mode 120000 mag/user_analog_project_wrapper_empty.mag
+ create mode 100644 utils/rcx.sh
+
+~/EDA/caravel_user_project_analog$ git log
+commit ad343161d0f46d5c1fb92b1ef4cf51f6f6680c66 (HEAD -> tatzelbranch)
+Author: Christoph Maier <cm.hardware.software.elsewhere@gmail.com>
+Date:   Mon Nov 8 21:07:44 2021 +0100
+
+    verilog/rtl/example_por.v : fix typo
+
+~/EDA/caravel_user_project_analog$ git pull --all
+Fetching github
+Fetching origin
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 12 (delta 3), reused 4 (delta 2), pack-reused 0
+Unpacking objects: 100% (12/12), 8.04 KiB | 75.00 KiB/s, done.
+From https://github.com/efabless/caravel_user_project_analog
+   f4d92bf..56c9aaa  main       -> origin/main
+Already up to date.
